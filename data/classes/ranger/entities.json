@@ -1,0 +1,2212 @@
+{
+  "skills": [
+    {
+      "id": "deadshot",
+      "name": "Deadshot",
+      "ko": "조준 화살",
+      "sum": "Il tuo colpo più forte. Si carica in tre passi: a carica piena colpisce tre volte più forte che senza carica, e il 35% in più se hai Precision, che ti dà [[marking-shot]].",
+      "meta": "Ricarica 20 s · 200 MP · 20 m · si carica in tre passi",
+      "options": [
+        {
+          "req": 8,
+          "name": "Removes MP consumed",
+          "it": "non consuma più mana"
+        },
+        {
+          "req": 8,
+          "name": "+30% Skill Speed",
+          "it": "si carica il 30% più in fretta"
+        },
+        {
+          "req": 8,
+          "name": "Changes to mobile skill",
+          "it": "la carichi anche camminando"
+        },
+        {
+          "req": 12,
+          "name": "Ignores Block and Evasion and lands as Multi-Hit",
+          "it": "non si può parare né schivare, e colpisce più volte"
+        },
+        {
+          "req": 16,
+          "name": "[Deadshot] grants extra damage on hit",
+          "it": "un secondo colpo, che vale la metà del primo"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 1,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+30% Skill Speed"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+30% Skill Speed",
+              "Changes to mobile skill"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+30% Skill Speed",
+              "[Deadshot] grants extra damage on hit"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+30% Skill Speed",
+              "Changes to mobile skill",
+              "[Deadshot] grants extra damage on hit"
+            ]
+          }
+        ],
+        "use": "Sul tasto 4, tenuto premuto insieme a [[snipe]] e alla macro: così parte a carica piena ogni volta che è pronta. Va tenuta, non toccata. Per tenerla col pollice, dai al 4 un secondo tasto su un pulsante laterale del mouse: Key Settings, Quickslot.",
+        "note": "La prima da portare a 16, con un tratto +1 Deadshot su ogni anello; poi a 20, con la carta Compass. A 16 il colpo in più prende il posto di Changes to mobile skill, che rientra a 20. Chi può stare fermo al suo posto prende Ignores Block and Evasion and lands as Multi-Hit.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 20,
+        "order": 1,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+30% Skill Speed"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+30% Skill Speed",
+              "Ignores Block and Evasion and lands as Multi-Hit"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+30% Skill Speed",
+              "Changes to mobile skill",
+              "Ignores Block and Evasion and lands as Multi-Hit"
+            ]
+          }
+        ],
+        "use": "A mano, subito dopo [[marking-shot]]. Un tocco la tira subito; a carica piena fa il triplo, ma mentre tendi l'arco sei scoperto: caricala solo quando non possono raggiungerti.",
+        "note": "In PvP entra Ignores Block and Evasion and lands as Multi-Hit. Aion 2 Maps la mette al posto di +30% Skill Speed; le build PvP del Global tengono la velocità e lasciano fuori il colpo in più.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 16.3,
+      "rings": {
+        "pve": 74,
+        "pvp": 61
+      }
+    },
+    {
+      "id": "snipe",
+      "name": "Snipe",
+      "ko": "저격",
+      "sum": "L'attacco base: una catena di colpi che tieni sempre premuta. Ogni colpo ti rende 120 MP e, con la specializzazione giusta, toglie 1 secondo alla ricarica di [[deadshot]].",
+      "meta": "Nessuna ricarica · 0 MP · rende 120 MP · 20 m",
+      "options": [
+        {
+          "req": 8,
+          "name": "+20% MP restored",
+          "it": "rende il 20% di mana in più"
+        },
+        {
+          "req": 8,
+          "name": "Absorbs 0.7% HP",
+          "it": "ogni colpo ti rende lo 0,7% dei PV"
+        },
+        {
+          "req": 8,
+          "name": "+50% Multi-Hit on hit",
+          "it": "50% in più di colpi multipli"
+        },
+        {
+          "req": 12,
+          "name": "-1s [Deadshot] cooldown on hit",
+          "it": "ogni colpo toglie 1 secondo alla ricarica di Deadshot"
+        },
+        {
+          "req": 16,
+          "name": "Adds [Tempest Arrow] Chain Skill",
+          "it": "aggiunge un quarto colpo alla catena, [[tempest-arrow]]"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 5,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+50% Multi-Hit on hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+50% Multi-Hit on hit",
+              "-1s [Deadshot] cooldown on hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "-1s [Deadshot] cooldown on hit",
+              "Adds [Tempest Arrow] Chain Skill"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+50% Multi-Hit on hit",
+              "-1s [Deadshot] cooldown on hit",
+              "Adds [Tempest Arrow] Chain Skill"
+            ]
+          }
+        ],
+        "use": "Sul tasto sinistro, sempre premuto insieme alla macro e a [[deadshot]].",
+        "note": "A 12 prendi subito -1s [Deadshot] cooldown on hit: è quella che fa tornare Deadshot prima dei suoi 20 secondi. A 16 la catena prende il posto di +50% Multi-Hit, che rientra a 20. Finché sali di livello da solo puoi tenere +20% MP restored, o Absorbs 0.7% HP se ti manca vita.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 4,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+50% Multi-Hit on hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+50% Multi-Hit on hit",
+              "-1s [Deadshot] cooldown on hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "-1s [Deadshot] cooldown on hit",
+              "Adds [Tempest Arrow] Chain Skill"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+50% Multi-Hit on hit",
+              "-1s [Deadshot] cooldown on hit",
+              "Adds [Tempest Arrow] Chain Skill"
+            ]
+          }
+        ],
+        "use": "Sul tasto sinistro, mentre giri intorno al bersaglio.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 15.8,
+      "rings": {
+        "pve": 69,
+        "pvp": 55
+      }
+    },
+    {
+      "id": "drill-dart",
+      "name": "Drill Dart",
+      "ko": "송곳 화살",
+      "sum": "Colpisce fino a 4 nemici e li fa sanguinare per 6 secondi, tagliando del 60% le cure che ricevono. Su un critico ti rende 100 MP.",
+      "meta": "Ricarica 5 s · 0 MP · rende 100 MP su un critico · 20 m · fino a 4 nemici",
+      "options": [
+        {
+          "req": 8,
+          "name": "Absorbs 3% HP",
+          "it": "ogni colpo ti rende il 3% dei PV"
+        },
+        {
+          "req": 8,
+          "name": "+2s Bleed duration",
+          "it": "il sanguinamento dura 2 secondi in più"
+        },
+        {
+          "req": 8,
+          "name": "+20% Skill Speed",
+          "it": "parte il 20% più in fretta"
+        },
+        {
+          "req": 12,
+          "name": "Multi-Hit on hit",
+          "it": "colpisce sempre più volte"
+        },
+        {
+          "req": 16,
+          "name": "Activates [Drill Dart] 1 extra time",
+          "it": "parte una seconda volta"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 2,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+20% Skill Speed"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+20% Skill Speed",
+              "Multi-Hit on hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+20% Skill Speed",
+              "Activates [Drill Dart] 1 extra time"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+20% Skill Speed",
+              "Multi-Hit on hit",
+              "Activates [Drill Dart] 1 extra time"
+            ]
+          }
+        ],
+        "use": "Nella seconda pila, in mezzo: sopra [[gale-arrow]] e sotto [[tempest-shot]].",
+        "note": "A 16 il colpo in più entra al posto di Multi-Hit on hit: lo fanno 89 build su 163, mentre 63 tolgono +20% Skill Speed. Da solo, o su un boss che ti consuma, al posto di +20% Skill Speed tieni Absorbs 3% HP. Se non parte: secondo Aion 2 Maps si accende solo entro 3 secondi da un tuo critico, quindi aspetta il primo.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 3,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Absorbs 3% HP"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Absorbs 3% HP",
+              "Multi-Hit on hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Absorbs 3% HP",
+              "Activates [Drill Dart] 1 extra time"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "Absorbs 3% HP",
+              "Multi-Hit on hit",
+              "Activates [Drill Dart] 1 extra time"
+            ]
+          }
+        ],
+        "use": "Nella macro. Il sanguinamento taglia del 60% le cure del bersaglio per 6 secondi.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 15.6,
+      "rings": {
+        "pve": 73,
+        "pvp": 61
+      }
+    },
+    {
+      "id": "suppressing-arrow",
+      "name": "Suppressing Arrow",
+      "ko": "제압 화살",
+      "sum": "Un colpo che stordisce per 3 secondi: i mostri sempre, i giocatori il 40% delle volte e solo se hai Precision.",
+      "meta": "Ricarica 20 s · 0 MP · 20 m",
+      "options": [
+        {
+          "req": 8,
+          "name": "+50% Multi-Hit on hit",
+          "it": "50% in più di colpi multipli"
+        },
+        {
+          "req": 8,
+          "name": "+1s Stun duration",
+          "it": "stordisce 1 secondo in più"
+        },
+        {
+          "req": 8,
+          "name": "+20% Skill Speed",
+          "it": "parte il 20% più in fretta"
+        },
+        {
+          "req": 12,
+          "name": "+20% Stun Chance",
+          "it": "+20% di probabilità di stordire"
+        },
+        {
+          "req": 16,
+          "name": "25% chance to reset cooldown on hit",
+          "it": "una volta su quattro torna subito pronta"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 10,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+20% Skill Speed"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+50% Multi-Hit on hit",
+              "+20% Skill Speed"
+            ]
+          }
+        ],
+        "use": "Sul tasto 1, a mano: sul boss, quando è pronta e Precision è accesa.",
+        "note": "Le fonti non sono d'accordo: Aion 2 Maps la alza per i boss, tra le ultime; Whelps nel gioco avanzato non la usa. Se le dai punti, [[wind-vigor]] resta a 1.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 1,
+        "order": 11,
+        "picks": [],
+        "use": "Poco usata: in PvP i punti vanno alla sopravvivenza.",
+        "label": "lasciala a 1"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "mid",
+      "top": 8.9,
+      "rings": {
+        "pve": 0,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "burst-arrow",
+      "name": "Burst Arrow",
+      "ko": "파열 화살",
+      "sum": "Colpisce solo un bersaglio rallentato o immobilizzato, e fino a 4 nemici intorno a lui. Il rallentamento lo mette [[snare-shot]].",
+      "meta": "Ricarica 20 s · 0 MP · 20 m · fino a 4 nemici · solo su un bersaglio rallentato o immobilizzato",
+      "options": [
+        {
+          "req": 8,
+          "name": "Absorbs 10% HP",
+          "it": "ti rende il 10% dei PV"
+        },
+        {
+          "req": 8,
+          "name": "+50% Multi-Hit on hit",
+          "it": "50% in più di colpi multipli"
+        },
+        {
+          "req": 8,
+          "name": "Changes to mobile skill",
+          "it": "la tiri anche camminando"
+        },
+        {
+          "req": 12,
+          "name": "Up to +20% damage when less targets hit",
+          "it": "fino al 20% di danno in più quando colpisci pochi bersagli"
+        },
+        {
+          "req": 16,
+          "name": "25% chance to reset cooldown on hit",
+          "it": "una volta su quattro torna subito pronta"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 7,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Changes to mobile skill"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Changes to mobile skill",
+              "Up to +20% damage when less targets hit"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "Changes to mobile skill",
+              "Up to +20% damage when less targets hit",
+              "25% chance to reset cooldown on hit"
+            ]
+          }
+        ],
+        "use": "Nella prima pila, in alto: sopra [[snare-shot]], che deve rallentare il bersaglio prima di lei.",
+        "note": "Portala a 8 per la prima specializzazione, poi a 10. Da solo puoi tenere Absorbs 10% HP al posto di Changes to mobile skill. 63 build su 172 prendono +50% Multi-Hit on hit al posto del 20% di danno.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 10,
+        "order": 6,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Absorbs 10% HP"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Absorbs 10% HP",
+              "Changes to mobile skill"
+            ]
+          }
+        ],
+        "use": "Subito dopo [[snare-shot]]: senza un rallentamento sul bersaglio non parte.",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 15,
+      "rings": {
+        "pve": 43,
+        "pvp": 14
+      }
+    },
+    {
+      "id": "marking-shot",
+      "name": "Marking Shot",
+      "ko": "표적 화살",
+      "sum": "Ti dà Precision per 10 secondi: +300 di critico, e [[deadshot]] colpisce il 35% più forte. Ti sposta nella direzione che stai premendo.",
+      "meta": "Ricarica 10 s · 50 MP · 20 m",
+      "options": [
+        {
+          "req": 8,
+          "name": "+5% Perfect Chance for the duration",
+          "it": "+5% di colpo perfetto finché dura Precision"
+        },
+        {
+          "req": 8,
+          "name": "30% chance to inflict Knock Back on hit",
+          "it": "30% di spingere indietro il bersaglio"
+        },
+        {
+          "req": 8,
+          "name": "+5s duration",
+          "it": "Precision dura 15 secondi"
+        },
+        {
+          "req": 12,
+          "name": "+1 consecutive use",
+          "it": "si può usare due volte di fila"
+        },
+        {
+          "req": 16,
+          "name": "Ignores Block and Evasion and lands as a Critical Hit",
+          "it": "non si può parare né schivare, ed è sempre critico"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 6,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+5s duration"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+5% Perfect Chance for the duration",
+              "+5s duration"
+            ]
+          }
+        ],
+        "use": "Sul tasto E, a mano: rilanciala circa 2 secondi prima che Precision finisca. Mentre la premi lascia i tasti di direzione, altrimenti ti sposta.",
+        "note": "È il tuo compito in combattimento: Precision deve restare sempre accesa. Portala a 8 per +5s duration, poi a 10; a 12 arriva coi nodi del Daevanion.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 10,
+        "order": 5,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "30% chance to inflict Knock Back on hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+5% Perfect Chance for the duration",
+              "30% chance to inflict Knock Back on hit"
+            ]
+          }
+        ],
+        "use": "A mano, e subito dopo [[deadshot]].",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 14.2,
+      "rings": {
+        "pve": 0,
+        "pvp": 33
+      }
+    },
+    {
+      "id": "gale-arrow",
+      "name": "Gale Arrow",
+      "ko": "광풍 화살",
+      "sum": "Colpisce fino a 4 nemici e ti dà Gale per 10 secondi: +7% di velocità di combattimento, +7% di danno PvE e +3,5% di danno PvP.",
+      "meta": "Ricarica 20 s · 200 MP · 20 m · fino a 4 nemici",
+      "options": [
+        {
+          "req": 8,
+          "name": "+5s duration",
+          "it": "Gale dura 5 secondi in più"
+        },
+        {
+          "req": 8,
+          "name": "50% chance to inflict Knock Back on hit",
+          "it": "una volta su due spinge indietro il bersaglio"
+        },
+        {
+          "req": 8,
+          "name": "Changes to mobile skill",
+          "it": "la tiri anche camminando"
+        },
+        {
+          "req": 12,
+          "name": "Increases Combat Speed, PvE Damage Boost, and PvP Damage Boost when less targets hit",
+          "it": "il bonus di Gale è più forte quando colpisci pochi bersagli"
+        },
+        {
+          "req": 16,
+          "name": "-10s cooldown",
+          "it": "ricarica di 10 secondi invece di 20"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 4,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Changes to mobile skill"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Changes to mobile skill",
+              "Increases Combat Speed, PvE Damage Boost, and PvP Damage Boost when less targets hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Increases Combat Speed, PvE Damage Boost, and PvP Damage Boost when less targets hit",
+              "-10s cooldown"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "Changes to mobile skill",
+              "Increases Combat Speed, PvE Damage Boost, and PvP Damage Boost when less targets hit",
+              "-10s cooldown"
+            ]
+          }
+        ],
+        "use": "Nella seconda pila, in basso: parte per prima ogni volta che torna.",
+        "note": "A 16 la ricarica scende a 10 secondi, quanto dura Gale: il bonus resta sempre acceso. Per questo dopo Deadshot è la seconda da portare a 20. Finché sali di livello puoi tenere +5s duration.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 7,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Changes to mobile skill"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "50% chance to inflict Knock Back on hit",
+              "Changes to mobile skill"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "50% chance to inflict Knock Back on hit",
+              "Changes to mobile skill",
+              "-10s cooldown"
+            ]
+          }
+        ],
+        "use": "Nella macro. In PvP conta la spinta: tiene lontano chi ti corre addosso.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 15.6,
+      "rings": {
+        "pve": 73,
+        "pvp": 50
+      }
+    },
+    {
+      "id": "snare-shot",
+      "name": "Snare Shot",
+      "ko": "올가미 화살",
+      "sum": "Colpisce fino a 4 nemici e li rallenta del 40% per 5 secondi. È lei che accende [[burst-arrow]].",
+      "meta": "Ricarica 15 s · 150 MP · 20 m · fino a 4 nemici",
+      "options": [
+        {
+          "req": 8,
+          "name": "+20% Move Speed reduction",
+          "it": "rallenta il 20% in più"
+        },
+        {
+          "req": 8,
+          "name": "+20% Skill Speed",
+          "it": "parte il 20% più in fretta"
+        },
+        {
+          "req": 8,
+          "name": "Changes to mobile skill",
+          "it": "la tiri anche camminando"
+        },
+        {
+          "req": 12,
+          "name": "Adds [Shackling Arrow] Chain Skill",
+          "it": "aggiunge un colpo a catena, [[shackling-arrow]]"
+        },
+        {
+          "req": 16,
+          "name": "+2s Slow and Root duration",
+          "it": "rallentamento e blocco durano 2 secondi in più"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 8,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+20% Skill Speed"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+20% Skill Speed",
+              "Changes to mobile skill"
+            ]
+          }
+        ],
+        "use": "Nella prima pila, in basso: parte per prima e rallenta il bersaglio per [[explosive-arrow]] e [[burst-arrow]].",
+        "note": "A 12 arriva coi nodi del Daevanion. 64 build su 173 al posto di +20% Skill Speed prendono la catena Shackling Arrow.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 10,
+        "order": 8,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+20% Skill Speed"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+20% Skill Speed",
+              "Changes to mobile skill"
+            ]
+          }
+        ],
+        "use": "Per tenerli lontani e per accendere [[burst-arrow]].",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 13.7,
+      "rings": {
+        "pve": 16,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "explosion-trap",
+      "name": "Explosion Trap",
+      "ko": "폭발의 덫",
+      "sum": "Una trappola ai tuoi piedi: resta 10 secondi, colpisce fino a 4 nemici entro 5 metri e stordisce per 3 secondi, i mostri sempre.",
+      "meta": "Ricarica 20 s · 200 MP · fino a 4 nemici",
+      "options": [
+        {
+          "req": 8,
+          "name": "Pulls enemies on explosion",
+          "it": "quando scoppia tira i nemici verso il centro"
+        },
+        {
+          "req": 8,
+          "name": "+1s Stun duration",
+          "it": "stordisce 1 secondo in più"
+        },
+        {
+          "req": 8,
+          "name": "Extra damage after 3s on hit",
+          "it": "altro danno dopo 3 secondi"
+        },
+        {
+          "req": 12,
+          "name": "+20% Stun Chance",
+          "it": "+20% di probabilità di stordire"
+        },
+        {
+          "req": 16,
+          "name": "+1 consecutive use",
+          "it": "si può mettere due volte di fila"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 11,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Pulls enemies on explosion"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Pulls enemies on explosion",
+              "Extra damage after 3s on hit"
+            ]
+          }
+        ],
+        "use": "Sul tasto 2, a mano, solo sui gruppi di mostri: li raduna, poi tieni premuta la macro.",
+        "note": "Sui boss non serve: è l'ultima a cui dare punti.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 10,
+        "order": 9,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Pulls enemies on explosion"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Pulls enemies on explosion",
+              "+20% Stun Chance"
+            ]
+          }
+        ],
+        "use": "Ai tuoi piedi quando un corpo a corpo ti raggiunge: li tira dentro e il 40% delle volte li stordisce.",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "mid",
+      "top": 9.1,
+      "rings": {
+        "pve": 0,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "defiance",
+      "name": "Defiance",
+      "ko": "충격 해제",
+      "sum": "Ti libera da Stun, Knockdown, Airborne, Grab, Frost e Fear, e per 5 secondi nessuno stato ti prende. Non libera da Root, Slow, Seal, Blind e Taunt.",
+      "meta": "Ricarica 60 s al livello 1, 51 s al 10 · 0 MP",
+      "options": [
+        {
+          "req": 8,
+          "name": "Adds [Lightning Arrow] Chain Skill",
+          "it": "aggiunge un colpo a catena, [[lightning-arrow]]"
+        },
+        {
+          "req": 8,
+          "name": "Restores 1000 Stamina on using [Defiance]",
+          "it": "ti rende 1.000 di Stamina"
+        },
+        {
+          "req": 8,
+          "name": "Restores 20% HP on using [Defiance]",
+          "it": "ti rende il 20% dei PV"
+        },
+        {
+          "req": 12,
+          "name": "+2s Tenacity duration",
+          "it": "l'immunità dura 2 secondi in più"
+        },
+        {
+          "req": 16,
+          "name": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+          "it": "finché dura l'immunità subisci il 50% di danno in meno in PvE e il 25% in PvP"
+        }
+      ],
+      "pve": {
+        "level": 1,
+        "order": 12,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Restores 20% HP on using [Defiance]"
+            ]
+          }
+        ],
+        "use": "Sulla barra spaziatrice, per uscire da un controllo.",
+        "note": "In PvE basta a 1: i punti servono altrove.",
+        "label": "lasciala a 1"
+      },
+      "pvp": {
+        "level": 10,
+        "order": 2,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Restores 20% HP on using [Defiance]"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Restores 20% HP on using [Defiance]",
+              "+2s Tenacity duration"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Restores 20% HP on using [Defiance]",
+              "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+            ]
+          }
+        ],
+        "use": "Sul controllo che ti ucciderebbe, non sul primo.",
+        "note": "È la tua sola uscita dai controlli. Non toglie Root, Slow, Seal e Blind; i suoi 5 secondi di immunità però li bloccano.",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 9.1,
+      "rings": {
+        "pve": 0,
+        "pvp": 27
+      }
+    },
+    {
+      "id": "arrow-scattershot",
+      "name": "Arrow Scattershot",
+      "ko": "화살 난사",
+      "sum": "Colpisce solo un bersaglio in Stagger, senza ricarica: in quella finestra la tieni premuta al posto di [[snipe]].",
+      "meta": "Nessuna ricarica · 0 MP · 20 m · solo su un bersaglio in Stagger",
+      "options": [
+        {
+          "req": 8,
+          "name": "Absorbs 5% HP",
+          "it": "ti rende il 5% dei PV"
+        },
+        {
+          "req": 8,
+          "name": "Restores 120 MP on hit",
+          "it": "ogni colpo rende 120 MP"
+        },
+        {
+          "req": 8,
+          "name": "Changes to mobile skill",
+          "it": "la tiri anche camminando"
+        },
+        {
+          "req": 12,
+          "name": "Multi-Hit on hit",
+          "it": "colpisce sempre più volte"
+        },
+        {
+          "req": 16,
+          "name": "-1s all cooldowns on hit",
+          "it": "ogni colpo toglie 1 secondo a tutte le ricariche"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 9,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Changes to mobile skill"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Changes to mobile skill",
+              "Multi-Hit on hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Changes to mobile skill",
+              "-1s all cooldowns on hit"
+            ]
+          }
+        ],
+        "use": "Sul tasto E, sopra [[marking-shot]]. Solo col boss in Stagger: lascia il tasto sinistro e tieni premuto E.",
+        "note": "Le fonti non sono d'accordo. Aion 2 Maps la porta a 10, dopo le passive; Whelps non le dà punti (\"we don't use this at all\"). È tra le ultime a cui dare punti e la prima da togliere. Il motivo per alzarla ancora è a 16: ogni colpo toglie 1 secondo a tutte le ricariche.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 1,
+        "order": 12,
+        "picks": [],
+        "use": "In PvP non serve: colpisce solo un bersaglio in Stagger.",
+        "label": "lasciala a 1"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "mid",
+      "top": 6.9,
+      "rings": {
+        "pve": 12,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "tempest-shot",
+      "name": "Tempest Shot",
+      "ko": "속사",
+      "sum": "Il colpo che riempie ogni buco: nessuna ricarica, fino a 4 nemici. Consuma il mana che [[snipe]] ti rende.",
+      "meta": "Nessuna ricarica · 120 MP · 20 m · fino a 4 nemici",
+      "options": [
+        {
+          "req": 8,
+          "name": "-20% MP consumed",
+          "it": "costa il 20% di mana in meno"
+        },
+        {
+          "req": 8,
+          "name": "+10% skill Critical Hit",
+          "it": "+10% di critico per questa skill"
+        },
+        {
+          "req": 8,
+          "name": "Deals up to 12% more damage when less targets are hit",
+          "it": "fino al 12% di danno in più quando colpisci pochi bersagli"
+        },
+        {
+          "req": 12,
+          "name": "5% chance to inflict Knock Back on Critical Hit",
+          "it": "su un critico, 5% di spingere indietro il bersaglio"
+        },
+        {
+          "req": 16,
+          "name": "+20% Skill Speed",
+          "it": "parte il 20% più in fretta"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 3,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Deals up to 12% more damage when less targets are hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+10% skill Critical Hit",
+              "Deals up to 12% more damage when less targets are hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Deals up to 12% more damage when less targets are hit",
+              "+20% Skill Speed"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+10% skill Critical Hit",
+              "Deals up to 12% more damage when less targets are hit",
+              "+20% Skill Speed"
+            ]
+          }
+        ],
+        "use": "Nella seconda pila, in alto: riempie i buchi tra [[gale-arrow]] e [[drill-dart]]. Mai sotto Drill Dart.",
+        "note": "A 16 +20% Skill Speed prende il posto del critico: lo fanno 171 build su 186. Finché sali di livello tieni -20% MP consumed. Molti la fermano a 16: per il danno basta.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 10,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Deals up to 12% more damage when less targets are hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+10% skill Critical Hit",
+              "Deals up to 12% more damage when less targets are hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Deals up to 12% more damage when less targets are hit",
+              "+20% Skill Speed"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+10% skill Critical Hit",
+              "Deals up to 12% more damage when less targets are hit",
+              "+20% Skill Speed"
+            ]
+          }
+        ],
+        "use": "Nella macro, come riempimento.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 16.4,
+      "rings": {
+        "pve": 69,
+        "pvp": 56
+      }
+    }
+  ],
+  "chains": [
+    {
+      "id": "tempest-arrow",
+      "name": "Tempest Arrow"
+    },
+    {
+      "id": "shackling-arrow",
+      "name": "Shackling Arrow"
+    },
+    {
+      "id": "lightning-arrow",
+      "name": "Lightning Arrow"
+    },
+    {
+      "id": "guerilla-strike",
+      "name": "Guerilla Strike"
+    }
+  ],
+  "stigma": [
+    {
+      "id": "griffon-arrow",
+      "name": "Griffon Arrow",
+      "ko": "그리폰 화살",
+      "sum": "Fuoco su fino a 4 nemici, che poi bruciano per 10 secondi (Crimson Flames), di più se si muovono.",
+      "meta": "Ricarica 45 s · 200 MP · 20 m · fino a 4 nemici",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "Changes to mobile skill",
+          "it": "la tiri anche camminando"
+        },
+        {
+          "at": 10,
+          "name": "+5s Damage over Time duration",
+          "it": "bruciano 5 secondi in più"
+        },
+        {
+          "at": 15,
+          "name": "Enhanced Crimson Flames - Extra damage when hit while afflicted with Crimson Flames",
+          "it": "danno in più a ogni colpo preso mentre bruciano"
+        },
+        {
+          "at": 20,
+          "name": "-50% Damage over Time intervals",
+          "it": "bruciano il doppio delle volte"
+        }
+      ],
+      "pve": {
+        "level": 5,
+        "state": "alternativa",
+        "pos": 5,
+        "note": "L'altra freccia: fa circa lo stesso danno di [[explosive-arrow]], e tra i primi 105 Ranger del Global la montano 79 su 100. Per Whelps prende il posto di Explosive Arrow quando arriva a 15. Nella prima pila va in basso, sotto [[snare-shot]].",
+        "swap": "explosive-arrow"
+      },
+      "pvp": null,
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "ambush-kick",
+      "name": "Ambush Kick",
+      "ko": "기습 차기",
+      "sum": "Ti porta alle spalle di un bersaglio entro 5 metri, lo spinge via e ti fa saltare indietro.",
+      "meta": "Ricarica 30 s · 0 MP",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+5m Range",
+          "it": "arriva a 10 metri"
+        },
+        {
+          "at": 10,
+          "name": "10% Max HP Protective Shield for 5s on hit",
+          "it": "uno scudo del 10% dei PV per 5 secondi"
+        },
+        {
+          "at": 15,
+          "name": "50% chance to inflict Stun for 3s on hit",
+          "it": "una volta su due stordisce per 3 secondi"
+        },
+        {
+          "at": 20,
+          "name": "+50% Stun Chance",
+          "it": "stordisce sempre"
+        }
+      ],
+      "pve": null,
+      "pvp": {
+        "level": 5,
+        "state": "sempre",
+        "pos": 4,
+        "note": "Per quando un corpo a corpo ti raggiunge."
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "illusory-arrow",
+      "name": "Illusory Arrow",
+      "ko": "환영 화살",
+      "sum": "Acceca il bersaglio per 3 secondi.",
+      "meta": "Ricarica 30 s · 200 MP",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+1s Blind duration",
+          "it": "acceca 1 secondo in più"
+        },
+        {
+          "at": 10,
+          "name": "Changes to AoE Skill",
+          "it": "colpisce ad area"
+        },
+        {
+          "at": 15,
+          "name": "Inflicts Slow for 5s on hit",
+          "it": "rallenta per 5 secondi"
+        },
+        {
+          "at": 20,
+          "name": "+1 consecutive use",
+          "it": "si può usare due volte di fila"
+        }
+      ],
+      "pve": null,
+      "pvp": {
+        "level": 5,
+        "state": "uno contro uno",
+        "pos": 6,
+        "note": "Per fermare un avversario solo."
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "sealing-arrow",
+      "name": "Sealing Arrow",
+      "ko": "봉인 화살",
+      "sum": "Sigilla il bersaglio per 5 secondi: i mostri sempre, i giocatori il 75% delle volte.",
+      "meta": "Ricarica 60 s · 200 MP",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "50% chance to inflict Root for 5s on hit",
+          "it": "una volta su due blocca per 5 secondi"
+        },
+        {
+          "at": 10,
+          "name": "-1000 enemy Max Stamina for 5s on hit",
+          "it": "toglie 1.000 di Stamina al bersaglio per 5 secondi"
+        },
+        {
+          "at": 15,
+          "name": "+2s Seal duration",
+          "it": "il sigillo dura 2 secondi in più"
+        },
+        {
+          "at": 20,
+          "name": "+25% Seal chance",
+          "it": "sigilla sempre"
+        }
+      ],
+      "pve": null,
+      "pvp": {
+        "level": 5,
+        "state": "uno contro uno",
+        "pos": 7,
+        "note": "Per fermare un avversario solo."
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "ensnaring-trap",
+      "name": "Ensnaring Trap",
+      "ko": "결박의 덫",
+      "sum": "Una trappola ai tuoi piedi che resta 30 secondi: chi la calpesta rimane sospeso in aria per 3 secondi.",
+      "meta": "Ricarica 90 s · 0 MP",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "Adds [Guerilla Strike] Chain Skill",
+          "it": "aggiunge un colpo a catena, [[guerilla-strike]]"
+        },
+        {
+          "at": 10,
+          "name": "Removes up to 2 buffs",
+          "it": "toglie fino a 2 buff"
+        },
+        {
+          "at": 15,
+          "name": "+1s Airborne duration",
+          "it": "1 secondo in più in aria"
+        },
+        {
+          "at": 20,
+          "name": "-30s cooldown",
+          "it": "ricarica di 60 secondi"
+        }
+      ],
+      "pve": null,
+      "pvp": {
+        "level": 5,
+        "state": "contro i corpo a corpo",
+        "pos": 8
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "stealth",
+      "name": "Stealth",
+      "ko": "은신",
+      "sum": "Invisibile per 10 secondi. Non si usa in combattimento, ed entrarci la toglie.",
+      "meta": "Ricarica 120 s · 0 MP",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "Critical Hit on attack during Stealth",
+          "it": "il colpo dato da invisibile è critico"
+        },
+        {
+          "at": 10,
+          "name": "+20% Move Speed for the duration",
+          "it": "ti muovi il 20% più in fretta"
+        },
+        {
+          "at": 15,
+          "name": "Available in combat",
+          "it": "si usa anche in combattimento"
+        },
+        {
+          "at": 20,
+          "name": "+10s Stealth duration",
+          "it": "dura 20 secondi"
+        }
+      ],
+      "pve": null,
+      "pvp": null,
+      "src": [
+        "db",
+        "meta"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "bow-of-blessing",
+      "name": "Bow of Blessing",
+      "ko": "축복의 활",
+      "sum": "+200 di critico e +100 di precisione per 10 secondi al livello 1, 12 al 5 e 20 al 20. A 5 aggiunge il 50% di colpi multipli, a 10 attacco in proporzione al tuo critico, a 15 il 20% di danno critico.",
+      "meta": "Ricarica 120 s · 0 MP · durata 10 s (Lv 1), 12 s (Lv 5), 20 s (Lv 20)",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+50% Multi-Hit Chance for duration",
+          "it": "50% in più di colpi multipli"
+        },
+        {
+          "at": 10,
+          "name": "Increases Attack proportional to Critical Hit for the duration",
+          "it": "attacco in più in proporzione al tuo critico"
+        },
+        {
+          "at": 15,
+          "name": "+20% Critical Damage Boost for the duration",
+          "it": "+20% di danno critico"
+        },
+        {
+          "at": 20,
+          "name": "+7% Double Chance for the duration",
+          "it": "+7% di colpo doppio"
+        }
+      ],
+      "pve": {
+        "level": 5,
+        "state": "in uso",
+        "pos": 2,
+        "note": "A 45 basta a 5. Dopo [[vaizels-authority]] a 20 sale a 15 insieme a [[supporting-fire]]."
+      },
+      "pvp": {
+        "level": 5,
+        "state": "sempre",
+        "pos": 2
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "arrow-storm",
+      "name": "Arrow Storm",
+      "ko": "화살 폭풍",
+      "sum": "Colpisce fino a 4 nemici e stordisce i mostri per 3 secondi. Toglie 50 alla barra di Stagger a qualunque livello, più di ogni altra skill del Ranger.",
+      "meta": "Ricarica 60 s · 200 MP · 20 m · fino a 4 nemici",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "Up to +20% max damage when more targets hit",
+          "it": "fino al 20% in più sui gruppi"
+        },
+        {
+          "at": 10,
+          "name": "Inflicts Slow for 10s on hit",
+          "it": "rallenta per 10 secondi"
+        },
+        {
+          "at": 15,
+          "name": "+1s Stun duration",
+          "it": "stordisce 1 secondo in più"
+        },
+        {
+          "at": 20,
+          "name": "+25% Stun Chance",
+          "it": "+25% di probabilità di stordire"
+        }
+      ],
+      "pve": {
+        "level": 1,
+        "state": "per lo Stagger",
+        "pos": 6,
+        "note": "Se il gruppo non fa in tempo a stordire il boss, entra nel quarto slot al posto della freccia. Tienila per quando la barra di Stagger si apre.",
+        "swap": "explosive-arrow"
+      },
+      "pvp": null,
+      "src": [
+        "db",
+        "maps",
+        "meta"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "vaizels-authority",
+      "name": "Vaizel's Authority",
+      "ko": "바이젤의 권능",
+      "sum": "+20% di attacco per 10 secondi al livello 1, 14,5 al 10 e 20 al 20. A 10 fa valere una volta e mezza [[focused-eye]], a 15 [[hunters-soul]], e a 20 ogni critico ha il 50% di togliere 1 secondo a tutte le ricariche.",
+      "meta": "Ricarica 60 s · 0 MP · durata 10 s (Lv 1), 14,5 s (Lv 10), 20 s (Lv 20)",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+10% Perfect Chance for the duration",
+          "it": "+10% di colpo perfetto"
+        },
+        {
+          "at": 10,
+          "name": "x1.5 [Focused Eye] effect for the duration",
+          "it": "Focused Eye vale una volta e mezza"
+        },
+        {
+          "at": 15,
+          "name": "x1.5 [Hunter's Soul] effect for the duration",
+          "it": "Hunter's Soul vale una volta e mezza"
+        },
+        {
+          "at": 20,
+          "name": "50% chance to reduce all skill cooldowns by 1s on Critical Hit for the duration",
+          "it": "il motore di tutta la build"
+        }
+      ],
+      "pve": {
+        "level": 20,
+        "state": "in uso",
+        "pos": 1,
+        "note": "A 45 sta a 10. Appena hai i punti è il primo stigma da portare a 20: lì il Ranger cambia passo."
+      },
+      "pvp": {
+        "level": 20,
+        "state": "sempre",
+        "pos": 1
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "mother-natures-breath",
+      "name": "Mother Nature's Breath",
+      "ko": "대자연의 숨결",
+      "sum": "Per 6 secondi subisci il 20% di danno in meno in PvE e il 10% in PvP, hai +200 di resistenza ai critici, e una volta su due recuperi come PV un quarto del colpo preso.",
+      "meta": "Ricarica 90 s · 0 MP · durata 6 s",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "Removes and grants immunity to Damage over Time effects",
+          "it": "toglie i danni nel tempo e li blocca finché dura"
+        },
+        {
+          "at": 10,
+          "name": "x1.5 [Vigilant Eye] effect for the duration",
+          "it": "Vigilant Eye vale una volta e mezza"
+        },
+        {
+          "at": 15,
+          "name": "x1.5 [Unyielding Resolve] effect for the duration",
+          "it": "Unyielding Resolve vale una volta e mezza"
+        },
+        {
+          "at": 20,
+          "name": "+20% PvE Damage Tolerance increase and +10% PvP Damage Tolerance increase",
+          "it": "un altro 20% in PvE e 10% in PvP"
+        }
+      ],
+      "pve": null,
+      "pvp": {
+        "level": 5,
+        "state": "sempre",
+        "pos": 3,
+        "note": "Quando ti saltano addosso. Dal livello 5 toglie anche veleni e sanguinamenti."
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "explosive-arrow",
+      "name": "Explosive Arrow",
+      "ko": "폭발 화살",
+      "sum": "Fuoco su fino a 4 nemici; il 20% di danno in più su chi è rallentato o immobilizzato.",
+      "meta": "Ricarica 45 s, 30 s dal livello 5 · 0 MP · 20 m · fino a 4 nemici",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "-15s cooldown",
+          "it": "ricarica di 30 secondi"
+        },
+        {
+          "at": 10,
+          "name": "+10% additional damage to targets afflicted with Slow or Root",
+          "it": "un altro 10% sui rallentati"
+        },
+        {
+          "at": 15,
+          "name": "Critical Hit on hit",
+          "it": "sempre critico"
+        },
+        {
+          "at": 20,
+          "name": "+20% additional damage to targets afflicted with Slow or Root",
+          "it": "un altro 20% sui rallentati"
+        }
+      ],
+      "pve": {
+        "level": 5,
+        "state": "in uso",
+        "pos": 4,
+        "or": "griffon-arrow",
+        "note": "Il quarto stigma è una delle due frecce. Whelps nel Global oggi monta questa, e passa a [[griffon-arrow]] quando Griffon arriva a 15. Nella prima pila sta in mezzo, sopra [[snare-shot]]: sui bersagli rallentati fa il 20% in più."
+      },
+      "pvp": null,
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "supporting-fire",
+      "name": "Supporting Fire",
+      "ko": "지원 사격",
+      "sum": "Evoca per 15 secondi un globo che spara insieme a te: una volta su quattro, al massimo ogni mezzo secondo, e ogni suo colpo ti rende l'1,5% dei PV.",
+      "meta": "Ricarica 90 s · 0 MP · durata 15 s",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+25% activation chance",
+          "it": "spara il doppio delle volte"
+        },
+        {
+          "at": 10,
+          "name": "+15s duration",
+          "it": "dura 30 secondi"
+        },
+        {
+          "at": 15,
+          "name": "-30s cooldown",
+          "it": "ricarica di 60 secondi"
+        },
+        {
+          "at": 20,
+          "name": "Critical Hit on hit",
+          "it": "i suoi colpi sono sempre critici"
+        }
+      ],
+      "pve": {
+        "level": 5,
+        "state": "in uso",
+        "pos": 3,
+        "note": "La monta il 97% dei primi 105 Ranger del Global. Chi al suo posto tiene tutte e due le frecce, [[explosive-arrow]] e [[griffon-arrow]], ne toglie una per farle posto."
+      },
+      "pvp": {
+        "level": 5,
+        "state": "alternativa",
+        "pos": 5,
+        "note": "Può entrare al posto di [[bow-of-blessing]].",
+        "swap": "bow-of-blessing"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "assault-smite",
+      "name": "Assault Smite",
+      "ko": "강습 강타",
+      "sum": "Colpisce fino a 4 nemici e stordisce i mostri per 3 secondi; più bersagli colpisci, più difesa ti dà, fino al 20%.",
+      "meta": "Ricarica 120 s · 0 MP",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+20% Attack for 5s on hit",
+          "it": "+20% di attacco per 5 secondi"
+        },
+        {
+          "at": 10,
+          "name": "500 MP damage on hit",
+          "it": "toglie 500 MP al bersaglio"
+        },
+        {
+          "at": 15,
+          "name": "+10m range",
+          "it": "arriva a 30 metri"
+        },
+        {
+          "at": 20,
+          "name": "+20% Stun Chance",
+          "it": "+20% di probabilità di stordire"
+        }
+      ],
+      "pve": null,
+      "pvp": null,
+      "src": [
+        "db"
+      ],
+      "conf": "mid"
+    }
+  ],
+  "passive": [
+    {
+      "id": "vigilant-eye",
+      "name": "Vigilant Eye",
+      "ko": "경계의 눈",
+      "sum": "+200 di schivata, più PV massimi e una piccola cura a ogni schivata.",
+      "scale": [
+        {
+          "label": "PV massimi",
+          "v": [
+            "6%",
+            "15%",
+            "25%"
+          ]
+        },
+        {
+          "label": "Cura minima a ogni schivata",
+          "v": [
+            "85",
+            "562",
+            "1112"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 7,
+        "note": "Sopravvivenza: viene dopo quelle di danno."
+      },
+      "pvp": {
+        "rank": 5
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 12.5,
+      "gear": {
+        "pve": 2,
+        "pvp": 1
+      }
+    },
+    {
+      "id": "concentrated-fire",
+      "name": "Concentrated Fire",
+      "ko": "집중 포화",
+      "sum": "Su un bersaglio che sta subendo danni nel tempo (il sanguinamento di [[drill-dart]], il fuoco di [[griffon-arrow]]), una volta su due un colpo in più; al massimo uno al secondo.",
+      "scale": [
+        {
+          "label": "Danno minimo del colpo in più",
+          "v": [
+            "56",
+            "276",
+            "428"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 4
+      },
+      "pvp": {
+        "rank": 8
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 14.7,
+      "gear": {
+        "pve": 11,
+        "pvp": 1
+      }
+    },
+    {
+      "id": "wind-vigor",
+      "name": "Wind Vigor",
+      "ko": "바람의 활력",
+      "sum": "Più Stamina, e uno scatto di velocità quando ti colpiscono.",
+      "scale": [
+        {
+          "label": "Stamina massima",
+          "v": [
+            "+15",
+            "+150",
+            "+300"
+          ]
+        },
+        {
+          "label": "Velocità quando ti colpiscono",
+          "v": [
+            "10%",
+            "19%",
+            "29%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 8,
+        "note": "Resta a 1 se dai punti a [[suppressing-arrow]]."
+      },
+      "pvp": {
+        "rank": 10
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 12.2,
+      "gear": {
+        "pve": 1,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "focused-eye",
+      "name": "Focused Eye",
+      "ko": "집중의 눈",
+      "sum": "Più danno, sempre: +100 di precisione e, a ogni livello, 1% di danno PvE, 0,5% di danno PvP e 0,2% di colpo doppio. Con [[vaizels-authority]] a 10 vale una volta e mezza finché il buff dura.",
+      "scale": [
+        {
+          "label": "Danno PvE",
+          "v": [
+            "1%",
+            "10%",
+            "20%"
+          ]
+        },
+        {
+          "label": "Danno PvP",
+          "v": [
+            "0,5%",
+            "5%",
+            "10%"
+          ]
+        },
+        {
+          "label": "Colpo doppio",
+          "v": [
+            "0,2%",
+            "2%",
+            "4%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 1,
+        "note": "La prima da alzare, e la prima da cercare su elmo, mantello, collana e orecchini e sulla carta Mirror."
+      },
+      "pvp": {
+        "rank": 3
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 16.8,
+      "gear": {
+        "pve": 74,
+        "pvp": 33
+      }
+    },
+    {
+      "id": "hunters-resolve",
+      "name": "Hunter's Resolve",
+      "ko": "사냥꾼의 결의",
+      "sum": "Più danno critico.",
+      "scale": [
+        {
+          "label": "Danno critico",
+          "v": [
+            "6%",
+            "15%",
+            "25%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 2,
+        "note": "La seconda, subito dopo [[focused-eye]]: la cerchi negli stessi posti, e sulla carta Bell."
+      },
+      "pvp": {
+        "rank": 4
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 16.3,
+      "gear": {
+        "pve": 72,
+        "pvp": 21
+      }
+    },
+    {
+      "id": "unyielding-resolve",
+      "name": "Unyielding Resolve",
+      "ko": "저항의 결의",
+      "sum": "Resistenza agli stati di tipo Ailment e Impact.",
+      "scale": [
+        {
+          "label": "Resistenza",
+          "v": [
+            "11,2%",
+            "22%",
+            "34%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 9,
+        "note": "In PvE resta a 1."
+      },
+      "pvp": {
+        "rank": 2,
+        "note": "A 10 dà il 22% di resistenza."
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 8.4,
+      "gear": {
+        "pve": 0,
+        "pvp": 10
+      }
+    },
+    {
+      "id": "rooting-eye",
+      "name": "Rooting Eye",
+      "ko": "속박의 눈",
+      "sum": "Su un bersaglio rallentato o immobilizzato, una volta su due un colpo in più; al massimo uno al secondo.",
+      "scale": [
+        {
+          "label": "Danno minimo del colpo in più",
+          "v": [
+            "143",
+            "364",
+            "524"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 5
+      },
+      "pvp": {
+        "rank": 7
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 14.3,
+      "gear": {
+        "pve": 4,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "melee-fire",
+      "name": "Melee Fire",
+      "ko": "근접 사격",
+      "sum": "Una volta su quattro un colpo in più; entro 5 metri, il 5% delle volte spinge indietro il bersaglio.",
+      "scale": [
+        {
+          "label": "Danno minimo del colpo in più",
+          "v": [
+            "148",
+            "304",
+            "417"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 6
+      },
+      "pvp": {
+        "rank": 9
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 14,
+      "gear": {
+        "pve": 2,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "revitalization-contract",
+      "name": "Revitalization Contract",
+      "ko": "회생의 계약",
+      "sum": "Resistenza agli stati; e quando scendi al 10% dei PV te ne rende una parte, una volta al minuto.",
+      "scale": [
+        {
+          "label": "Resistenza agli stati",
+          "v": [
+            "17%",
+            "35%",
+            "55%"
+          ]
+        },
+        {
+          "label": "PV resi sotto il 10%",
+          "v": [
+            "35%",
+            "44%",
+            "54%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 10,
+        "note": "In PvE resta a 1."
+      },
+      "pvp": {
+        "rank": 1,
+        "note": "La prima da alzare in PvP: a 10 dà il 35% di resistenza agli stati."
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 10,
+      "gear": {
+        "pve": 0,
+        "pvp": 17
+      }
+    },
+    {
+      "id": "hunters-soul",
+      "name": "Hunter's Soul",
+      "ko": "사냥꾼의 혼",
+      "sum": "Su un critico, una volta su due, un colpo in più; al massimo uno al secondo. Con [[vaizels-authority]] a 15 vale una volta e mezza.",
+      "scale": [
+        {
+          "label": "Danno minimo del colpo in più",
+          "v": [
+            "344",
+            "650",
+            "872"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 3,
+        "note": "La terza: dopo [[focused-eye]] e [[hunters-resolve]]."
+      },
+      "pvp": {
+        "rank": 6
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga",
+        "whelps"
+      ],
+      "conf": "high",
+      "top": 15.8,
+      "gear": {
+        "pve": 27,
+        "pvp": 5
+      }
+    }
+  ],
+  "levels": {
+    "src": "meta",
+    "players": 105,
+    "date": "2026-10-08",
+    "read": "2026-10-10"
+  }
+}

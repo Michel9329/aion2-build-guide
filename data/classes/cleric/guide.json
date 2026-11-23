@@ -1,0 +1,1430 @@
+{
+  "include": [
+    "entities.json"
+  ],
+  "meta": {
+    "title": "Cleric AION 2",
+    "navTitle": "Cleric · AION 2",
+    "h1": "Cleric, AION 2 Global",
+    "lead": "Skill, stigma, passive, macro e rotazione del Cleric, in due build sullo stesso personaggio: Danno e Cura, una per preset delle skill. I nomi sono quelli del client inglese; i numeri vengono dai dati del gioco, le scelte da chi lo gioca meglio.",
+    "facts": [
+      "**Season 1**, livello massimo 45",
+      "Dati del client letti il **01/11/2026**",
+      "Confronto coi primi otto d'Europa il **01/11/2026**",
+      "Scritto per **tastiera e mouse**"
+    ],
+    "stamp": "Aggiornato al 01/11/2026"
+  },
+  "builds": [
+    {
+      "id": "danno",
+      "label": "Danno",
+      "preset": 1
+    },
+    {
+      "id": "cura",
+      "label": "Cura",
+      "preset": 2
+    }
+  ],
+  "sources": [
+    {
+      "id": "db",
+      "label": "Questlog, le skill del Cleric",
+      "url": "https://questlog.gg/aion-2/en/db/skills/cleric",
+      "kind": "Dati del client",
+      "region": "Global",
+      "date": "letto il 01/11/2026, schede aggiornate tra il 28/09 e il 29/10",
+      "note": "35 schede: 12 attive, 13 stigma, 10 passive. Il testo salvato non fa parte di questo repository."
+    },
+    {
+      "id": "builds",
+      "label": "Questlog, le build pubblicate dai giocatori",
+      "url": "https://questlog.gg/aion-2/en/skill-builder?publisher=global&class=cleric",
+      "kind": "Statistiche d'uso",
+      "region": "Global",
+      "date": "01/11/2026",
+      "note": "900 build in elenco; di 278 autori lette in dettaglio 438 build, 353 PvE con una skill a 16 o più (specializzazioni, pile sui tasti, macro)."
+    },
+    {
+      "id": "meta",
+      "label": "Aion 2 Meta, guida del Cleric",
+      "url": "https://aion2-meta.com/guides/cleric/",
+      "kind": "Statistiche d'uso",
+      "region": "Global e Corea",
+      "date": "Corea 25/10/2026, Global 29/10/2026",
+      "note": "10.358 Cleric coreani tra i primi (AION2CAL) e i primi 32 Cleric del Global."
+    },
+    {
+      "id": "maps",
+      "label": "Aion 2 Maps, guida del Cleric",
+      "url": "https://aion2maps.com/guides/cleric/",
+      "kind": "Guida con le fonti",
+      "region": "Global",
+      "date": "aggiornata il 18/10/2026",
+      "note": "Di ogni frase dice se è un dato del client o il consiglio di un creator: 235 citazioni da 49 fonti. Con le sue pagine sulle skill e sulla macro, che spiegano i tre preset."
+    },
+    {
+      "id": "couga",
+      "label": "couga54, raccolta di guide del Cleric",
+      "url": "https://couga54.github.io/aion2-guides/en/cleric/",
+      "kind": "Raccolta di creator",
+      "region": "Global",
+      "date": "08-10/10/2026",
+      "note": "Segue Kaeria, Lucia (che si presenta come «World's First Rank 1» tra i Cleric), Whelps e aLuckyRO. Il sito si è spostato su aion2-guides.info."
+    },
+    {
+      "id": "topeu",
+      "label": "Le schede dei primi otto Cleric d'Europa",
+      "url": "https://metabot.gg/en/aion-2/leaderboards/eu/cleric",
+      "kind": "Schede dei giocatori",
+      "region": "Europa",
+      "date": "01/11/2026",
+      "note": "I primi otto per Combat Power, letti da MetaBot: pezzi, tratti, skill, stigma, carte e Daevanion. Item Level da 3.292 a 3.561. Cinque montano i quattro stigma da danno, tre una versione da cura."
+    },
+    {
+      "id": "ranks",
+      "label": "MetaBot, classifica dei Cleric d'Europa",
+      "url": "https://metabot.gg/en/aion-2/leaderboards/eu/cleric",
+      "kind": "Classifica",
+      "region": "Europa",
+      "date": "01/11/2026",
+      "note": "587 Cleric in classifica; mediana dei primi 100: Item Level 2.942, Combat Power 181.958."
+    },
+    {
+      "id": "whelps",
+      "label": "Whelps, il Cleric del Global dopo la patch",
+      "url": "https://www.youtube.com/watch?v=N3ONhVc0K-U",
+      "kind": "Video di un creator",
+      "region": "Global e Corea",
+      "date": "20/10/2026",
+      "note": "Gioca il Cleric sul Global e sul server coreano Israphel. Stigma, livelli, specializzazioni e la sua macro, con la finestra Skill a schermo (le foto della pila e dei preset vengono da qui)."
+    },
+    {
+      "id": "lucia",
+      "label": "Lucia (LuciaHeals), guida del Cleric e prova delle macro",
+      "url": "https://www.youtube.com/watch?v=j86-p9Kpijo",
+      "kind": "Video di un creator",
+      "region": "Global",
+      "date": "04/10 e 30/10/2026",
+      "note": "Si presenta come «World's First Rank 1» tra i Cleric. Il 30/10 ha misurato sul manichino la macro con e senza Judgment Thunder: con, circa 99 mila danni al secondo; senza, circa 85 mila. Dal 20 di Condemnation, dice, si toglie."
+    },
+    {
+      "id": "excalul",
+      "label": "Excalul, guida del Cleric",
+      "url": "https://www.youtube.com/watch?v=zioAbsvcX_8",
+      "kind": "Video di un creator",
+      "region": "Global",
+      "date": "18/10/2026",
+      "note": "Si presenta come primo al mondo nel raid Ludra e primo Cleric del Global. Specializzazioni, stigma e macro."
+    },
+    {
+      "id": "th3ruthless",
+      "label": "Th3Ruthless, guida del Cleric con le build",
+      "url": "https://www.youtube.com/watch?v=kCYoKiK9Nmc",
+      "kind": "Video di un creator",
+      "region": "Global",
+      "date": "24/10/2026",
+      "note": "Con un PDF di 68 pagine: specializzazioni a ogni livello, ordine dei punti stigma, quattro build per il Global."
+    },
+    {
+      "id": "antochi",
+      "label": "Antochi, la macro coreana del Cleric",
+      "url": "https://www.youtube.com/watch?v=-86sdRZ4SX4",
+      "kind": "Video di un creator",
+      "region": "Corea",
+      "date": "07/10/2026",
+      "note": "Riassume le guide di Inven e dei creator coreani: «una colonna, un passo». Un creator coreano ha provato decine di ordini e questo rende di più."
+    },
+    {
+      "id": "aion2data",
+      "label": "aion2data, i 490 Cleric più forti del Global",
+      "url": "https://aion2data.com/rankings/meta/cleric",
+      "kind": "Statistiche d'uso",
+      "region": "Global",
+      "date": "01/11/2026",
+      "note": "Livelli medi di skill, stigma e passive, carte Arcana, titoli e Daevanion dei 490 Cleric con più Combat Power; e la guida del 29/10 con le discussioni di Reddit, Inven e Bahamut."
+    },
+    {
+      "id": "aion2vault",
+      "label": "aion2vault, le macro pubbliche del Cleric",
+      "url": "https://aion2vault.com/builds/cleric/macro/",
+      "kind": "Statistiche d'uso",
+      "region": "Global",
+      "date": "26/10/2026",
+      "note": "537 build pubbliche con macro: quali skill stanno dentro e quali fuori, e quante copiano la stessa."
+    },
+    {
+      "id": "metaroad",
+      "label": "Metaroad, il Cleric da curatore",
+      "url": "https://metaroad.gg/aion2/build-guides/cleric-pve-healer-build",
+      "kind": "Guida scritta",
+      "region": "Global",
+      "date": "05/10/2026, ritoccata il 21/10",
+      "note": "Tre preset per i tre gruppi che si incontrano: normale, dungeon nuovo dove si muore, gruppo con un Chanter. Le cure d'emergenza mai nella macro."
+    },
+    {
+      "id": "gangcoding",
+      "label": "Gangcoding (강코딩), il Cleric coreano del quarto santuario in difficile",
+      "url": "https://www.youtube.com/watch?v=bT0shr2kILY",
+      "kind": "Video di un creator",
+      "region": "Corea",
+      "date": "15/09/2026",
+      "note": "Ha chiuso il quarto santuario in difficile due giorni prima del video. Senza Chanter: Salvation, Yustiel's Power e Light of Protection al massimo sono obbligatori, e Benevolence anche."
+    }
+  ],
+  "macro": {
+    "pve": {
+      "delay": 10,
+      "hold": [
+        {
+          "key": "LMB",
+          "what": "Earth's Retribution, l'attacco base"
+        },
+        {
+          "key": "RMB",
+          "what": "la macro"
+        }
+      ],
+      "lines": [
+        {
+          "title": "La pila",
+          "key": "T",
+          "step": 1,
+          "delay": "nella macro, riga 1",
+          "slots": [
+            {
+              "skill": "earth-punishment",
+              "tag": "brucia il bersaglio: da qui Condemnation è sempre critica"
+            },
+            {
+              "skill": "divine-aura",
+              "tag": "l'aura, quando è pronta"
+            },
+            {
+              "skill": "condemnation",
+              "tag": "il colpo principale: parte solo su chi ha Chain of Torment"
+            },
+            {
+              "skill": "chain-of-torment",
+              "tag": "la rimette quando sul bersaglio non c'è"
+            }
+          ],
+          "why": "Il gioco prova la pila dal basso e lancia la prima pronta. [[earth-punishment]] in basso parte appena torna, e finché il bersaglio brucia ogni [[condemnation]] è critica e azzera la sua ricarica. [[condemnation]] parte solo su un bersaglio con [[chain-of-torment]] addosso: quando non c'è, la pila scende fino a lei e la rimette. È la pila dei coreani: un creator coreano ha provato decine di ordini e questa rende di più (Antochi, dalle guide di Inven), ed è quella di Aion 2 Meta. [[prayer-of-amplification]] e [[debilitating-mark]] restano fuori, a mano. I creator del Global (Whelps, Lucia) mettono Prayer dentro la pila.[^meta,antochi,whelps]"
+        },
+        {
+          "title": "Judgment Thunder",
+          "key": "Q",
+          "step": 2,
+          "delay": "nella macro, riga 2",
+          "slots": [
+            {
+              "skill": "judgment-thunder",
+              "tag": "riempie tra un colpo e l'altro"
+            }
+          ],
+          "why": "Sotto il 20 di Condemnation la macro con [[judgment-thunder]] rende di più: Lucia l'ha misurato sul manichino il 30/10, circa 99 mila danni al secondo contro 85 mila. Senza ricarica, parte a ogni giro della macro tra un colpo della pila e l'altro. Dal 20 di Condemnation si toglie (Lucia, e 7 dei 15 giocatori di una discussione del 27/10 su Reddit).[^lucia,aion2data]"
+        }
+      ],
+      "manual": [
+        {
+          "skill": "bolt",
+          "key": "4",
+          "when": "tienilo premuto fino alla carica piena, appena dopo Prayer of Amplification. Nella macro partirebbe al primo gradino."
+        },
+        {
+          "skill": "prayer-of-amplification",
+          "key": "6",
+          "when": "subito prima di Bolt: +20% di attacco per 10 secondi, una volta al minuto."
+        },
+        {
+          "skill": "light-of-protection",
+          "key": "5",
+          "when": "una volta sola: resta acceso. Un secondo tocco lo spegne."
+        },
+        {
+          "skill": "noble-aura",
+          "key": "7",
+          "when": "prima di attaccare, e di nuovo dopo 5 minuti."
+        },
+        {
+          "skill": "light-of-regeneration",
+          "key": "2",
+          "when": "appena è pronta, prima che arrivi il danno: cura il gruppo per 30 secondi."
+        },
+        {
+          "skill": "healing-light",
+          "key": "E",
+          "when": "quando tu e un compagno avete preso un colpo."
+        },
+        {
+          "skill": "radiant-recovery",
+          "key": "3",
+          "when": "quando quasi tutto il gruppo ha preso un colpo, o ha un effetto negativo addosso."
+        },
+        {
+          "skill": "debilitating-mark",
+          "key": "1",
+          "extra": true,
+          "when": "quando il gruppo prende tanti colpi: il boss fa il 15% di danno in meno."
+        },
+        {
+          "skill": "lightning-strike-scattershot",
+          "key": "1",
+          "extra": true,
+          "when": "sotto Debilitating Mark, sullo stesso tasto. Si accende solo col boss in Stagger: allora il tasto 1 lancia lei."
+        },
+        {
+          "skill": "defiance",
+          "key": "Spazio",
+          "extra": true,
+          "when": "per uscire da uno stordimento o da un atterramento."
+        }
+      ],
+      "alt": {
+        "id": "cond20",
+        "title": "Da Condemnation 20",
+        "when": {
+          "skill": "condemnation",
+          "level": 20
+        },
+        "says": "Condemnation a 20 riparte quasi sempre da sola: Judgment Thunder esce dalla macro e resta sul Q per i gruppi di mostri. È la pila dei coreani, una riga sola.",
+        "delay": 10,
+        "lines": [
+          {
+            "title": "La pila",
+            "key": "T",
+            "step": 1,
+            "delay": "nella macro, riga 1",
+            "slots": [
+              {
+                "skill": "earth-punishment",
+                "tag": "brucia il bersaglio: da qui Condemnation è sempre critica"
+              },
+              {
+                "skill": "divine-aura",
+                "tag": "l'aura, quando è pronta"
+              },
+              {
+                "skill": "condemnation",
+                "tag": "il colpo principale: parte solo su chi ha Chain of Torment"
+              },
+              {
+                "skill": "chain-of-torment",
+                "tag": "la rimette quando sul bersaglio non c'è"
+              }
+            ],
+            "why": "Il gioco prova la pila dal basso e lancia la prima pronta. [[earth-punishment]] in basso parte appena torna, e finché il bersaglio brucia ogni [[condemnation]] è critica e azzera la sua ricarica. [[condemnation]] parte solo su un bersaglio con [[chain-of-torment]] addosso: quando non c'è, la pila scende fino a lei e la rimette. È la pila dei coreani: un creator coreano ha provato decine di ordini e questa rende di più (Antochi, dalle guide di Inven), ed è quella di Aion 2 Meta. [[prayer-of-amplification]] resta fuori, a mano, come [[debilitating-mark]] e [[judgment-thunder]] (Aion 2 Meta). I creator del Global (Whelps, Lucia) usano due righe, con Prayer dentro la prima.[^meta,antochi,whelps]"
+          },
+          {
+            "title": "Judgment Thunder",
+            "key": "Q",
+            "step": 0,
+            "delay": "a mano",
+            "slots": [
+              {
+                "skill": "judgment-thunder",
+                "tag": "sui gruppi di mostri"
+              }
+            ],
+            "why": "Dal 20 di Condemnation [[judgment-thunder]] nella macro toglie colpi a Condemnation: resta sul Q, e la premi tu sui gruppi di mostri e nei corridoi, come i coreani (Aion 2 Meta).[^lucia,meta]"
+          }
+        ],
+        "hold": [
+          {
+            "key": "LMB",
+            "what": "Earth's Retribution, l'attacco base"
+          },
+          {
+            "key": "RMB",
+            "what": "la macro"
+          }
+        ]
+      }
+    },
+    "pvp": {
+      "delay": 10,
+      "hold": [
+        {
+          "key": "LMB",
+          "what": "Earth's Retribution, tra un colpo e l'altro"
+        },
+        {
+          "key": "RMB",
+          "what": "la macro, solo con le skill di danno"
+        }
+      ],
+      "lines": [
+        {
+          "title": "La pila",
+          "key": "T",
+          "step": 1,
+          "delay": "nella macro, riga 1",
+          "slots": [
+            {
+              "skill": "divine-aura",
+              "tag": "rallenta chi le sta vicino"
+            },
+            {
+              "skill": "condemnation",
+              "tag": "parte solo su chi ha Chain of Torment"
+            },
+            {
+              "skill": "chain-of-torment",
+              "tag": "la rimette"
+            }
+          ],
+          "why": "In PvP il preset è uno, uguale per le due build: nella macro restano le skill di danno. [[earth-punishment]], [[voice-of-doom]], le cure, [[salvation]] e [[defiance]] li premi tu, quando servono (Aion 2 Maps).[^maps]"
+        }
+      ],
+      "manual": [
+        {
+          "skill": "debilitating-mark",
+          "key": "1",
+          "when": "per primo, insieme a Chain of Torment: l'altro spreca la sua pulizia."
+        },
+        {
+          "skill": "earth-punishment",
+          "key": "6",
+          "when": "quando la sua pulizia è in ricarica: Condemnation è critica finché brucia."
+        },
+        {
+          "skill": "voice-of-doom",
+          "key": "7",
+          "when": "su chi cura o ha uno scudo: taglia del 60% le cure per 20 secondi."
+        },
+        {
+          "skill": "salvation",
+          "key": "8",
+          "when": "a poca vita: per 3 secondi niente ti prende, e le cure ti rendono il doppio."
+        },
+        {
+          "skill": "radiant-recovery",
+          "key": "3",
+          "when": "toglie gli effetti negativi a te e al gruppo."
+        },
+        {
+          "skill": "healing-light",
+          "key": "E",
+          "when": "la cura veloce, tra un colpo e l'altro."
+        },
+        {
+          "skill": "defiance",
+          "key": "Spazio",
+          "when": "sul controllo che ti ucciderebbe, non sul primo."
+        }
+      ]
+    }
+  },
+  "rotations": {
+    "pve": [
+      {
+        "title": "Apertura sul boss",
+        "short": "Apertura",
+        "sheet": true,
+        "when": "Prima di cominciare",
+        "steps": [
+          {
+            "skill": "light-of-protection",
+            "note": "acceso"
+          },
+          {
+            "skill": "noble-aura",
+            "note": "prima del primo colpo"
+          },
+          {
+            "skill": "light-of-regeneration",
+            "note": "sul gruppo"
+          },
+          {
+            "skill": "prayer-of-amplification"
+          },
+          {
+            "skill": "bolt",
+            "note": "carica piena",
+            "hold": true
+          },
+          {
+            "text": "tieni premuti i due tasti",
+            "hold": true
+          }
+        ],
+        "expl": "[[light-of-protection]] resta acceso da prima. [[noble-aura]] va lanciata prima del primo colpo: ti segue per 5 minuti. [[light-of-regeneration]] sul gruppo prima che arrivi il danno. Poi [[prayer-of-amplification]] e subito [[bolt]] carico, così il colpo entra dentro il +20%. Da lì tieni premuti il tasto sinistro e la macro.",
+        "src": [
+          "meta",
+          "maps",
+          "couga"
+        ],
+        "conf": "high"
+      },
+      {
+        "title": "Ciclo",
+        "short": "Ciclo",
+        "sheet": true,
+        "when": "Per tutto il combattimento",
+        "steps": [
+          {
+            "skill": "chain-of-torment",
+            "note": "dalla macro"
+          },
+          {
+            "skill": "earth-punishment",
+            "note": "dalla macro"
+          },
+          {
+            "skill": "condemnation",
+            "note": "critica, riparte subito"
+          },
+          {
+            "skill": "condemnation"
+          },
+          {
+            "skill": "bolt",
+            "note": "a mano, dentro Prayer"
+          }
+        ],
+        "expl": "È quello che fa la macro mentre tieni premuti i due tasti: [[chain-of-torment]] sul bersaglio, [[earth-punishment]] appena torna, e in mezzo [[condemnation]] a ripetizione: finché il bersaglio brucia è sempre critica e la sua ricarica si azzera. [[earths-retribution]] passa tra un colpo e l'altro e ti rende il mana. Tu aggiungi [[bolt]] carico dentro [[prayer-of-amplification]] e [[light-of-regeneration]] a ogni ricarica.",
+        "src": [
+          "meta",
+          "maps",
+          "couga"
+        ],
+        "conf": "high"
+      },
+      {
+        "title": "Boss in Stagger",
+        "short": "Stagger",
+        "sheet": false,
+        "when": "Quando si rompe la barra di Stagger",
+        "steps": [
+          {
+            "skill": "lightning-strike-scattershot",
+            "note": "tasto 1, a ripetizione"
+          }
+        ],
+        "expl": "Col boss in Stagger il tasto 1 lancia [[lightning-strike-scattershot]], che colpisce solo in quel momento. Contro la barra, [[bolt]] toglie da 20 a 35 a seconda della carica e [[earth-punishment]] 20.",
+        "src": [
+          "meta",
+          "maps"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Il gruppo prende danno",
+        "short": "Cura",
+        "sheet": false,
+        "when": "Quando la vita del gruppo scende",
+        "steps": [
+          {
+            "skill": "healing-light",
+            "note": "uno o due feriti"
+          },
+          {
+            "skill": "radiant-recovery",
+            "note": "quasi tutti"
+          },
+          {
+            "skill": "debilitating-mark",
+            "note": "se dura"
+          },
+          {
+            "text": "torna a colpire"
+          }
+        ],
+        "expl": "Uno o due feriti: [[healing-light]]. Quasi tutto il gruppo, o un effetto negativo addosso: [[radiant-recovery]]. Se il boss continua a picchiare forte, [[debilitating-mark]] gli toglie il 15% di danno. In un gruppo che conosce il combattimento il Cleric fa danno per circa il 90% del tempo e cura gli errori piccoli (Aion 2 Maps).",
+        "src": [
+          "maps",
+          "meta"
+        ],
+        "conf": "high"
+      },
+      {
+        "title": "Gruppi di mostri",
+        "short": "Gruppi",
+        "sheet": false,
+        "when": "Più mostri insieme",
+        "steps": [
+          {
+            "skill": "chain-of-torment",
+            "note": "fino a 4"
+          },
+          {
+            "skill": "condemnation"
+          },
+          {
+            "skill": "judgment-thunder",
+            "note": "tasto Q"
+          }
+        ],
+        "expl": "Quasi tutti i tuoi colpi prendono fino a 4 nemici attorno al bersaglio. [[chain-of-torment]] li segna tutti e [[condemnation]] li colpisce; [[judgment-thunder]] sul Q non ha ricarica e riempie i buchi.",
+        "src": [
+          "maps",
+          "meta"
+        ],
+        "conf": "mid"
+      }
+    ],
+    "pvp": [
+      {
+        "title": "Il colpo",
+        "short": "Colpo",
+        "sheet": true,
+        "when": "Per aprire",
+        "steps": [
+          {
+            "skill": "debilitating-mark",
+            "note": "l'esca"
+          },
+          {
+            "skill": "chain-of-torment"
+          },
+          {
+            "skill": "earth-punishment",
+            "note": "dopo la loro pulizia"
+          },
+          {
+            "skill": "condemnation",
+            "note": "a ripetizione"
+          }
+        ],
+        "expl": "Prima [[debilitating-mark]] e [[chain-of-torment]]: l'altro spreca la pulizia per toglierli. Con la sua pulizia in ricarica, [[earth-punishment]]: finché brucia ogni [[condemnation]] è critica e riparte subito.",
+        "src": [
+          "maps"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Chi cura",
+        "short": "Curatori",
+        "sheet": true,
+        "when": "Contro un curatore o uno scudo",
+        "steps": [
+          {
+            "skill": "voice-of-doom",
+            "note": "-60% cure"
+          }
+        ],
+        "expl": "[[voice-of-doom]] taglia del 60% le cure e le pozioni fino a 4 nemici per 20 secondi, e dal 10 toglie gli scudi. Tienila per chi cura.",
+        "src": [
+          "maps"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Quando ti saltano addosso",
+        "short": "Difesa",
+        "sheet": false,
+        "when": "Ti hanno preso",
+        "steps": [
+          {
+            "skill": "defiance"
+          },
+          {
+            "skill": "salvation",
+            "note": "a poca vita"
+          },
+          {
+            "skill": "radiant-recovery",
+            "note": "toglie gli effetti"
+          }
+        ],
+        "expl": "[[defiance]] ti libera e per 5 secondi niente ti prende. Se la vita scende lo stesso, [[salvation]]: 3 secondi in cui non prendi danni, e ti curi dentro. [[radiant-recovery]] toglie gli effetti negativi a te e al gruppo.",
+        "src": [
+          "maps"
+        ],
+        "conf": "mid"
+      }
+    ]
+  },
+  "path": {
+    "nav": "Parti da qui",
+    "title": "Parti da qui: un passo alla volta",
+    "chapters": [
+      {
+        "id": "macro",
+        "nav": "La macro",
+        "steps": [
+          {
+            "id": "idea",
+            "nav": "L'idea",
+            "title": "Due tasti premuti, e una pila che fa il resto",
+            "blocks": [
+              {
+                "t": "flow",
+                "items": [
+                  {
+                    "k": "Il tasto sinistro",
+                    "x": "[[earths-retribution]], l'attacco base. Lo tieni premuto tu: ti rende 110 MP a colpo."
+                  },
+                  {
+                    "k": "Il tasto destro",
+                    "x": "La **macro**. Finché lo tieni premuto, preme {{T}} e {{Q}} al posto tuo."
+                  },
+                  {
+                    "k": "La pila",
+                    "x": "Il tasto {{T}}, con quattro skill una sopra l'altra. Il gioco usa la prima pronta, partendo dal basso. Sul {{Q}} [[judgment-thunder]] da sola, che riempie i buchi."
+                  }
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Il tuo colpo principale è [[condemnation]]: parte solo su un bersaglio che ha addosso [[chain-of-torment]], e finché il bersaglio brucia di [[earth-punishment]] è sempre critica, quindi la sua ricarica si azzera e riparte subito. Le cure le premi tu, quando servono."
+              },
+              {
+                "t": "callout",
+                "title": "La build Danno sta nel preset 1",
+                "x": "Il gioco tiene fino a tre preset delle skill, ognuno coi suoi livelli, i suoi stigma e la sua macro. Questa build va nel preset 1, la Cura nel 2."
+              }
+            ]
+          },
+          {
+            "id": "pila",
+            "nav": "La pila",
+            "title": "La pila: quattro skill nell'ultima colonna",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri la finestra delle skill con {{K}}. In basso c'è la griglia: trova l'ultima colonna a destra.",
+                  "Trascina **Earth Punishment** nella casella più in basso di quella colonna.",
+                  "Sopra, **Divine Aura**.",
+                  "Sopra ancora, **Condemnation**.",
+                  "In cima, **Chain of Torment**.",
+                  "Trascina **Judgment Thunder** sulla casella del tasto **Q**, da sola."
+                ]
+              },
+              {
+                "t": "seq",
+                "steps": [
+                  {
+                    "skill": "earth-punishment",
+                    "note": "in basso"
+                  },
+                  {
+                    "skill": "divine-aura"
+                  },
+                  {
+                    "skill": "condemnation"
+                  },
+                  {
+                    "skill": "chain-of-torment",
+                    "note": "in cima"
+                  }
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "barra-cleric-danno",
+                "w": 1128,
+                "h": 504,
+                "alt": "La barra della Danno: nell'ultima colonna, il T, dal basso Earth Punishment, Divine Aura, Condemnation e Chain of Torment; Judgment Thunder sul Q.",
+                "marks": [
+                  {
+                    "n": 2,
+                    "x": 90.6,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 3,
+                    "x": 90.6,
+                    "y": 53.6
+                  },
+                  {
+                    "n": 4,
+                    "x": 90.6,
+                    "y": 36.9
+                  },
+                  {
+                    "n": 5,
+                    "x": 90.6,
+                    "y": 20.2
+                  },
+                  {
+                    "n": 6,
+                    "x": 68.3,
+                    "y": 70.2
+                  }
+                ],
+                "credit": "La barra da fare, disegnata con le icone del gioco nelle colonne della tua barra: 1-8, Q, E, il tasto sinistro e l'ultima colonna, che diventa T. I numeri sono quelli dei passi."
+              },
+              {
+                "t": "callout",
+                "title": "Perché Chain of Torment sta in cima",
+                "x": "Condemnation parte solo su un bersaglio con Chain of Torment addosso. Quando non c'è, il gioco salta Condemnation e scende fino a Chain of Torment, che la rimette: così la pila non si ferma mai."
+              },
+              {
+                "t": "note",
+                "x": "Si parte sempre dal basso: finché la casella in fondo è vuota, il gioco non lascia riempire quelle sopra."
+              }
+            ],
+            "check": "nell'ultima colonna, dal basso, vedi Earth Punishment, Divine Aura, Condemnation e Chain of Torment, e sul Q Judgment Thunder."
+          },
+          {
+            "id": "tasto-pila",
+            "nav": "La T",
+            "title": "Dai la T alla pila",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Premi {{Esc}}, apri **Settings** e clicca **Key Settings**.",
+                  "Clicca **Quickslot**.",
+                  "Scorri l'elenco e trova la riga che nella prima casella ha il disegno di un mouse con la metà destra accesa: è l'ultima colonna della barra, quella della pila.",
+                  "Clicca quella casella e premi {{T}}."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "ranger-tasto-deadshot",
+                "w": 1460,
+                "h": 450,
+                "alt": "Settings, Key Settings, Quickslot: una riga per ogni casella della barra, con due caselle per i tasti.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 31.6,
+                    "y": 7.5
+                  },
+                  {
+                    "n": 2,
+                    "x": 63.2,
+                    "y": 15.3
+                  },
+                  {
+                    "n": 3,
+                    "x": 77.9,
+                    "y": 59.3
+                  }
+                ],
+                "credit": "Fotogramma da [Whelps, Complete Ranger PvE Guide](https://www.youtube.com/watch?v=wKOm6yKuu_I&t=545s), minuto 9:05. Tagliato al centro. Qui si vedono le righe dei tasti 1, 2, 3, 4 e Q: la tua è nella stessa colonna di caselle, col disegno del mouse."
+              },
+              {
+                "t": "note",
+                "x": "È la stessa cosa che hai fatto col Chanter: su un personaggio nuovo l'ultima colonna ha il tasto destro."
+              }
+            ],
+            "check": "nella finestra delle skill l'ultima colonna della barra ha la T al posto del mouse."
+          },
+          {
+            "id": "tasto",
+            "nav": "Il tasto destro",
+            "title": "Dai il tasto destro alla macro",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Premi {{Esc}}, apri **Settings** e clicca **Key Settings**.",
+                  "Clicca **General**.",
+                  "Scorri fino a Gameplay. Alla riga **Macro** clicca la prima casella, poi premi il **tasto destro** del mouse."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "tasto-macro",
+                "w": 1340,
+                "h": 558,
+                "alt": "Settings, Key Settings, General: la riga Macro nella sezione Gameplay.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 16.2,
+                    "y": 7
+                  },
+                  {
+                    "n": 2,
+                    "x": 30.7,
+                    "y": 14.7
+                  },
+                  {
+                    "n": 3,
+                    "x": 68.3,
+                    "y": 83.5
+                  }
+                ],
+                "credit": "Fotogramma da [Grobs, AION 2 Macro Guide](https://www.youtube.com/watch?v=HMod6Z4GrE0&t=106s), minuto 1:46. Tagliato al centro."
+              },
+              {
+                "t": "note",
+                "x": "Su un personaggio nuovo la riga Macro è vuota: va rimessa, come col Chanter."
+              }
+            ],
+            "check": "nella casella della riga Macro compare il disegno di un mouse."
+          },
+          {
+            "id": "righe",
+            "nav": "La macro",
+            "title": "Crea la macro: due righe, il T e il Q",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri la finestra delle skill con {{K}}. In alto a destra, accanto a **Macro**, ci sono i numeri dei preset: controlla che sia acceso l'**1**.",
+                  "Clicca **Macro**, poi il pulsante giallo **Add Macro**. Compare una riga con un'icona.",
+                  "Clicca quell'icona: si apre una fila di caselle. Clicca quella con **Earth Punishment**: è il tasto T. Nel campo **Delay** scrivi **10**.",
+                  "Di nuovo **Add Macro**: nella seconda riga scegli la casella con **Judgment Thunder**, il tasto Q, e **Delay 10**."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "macro-cleric-danno",
+                "w": 936,
+                "h": 672,
+                "alt": "La finestra Macro del preset 1 con due righe: il T, che mostra Earth Punishment, e il Q, che mostra Judgment Thunder.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 85.5,
+                    "y": 12.9
+                  },
+                  {
+                    "n": 2,
+                    "x": 32.5,
+                    "y": 87.8
+                  },
+                  {
+                    "n": 3,
+                    "x": 32.5,
+                    "y": 31
+                  },
+                  {
+                    "n": 4,
+                    "x": 34.9,
+                    "y": 46.4
+                  }
+                ],
+                "legend": [
+                  "I numeri dei **preset**: per la build Danno l'1.",
+                  "**Add Macro**: aggiunge una riga. Ne servono due.",
+                  "L'icona della riga: cliccala e scegli la casella del tasto. La riga 1 mostra Earth Punishment, la skill più in basso della pila sul T; la riga 2 Judgment Thunder.",
+                  "**Delay**: 10, in tutte e due le righe."
+                ],
+                "credit": "La macro da fare, disegnata come la finestra Macro del gioco, con le skill della tua barra. I numeri sono quelli della legenda."
+              },
+              {
+                "t": "callout",
+                "title": "Vedi solo Earth Punishment? È giusto",
+                "x": "La macro elenca i tasti, non le skill, e ogni tasto ha l'icona della skill più in basso: per la T è Earth Punishment. Quella riga è la pila intera: partono anche Divine Aura, Condemnation e Chain of Torment."
+              },
+              {
+                "t": "callout",
+                "kind": "warn",
+                "title": "Non lasciare l'attacco base",
+                "x": "Una riga nuova parte con l'attacco base: se resta così, la macro tira colpi base al posto delle skill."
+              },
+              {
+                "t": "callout",
+                "title": "Lascia accesa Skill Queue",
+                "x": "Sta in Settings, Combat. È accesa da sola: senza, le cure che premi mentre tieni la macro si perdono (Aion 2 Maps)."
+              }
+            ],
+            "check": "nella finestra Macro ci sono due righe: la prima con l'icona di Earth Punishment, la seconda con Judgment Thunder, Delay 10."
+          },
+          {
+            "id": "prova",
+            "nav": "La prova",
+            "title": "Provala sul manichino: due tasti premuti",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Vai davanti a un manichino, il **Training Scarecrow**.",
+                  "Tieni premuti insieme il **tasto sinistro** e il **tasto destro**."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "due-tasti",
+                "w": 1240,
+                "h": 310,
+                "alt": "Il personaggio colpisce il manichino con i due tasti del mouse premuti insieme.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 32.3,
+                    "y": 13.2
+                  },
+                  {
+                    "n": 2,
+                    "x": 82.3,
+                    "y": 16.1
+                  }
+                ],
+                "credit": "Fotogramma da [Grobs, AION 2 Macro Guide](https://www.youtube.com/watch?v=HMod6Z4GrE0&t=205s), minuto 3:25. Nel video è un Gladiator: i due tasti sono gli stessi."
+              },
+              {
+                "t": "list",
+                "items": [
+                  "Condemnation si ferma a lungo? Sul manichino deve fermarsi solo quando Chain of Torment finisce: 7 secondi ogni 20 (Aion 2 Maps).",
+                  "Divine Aura non parte mentre ti muovi: stai fermo, o tienila fuori dalla pila e mettila tu.",
+                  "La macro si ferma quando cambi preset delle skill: tieni di nuovo premuto il tasto destro."
+                ]
+              }
+            ],
+            "check": "il personaggio continua a colpire finché tieni premuto, e si ferma quando lasci."
+          }
+        ]
+      },
+      {
+        "id": "cond20",
+        "nav": "Da Condemnation 20",
+        "title": "Da Condemnation 20: la macro a una riga",
+        "steps": [
+          {
+            "id": "macro",
+            "nav": "La macro",
+            "title": "Togli la seconda riga della macro",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri la finestra delle skill con {{K}} e clicca **Macro**, in alto a destra. Controlla che sia acceso il preset **1**.",
+                  "Alla riga 2, quella con **Judgment Thunder**, clicca il **cestino** a destra.",
+                  "Resta una riga sola, con l'icona di Earth Punishment e Delay 10."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "macro-cleric-danno",
+                "w": 936,
+                "h": 672,
+                "alt": "La finestra Macro del preset 1 com'era fino a Condemnation 19: due righe, e il cestino della riga 2.",
+                "marks": [
+                  {
+                    "n": 2,
+                    "x": 57.1,
+                    "y": 59.5
+                  }
+                ],
+                "credit": "La macro fino a Condemnation 19, disegnata come la finestra Macro del gioco, con le skill della tua barra: il cestino della riga 2 toglie Judgment Thunder. Il numero è quello del passo."
+              },
+              {
+                "t": "callout",
+                "title": "Perché",
+                "x": "Con Condemnation a 20 la sua ricarica si azzera quasi sempre: Judgment Thunder nella macro le toglierebbe colpi. Lucia l'ha misurato: sotto il 20 conviene tenerla, sopra no."
+              }
+            ],
+            "check": "nella finestra Macro c'è una riga sola, con l'icona di Earth Punishment e Delay 10."
+          },
+          {
+            "id": "tasti",
+            "nav": "Il Q",
+            "title": "Judgment Thunder resta sul Q, a mano",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Non toccare la barra: Judgment Thunder resta sul **Q**.",
+                  "Premila tu sui gruppi di mostri e nei corridoi: lì la sua area di quattro bersagli rende più di Condemnation."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "skill",
+        "nav": "Le skill",
+        "steps": [
+          {
+            "id": "ordine",
+            "nav": "Quali alzare",
+            "title": "Quali skill alzare, e fin dove",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "Coi punti una skill arriva a 10, e i suoi quattro nodi del Daevanion la portano a 14. Oltre sale solo con gli anelli e con le carte Arcana. I livelli che contano sono tre: 12, 16 e 20, dove si apre una specializzazione o un posto in più."
+              },
+              {
+                "t": "seq",
+                "steps": [
+                  {
+                    "skill": "condemnation",
+                    "note": "20"
+                  },
+                  {
+                    "skill": "bolt",
+                    "note": "20"
+                  },
+                  {
+                    "skill": "radiant-recovery",
+                    "note": "20"
+                  },
+                  {
+                    "skill": "judgment-thunder",
+                    "note": "16"
+                  },
+                  {
+                    "skill": "divine-aura",
+                    "note": "16"
+                  },
+                  {
+                    "skill": "earths-retribution",
+                    "note": "16"
+                  },
+                  {
+                    "skill": "healing-light",
+                    "note": "16"
+                  },
+                  {
+                    "skill": "light-of-regeneration",
+                    "note": "16"
+                  }
+                ]
+              },
+              {
+                "t": "list",
+                "items": [
+                  "[[condemnation]] a 20 prima di tutto. Cerca **+1 Condemnation** sugli anelli: dei primi otto Cleric d'Europa ce l'hanno sette sul primo anello e sei sul secondo.",
+                  "[[radiant-recovery]] a 20 è la scelta dei primi coreani: la cura grande, che sale col tuo attacco.",
+                  "[[chain-of-torment]], [[debilitating-mark]] e [[defiance]]: 10 coi punti, e basta. [[lightning-strike-scattershot]] resta a 1."
+                ]
+              },
+              {
+                "t": "note",
+                "x": "I tuoi livelli, e le specializzazioni da tenere accese oggi: pagina **Equip**, vista **Skill**, clicca la skill."
+              }
+            ]
+          },
+          {
+            "id": "passive",
+            "nav": "Le passive",
+            "title": "Le passive: due da spingere, le altre si fermano",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "Ogni passiva arriva a 10 coi punti e a 14 coi suoi quattro nodi del Daevanion. Oltre il 14 sale solo se la trovi su armatura, collana e orecchini, o sulle carte Arcana. Quindi la scelta è una: quali cercare sull'equip."
+              },
+              {
+                "t": "passives"
+              },
+              {
+                "t": "note",
+                "x": "A 1 restano [[prayer-of-concentration]], [[heal-block]] ed [[empyrean-lords-benediction]]. [[survival-willpower]] serve solo in PvP."
+              }
+            ]
+          },
+          {
+            "id": "spec",
+            "nav": "Specializzazioni",
+            "title": "Le specializzazioni: dove si accendono",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Nella finestra delle skill clicca una skill attiva: sotto **Specialty** ci sono cinque righe.",
+                  "Clicca una riga per accenderla. Quelle accese sono scritte in chiaro, quelle spente in scuro.",
+                  "I posti sono contati: uno dal livello 8 della skill, due dal 12, tre dal 20."
+                ]
+              },
+              {
+                "t": "note",
+                "x": "Quali accendere, skill per skill e al livello che hai oggi: pagina **Equip**, vista **Skill**, clicca la skill. Le specializzazioni sono del preset: nel preset 2, la Cura, le accendi di nuovo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stigma",
+        "nav": "Gli stigma",
+        "steps": [
+          {
+            "id": "quali",
+            "nav": "Quali quattro",
+            "title": "Monta questi quattro stigma",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri {{K}} e in alto clicca **Stigma**.",
+                  "A destra ci sono tutti gli stigma. Quelli col lucchetto non li hai presi.",
+                  "Clicca uno stigma e poi **Acquire**: costa un punto stigma."
+                ]
+              },
+              {
+                "t": "seq",
+                "steps": [
+                  {
+                    "skill": "earth-punishment"
+                  },
+                  {
+                    "skill": "prayer-of-amplification"
+                  },
+                  {
+                    "skill": "light-of-protection"
+                  },
+                  {
+                    "skill": "noble-aura"
+                  }
+                ]
+              },
+              {
+                "t": "table",
+                "head": [
+                  "Stigma",
+                  "Cosa fa"
+                ],
+                "rows": [
+                  [
+                    "[[earth-punishment]]",
+                    "Brucia il bersaglio: finché brucia ogni Condemnation è critica e riparte subito."
+                  ],
+                  [
+                    "[[prayer-of-amplification]]",
+                    "+20% di attacco per 10 secondi ogni minuto: Bolt carico va lanciato dentro."
+                  ],
+                  [
+                    "[[light-of-protection]]",
+                    "Più danno e più resistenza per te e per il gruppo. È il motivo per cui un gruppo vuole un Cleric, e i gruppi guardano il suo livello."
+                  ],
+                  [
+                    "[[noble-aura]]",
+                    "Un'aura che ti segue per 5 minuti e colpisce con te."
+                  ]
+                ]
+              },
+              {
+                "t": "callout",
+                "title": "Nel gruppo c'è un Chanter?",
+                "x": "La sua Undefeated Mantra e la tua [[light-of-protection]] non si sommano: vale quella di livello più alto. Al posto di Light of Protection monta [[absolution]], la cura più grande, che rende dal 15."
+              }
+            ],
+            "check": "sono accesi questi quattro, e tutti gli altri hanno il lucchetto."
+          },
+          {
+            "id": "livelli",
+            "nav": "A che livello",
+            "title": "A che livello portarli",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Al 45 hai 30 punti stigma. Mettili così: **Light of Protection a 10**, gli altri tre **a 5**. Bastano esatti.",
+                  "Con i punti che arrivano dopo, porta **Earth Punishment a 20**, poi **Prayer of Amplification a 20**, poi **Light of Protection a 20**, poi **Noble Aura**.",
+                  "Alla fine tutti e quattro a 20: è quello che hanno cinque dei primi otto Cleric d'Europa."
+                ]
+              },
+              {
+                "t": "list",
+                "items": [
+                  "Un livello costa 1 punto fino al 5, 2 fino al 10, 4 fino al 15 e 8 fino al 20.",
+                  "Gli altri punti si comprano nei negozi come **Stigma Shard**: 200 dall'Abisso, 35 dallo Shugo Festival, 35 dai Nightmare.",
+                  "Azzerare gli stigma è gratis, e ogni preset spende tutti i tuoi punti: la Cura, nel preset 2, ha i suoi livelli e non toglie niente a questa."
+                ]
+              }
+            ],
+            "check": "Light of Protection è a 10 e non ti avanzano punti."
+          }
+        ]
+      },
+      {
+        "id": "combattimento",
+        "nav": "In combattimento",
+        "steps": [
+          {
+            "id": "tasti",
+            "nav": "I tasti",
+            "title": "Che cosa c'è su ogni tasto",
+            "blocks": [
+              {
+                "t": "fig",
+                "img": "barra-cleric-danno",
+                "w": 1128,
+                "h": 504,
+                "alt": "La barra intera della Danno, tasto per tasto.",
+                "marks": [],
+                "credit": "La barra intera della Danno, la stessa della tabella qui sotto, disegnata con le icone del gioco nelle colonne della tua barra: 1-8, Q, E, il tasto sinistro e l'ultima colonna, che diventa T."
+              },
+              {
+                "t": "table",
+                "head": [
+                  "Tasto",
+                  "Cosa c'è",
+                  "Quando lo premi"
+                ],
+                "rows": [
+                  [
+                    "{{tasto sinistro}}",
+                    "[[earths-retribution]]",
+                    "Sempre premuto."
+                  ],
+                  [
+                    "{{tasto destro}}",
+                    "La macro",
+                    "Sempre premuto."
+                  ],
+                  [
+                    "{{T}}",
+                    "[[earth-punishment]], [[divine-aura]], [[condemnation]], [[chain-of-torment]]",
+                    "Mai: lo preme la macro."
+                  ],
+                  [
+                    "{{4}}",
+                    "[[bolt]]",
+                    "Tenuto premuto fino alla carica piena, subito dopo il 6."
+                  ],
+                  [
+                    "{{6}}",
+                    "[[prayer-of-amplification]]",
+                    "Subito prima di Bolt, una volta al minuto."
+                  ],
+                  [
+                    "{{5}}",
+                    "[[light-of-protection]]",
+                    "Una volta sola: resta acceso."
+                  ],
+                  [
+                    "{{7}}",
+                    "[[noble-aura]]",
+                    "Prima di attaccare, e di nuovo dopo 5 minuti."
+                  ],
+                  [
+                    "{{2}}",
+                    "[[light-of-regeneration]]",
+                    "Appena è pronta, prima del danno."
+                  ],
+                  [
+                    "{{E}}",
+                    "[[healing-light]]",
+                    "Quando tu e un compagno avete preso un colpo."
+                  ],
+                  [
+                    "{{3}}",
+                    "[[radiant-recovery]]",
+                    "Quando quasi tutto il gruppo è ferito, o ha un effetto negativo."
+                  ],
+                  [
+                    "{{Q}}",
+                    "[[judgment-thunder]]",
+                    "Mai finché Condemnation non è a 20: la preme la macro. Dopo, a mano sui gruppi di mostri."
+                  ],
+                  [
+                    "{{1}}",
+                    "[[lightning-strike-scattershot]], e sopra [[debilitating-mark]]",
+                    "Col boss in Stagger parte Lightning Strike Scattershot; quando il gruppo soffre, Debilitating Mark."
+                  ],
+                  [
+                    "{{Spazio}}",
+                    "[[defiance]]",
+                    "Per uscire da un controllo."
+                  ]
+                ]
+              },
+              {
+                "t": "note",
+                "x": "Sono i tasti dei tuoi altri personaggi: la pila sulla T, il destro alla macro, i quattro stigma tra il 5 e l'8, Defiance sulla barra spaziatrice. L'8 resta libero."
+              }
+            ]
+          },
+          {
+            "id": "apertura",
+            "nav": "L'apertura",
+            "title": "Come si apre su un boss",
+            "blocks": [
+              {
+                "t": "seq",
+                "steps": [
+                  {
+                    "skill": "light-of-protection",
+                    "note": "acceso"
+                  },
+                  {
+                    "skill": "noble-aura",
+                    "note": "prima del primo colpo"
+                  },
+                  {
+                    "skill": "light-of-regeneration",
+                    "note": "sul gruppo"
+                  },
+                  {
+                    "skill": "prayer-of-amplification"
+                  },
+                  {
+                    "skill": "bolt",
+                    "note": "carica piena",
+                    "hold": true
+                  },
+                  {
+                    "text": "tieni premuti i due tasti",
+                    "hold": true
+                  }
+                ]
+              },
+              {
+                "t": "steps",
+                "items": [
+                  "Accendi [[light-of-protection]] con {{5}}: una volta, e resta.",
+                  "Prima del primo colpo, {{7}}: [[noble-aura]] ti segue per 5 minuti.",
+                  "{{2}}: [[light-of-regeneration]] sul gruppo, prima che arrivi il danno.",
+                  "{{6}} e subito {{4}} tenuto fino alla carica piena: [[bolt]] entra dentro il +20%.",
+                  "Tieni premuti i due tasti del mouse, e non lasciarli più."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "durante",
+            "nav": "Durante",
+            "title": "Durante il combattimento",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Tieni premuti i due tasti. La macro fa il resto.",
+                  "Ogni minuto, {{6}} e poi {{4}} carico.",
+                  "{{2}} appena è pronta: sul gruppo non si spegne mai.",
+                  "Guarda la vita del gruppo: uno o due feriti {{E}}, quasi tutti {{3}}."
+                ]
+              },
+              {
+                "t": "list",
+                "items": [
+                  "Boss in Stagger: premi {{1}} a ripetizione, parte [[lightning-strike-scattershot]].",
+                  "Una cura caricata dopo che il gruppo è caduto non serve: prima le cure, Bolt aspetta.",
+                  "[[debilitating-mark]] a ogni ricarica ti costa danno: tienilo per quando il gruppo soffre."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "gruppo",
+            "nav": "Nel gruppo",
+            "title": "Il tuo lavoro nel gruppo",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "Nei dungeon il premio dipende da quanto hai contribuito: un Cleric che cura e basta può uscire senza niente (couga54). In un gruppo che conosce il combattimento fai danno per circa il 90% del tempo e curi gli errori piccoli; un gruppo che impara ha bisogno di più cure, e lì passi alla build Cura (Aion 2 Maps)."
+              },
+              {
+                "t": "table",
+                "head": [
+                  "Con un Chanter nel gruppo",
+                  "Che cosa succede"
+                ],
+                "rows": [
+                  [
+                    "[[light-of-protection]]",
+                    "Non si somma con la sua Undefeated Mantra: vale quella di livello più alto, e a pari livello il mantra. Al suo posto, [[absolution]]."
+                  ],
+                  [
+                    "[[earth-punishment]]",
+                    "La tua Earth's Blessing e il suo Power of the Storm non si prendono insieme: mettetevi d'accordo su chi copre chi."
+                  ],
+                  [
+                    "[[debilitating-mark]]",
+                    "Copre il suo Wave Blow: tienilo tu sul boss."
+                  ]
+                ]
+              },
+              {
+                "t": "callout",
+                "title": "Le resurrezioni",
+                "x": "In questa build non c'è [[summon-resurrection]]: se il gruppo muore spesso, passa alla Cura, dove prende il posto di [[benevolence]]."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

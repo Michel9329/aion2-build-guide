@@ -1,0 +1,2196 @@
+{
+  "skills": [
+    {
+      "id": "overhead-slam",
+      "name": "Overhead Slam",
+      "ko": "내려찍기",
+      "sum": "Il tuo danno principale. Di suo colpisce solo un bersaglio a terra; sui boss si accende per 10 secondi dopo [[rage-burst]], oppure da sola con il 7% di probabilità a ogni tuo attacco.",
+      "meta": "Ricarica 5 s · 0 MP · 4 m · alza l'aggro",
+      "options": [
+        {
+          "req": 8,
+          "name": "Absorbs 0.7% HP",
+          "it": "ogni colpo ti rende lo 0,7% dei PV"
+        },
+        {
+          "req": 8,
+          "name": "Changes to AoE Skill",
+          "it": "colpisce ad area, utile solo per i gruppi di mostri"
+        },
+        {
+          "req": 8,
+          "name": "Adds [Upward Strike] Chain Skill",
+          "it": "aggiunge un secondo colpo a catena, [[upward-strike]]"
+        },
+        {
+          "req": 12,
+          "name": "Critical Hit on hit",
+          "it": "ogni colpo è critico"
+        },
+        {
+          "req": 16,
+          "name": "Remove cooldown",
+          "it": "toglie la ricarica, la ripeti senza pause finché è accesa"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 1,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Adds [Upward Strike] Chain Skill"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Adds [Upward Strike] Chain Skill",
+              "Critical Hit on hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Adds [Upward Strike] Chain Skill",
+              "Remove cooldown"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "Adds [Upward Strike] Chain Skill",
+              "Critical Hit on hit",
+              "Remove cooldown"
+            ]
+          }
+        ],
+        "use": "Nella pila principale, in mezzo tra [[rage-burst]] e [[rending-blow]]: resta lì anche a 16. Quando la macro ti viene da sola puoi provarla su un tasto suo, tenuto premuto: è l'assetto con più colpi, nella sezione Macro.",
+        "note": "A 16 il critico garantito esce per fare posto a Remove cooldown e rientra a 20, quando si apre il terzo slot. È la prima skill da portare a 16 e poi a 20.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 20,
+        "order": 1,
+        "picks": [
+          {
+            "at": 12,
+            "choose": [
+              "Absorbs 0.7% HP",
+              "Adds [Upward Strike] Chain Skill"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Adds [Upward Strike] Chain Skill",
+              "Remove cooldown"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "Adds [Upward Strike] Chain Skill",
+              "Critical Hit on hit",
+              "Remove cooldown"
+            ]
+          }
+        ],
+        "use": "A mano, appena il bersaglio è a terra.",
+        "note": "È la punizione dopo ogni atterramento. A 20 le risposte coreane di settembre tengono cura, catena e niente ricarica; quelle di agosto il critico garantito al posto della catena. Scegli dopo aver provato.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "builds",
+        "arthars",
+        "grobs",
+        "couga",
+        "maps",
+        "inven"
+      ],
+      "conf": "high",
+      "top": 17.5,
+      "rings": {
+        "pve": 74,
+        "pvp": 62
+      }
+    },
+    {
+      "id": "rending-blow",
+      "name": "Rending Blow",
+      "ko": "절단의 맹타",
+      "sum": "Il colpo che riempie i buchi quando [[overhead-slam]] non è disponibile. Non ha ricarica ma costa mana a ogni uso.",
+      "meta": "Nessuna ricarica · 120 MP · 4 m · fino a 4 nemici · alza l'aggro",
+      "options": [
+        {
+          "req": 8,
+          "name": "-20% MP consumed",
+          "it": "costa il 20% di mana in meno"
+        },
+        {
+          "req": 8,
+          "name": "+200 Block while using skill",
+          "it": "più parata mentre la usi"
+        },
+        {
+          "req": 8,
+          "name": "Changes to mobile skill",
+          "it": "la usi camminando, senza restare bloccato nell'animazione"
+        },
+        {
+          "req": 12,
+          "name": "Deals up to 12% more damage when less targets are hit",
+          "it": "fino al 12% di danno in più su un bersaglio solo"
+        },
+        {
+          "req": 16,
+          "name": "Restores 50 MP on landing a Critical Hit",
+          "it": "ogni critico ti rende 50 MP: da qui il mana si regge da solo"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 2,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Changes to mobile skill"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Changes to mobile skill",
+              "Deals up to 12% more damage when less targets are hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Changes to mobile skill",
+              "Restores 50 MP on landing a Critical Hit"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "Changes to mobile skill",
+              "Deals up to 12% more damage when less targets are hit",
+              "Restores 50 MP on landing a Critical Hit"
+            ]
+          }
+        ],
+        "use": "Nella pila principale, in alto.",
+        "note": "Quando arriva a 16 smetti di usare [[keen-strike]]: il mana torna dai critici.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 6,
+        "picks": [
+          {
+            "at": 12,
+            "choose": [
+              "Changes to mobile skill",
+              "Deals up to 12% more damage when less targets are hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Changes to mobile skill",
+              "Restores 50 MP on landing a Critical Hit"
+            ]
+          }
+        ],
+        "use": "A mano, per restare addosso al bersaglio tra un controllo e l'altro.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "builds",
+        "arthars",
+        "grobs",
+        "maps"
+      ],
+      "conf": "mid",
+      "confNote": "A 16 la maggioranza sceglie mobile + recupero MP (48 build su 72); una minoranza prende -20% MP + 12% di danno.",
+      "top": 16.1,
+      "rings": {
+        "pve": 73,
+        "pvp": 32
+      }
+    },
+    {
+      "id": "ruinous-blow",
+      "name": "Ruinous Blow",
+      "ko": "파멸의 맹타",
+      "sum": "Carica sul bersaglio, fa il colpo più pesante tra le skill attive e ti dà Prepare for Battle per 20 secondi: +20% danno PvE (+10% PvP), +100 critico, +15% probabilità degli stati.",
+      "meta": "Ricarica 45 s · 250 MP · 7,5 m · fino a 4 nemici",
+      "options": [
+        {
+          "req": 8,
+          "name": "+20% Skill Speed",
+          "it": "la skill parte più in fretta"
+        },
+        {
+          "req": 8,
+          "name": "+12.5m Range",
+          "it": "carica da 20 m invece che da 7,5"
+        },
+        {
+          "req": 8,
+          "name": "+30% Skill Critical Hit",
+          "it": "più probabilità di critico per questa skill"
+        },
+        {
+          "req": 12,
+          "name": "Extra damage on hit",
+          "it": "danno aggiuntivo a ogni colpo"
+        },
+        {
+          "req": 16,
+          "name": "Ignores Block and Evasion and lands as Multi-Hit",
+          "it": "non può essere parata né schivata e colpisce più volte"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 3,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+30% Skill Critical Hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+30% Skill Critical Hit",
+              "Extra damage on hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+30% Skill Critical Hit",
+              "Extra damage on hit"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+30% Skill Critical Hit",
+              "Extra damage on hit",
+              "Ignores Block and Evasion and lands as Multi-Hit"
+            ]
+          }
+        ],
+        "use": "Su un tasto suo, {{E}}. La usi appena è pronta, per tenere su Prepare for Battle.",
+        "note": "Grobs e le guide coreane di settembre al posto del critico prendono +20% Skill Speed. Sono due scelte valide: tra i giocatori Global 68 build su 74 usano il critico.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 7,
+        "picks": [
+          {
+            "at": 12,
+            "choose": [
+              "+12.5m Range",
+              "Extra damage on hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+12.5m Range",
+              "Ignores Block and Evasion and lands as Multi-Hit"
+            ]
+          }
+        ],
+        "use": "A mano: terzo modo per chiudere la distanza.",
+        "note": "Ignorare parata e schivata serve soprattutto contro i Templar.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "builds",
+        "arthars",
+        "grobs",
+        "couga",
+        "inven",
+        "maps"
+      ],
+      "conf": "mid",
+      "confNote": "Critico o velocità al livello 8: le fonti si dividono.",
+      "top": 15.7,
+      "rings": {
+        "pve": 73,
+        "pvp": 57
+      }
+    },
+    {
+      "id": "leaping-slam",
+      "name": "Leaping Slam",
+      "ko": "도약 찍기",
+      "sum": "Salto di 20 metri sul bersaglio. È il modo normale di entrare in combattimento.",
+      "meta": "Ricarica 15 s · 0 MP · 20 m",
+      "options": [
+        {
+          "req": 8,
+          "name": "Prepare for Battle effect on the caster for 3s",
+          "it": "3 secondi di Prepare for Battle all'atterraggio, che poi [[ruinous-blow]] allunga"
+        },
+        {
+          "req": 8,
+          "name": "50% chance to trigger [Ankle Slice] on hit",
+          "it": "50% di accendere [[ankle-slice]] senza bisogno della parata"
+        },
+        {
+          "req": 8,
+          "name": "Resets cooldown on defeating an enemy",
+          "it": "se uccidi un nemico la ricarica si azzera e salti sul prossimo"
+        },
+        {
+          "req": 12,
+          "name": "+20% PvE Damage Tolerance and +10 PvP Damage Tolerance for 3s",
+          "it": "prendi meno danno per 3 secondi dopo il salto"
+        },
+        {
+          "req": 16,
+          "name": "Changes to AoE skill and pulls in enemies",
+          "it": "diventa ad area e tira i nemici verso di te"
+        }
+      ],
+      "pve": {
+        "level": 8,
+        "order": 6,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Resets cooldown on defeating an enemy"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Prepare for Battle effect on the caster for 3s",
+              "Resets cooldown on defeating an enemy"
+            ]
+          }
+        ],
+        "use": "A mano. Mettila sullo stesso tasto di [[rush-strike]].",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 10,
+        "order": 10,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "50% chance to trigger [Ankle Slice] on hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "50% chance to trigger [Ankle Slice] on hit",
+              "+20% PvE Damage Tolerance and +10 PvP Damage Tolerance for 3s"
+            ]
+          }
+        ],
+        "use": "A mano, per entrare in un gruppo e sopravvivere all'atterraggio.",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "builds",
+        "arthars",
+        "grobs",
+        "maps"
+      ],
+      "conf": "high",
+      "top": 13.7,
+      "rings": {
+        "pve": 29,
+        "pvp": 39
+      }
+    },
+    {
+      "id": "rush-strike",
+      "name": "Rush Strike",
+      "ko": "돌진 일격",
+      "sum": "Scatto sul bersaglio che si usa subito dopo una schivata (o in volo). Atterra sempre i mostri normali, i giocatori nel 30% dei casi.",
+      "meta": "Ricarica 20 s · 0 MP · 10 m · si attiva dopo la schivata",
+      "options": [
+        {
+          "req": 8,
+          "name": "Restores 300 Stamina on hit",
+          "it": "ti rende 300 di Stamina"
+        },
+        {
+          "req": 8,
+          "name": "+10m range",
+          "it": "arriva a 20 m, come [[leaping-slam]]"
+        },
+        {
+          "req": 8,
+          "name": "Changes to Charge Skill and deals AoE damage",
+          "it": "diventa una skill a carica con danno ad area"
+        },
+        {
+          "req": 12,
+          "name": "-10s cooldown",
+          "it": "la ricarica scende a 10 secondi"
+        },
+        {
+          "req": 16,
+          "name": "+25% Knockdown Chance",
+          "it": "più probabilità di atterrare i giocatori"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 9,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+10m range"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+10m range",
+              "-10s cooldown"
+            ],
+            "note": "couga54 e Arthars al posto della ricarica mettono Restores 300 Stamina on hit; nelle build Global vince la ricarica, 19 a 7."
+          }
+        ],
+        "use": "A mano, sullo stesso tasto di [[leaping-slam]].",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 10,
+        "order": 5,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+10m range"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+10m range",
+              "-10s cooldown"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+10m range",
+              "-10s cooldown"
+            ],
+            "note": "oppure +25% Knockdown Chance al posto della gittata"
+          }
+        ],
+        "use": "A mano: schivata, poi Rush Strike per provare l'atterramento.",
+        "label": "con i punti",
+        "note": "Gli assetti PvP la alzano: a 12 la ricarica scende a 10 secondi."
+      },
+      "src": [
+        "db",
+        "builds",
+        "grobs",
+        "couga",
+        "maps"
+      ],
+      "conf": "high",
+      "top": 13.5,
+      "rings": {
+        "pve": 16,
+        "pvp": 52
+      }
+    },
+    {
+      "id": "keen-strike",
+      "name": "Keen Strike",
+      "ko": "예리한 일격",
+      "sum": "L'attacco base. Non costa niente e ti rende 100 MP a colpo: serve finché il mana è un problema.",
+      "meta": "Nessuna ricarica · 0 MP · rende 100 MP · 4 m · alza l'aggro",
+      "options": [
+        {
+          "req": 8,
+          "name": "+20% MP restored",
+          "it": "rende 120 MP invece di 100"
+        },
+        {
+          "req": 8,
+          "name": "Absorbs 1% HP",
+          "it": "ogni colpo ti rende l'1% dei PV"
+        },
+        {
+          "req": 8,
+          "name": "+50% Multi-Hit on hit",
+          "it": "più probabilità di colpo multiplo"
+        },
+        {
+          "req": 12,
+          "name": "-1s [Ruinous Blow] cooldown on hit",
+          "it": "ogni colpo toglie 1 secondo alla ricarica di [[ruinous-blow]]"
+        },
+        {
+          "req": 16,
+          "name": "Adds [Reckless Strike] Chain Skill",
+          "it": "aggiunge un colpo a catena"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 4,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+20% MP restored"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+20% MP restored",
+              "-1s [Ruinous Blow] cooldown on hit"
+            ]
+          }
+        ],
+        "use": "Tasto sinistro. La tieni premuta insieme alla macro solo finché [[rending-blow]] è sotto il 16.",
+        "note": "A 10 con i punti, quarta dopo le tre principali. Non spenderci altro: con Rending Blow a 16 esce dalla rotazione sui boss.",
+        "label": "con i punti"
+      },
+      "pvp": null,
+      "src": [
+        "db",
+        "grobs",
+        "alucky",
+        "couga",
+        "maps"
+      ],
+      "conf": "high",
+      "top": 13.9,
+      "rings": {
+        "pve": 39,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "mocking-blade",
+      "name": "Mocking Blade",
+      "ko": "유린의 검",
+      "sum": "Atterra il bersaglio per 3 secondi. Sui boss, che non si atterrano, diventa la tua cura d'emergenza.",
+      "meta": "Ricarica 20 s · 200 MP · 4 m",
+      "options": [
+        {
+          "req": 8,
+          "name": "Absorbs 4% HP, absorbs 15% HP of target with Incapacitated Immunity",
+          "it": "ti cura del 4%, del 15% se il bersaglio è un boss"
+        },
+        {
+          "req": 8,
+          "name": "Changes to AoE damage on down strike",
+          "it": "il colpo verso il basso fa danno ad area"
+        },
+        {
+          "req": 8,
+          "name": "Adds 2 additional strikes",
+          "it": "due colpi in più"
+        },
+        {
+          "req": 12,
+          "name": "+1s Knockdown duration",
+          "it": "l'atterramento dura 4 secondi"
+        },
+        {
+          "req": 16,
+          "name": "Ignores Block and Evasion and lands as Multi-Hit",
+          "it": "non può essere parata né schivata"
+        }
+      ],
+      "pve": {
+        "level": 8,
+        "order": 7,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Absorbs 4% HP, absorbs 15% HP of target with Incapacitated Immunity"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Absorbs 4% HP, absorbs 15% HP of target with Incapacitated Immunity",
+              "Changes to AoE damage on down strike"
+            ]
+          }
+        ],
+        "use": "A mano, quando ti serve vita. Sugli élite apre la finestra di [[overhead-slam]].",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 2,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Absorbs 4% HP, absorbs 15% HP of target with Incapacitated Immunity"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Absorbs 4% HP, absorbs 15% HP of target with Incapacitated Immunity",
+              "+1s Knockdown duration"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+1s Knockdown duration",
+              "Ignores Block and Evasion and lands as Multi-Hit"
+            ]
+          }
+        ],
+        "use": "A mano: è l'apertura garantita di ogni combo.",
+        "label": "obiettivo",
+        "note": "Atterra sempre un bersaglio che non è immune. A 16 l'atterramento dura 4 secondi e non si può parare né schivare. Al 16 arriva solo con anelli o carte che hanno la sua riga: senza, si ferma a 14 con due specializzazioni."
+      },
+      "src": [
+        "db",
+        "builds",
+        "arthars",
+        "couga",
+        "maps"
+      ],
+      "conf": "high",
+      "top": 11.3,
+      "rings": {
+        "pve": 0,
+        "pvp": 27
+      }
+    },
+    {
+      "id": "crushing-wave",
+      "name": "Crushing Wave",
+      "ko": "분쇄 파동",
+      "sum": "Colpo ad area intorno a te. Lento, quindi sui boss non si usa: serve sui gruppi di mostri, dove ti cura anche.",
+      "meta": "Ricarica 20 s · 250 MP · 5 m intorno a te · fino a 4 nemici",
+      "options": [
+        {
+          "req": 8,
+          "name": "Absorbs 2% HP",
+          "it": "ti cura del 2% a colpo"
+        },
+        {
+          "req": 8,
+          "name": "Restores 50 MP on landing a Critical Hit",
+          "it": "50 MP a ogni critico"
+        },
+        {
+          "req": 8,
+          "name": "Up to +20% damage when more targets hit",
+          "it": "più danno se colpisce più nemici"
+        },
+        {
+          "req": 12,
+          "name": "Resets cooldown on landing a Critical Hit",
+          "it": "un critico azzera la ricarica"
+        },
+        {
+          "req": 16,
+          "name": "50% chance to pull",
+          "it": "50% di tirare i nemici verso di te"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 5,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Absorbs 2% HP"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Absorbs 2% HP",
+              "Resets cooldown on landing a Critical Hit"
+            ]
+          }
+        ],
+        "use": "A mano, solo sui gruppi.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 1,
+        "label": "a 1",
+        "order": 9,
+        "picks": [
+          {
+            "at": 16,
+            "choose": [
+              "Resets cooldown on landing a Critical Hit",
+              "50% chance to pull"
+            ]
+          }
+        ],
+        "use": "A mano: con il pull del livello 16 tira fuori un healer dalla seconda linea.",
+        "note": "In un assetto PvP con i punti contati torna a 1: quei 21 punti vanno a [[aerial-snare]] o a [[survival-willpower]]. Vale la pena solo a 16."
+      },
+      "src": [
+        "db",
+        "builds",
+        "arthars",
+        "couga",
+        "maps"
+      ],
+      "conf": "high",
+      "top": 10.7,
+      "rings": {
+        "pve": 55,
+        "pvp": 33
+      }
+    },
+    {
+      "id": "ankle-slice",
+      "name": "Ankle Slice",
+      "ko": "발목 베기",
+      "sum": "Si accende dopo una tua parata riuscita. Colpisce fino a 4 nemici e li immobilizza (Root) per 3 secondi: sempre i mostri, nel 50% dei casi i giocatori.",
+      "meta": "Ricarica 10 s · 0 MP · 4 m · si attiva dopo una parata",
+      "options": [
+        {
+          "req": 8,
+          "name": "30% chance to inflict Knockdown for 3s on landing [Ankle Slice]",
+          "it": "30% di atterrare per 3 secondi"
+        },
+        {
+          "req": 8,
+          "name": "Adds [Ankle Smash] Chain Skill",
+          "it": "aggiunge un colpo a catena, che però rallenta la rotazione"
+        },
+        {
+          "req": 8,
+          "name": "+16m [Ankle Slice] range",
+          "it": "arriva a 20 m"
+        },
+        {
+          "req": 12,
+          "name": "Ignores Block and Evasion and lands as Multi-Hit",
+          "it": "non può essere parata né schivata"
+        },
+        {
+          "req": 16,
+          "name": "25% chance to reset [Ankle Slice] cooldown on Block",
+          "it": "25% di azzerare la ricarica quando pari"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 10,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+16m [Ankle Slice] range"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+16m [Ankle Slice] range",
+              "Ignores Block and Evasion and lands as Multi-Hit"
+            ]
+          }
+        ],
+        "use": "A mano, dopo una parata con [[focused-block]]. Con la gittata allungata fa anche da avvicinamento di riserva.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 10,
+        "order": 9,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "30% chance to inflict Knockdown for 3s on landing [Ankle Slice]"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "30% chance to inflict Knockdown for 3s on landing [Ankle Slice]",
+              "+16m [Ankle Slice] range"
+            ]
+          }
+        ],
+        "use": "A mano: un altro modo per arrivare all'atterramento.",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "builds",
+        "arthars",
+        "couga",
+        "maps"
+      ],
+      "conf": "high",
+      "confNote": "Il testo inglese del client è ambiguo; quello coreano e Aion 2 Maps dicono la stessa cosa: si usa subito dopo una parata.",
+      "top": 10.6,
+      "rings": {
+        "pve": 0,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "defiance",
+      "name": "Defiance",
+      "ko": "충격 해제",
+      "sum": "Ti libera da stordimento, atterramento, lancio in aria, presa, congelamento e paura, e ti rende immune agli stati per 5 secondi (Tenacity). Non libera da Root, rallentamento, Seal e provocazione. La riduzione delle ricariche non la tocca.",
+      "meta": "Ricarica 60 s al livello 1, 51 s al 10 · 0 MP",
+      "options": [
+        {
+          "req": 8,
+          "name": "Adds [Wrath Burst] Chain Skill",
+          "it": "aggiunge un colpo a catena"
+        },
+        {
+          "req": 8,
+          "name": "Restores 1000 Stamina on using [Defiance]",
+          "it": "ti rende 1.000 di Stamina"
+        },
+        {
+          "req": 8,
+          "name": "Restores 20% HP on using [Defiance]",
+          "it": "ti cura del 20%"
+        },
+        {
+          "req": 12,
+          "name": "+2s Tenacity duration",
+          "it": "l'immunità dura 7 secondi"
+        },
+        {
+          "req": 16,
+          "name": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+          "it": "prendi molto meno danno finché dura l'immunità"
+        }
+      ],
+      "pve": {
+        "level": 1,
+        "label": "basta così",
+        "order": 11,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Restores 20% HP on using [Defiance]"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Restores 20% HP on using [Defiance]",
+              "+2s Tenacity duration"
+            ],
+            "note": "È la scelta delle build Global: 46 su 51 con la skill tra 12 e 15."
+          }
+        ],
+        "use": "A mano, su un tasto tutto suo (nelle impostazioni: Separate Defiance Hotkey).",
+        "note": "Al livello 1 libera già dai controlli. I punti servono altrove: si alza per il PvP."
+      },
+      "pvp": {
+        "level": 10,
+        "order": 4,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Restores 20% HP on using [Defiance]"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Restores 20% HP on using [Defiance]",
+              "+2s Tenacity duration"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+2s Tenacity duration",
+              "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+            ]
+          }
+        ],
+        "use": "A mano, sul primo controllo pesante che rischia di ucciderti. Non sprecarla sul primo che arriva.",
+        "note": "Con i punti arriva a 10, ed è già abbastanza per cominciare. Chi fa PvP sul serio la porta a 16. In Corea c'è chi a 16 tiene la cura del 20% al posto dei 2 secondi in più di immunità.",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "builds",
+        "couga",
+        "vortex",
+        "inven",
+        "maps"
+      ],
+      "conf": "high",
+      "top": 10.7,
+      "rings": {
+        "pve": 0,
+        "pvp": 40
+      }
+    },
+    {
+      "id": "sword-aura-rampage",
+      "name": "Sword Aura Rampage",
+      "ko": "검기 난무",
+      "sum": "Si può usare solo su un bersaglio in Stagger (la barra di Stagger del boss azzerata). In quella finestra la ripeti senza ricarica.",
+      "meta": "Nessuna ricarica · 0 MP · 4 m · solo su bersaglio in Stagger",
+      "options": [
+        {
+          "req": 8,
+          "name": "Absorbs 5% HP",
+          "it": "ti cura del 5% a colpo"
+        },
+        {
+          "req": 8,
+          "name": "Restores 120 MP",
+          "it": "rende 120 MP a colpo"
+        },
+        {
+          "req": 8,
+          "name": "Changes to mobile skill",
+          "it": "la usi camminando"
+        },
+        {
+          "req": 12,
+          "name": "Multi-Hit on hit",
+          "it": "ogni colpo è multiplo"
+        },
+        {
+          "req": 16,
+          "name": "-1s all skill cooldowns on hit",
+          "it": "ogni colpo toglie 1 secondo a tutte le ricariche, stigma comprese"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "label": "con i punti",
+        "order": 8,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Absorbs 5% HP"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Absorbs 5% HP",
+              "Multi-Hit on hit"
+            ],
+            "note": "Multi-Hit on hit si prende dal 12 (Aion 2 Maps): tra le build Global ce l'hanno 8 su 10 con la skill tra 12 e 15."
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Multi-Hit on hit",
+              "-1s all skill cooldowns on hit"
+            ]
+          }
+        ],
+        "use": "A mano, solo quando il boss è in Stagger.",
+        "note": "A 10 con i punti basta. Diventa interessante a 16, quando ogni colpo toglie 1 secondo a tutte le ricariche, ma quei livelli arrivano da anelli e carte che servono prima alle tre skill principali."
+      },
+      "pvp": null,
+      "src": [
+        "db",
+        "builds",
+        "arthars",
+        "grobs",
+        "vortex",
+        "inven",
+        "maps"
+      ],
+      "conf": "mid",
+      "confNote": "Utilità discussa: decide quanto spesso il boss va in Stagger.",
+      "top": 10.2,
+      "rings": {
+        "pve": 38,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "aerial-snare",
+      "name": "Aerial Snare",
+      "ko": "공중 결박",
+      "sum": "Lancia in aria un bersaglio già a terra (sempre i mostri, 50% i giocatori). Sui boss si attiva solo con il 5% di probabilità a ogni attacco.",
+      "meta": "Ricarica 45 s · 150 MP · 4 m · solo su bersaglio a terra",
+      "options": [
+        {
+          "req": 8,
+          "name": "Multi-Hit on hit",
+          "it": "ogni colpo è multiplo"
+        },
+        {
+          "req": 8,
+          "name": "+25% [Aerial Snare] Airborne Chance",
+          "it": "lancia in aria i giocatori nel 75% dei casi"
+        },
+        {
+          "req": 8,
+          "name": "+100% damage to targets with Incapacitated Immunity",
+          "it": "danno doppio sui boss"
+        },
+        {
+          "req": 12,
+          "name": "Adds [Forced Fall] Chain Skill",
+          "it": "aggiunge il colpo a catena [[forced-fall]]"
+        },
+        {
+          "req": 16,
+          "name": "-50% [Aerial Snare] cooldown",
+          "it": "ricarica dimezzata"
+        }
+      ],
+      "pve": {
+        "level": 1,
+        "label": "lasciala a 1",
+        "order": 12,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+100% damage to targets with Incapacitated Immunity"
+            ]
+          }
+        ],
+        "use": "Se la tieni sulla barra, su un tasto suo e fuori dalla macro.",
+        "note": "Sui boss si accende di rado. Arthars e Grobs la lasciano fuori; aLuckyRO la usa nei Nightmare. Non spenderci punti finché il resto non è a posto."
+      },
+      "pvp": {
+        "level": 10,
+        "order": 3,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+25% [Aerial Snare] Airborne Chance"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+25% [Aerial Snare] Airborne Chance",
+              "Adds [Forced Fall] Chain Skill"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Adds [Forced Fall] Chain Skill",
+              "-50% [Aerial Snare] cooldown"
+            ]
+          }
+        ],
+        "use": "A mano, dopo [[overhead-slam]] sul bersaglio a terra: allunga il controllo.",
+        "note": "Il bersaglio in aria subisce il 20% di danno in più. Con i punti arriva a 10; a 16 dimezza la ricarica.",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "builds",
+        "arthars",
+        "alucky",
+        "couga",
+        "maps"
+      ],
+      "conf": "mid",
+      "confNote": "In PvE le fonti sono divise. In PvP è centrale per Aion 2 Maps e per le guide coreane di fine 2025; i coreani di oggi, a livello 50, la tengono bassa.",
+      "top": 8.8,
+      "rings": {
+        "pve": 0,
+        "pvp": 0
+      }
+    }
+  ],
+  "chains": [
+    {
+      "id": "upward-strike",
+      "name": "Upward Strike"
+    },
+    {
+      "id": "forced-fall",
+      "name": "Forced Fall"
+    },
+    {
+      "id": "reckless-strike",
+      "name": "Reckless Strike"
+    },
+    {
+      "id": "ankle-smash",
+      "name": "Ankle Smash"
+    },
+    {
+      "id": "wrath-burst",
+      "name": "Wrath Burst"
+    },
+    {
+      "id": "blade-dance",
+      "name": "Blade Dance"
+    },
+    {
+      "id": "destructive-rush",
+      "name": "Destructive Rush"
+    }
+  ],
+  "stigma": [
+    {
+      "id": "lunge-stance",
+      "name": "Lunge Stance",
+      "ko": "돌격 자세",
+      "sum": "+20% di velocità di combattimento. Dura 10 secondi al livello 1 e 20 al livello 20. Al 20 ogni critico ha il 50% di togliere 1 secondo a tutte le ricariche: è questo che tiene accese [[rage-burst]] e [[overhead-slam]].",
+      "meta": "Ricarica 60 s · 0 MP · durata 10 s (Lv 1), 14,5 s (Lv 10), 20 s (Lv 20)",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+5% Double Chance for the duration",
+          "it": "più colpi doppi"
+        },
+        {
+          "at": 10,
+          "name": "Increases Move Speed by 20% for the duration",
+          "it": "ti muovi più in fretta"
+        },
+        {
+          "at": 15,
+          "name": "x1.5 [Identify Weakness] effect for the duration",
+          "it": "la passiva del critico vale una volta e mezza"
+        },
+        {
+          "at": 20,
+          "name": "50% chance to reduce all skill cooldowns by 1s on Critical Hit for the duration",
+          "it": "il motore di tutta la build"
+        }
+      ],
+      "pve": {
+        "level": 20,
+        "state": "in uso",
+        "note": "Dopo [[rage-burst]] e [[focused-block]] a 5, tutti i punti stigma vanno qui fino al 20.",
+        "pos": 1
+      },
+      "pvp": {
+        "level": 20,
+        "state": "sempre",
+        "note": "Dal livello 10 ti muovi anche il 20% più in fretta.",
+        "pos": 1
+      },
+      "src": [
+        "db",
+        "builds",
+        "meta",
+        "arthars",
+        "grobs",
+        "inven",
+        "maps"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "rage-burst",
+      "name": "Rage Burst",
+      "ko": "격노 폭발",
+      "sum": "Colpisce e accende [[overhead-slam]] sul bersaglio per 10 secondi. Negli stessi 10 secondi tu fai +10% di danno PvE (+5% PvP) e il nemico perde il 10% di attacco.",
+      "meta": "Ricarica 45 s, 30 s dal livello 5 · 100 MP · 4 m",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "-15s [Rage Burst] cooldown",
+          "it": "ricarica da 45 a 30 secondi"
+        },
+        {
+          "at": 10,
+          "name": "+10% Attack reduction",
+          "it": "il nemico perde un altro 10% di attacco"
+        },
+        {
+          "at": 15,
+          "name": "Critical Hit on hit",
+          "it": "il colpo è sempre critico"
+        },
+        {
+          "at": 20,
+          "name": "+10% PvE Damage Boost increase and +5% PvP Damage Boost increase",
+          "it": "il bonus di danno raddoppia"
+        }
+      ],
+      "pve": {
+        "level": 20,
+        "state": "in uso",
+        "note": "A 45 sta a 5; dopo [[lunge-stance]] a 20 e [[zikels-blessing]] a 10 si porta a 20: a 15 il colpo è sempre critico, a 20 il bonus di danno raddoppia. Gli otto primi d'Europa la tengono tutti a 20 (29/10/2026).",
+        "pos": 2
+      },
+      "pvp": {
+        "level": 5,
+        "state": "alternativa",
+        "note": "Apre la finestra di Overhead Slam anche senza atterramento. Entra al posto di [[blade-toss]] o [[focused-block]].",
+        "pos": 6,
+        "swap": "blade-toss"
+      },
+      "src": [
+        "db",
+        "builds",
+        "meta",
+        "arthars",
+        "grobs",
+        "maps"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "focused-block",
+      "name": "Focused Block",
+      "ko": "집중 막기",
+      "sum": "Per un attimo pari di sicuro il colpo che arriva. Ogni parata fa scattare [[experienced-counterstrike]], cioè 20 secondi di danno in più per te e per il gruppo, e ti rende mana e Stamina.",
+      "meta": "Ricarica 20 s · 0 MP · rende 110 MP e Stamina (Lv 1), 150 (Lv 5), 300 (Lv 20)",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+1 consecutive use",
+          "it": "due usi di fila"
+        },
+        {
+          "at": 10,
+          "name": "Changes to mobile skill",
+          "it": "la usi camminando"
+        },
+        {
+          "at": 15,
+          "name": "+20% Move Speed for 3s on Parry",
+          "it": "scatto dopo la parata"
+        },
+        {
+          "at": 20,
+          "name": "Restores 10% HP once on Parry",
+          "it": "la parata ti cura del 10%"
+        }
+      ],
+      "pve": {
+        "level": 5,
+        "state": "in uso",
+        "note": "La usi a mano, subito prima di un colpo grosso del boss. Se nel gruppo c'è un Templar, il suo Fury prende il posto del bonus che dai tu: in quel caso qui metti [[wave-armor]], che moltiplica [[experienced-counterstrike]] e [[murderous-burst]].",
+        "pos": 3,
+        "or": "wave-armor"
+      },
+      "pvp": {
+        "level": 5,
+        "state": "in arena",
+        "note": "Serve a prendere tempo o a scappare: due parate di fila. In arena para i colpi di danno grossi, non i controlli.",
+        "pos": 5
+      },
+      "src": [
+        "db",
+        "builds",
+        "meta",
+        "arthars",
+        "grobs",
+        "maps"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "zikels-blessing",
+      "name": "Zikel's Blessing",
+      "ko": "지켈의 축복",
+      "sum": "+20% di attacco e +100 di precisione. Dura 10 secondi al livello 1, 14,5 al 10 e 20 al 20.",
+      "meta": "Ricarica 120 s · 0 MP",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+50% Stagger Gauge Damage",
+          "it": "svuoti prima la barra di Stagger del boss"
+        },
+        {
+          "at": 10,
+          "name": "+10% PvE Damage Boost and +5% PvP Damage Boost",
+          "it": "il motivo per cui si porta a 10"
+        },
+        {
+          "at": 15,
+          "name": "+50% Multi-Hit chance",
+          "it": "più colpi multipli"
+        },
+        {
+          "at": 20,
+          "name": "+20% Status Effect Chance",
+          "it": "gli stati entrano più spesso"
+        }
+      ],
+      "pve": {
+        "level": 15,
+        "state": "in uso",
+        "note": "Quarto slot di base: funziona da sola, anche in gruppi improvvisati. Dal 5 aumenta del 50% il danno alla barra di Stagger del boss, dal 10 dà +10% di danno PvE, dal 15 +50% di colpi multipli: sei primi su otto d'Europa la tengono tra 15 e 20 (29/10/2026). Conviene accenderla quando si apre la barra di Stagger.",
+        "pos": 4
+      },
+      "pvp": {
+        "level": 10,
+        "state": "alternativa",
+        "note": "Poco usata in PvP: lo slot va alla sopravvivenza.",
+        "pos": 8
+      },
+      "src": [
+        "db",
+        "builds",
+        "meta",
+        "arthars",
+        "maps"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "lifestealing-blade",
+      "name": "Lifestealing Blade",
+      "ko": "흡혈의 검",
+      "sum": "Colpo ad area che ti cura del 10%. Dal livello 10 dà al gruppo l'effetto Predation per 20 secondi.",
+      "meta": "Ricarica 90 s, 60 s dal livello 15 · 200 MP · 4 m · fino a 4 nemici",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "Up to +20% damage when more targets hit",
+          "it": "più danno su più nemici"
+        },
+        {
+          "at": 10,
+          "name": "Predation effect on party members for 20s",
+          "it": "bonus ai colpi di tutto il gruppo"
+        },
+        {
+          "at": 15,
+          "name": "-30s cooldown",
+          "it": "ricarica a 60 secondi"
+        },
+        {
+          "at": 20,
+          "name": "+5% HP absorbed",
+          "it": "cura del 15%"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "state": "alternativa",
+        "pos": 7,
+        "note": "Al posto di [[focused-block]] quando un Templar tiene il boss: dal livello 10 dà al gruppo Predation per 20 secondi. Tra i primi otto d'Europa (29/10/2026) nessuno la monta: in quello slot sta [[wave-armor]].",
+        "swap": "focused-block"
+      },
+      "pvp": null,
+      "src": [
+        "db",
+        "builds",
+        "meta",
+        "arthars",
+        "couga",
+        "maps"
+      ],
+      "conf": "mid",
+      "confNote": "Tra i primi 94 Global del 5/10 la usava il 40%; nelle build Questlog il 30% la mette al posto di Focused Block; tra i primi otto d'Europa del 29/10 nessuno."
+    },
+    {
+      "id": "wave-armor",
+      "name": "Wave Armor",
+      "ko": "파동의 갑주",
+      "sum": "Danno continuo ai nemici entro 3 metri. Dal 10 e dal 15 moltiplica per una volta e mezza [[experienced-counterstrike]] e [[murderous-burst]].",
+      "meta": "Ricarica 60 s · 200 MP · durata 10 s (Lv 1), 20 s (Lv 20)",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "Absorbs 2% HP",
+          "it": "ti cura"
+        },
+        {
+          "at": 10,
+          "name": "x1.5 [Experienced Counterstrike] effect for the duration",
+          "it": "Experienced Counterstrike vale una volta e mezza finché dura"
+        },
+        {
+          "at": 15,
+          "name": "x1.5 [Murderous Burst] effect for the duration",
+          "it": "Murderous Burst vale una volta e mezza finché dura"
+        },
+        {
+          "at": 20,
+          "name": "Reflects 10% of damage taken",
+          "it": "riflette il 10% del danno"
+        }
+      ],
+      "pve": {
+        "level": 15,
+        "state": "con un Templar",
+        "note": "Quando un Templar tiene il boss, il suo Fury copre già il bonus di gruppo delle parate: questo slot rende di più così. Dal 10 moltiplica [[experienced-counterstrike]] per una volta e mezza, dal 15 [[murderous-burst]]. Cinque dei primi otto d'Europa la portano tra 15 e 20 (29/10/2026); nel Global manca il livello 25, che in Corea la rende ancora più forte.",
+        "pos": 5,
+        "swap": "focused-block"
+      },
+      "pvp": null,
+      "src": [
+        "db",
+        "builds",
+        "arthars",
+        "couga",
+        "inven"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "blade-toss",
+      "name": "Blade Toss",
+      "ko": "칼날 날리기",
+      "sum": "Lancio da 20 metri: per 10 secondi il bersaglio ha il 30% di difesa in meno e riceve metà delle cure.",
+      "meta": "Ricarica 20 s · 0 MP · 20 m",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+20% [Blade Toss] Incoming Heal reduction",
+          "it": "le cure ricevute scendono del 70%"
+        },
+        {
+          "at": 10,
+          "name": "[Blade Toss] inflicts Slow for 5s",
+          "it": "rallenta per 5 secondi"
+        },
+        {
+          "at": 15,
+          "name": "[Blade Toss] breaks Protective Shields",
+          "it": "rompe gli scudi"
+        },
+        {
+          "at": 20,
+          "name": "[Blade Dance] has 30% chance to inflict Knockdown for 3s",
+          "it": "il colpo a catena può atterrare"
+        }
+      ],
+      "pve": {
+        "level": 5,
+        "state": "sconsigliata in PvE",
+        "note": "Abbassa la difesa del boss per tutti, ma in PvE è una perdita di danno (Ulfhednar, 18/10/2026): nessuno dei primi otto d'Europa la monta (29/10/2026).",
+        "pos": 6
+      },
+      "pvp": {
+        "level": 5,
+        "state": "Abyss e 5 contro 5",
+        "note": "La risposta agli healer e a chi scappa: si tira prima di entrare.",
+        "pos": 3
+      },
+      "src": [
+        "db",
+        "builds",
+        "alucky",
+        "couga",
+        "vortex",
+        "maps"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "tenaciousness",
+      "name": "Tenaciousness",
+      "ko": "근성",
+      "sum": "3 secondi di immunità a danni e stati. Quando finisce prendi molto meno danno per altri 3 secondi.",
+      "meta": "Ricarica 150 s al livello 1, 142 s al 5, 112 s al 20 · 0 MP",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+100% Incoming Heal",
+          "it": "le cure su di te valgono doppio"
+        },
+        {
+          "at": 10,
+          "name": "Restores 20% Max HP when the effect ends",
+          "it": "a fine effetto ti cura del 20%"
+        },
+        {
+          "at": 15,
+          "name": "+20% Attack",
+          "it": "20% di attacco in più"
+        },
+        {
+          "at": 20,
+          "name": "Trigger [Tenaciousness] when afflicted with Impact-type status",
+          "it": "si attiva da sola quando ti atterrano o ti stordiscono"
+        }
+      ],
+      "pve": null,
+      "pvp": {
+        "level": 10,
+        "state": "sempre",
+        "note": "Si tiene per la seconda catena di controlli, dopo aver speso [[defiance]]. Per i coreani è il punto di forza del Gladiator in PvP: a 10 per partire (15 punti), a 15 come obiettivo (35 punti).",
+        "pos": 2
+      },
+      "src": [
+        "db",
+        "builds",
+        "meta",
+        "couga",
+        "vortex",
+        "inven",
+        "maps"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "armor-of-balance",
+      "name": "Armor of Balance",
+      "ko": "균형의 갑옷",
+      "sum": "+50% di resistenza agli stati d'impatto (atterramento, stordimento, lancio in aria). Dura 10 secondi al livello 1, 12 al 5, 20 al 20.",
+      "meta": "Ricarica 90 s · 0 MP",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+20% Ailment-type and Mental-type Resist",
+          "it": "resisti anche agli altri stati"
+        },
+        {
+          "at": 10,
+          "name": "x1.5 [Blood Absorption] effect for the duration",
+          "it": "Blood Absorption vale una volta e mezza finché dura"
+        },
+        {
+          "at": 15,
+          "name": "x1.5 [Protection Armor] effect for the duration",
+          "it": "Protection Armor vale una volta e mezza finché dura"
+        },
+        {
+          "at": 20,
+          "name": "+50% Impact-type Resist",
+          "it": "un altro 50% di resistenza"
+        }
+      ],
+      "pve": null,
+      "pvp": {
+        "level": 5,
+        "state": "Abyss e 1 contro 1",
+        "note": "Si accende prima di tuffarsi in un gruppo, non dopo essere finiti a terra.",
+        "pos": 4
+      },
+      "src": [
+        "db",
+        "builds",
+        "couga",
+        "vortex",
+        "maps"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "forced-restraint",
+      "name": "Forced Restraint",
+      "ko": "강제 결박",
+      "sum": "75% di sigillare il bersaglio (Seal, non può usare skill) per 5 secondi.",
+      "meta": "Ricarica 60 s · 100 MP · 4 m",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "50% chance to inflict Root for 5s",
+          "it": "una volta su due blocca sul posto per 5 secondi"
+        },
+        {
+          "at": 10,
+          "name": "-1,000 Stamina",
+          "it": "toglie Stamina al bersaglio"
+        },
+        {
+          "at": 15,
+          "name": "+2s Seal duration",
+          "it": "il Seal dura 2 secondi in più"
+        },
+        {
+          "at": 20,
+          "name": "+25% Seal chance",
+          "it": "il Seal entra più spesso"
+        }
+      ],
+      "pve": null,
+      "pvp": {
+        "level": 5,
+        "state": "alternativa",
+        "note": "Blocca il bersaglio durante la finestra di [[overhead-slam]]. Nelle guide coreane di settembre è data per obbligatoria al livello 5, quando aggiunge il Root: entra al posto di [[armor-of-balance]] se soffri più i bersagli che scappano che i controlli.",
+        "pos": 7,
+        "swap": "armor-of-balance"
+      },
+      "src": [
+        "db",
+        "couga",
+        "vortex",
+        "inven"
+      ],
+      "conf": "mid",
+      "confNote": "Guide coreane del 2025 e del 2026 danno set diversi; nel Global con quattro slot non c'è ancora un meta PvP."
+    },
+    {
+      "id": "wrath-wave",
+      "name": "Wrath Wave",
+      "ko": "분노의 파동",
+      "sum": "Onda intorno a te che atterra per 3 secondi (sempre i mostri, 50% i giocatori).",
+      "meta": "Ricarica 60 s · 200 MP · 5 m intorno a te",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "Up to +20% damage when more targets hit",
+          "it": "più danno su più nemici"
+        },
+        {
+          "at": 10,
+          "name": "Reduces Attack by 20% for 5s",
+          "it": "toglie il 20% di attacco per 5 secondi"
+        },
+        {
+          "at": 15,
+          "name": "Deals damage 1 additional time",
+          "it": "colpisce una volta in più"
+        },
+        {
+          "at": 20,
+          "name": "+25% Knockdown Chance",
+          "it": "atterra più spesso"
+        }
+      ],
+      "pve": {
+        "level": 1,
+        "state": "per lo Stagger",
+        "pos": 8,
+        "note": "Fa 50 di danno alla barra di Stagger a qualunque livello, più di ogni altra skill. Se il gruppo non fa in tempo a stordire il boss, entra al posto di [[rage-burst]] o di [[focused-block]].",
+        "swap": [
+          "rage-burst",
+          "focused-block"
+        ]
+      },
+      "pvp": null,
+      "src": [
+        "db",
+        "arthars",
+        "couga",
+        "maps"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "fracturing-rush",
+      "name": "Fracturing Rush",
+      "ko": "분쇄 돌진",
+      "sum": "Carica in avanti di 10 metri che immobilizza chi incontra.",
+      "meta": "Ricarica 90 s · 100 MP",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+2 max targets hit",
+          "it": "colpisce due nemici in più"
+        },
+        {
+          "at": 10,
+          "name": "Adds [Destructive Rush] Chain Skill",
+          "it": "aggiunge un colpo a catena, Destructive Rush"
+        },
+        {
+          "at": 15,
+          "name": "+20% Root Chance",
+          "it": "blocca sul posto più spesso"
+        },
+        {
+          "at": 20,
+          "name": "50% chance to inflict Airborne for 3s",
+          "it": "una volta su due solleva in aria per 3 secondi"
+        }
+      ],
+      "pve": null,
+      "pvp": null,
+      "src": [
+        "db",
+        "arthars",
+        "couga"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "assault-strike",
+      "name": "Assault Strike",
+      "ko": "강습 일격",
+      "sum": "Salto da 20 metri con 30% di atterrare i giocatori.",
+      "meta": "Ricarica 120 s · 0 MP · 20 m",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+20% Attack for 5s on hit",
+          "it": "20% di attacco in più per 5 secondi dopo il colpo"
+        },
+        {
+          "at": 10,
+          "name": "500 MP damage on hit",
+          "it": "toglie 500 MP al bersaglio"
+        },
+        {
+          "at": 15,
+          "name": "+10m range",
+          "it": "10 metri di gittata in più"
+        },
+        {
+          "at": 20,
+          "name": "+20% Knockdown Chance",
+          "it": "atterra più spesso"
+        }
+      ],
+      "pve": null,
+      "pvp": null,
+      "src": [
+        "db",
+        "arthars",
+        "couga"
+      ],
+      "conf": "high"
+    }
+  ],
+  "passive": [
+    {
+      "id": "attack-preparation",
+      "name": "Attack Preparation",
+      "ko": "공격 준비",
+      "sum": "Più danno, più difesa e +100 di precisione, sempre e senza condizioni.",
+      "scale": [
+        {
+          "label": "Danno PvE",
+          "v": [
+            "5,5%",
+            "10%",
+            "15%"
+          ]
+        },
+        {
+          "label": "Danno PvP",
+          "v": [
+            "2,75%",
+            "5%",
+            "7,5%"
+          ]
+        },
+        {
+          "label": "Difesa",
+          "v": [
+            "2%",
+            "20%",
+            "40%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 1,
+        "note": "La prima da alzare, e la prima da cercare sulle carte e sull'equipaggiamento."
+      },
+      "pvp": {
+        "rank": 1
+      },
+      "src": [
+        "db",
+        "meta",
+        "arthars",
+        "grobs",
+        "alucky",
+        "maps"
+      ],
+      "conf": "high",
+      "top": 16.6,
+      "gear": {
+        "pve": 61,
+        "pvp": 14
+      }
+    },
+    {
+      "id": "experienced-counterstrike",
+      "name": "Experienced Counterstrike",
+      "ko": "노련한 반격",
+      "sum": "Più danno quando colpisci di fronte. In più, ogni tua parata dà 20 secondi di danno extra a te e al gruppo. Non si somma con Fury del Templar.",
+      "scale": [
+        {
+          "label": "Danno frontale",
+          "v": [
+            "0,4%",
+            "4%",
+            "8%"
+          ]
+        },
+        {
+          "label": "Danno PvE dopo una parata",
+          "v": [
+            "5,4%",
+            "9%",
+            "13%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 2,
+        "note": "Ti dà lo 0,4% di danno frontale per livello, sempre. In più ogni parata regala al gruppo 20 secondi di danno. In Corea è considerata la prima passiva, a patto di colpire di fronte almeno il 70% del tempo."
+      },
+      "pvp": {
+        "rank": 6,
+        "note": "Ogni parata dà anche in PvP un bonus di danno a te e al gruppo."
+      },
+      "src": [
+        "db",
+        "meta",
+        "arthars",
+        "grobs",
+        "sen",
+        "inven",
+        "maps"
+      ],
+      "conf": "high",
+      "top": 16.3,
+      "gear": {
+        "pve": 73,
+        "pvp": 12
+      }
+    },
+    {
+      "id": "murderous-burst",
+      "name": "Murderous Burst",
+      "ko": "살기 파열",
+      "sum": "Ogni attacco dà una carica. Alla quinta esplode: danno ad area e 3 secondi di danno critico in più. Con la velocità giusta è sempre attiva.",
+      "scale": [
+        {
+          "label": "Danno critico",
+          "v": [
+            "5,5%",
+            "10%",
+            "15%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 3
+      },
+      "pvp": {
+        "rank": 7
+      },
+      "src": [
+        "db",
+        "meta",
+        "arthars",
+        "grobs",
+        "maps"
+      ],
+      "conf": "high",
+      "top": 15.9,
+      "gear": {
+        "pve": 67,
+        "pvp": 6
+      }
+    },
+    {
+      "id": "impact-hit",
+      "name": "Impact Hit",
+      "ko": "충격 적중",
+      "sum": "Più colpi doppi e più probabilità che i tuoi atterramenti entrino.",
+      "scale": [
+        {
+          "label": "Colpo doppio",
+          "v": [
+            "0,3%",
+            "3%",
+            "6%"
+          ]
+        },
+        {
+          "label": "Probabilità stati d'impatto",
+          "v": [
+            "11,2%",
+            "22%",
+            "34%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 4,
+        "note": "Tra le quattro da alzare: i primi otto d'Europa la tengono tra 19 e 24 e la cercano sui tratti più di ogni altra passiva (elmo, spalline, stivali, mantello, collana, orecchini; 29/10/2026). Dà colpi doppi e fa entrare gli atterramenti. aLuckyRO in PvE la dava per poco utile: le schede dicono il contrario."
+      },
+      "pvp": {
+        "rank": 4
+      },
+      "src": [
+        "db",
+        "meta",
+        "grobs",
+        "alucky",
+        "maps"
+      ],
+      "conf": "high",
+      "top": 15.7,
+      "gear": {
+        "pve": 59,
+        "pvp": 46
+      }
+    },
+    {
+      "id": "identify-weakness",
+      "name": "Identify Weakness",
+      "ko": "약점 파악",
+      "sum": "Più critico e più colpi perfetti. [[lunge-stance]] al 15 la moltiplica per una volta e mezza.",
+      "scale": [
+        {
+          "label": "Critico",
+          "v": [
+            "+100",
+            "+190",
+            "+290"
+          ]
+        },
+        {
+          "label": "Colpo perfetto",
+          "v": [
+            "0,5%",
+            "5%",
+            "10%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 5
+      },
+      "pvp": {
+        "rank": 8
+      },
+      "src": [
+        "db",
+        "meta",
+        "arthars",
+        "sen",
+        "maps"
+      ],
+      "conf": "high",
+      "top": 15.6,
+      "gear": {
+        "pve": 21,
+        "pvp": 3
+      }
+    },
+    {
+      "id": "blood-absorption",
+      "name": "Blood Absorption",
+      "ko": "피의 흡수",
+      "sum": "Metà dei tuoi colpi ti cura un po'. Quando scendi sotto il 50% dei PV ti cura di colpo (una volta al minuto). È il motivo per cui il Gladiator regge senza healer.",
+      "scale": [
+        {
+          "label": "Cura a colpo (PV massimi)",
+          "v": [
+            "1,6%",
+            "2,5%",
+            "3,5%"
+          ]
+        },
+        {
+          "label": "Cura sotto il 50%",
+          "v": [
+            "26%",
+            "35%",
+            "45%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 6,
+        "note": "Funziona già bene al livello che ha: non serve inseguirla."
+      },
+      "pvp": {
+        "rank": 5
+      },
+      "src": [
+        "db",
+        "arthars",
+        "grobs"
+      ],
+      "conf": "high",
+      "top": 14.3,
+      "gear": {
+        "pve": 0,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "destructive-impulse",
+      "name": "Destructive Impulse",
+      "ko": "파괴 충동",
+      "sum": "Danno extra sui bersagli in Stagger o sotto uno stato d'impatto (a terra, storditi, in aria).",
+      "scale": [],
+      "pve": {
+        "rank": 7,
+        "note": "Vale solo nelle finestre di Stagger. Arthars la scarta, aLuckyRO e Sen la alzano: è l'ultima a cui dare punti. Nessuno dei primi otto d'Europa ci mette punti (29/10/2026)."
+      },
+      "pvp": {
+        "rank": 10,
+        "note": "In PvP colpisce ogni bersaglio che hai atterrato."
+      },
+      "src": [
+        "db",
+        "arthars",
+        "alucky",
+        "sen",
+        "couga",
+        "maps"
+      ],
+      "conf": "mid",
+      "top": 12.1,
+      "gear": {
+        "pve": 0,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "survival-stance",
+      "name": "Survival Stance",
+      "ko": "생존 자세",
+      "sum": "Tanti PV in più e meno danno subito.",
+      "scale": [
+        {
+          "label": "PV massimi",
+          "v": [
+            "+7%",
+            "+25%",
+            "+45%"
+          ]
+        },
+        {
+          "label": "Danno PvE subito",
+          "v": [
+            "-5,5%",
+            "-10%",
+            "-15%"
+          ]
+        },
+        {
+          "label": "Danno PvP subito",
+          "v": [
+            "-2,75%",
+            "-5%",
+            "-7,5%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 8,
+        "note": "Utile se fai il tank; per il danno non conta."
+      },
+      "pvp": {
+        "rank": 3
+      },
+      "src": [
+        "db",
+        "meta",
+        "couga",
+        "maps"
+      ],
+      "conf": "high",
+      "top": 15.1,
+      "gear": {
+        "pve": 2,
+        "pvp": 39
+      }
+    },
+    {
+      "id": "survival-willpower",
+      "name": "Survival Willpower",
+      "ko": "생존 의지",
+      "sum": "Resistenza agli stati, e molto meno danno subito per 5 secondi quando ti controllano (una volta al minuto).",
+      "scale": [
+        {
+          "label": "Resistenza agli stati",
+          "v": [
+            "17%",
+            "35%",
+            "55%"
+          ]
+        },
+        {
+          "label": "Danno PvP subito, sotto controllo",
+          "v": [
+            "-6%",
+            "-15%",
+            "-25%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 9,
+        "note": "In PvE è peso morto. Nessuno dei primi otto d'Europa ci mette punti (29/10/2026)."
+      },
+      "pvp": {
+        "rank": 2,
+        "note": "A 10 dà il 35% di resistenza agli stati. È la prima passiva da alzare per il PvP."
+      },
+      "src": [
+        "db",
+        "meta",
+        "couga",
+        "maps"
+      ],
+      "conf": "high",
+      "top": 13.1,
+      "gear": {
+        "pve": 0,
+        "pvp": 22
+      }
+    },
+    {
+      "id": "protection-armor",
+      "name": "Protection Armor",
+      "ko": "보호의 갑옷",
+      "sum": "+200 di parata e una piccola cura a ogni parata.",
+      "scale": [],
+      "pve": {
+        "rank": 10,
+        "note": "Quando esce su una carta o su un pezzo di equipaggiamento, è una riga da cambiare. Nessuno dei primi otto d'Europa ci mette punti (29/10/2026)."
+      },
+      "pvp": {
+        "rank": 9
+      },
+      "src": [
+        "db",
+        "meta",
+        "arthars",
+        "couga",
+        "maps"
+      ],
+      "conf": "high",
+      "top": 7.9,
+      "gear": {
+        "pve": 0,
+        "pvp": 0
+      }
+    }
+  ],
+  "levels": {
+    "src": "meta",
+    "players": 105,
+    "date": "2026-10-08",
+    "read": "2026-10-10"
+  }
+}

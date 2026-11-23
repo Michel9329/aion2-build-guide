@@ -1,0 +1,1262 @@
+{
+  "include": [
+    "entities.json"
+  ],
+  "meta": {
+    "title": "Ranger AION 2",
+    "navTitle": "Ranger · AION 2",
+    "h1": "Ranger, AION 2 Global",
+    "lead": "Skill, stigma, passive, macro e rotazione del Ranger. I nomi sono quelli del client inglese; i numeri vengono dai dati del gioco, le scelte da chi lo gioca meglio.",
+    "facts": [
+      "**Season 1**, livello massimo 45",
+      "Dati del client letti il **10/10/2026**",
+      "Scritto per **tastiera e mouse**"
+    ],
+    "stamp": "Aggiornato al 10/10/2026"
+  },
+  "sources": [
+    {
+      "id": "db",
+      "label": "Questlog, le skill del Ranger",
+      "url": "https://questlog.gg/aion-2/en/db/skills/ranger",
+      "kind": "Dati del client",
+      "region": "Global",
+      "date": "letto il 10/10/2026, schede aggiornate tra il 28/09 e il 07/10",
+      "note": "35 schede: 12 attive, 13 stigma, 10 passive. Il testo salvato non fa parte di questo repository."
+    },
+    {
+      "id": "builds",
+      "label": "Questlog, le build pubblicate dai giocatori",
+      "url": "https://questlog.gg/aion-2/en/skill-builder?publisher=global&class=ranger",
+      "kind": "Statistiche d'uso",
+      "region": "Global",
+      "date": "10/10/2026",
+      "note": "622 build in elenco; 262 build PvE con una skill a 16 o più lette in dettaglio (specializzazioni, pile sui tasti, macro)."
+    },
+    {
+      "id": "meta",
+      "label": "Aion 2 Meta, guida del Ranger",
+      "url": "https://aion2-meta.com/guides/ranger/",
+      "kind": "Statistiche d'uso",
+      "region": "Global e Corea",
+      "date": "Corea 05/10/2026, Global 08/10/2026",
+      "note": "12.484 Ranger coreani tra i primi (AION2CAL) e i primi 105 Ranger del Global."
+    },
+    {
+      "id": "maps",
+      "label": "Aion 2 Maps, guida del Ranger",
+      "url": "https://aion2maps.com/guides/ranger/",
+      "kind": "Guida con dati del client",
+      "region": "Global",
+      "date": "aggiornata il 09/10/2026",
+      "note": "Ogni frase dice se è un dato del client, una statistica del Global, il consiglio di un creator o un punto su cui le fonti non sono d'accordo."
+    },
+    {
+      "id": "couga",
+      "label": "couga54, raccolta di guide: Ranger",
+      "url": "https://couga54.github.io/aion2-guides/en/ranger/",
+      "kind": "Raccolta",
+      "region": "Global Season 1",
+      "date": "aggiornata il 09/10/2026",
+      "note": "Segue la build di Whelps per il gioco avanzato; per salire di livello quella di Moxsy."
+    },
+    {
+      "id": "ranks",
+      "label": "MetaBot.GG, classifica dei Ranger in Europa",
+      "url": "https://metabot.gg/en/aion-2/leaderboards/eu/ranger",
+      "kind": "Dati pubblici del sito ufficiale",
+      "region": "Europa",
+      "date": "letta il 10/10/2026",
+      "note": "I primi 100 per Combat Power su 393 Ranger che MetaBot conosce: nel mezzo Item Level 2.217 e Combat Power 102.617."
+    },
+    {
+      "id": "whelps",
+      "label": "Whelps, Complete Ranger PvE Guide e la sua build \"Ranger updated 10.08\"",
+      "url": "https://www.youtube.com/watch?v=wKOm6yKuu_I",
+      "kind": "Video e build",
+      "region": "video registrato in Corea, build per il Global",
+      "date": "video del 27/09/2026, build dell'08/10/2026",
+      "note": "Ranger con 1 milione di Combat Power sui server coreani. La build per il Global è su Questlog (character-builder, build 8655)."
+    }
+  ],
+  "macro": {
+    "pve": {
+      "delay": 10,
+      "hold": [
+        {
+          "key": "LMB",
+          "what": "Snipe, l'attacco base"
+        },
+        {
+          "key": "RMB",
+          "what": "la macro"
+        },
+        {
+          "key": "4",
+          "what": "Deadshot: tenuto premuto parte a carica piena"
+        }
+      ],
+      "lines": [
+        {
+          "title": "Prima pila",
+          "key": "Q",
+          "step": 1,
+          "delay": "nella macro, riga 1",
+          "slots": [
+            {
+              "skill": "snare-shot",
+              "tag": "parte per prima e rallenta"
+            },
+            {
+              "skill": "explosive-arrow",
+              "tag": ""
+            },
+            {
+              "skill": "burst-arrow",
+              "tag": "solo su un bersaglio rallentato"
+            }
+          ],
+          "why": "[[snare-shot]] rallenta il bersaglio: [[explosive-arrow]] su chi è rallentato fa il 20% di danno in più, e [[burst-arrow]] senza un rallentamento non parte. Per questo Snare Shot sta in basso. È la prima pila della build di Whelps per il Global."
+        },
+        {
+          "title": "Seconda pila",
+          "key": "T",
+          "step": 2,
+          "delay": "nella macro, riga 2",
+          "slots": [
+            {
+              "skill": "gale-arrow",
+              "tag": "parte per prima"
+            },
+            {
+              "skill": "drill-dart",
+              "tag": ""
+            },
+            {
+              "skill": "tempest-shot",
+              "tag": "riempie i buchi"
+            }
+          ],
+          "why": "[[gale-arrow]] riaccende il suo bonus appena torna, [[drill-dart]] parte ogni 5 secondi, e [[tempest-shot]], che non ha ricarica, riempie tutto il resto. Tempest Shot sta sempre in alto: più in basso ruberebbe il turno alle altre due. Tra le build del Global è la pila più usata: 114 su 262."
+        },
+        {
+          "title": "Buff",
+          "key": "5",
+          "delay": "a mano, tre pressioni",
+          "slots": [
+            {
+              "skill": "vaizels-authority",
+              "tag": ""
+            },
+            {
+              "skill": "supporting-fire",
+              "tag": ""
+            },
+            {
+              "skill": "bow-of-blessing",
+              "tag": ""
+            }
+          ],
+          "why": "I tre buff vanno accesi insieme, prima del boss e poi ogni volta che tornano. Impilati su un tasto solo, tre pressioni li accendono tutti."
+        },
+        {
+          "title": "Marking Shot",
+          "key": "E",
+          "slots": [
+            {
+              "skill": "marking-shot",
+              "tag": "la premi tu"
+            },
+            {
+              "skill": "arrow-scattershot",
+              "tag": "solo col boss in Stagger"
+            }
+          ],
+          "why": "Stanno sullo stesso tasto. [[marking-shot]] è in basso e parte per prima. [[arrow-scattershot]] è sopra e parte solo quando il boss è in Stagger: in quel momento lascia il tasto sinistro e tieni premuto questo.",
+          "delay": "a mano"
+        }
+      ],
+      "manual": [
+        {
+          "skill": "marking-shot",
+          "key": "E",
+          "when": "circa 2 secondi prima che Precision finisca. Lascia i tasti di direzione mentre la premi: ti sposta dove stai andando."
+        },
+        {
+          "skill": "arrow-scattershot",
+          "key": "E",
+          "when": "solo col boss in Stagger: lascia il tasto sinistro e tieni premuto E. Sta sopra Marking Shot, sullo stesso tasto."
+        },
+        {
+          "skill": "suppressing-arrow",
+          "key": "1",
+          "when": "sul boss, quando è pronta e Precision è accesa."
+        },
+        {
+          "skill": "explosion-trap",
+          "key": "2",
+          "when": "solo sui gruppi di mostri: li raduna."
+        },
+        {
+          "skill": "defiance",
+          "key": "Spazio",
+          "when": "per uscire da un controllo."
+        }
+      ]
+    },
+    "pvp": {
+      "hold": [
+        {
+          "key": "LMB",
+          "what": "Snipe, mentre giri intorno al bersaglio"
+        },
+        {
+          "key": "RMB",
+          "what": "la macro, solo con le skill di danno"
+        }
+      ],
+      "lines": [
+        {
+          "title": "Pila del danno",
+          "key": "T",
+          "delay": "nella macro, riga 1",
+          "slots": [
+            {
+              "skill": "gale-arrow",
+              "tag": "parte per prima"
+            },
+            {
+              "skill": "drill-dart",
+              "tag": ""
+            },
+            {
+              "skill": "tempest-shot",
+              "tag": ""
+            }
+          ],
+          "why": "In PvP nella macro restano solo le skill di danno. Marking Shot, Deadshot, i buff e le difese li premi tu, quando servono.",
+          "step": 1
+        }
+      ],
+      "manual": [
+        {
+          "skill": "marking-shot",
+          "when": "poi subito Deadshot, dentro Precision."
+        },
+        {
+          "skill": "deadshot",
+          "when": "un tocco se possono raggiungerti, a carica piena se non possono."
+        },
+        {
+          "skill": "snare-shot",
+          "when": "per tenerli lontani: li rallenta del 40% per 5 secondi."
+        },
+        {
+          "skill": "burst-arrow",
+          "when": "subito dopo Snare Shot."
+        },
+        {
+          "skill": "ambush-kick",
+          "when": "quando un corpo a corpo ti raggiunge."
+        },
+        {
+          "skill": "mother-natures-breath",
+          "when": "quando ti saltano addosso: 6 secondi di difesa."
+        },
+        {
+          "skill": "defiance",
+          "when": "sul controllo che ti ucciderebbe, non sul primo."
+        }
+      ],
+      "delay": 10
+    }
+  },
+  "rotations": {
+    "pve": [
+      {
+        "title": "Apertura sul boss",
+        "short": "Apertura",
+        "sheet": true,
+        "when": "Prima di cominciare",
+        "steps": [
+          {
+            "skill": "vaizels-authority"
+          },
+          {
+            "skill": "bow-of-blessing"
+          },
+          {
+            "skill": "supporting-fire"
+          },
+          {
+            "skill": "marking-shot",
+            "note": "Precision"
+          },
+          {
+            "skill": "deadshot",
+            "note": "a carica piena"
+          },
+          {
+            "text": "tieni premuti i tre tasti",
+            "hold": true
+          }
+        ],
+        "expl": "I tre buff insieme, poi [[marking-shot]] e subito un [[deadshot]] a carica piena dentro Precision. Da lì tieni premuti Snipe, la macro e Deadshot.",
+        "src": [
+          "maps",
+          "couga",
+          "whelps"
+        ],
+        "conf": "high"
+      },
+      {
+        "title": "Ciclo",
+        "short": "Ciclo",
+        "sheet": true,
+        "when": "Per tutto il combattimento",
+        "steps": [
+          {
+            "skill": "marking-shot",
+            "note": "prima che Precision finisca"
+          },
+          {
+            "skill": "deadshot",
+            "note": "ogni volta che torna"
+          },
+          {
+            "skill": "gale-arrow",
+            "note": "dalla macro"
+          },
+          {
+            "skill": "drill-dart",
+            "note": "dalla macro"
+          },
+          {
+            "skill": "tempest-shot",
+            "note": "nei buchi"
+          }
+        ],
+        "expl": "È quello che fanno i tre tasti tenuti premuti. Tu aggiungi [[marking-shot]] circa 2 secondi prima che Precision finisca e riaccendi i buff quando tornano. Ogni tanto [[snare-shot]] rallenta il bersaglio, ed [[explosive-arrow]] e [[burst-arrow]] lo colpiscono subito dopo: ci pensa la prima pila.",
+        "src": [
+          "maps",
+          "couga",
+          "whelps"
+        ],
+        "conf": "high"
+      },
+      {
+        "title": "Boss in Stagger",
+        "short": "Stagger",
+        "sheet": false,
+        "when": "Quando si apre la barra di Stagger",
+        "steps": [
+          {
+            "skill": "arrow-scattershot",
+            "note": "tenuta al posto di Snipe",
+            "hold": true
+          }
+        ],
+        "expl": "[[arrow-scattershot]] colpisce solo un bersaglio in Stagger, e non ha ricarica. Le skill che tolgono più barra tienile per quando la barra si apre: [[arrow-storm]], se la monti, ne toglie 50.",
+        "src": [
+          "maps"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Gruppi di mostri",
+        "short": "Gruppi",
+        "sheet": false,
+        "when": "Più mostri insieme",
+        "steps": [
+          {
+            "skill": "snipe",
+            "note": "ne tocchi più d'uno"
+          },
+          {
+            "skill": "marking-shot"
+          },
+          {
+            "skill": "explosion-trap",
+            "note": "li raduna"
+          },
+          {
+            "text": "tieni premuta la macro",
+            "hold": true
+          }
+        ],
+        "expl": "Quasi tutte le tue skill colpiscono fino a 4 nemici entro 4 metri dal bersaglio: non ucciderli uno alla volta. Tirali con [[snipe]], radunali con [[explosion-trap]], poi la macro.",
+        "src": [
+          "couga",
+          "maps",
+          "whelps"
+        ],
+        "conf": "mid"
+      }
+    ],
+    "pvp": [
+      {
+        "title": "Il colpo grosso",
+        "short": "Colpo",
+        "sheet": true,
+        "when": "Quando non possono raggiungerti",
+        "steps": [
+          {
+            "skill": "vaizels-authority"
+          },
+          {
+            "skill": "bow-of-blessing"
+          },
+          {
+            "skill": "marking-shot",
+            "note": "Precision"
+          },
+          {
+            "skill": "deadshot",
+            "note": "subito"
+          }
+        ],
+        "expl": "[[deadshot]] va tirato dentro Precision, coi due buff accesi. A carica piena fa il triplo ma ti lascia scoperto mentre tendi l'arco.",
+        "src": [
+          "maps"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Tenerli lontani",
+        "short": "Distanza",
+        "sheet": true,
+        "when": "Sempre",
+        "steps": [
+          {
+            "skill": "snare-shot",
+            "note": "rallenta"
+          },
+          {
+            "skill": "burst-arrow"
+          },
+          {
+            "skill": "drill-dart",
+            "note": "taglia le cure"
+          }
+        ],
+        "expl": "Combatti da 20 metri: gira intorno al bersaglio usando il terreno, non correre in linea retta e non stare fermo a caricare.",
+        "src": [
+          "maps",
+          "meta"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Quando ti raggiungono",
+        "short": "Difesa",
+        "sheet": false,
+        "when": "Un corpo a corpo ti è addosso",
+        "steps": [
+          {
+            "skill": "ambush-kick",
+            "note": "o Explosion Trap"
+          },
+          {
+            "skill": "mother-natures-breath"
+          },
+          {
+            "skill": "defiance",
+            "note": "se ti bloccano"
+          }
+        ],
+        "expl": "Non hai una skill che ti rende invulnerabile: a tenerti vivo sono [[mother-natures-breath]], [[ambush-kick]] e [[defiance]].",
+        "src": [
+          "maps"
+        ],
+        "conf": "mid"
+      }
+    ]
+  },
+  "path": {
+    "nav": "Parti da qui",
+    "title": "Parti da qui: un passo alla volta",
+    "chapters": [
+      {
+        "id": "macro",
+        "nav": "La macro",
+        "steps": [
+          {
+            "id": "idea",
+            "nav": "L'idea",
+            "title": "Come sul Gladiator, con due pile",
+            "blocks": [
+              {
+                "t": "flow",
+                "items": [
+                  {
+                    "k": "Il pulsante",
+                    "x": "Il **tasto destro** del mouse. Lo tieni premuto tu."
+                  },
+                  {
+                    "k": "Il filo",
+                    "x": "La **macro**. Finché tieni premuto il destro, preme {{Q}} e {{T}} al posto tuo."
+                  },
+                  {
+                    "k": "Le due pile",
+                    "x": "I tasti {{Q}} e {{T}}, con tre skill ciascuno, una sopra l'altra. Il gioco usa la prima pronta, partendo dal basso."
+                  }
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Sul Gladiator la pila era una sola. Qui sono due, e in più tieni premuti altri due tasti: il **sinistro** per [[snipe]] e il {{4}} per [[deadshot]]."
+              },
+              {
+                "t": "p",
+                "x": "Le cose da preparare sono cinque: la prima pila, la seconda, il tasto destro, la macro, Deadshot."
+              }
+            ]
+          },
+          {
+            "id": "pila1",
+            "nav": "Prima pila",
+            "title": "Prima pila: tre skill sul tasto Q",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri la finestra delle skill con {{K}}. In basso c'è questa griglia: trova la colonna del tasto **Q**.",
+                  "Trascina **Snare Shot** nella casella più in basso di quella colonna.",
+                  "Trascina **Explosive Arrow** nella casella sopra.",
+                  "Trascina **Burst Arrow** nella casella sopra ancora."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "barra-ranger",
+                "w": 1128,
+                "h": 504,
+                "alt": "La barra del Ranger: sul Q, dal basso, Snare Shot, Explosive Arrow e Burst Arrow.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 68.3,
+                    "y": 82.7
+                  },
+                  {
+                    "n": 2,
+                    "x": 68.3,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 3,
+                    "x": 68.3,
+                    "y": 53.6
+                  },
+                  {
+                    "n": 4,
+                    "x": 68.3,
+                    "y": 36.9
+                  }
+                ],
+                "credit": "La barra da fare, disegnata con le icone del gioco nelle colonne della tua barra: 1-8, Q, E, il tasto sinistro e l'ultima colonna, che diventa T. I numeri sono quelli dei passi."
+              },
+              {
+                "t": "note",
+                "x": "Si parte sempre dal basso: finché la casella in fondo è vuota, il gioco non lascia riempire quelle sopra."
+              }
+            ],
+            "check": "nella colonna Q, dal basso, vedi Snare Shot, Explosive Arrow e Burst Arrow."
+          },
+          {
+            "id": "pila2",
+            "nav": "Seconda pila",
+            "title": "Seconda pila: tre skill sul tasto T",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Nella stessa griglia trova la colonna del tasto **T**: è l'ultima a destra.",
+                  "In basso metti **Gale Arrow**.",
+                  "Sopra, **Drill Dart**.",
+                  "Sopra ancora, **Tempest Shot**."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "barra-ranger",
+                "w": 1128,
+                "h": 504,
+                "alt": "La barra del Ranger: sul T, dal basso, Gale Arrow, Drill Dart e Tempest Shot.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 90.6,
+                    "y": 82.7
+                  },
+                  {
+                    "n": 2,
+                    "x": 90.6,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 3,
+                    "x": 90.6,
+                    "y": 53.6
+                  },
+                  {
+                    "n": 4,
+                    "x": 90.6,
+                    "y": 36.9
+                  }
+                ],
+                "credit": "La barra da fare, disegnata con le icone del gioco nelle colonne della tua barra: 1-8, Q, E, il tasto sinistro e l'ultima colonna, che diventa T. I numeri sono quelli dei passi."
+              },
+              {
+                "t": "note",
+                "x": "Tempest Shot sta sempre in alto: più in basso ruberebbe il turno alle altre due."
+              }
+            ],
+            "check": "nella colonna T, dal basso, vedi Gale Arrow, Drill Dart e Tempest Shot."
+          },
+          {
+            "id": "tasto",
+            "nav": "Il tasto destro",
+            "title": "Dai il tasto destro alla macro",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Premi {{Esc}}, apri **Settings** e clicca **Key Settings**.",
+                  "Clicca **General**.",
+                  "Scorri fino a Gameplay. Alla riga **Macro** clicca la prima casella, poi premi il **tasto destro** del mouse."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "tasto-macro",
+                "w": 1340,
+                "h": 558,
+                "alt": "Settings, Key Settings, General: la riga Macro nella sezione Gameplay.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 16.2,
+                    "y": 7
+                  },
+                  {
+                    "n": 2,
+                    "x": 30.7,
+                    "y": 14.7
+                  },
+                  {
+                    "n": 3,
+                    "x": 68.3,
+                    "y": 83.5
+                  }
+                ],
+                "credit": "Fotogramma da [Grobs, AION 2 Macro Guide](https://www.youtube.com/watch?v=HMod6Z4GrE0&t=106s), minuto 1:46. Tagliato al centro."
+              },
+              {
+                "t": "callout",
+                "title": "L'hai già fatto per il Gladiator?",
+                "x": "Può essere già a posto: se nella casella della riga Macro c'è il disegno di un mouse, passa avanti."
+              },
+              {
+                "t": "note",
+                "x": "Se la casella non prende il tasto del mouse, sei nella modalità di controllo AION 1: cambiala con il tasto scritto in cima alla stessa pagina, alla riga Switch Control Mode."
+              }
+            ],
+            "check": "nella casella della riga Macro compare il disegno di un mouse."
+          },
+          {
+            "id": "macro1",
+            "nav": "La macro",
+            "title": "Crea la macro: la prima riga, il tasto Q",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri la finestra delle skill con {{K}} e clicca **Macro**, in alto a destra.",
+                  "Clicca il pulsante giallo **Add Macro**. Compare una riga con un'icona.",
+                  "Clicca quell'icona: si apre una fila di caselle. Clicca quella con **Snare Shot**, la colonna Q.",
+                  "Nel campo **Delay** scrivi **10**."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "macro-ranger",
+                "w": 936,
+                "h": 672,
+                "alt": "La finestra Macro con due righe: il Q, che mostra Snare Shot, e il T, che mostra Gale Arrow.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 73.9,
+                    "y": 12.9
+                  },
+                  {
+                    "n": 2,
+                    "x": 32.5,
+                    "y": 87.8
+                  },
+                  {
+                    "n": 3,
+                    "x": 32.5,
+                    "y": 31
+                  },
+                  {
+                    "n": 4,
+                    "x": 34.9,
+                    "y": 46.4
+                  }
+                ],
+                "credit": "La macro da fare, disegnata come la finestra Macro del gioco, con le skill della tua barra: è già finita, con tutte e due le righe. I numeri sono quelli dei passi."
+              },
+              {
+                "t": "callout",
+                "x": "La macro mostra la skill più in basso della pila. Sul tasto Q è **Snare Shot**."
+              }
+            ],
+            "check": "nella finestra Macro c'è una riga con l'icona di Snare Shot e Delay 10."
+          },
+          {
+            "id": "macro2",
+            "nav": "Seconda riga",
+            "title": "Aggiungi la seconda riga, il tasto T",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Clicca ancora **Add Macro**. La riga nuova parte con **Snipe**, l'attacco base: cliccane l'icona e scegli la casella con **Gale Arrow**, la colonna T.",
+                  "Nel campo **Delay** scrivi **10** anche qui."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "macro-ranger",
+                "w": 936,
+                "h": 672,
+                "alt": "La finestra Macro: la riga 2 è quella del tasto T, con Gale Arrow.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 32.5,
+                    "y": 59.2
+                  },
+                  {
+                    "n": 2,
+                    "x": 34.9,
+                    "y": 74.7
+                  }
+                ],
+                "credit": "La stessa macro, disegnata come la finestra Macro del gioco, con le skill della tua barra: la riga 2 è quella del tasto T. I numeri sono quelli dei passi."
+              },
+              {
+                "t": "callout",
+                "kind": "warn",
+                "title": "Non lasciare Snipe",
+                "x": "Se la riga resta sull'attacco base, la macro tira frecce base al posto delle skill."
+              },
+              {
+                "t": "callout",
+                "title": "Vedi solo due icone? È giusto",
+                "x": "La macro elenca i tasti, non le skill. Ogni riga è una pila intera: le altre due skill partono anche loro."
+              }
+            ],
+            "check": "nella finestra Macro ci sono due righe, Snare Shot e Gale Arrow, tutte e due con Delay 10."
+          },
+          {
+            "id": "deadshot",
+            "nav": "Deadshot",
+            "title": "Deadshot sul 4, tenuto premuto",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "[[deadshot]] si carica: con un tocco parte debole, tenuta premuta parte a carica piena, tre volte più forte. Per questo non sta nella macro: sta da sola sul {{4}}. Per tenerla premuta col pollice, dai al 4 un secondo tasto sul mouse."
+              },
+              {
+                "t": "steps",
+                "items": [
+                  "Premi {{Esc}}, apri **Settings** e clicca **Key Settings**.",
+                  "Clicca **Quickslot**.",
+                  "Trova la riga del tasto {{4}}.",
+                  "Clicca la seconda casella di quella riga e premi un tasto laterale del mouse."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "ranger-tasto-deadshot",
+                "w": 1460,
+                "h": 450,
+                "alt": "Settings, Key Settings, Quickslot: la riga del tasto 4 ha nella seconda casella il disegno di un tasto laterale del mouse.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 31.6,
+                    "y": 7.5
+                  },
+                  {
+                    "n": 2,
+                    "x": 63.2,
+                    "y": 15.3
+                  },
+                  {
+                    "n": 3,
+                    "x": 69.3,
+                    "y": 75.3
+                  },
+                  {
+                    "n": 4,
+                    "x": 87.4,
+                    "y": 75.3
+                  }
+                ],
+                "credit": "Fotogramma da [Whelps, Complete Ranger PvE Guide](https://www.youtube.com/watch?v=wKOm6yKuu_I&t=545s), minuto 9:05. Tagliato al centro."
+              },
+              {
+                "t": "note",
+                "x": "Se il tuo mouse ha già un tasto che fa da {{4}}, come quelli del pollice del Naga, sei a posto così."
+              }
+            ],
+            "check": "nella seconda casella compare il disegno di un mouse."
+          },
+          {
+            "id": "prova",
+            "nav": "La prova",
+            "title": "Provala sul manichino: tre tasti premuti",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Vai davanti a un manichino, il **Training Scarecrow**.",
+                  "Tieni premuti insieme il **tasto sinistro**, il **tasto destro** e il tasto di **Deadshot**.",
+                  "Ogni tanto premi {{E}}: è [[marking-shot]]."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "ranger-prova",
+                "w": 860,
+                "h": 482,
+                "alt": "Un Ranger che tira sul manichino di prova, il Melee Training Scarecrow.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 33,
+                    "y": 20.5
+                  }
+                ],
+                "credit": "Fotogramma da [Whelps, Complete Ranger PvE Guide](https://www.youtube.com/watch?v=wKOm6yKuu_I&t=590s), minuto 9:50."
+              },
+              {
+                "t": "list",
+                "items": [
+                  "Deadshot parte da sola, a carica piena, ogni volta che è pronta.",
+                  "Lascia accesa **Skill Queue** (Settings, Combat): senza, Marking Shot e i Deadshot caricati si perdono."
+                ]
+              }
+            ],
+            "check": "il personaggio continua a tirare finché tieni premuto, e si ferma quando lasci."
+          }
+        ]
+      },
+      {
+        "id": "skill",
+        "nav": "Le skill",
+        "steps": [
+          {
+            "id": "finestra",
+            "nav": "La finestra",
+            "title": "La finestra delle skill: che cosa vuol dire Lv. 1 (+4)",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri la finestra con {{K}}. A destra, in alto, ci sono le skill **Active**.",
+                  "Sotto, le **Passive**. Clicca quella che vuoi guardare.",
+                  "A sinistra compare il nome col livello. Il primo numero sono i punti che ci hai messo tu: al massimo 10. Quello verde tra parentesi arriva da fuori: nodi del Daevanion, equip, carte Arcana.",
+                  "**Level Up** alza la skill di un livello, coi punti.",
+                  "Qui ci sono i punti che ti restano."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "ranger-finestra-skill",
+                "w": 1440,
+                "h": 810,
+                "alt": "La finestra Skill del Ranger: a sinistra Focused Eye Lv. 1 (+4), a destra l'elenco delle skill attive e passive, in basso a destra i punti rimasti e il pulsante Level Up.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 79.5,
+                    "y": 16.8
+                  },
+                  {
+                    "n": 2,
+                    "x": 79.5,
+                    "y": 40.3
+                  },
+                  {
+                    "n": 3,
+                    "x": 20.3,
+                    "y": 13.1
+                  },
+                  {
+                    "n": 4,
+                    "x": 79.5,
+                    "y": 94.6
+                  },
+                  {
+                    "n": 5,
+                    "x": 96.5,
+                    "y": 90.3
+                  }
+                ],
+                "credit": "Fotogramma da [Whelps, Complete Ranger PvE Guide](https://www.youtube.com/watch?v=wKOm6yKuu_I&t=62s), minuto 1:02."
+              },
+              {
+                "t": "note",
+                "x": "Nella foto Focused Eye è Lv. 1 (+4): un punto solo, e quattro livelli presi dai nodi del Daevanion. Sulla skill vale 5."
+              }
+            ]
+          },
+          {
+            "id": "passive",
+            "nav": "Le passive",
+            "title": "Le passive: due da spingere, le altre si fermano",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "Ogni passiva arriva a 10 coi punti e a 14 coi suoi quattro nodi del Daevanion. Oltre il 14 sale solo se la trovi su armatura, collana e orecchini, o sulle carte Arcana. Quindi la scelta è una: quali cercare sull'equip."
+              },
+              {
+                "t": "passives"
+              },
+              {
+                "t": "fig",
+                "img": "ranger-passive",
+                "w": 525,
+                "h": 660,
+                "narrow": true,
+                "alt": "Le skill di un Ranger a fine corsa: tra le passive Focused Eye è a 33, Hunter's Resolve a 28, Hunter's Soul a 21 e Wind Vigor a 9.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 62,
+                    "y": 66.5
+                  },
+                  {
+                    "n": 2,
+                    "x": 80.8,
+                    "y": 66.5
+                  },
+                  {
+                    "n": 3,
+                    "x": 80.8,
+                    "y": 95
+                  },
+                  {
+                    "n": 4,
+                    "x": 43.1,
+                    "y": 66.5
+                  }
+                ],
+                "legend": [
+                  "[[focused-eye]], 33. La prima da cercare su equip e carte.",
+                  "[[hunters-resolve]], 28. La seconda.",
+                  "[[hunters-soul]], 21. Si tiene se capita, non si cerca.",
+                  "[[wind-vigor]], 9. Ferma: non serve alzarla."
+                ],
+                "credit": "Fotogramma da [Whelps, Complete Ranger PvE Guide](https://www.youtube.com/watch?v=wKOm6yKuu_I&t=477s), minuto 7:57. È un personaggio dei server coreani a fine corsa: i livelli sono più alti di quelli che si vedono oggi sul Global."
+              },
+              {
+                "t": "note",
+                "x": "I tuoi livelli, quali spingere e dove si fermano le altre: pagina **Equip**, vista **Skill**."
+              }
+            ]
+          },
+          {
+            "id": "spec",
+            "nav": "Specializzazioni",
+            "title": "Le specializzazioni: dove si accendono",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Clicca una skill attiva: sotto **Specialty** ci sono cinque righe.",
+                  "Clicca una riga per accenderla. Quelle accese sono scritte in chiaro, quelle spente in scuro.",
+                  "I posti sono contati: uno dal livello 8 della skill, due dal 12, tre dal 20."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "ranger-spec",
+                "w": 570,
+                "h": 900,
+                "narrow": true,
+                "alt": "Le specializzazioni di Snipe: tre posti in alto e cinque righe, le ultime tre accese.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 25.5,
+                    "y": 55.4
+                  },
+                  {
+                    "n": 2,
+                    "x": 60,
+                    "y": 82.6
+                  },
+                  {
+                    "n": 3,
+                    "x": 51,
+                    "y": 63.1
+                  }
+                ],
+                "credit": "Fotogramma da [Whelps, Complete Ranger PvE Guide](https://www.youtube.com/watch?v=wKOm6yKuu_I&t=204s), minuto 3:24."
+              },
+              {
+                "t": "note",
+                "x": "Quali accendere, skill per skill e al livello che hai oggi: pagina **Equip**, vista **Skill**, clicca la skill."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stigma",
+        "nav": "Gli stigma",
+        "steps": [
+          {
+            "id": "quali",
+            "nav": "Quali quattro",
+            "title": "Monta questi quattro stigma",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri {{K}} e in alto clicca **Stigma**.",
+                  "A destra ci sono tutti gli stigma. Quelli col lucchetto non li hai presi.",
+                  "Clicca uno stigma e poi **Acquire**: costa un punto stigma."
+                ]
+              },
+              {
+                "t": "seq",
+                "steps": [
+                  {
+                    "skill": "vaizels-authority"
+                  },
+                  {
+                    "skill": "bow-of-blessing"
+                  },
+                  {
+                    "skill": "supporting-fire"
+                  },
+                  {
+                    "skill": "explosive-arrow"
+                  }
+                ]
+              },
+              {
+                "t": "table",
+                "head": [
+                  "Stigma",
+                  "Cosa fa"
+                ],
+                "rows": [
+                  [
+                    "[[vaizels-authority]]",
+                    "Più attacco per qualche secondo. A 20 fa tornare prima tutte le ricariche: è il motore della build."
+                  ],
+                  [
+                    "[[bow-of-blessing]]",
+                    "Più critico e più precisione. Dal livello 5 anche il 50% di colpi multipli in più."
+                  ],
+                  [
+                    "[[supporting-fire]]",
+                    "Un globo che spara insieme a te e ti cura. La monta il 97% dei primi Ranger."
+                  ],
+                  [
+                    "[[explosive-arrow]]",
+                    "La freccia di fuoco: il 20% in più sui bersagli rallentati. Sta nella prima pila."
+                  ]
+                ]
+              },
+              {
+                "t": "callout",
+                "title": "Hai montato Griffon Arrow?",
+                "x": "È l'altra freccia, e vale quanto Explosive Arrow. Ma gli slot sono quattro: una delle due lascia il posto a [[supporting-fire]]."
+              }
+            ],
+            "check": "sono accesi questi quattro, e tutti gli altri hanno il lucchetto."
+          },
+          {
+            "id": "livelli",
+            "nav": "A che livello",
+            "title": "A che livello portarli",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Al 45 hai 30 punti stigma. Mettili così: **Vaizel's Authority a 10**, gli altri tre **a 5**. Bastano esatti.",
+                  "Con i punti che arrivano dopo, porta **Vaizel's Authority a 20**: lì il Ranger cambia passo.",
+                  "Poi **Bow of Blessing** e **Supporting Fire a 15**."
+                ]
+              },
+              {
+                "t": "list",
+                "items": [
+                  "Un livello costa 1 punto fino al 5, 2 fino al 10, 4 fino al 15 e 8 fino al 20.",
+                  "Gli altri punti si comprano nei negozi come **Stigma Shard**: 200 dall'Abisso, 35 dallo Shugo Festival, 35 dai Nightmare.",
+                  "Azzerare gli stigma è gratis: se hai messo i punti altrove, toglili e rimettili."
+                ]
+              }
+            ],
+            "check": "Vaizel's Authority è a 10 e non ti avanzano punti."
+          }
+        ]
+      },
+      {
+        "id": "combattimento",
+        "nav": "In combattimento",
+        "steps": [
+          {
+            "id": "tasti",
+            "nav": "I tasti",
+            "title": "Che cosa c'è su ogni tasto",
+            "blocks": [
+              {
+                "t": "fig",
+                "img": "barra-ranger",
+                "w": 1128,
+                "h": 504,
+                "alt": "La barra intera del Ranger, tasto per tasto.",
+                "marks": [],
+                "credit": "La barra intera, disegnata con le icone del gioco nelle colonne della tua barra: 1-8, Q, E, il tasto sinistro e l'ultima colonna, che diventa T."
+              },
+              {
+                "t": "table",
+                "head": [
+                  "Tasto",
+                  "Cosa c'è",
+                  "Quando lo premi"
+                ],
+                "rows": [
+                  [
+                    "{{tasto sinistro}}",
+                    "[[snipe]]",
+                    "Sempre premuto."
+                  ],
+                  [
+                    "{{tasto destro}}",
+                    "La macro",
+                    "Sempre premuto."
+                  ],
+                  [
+                    "{{4}}",
+                    "[[deadshot]]",
+                    "Sempre premuto: parte da sola, a carica piena."
+                  ],
+                  [
+                    "{{Q}}",
+                    "[[snare-shot]], [[explosive-arrow]], [[burst-arrow]]",
+                    "Mai: lo preme la macro."
+                  ],
+                  [
+                    "{{T}}",
+                    "[[gale-arrow]], [[drill-dart]], [[tempest-shot]]",
+                    "Mai: lo preme la macro."
+                  ],
+                  [
+                    "{{E}}",
+                    "[[marking-shot]], e sopra [[arrow-scattershot]]",
+                    "Circa 2 secondi prima che Precision finisca. Col boss in Stagger lo tieni premuto al posto del sinistro."
+                  ],
+                  [
+                    "{{5}}",
+                    "[[vaizels-authority]], [[supporting-fire]], [[bow-of-blessing]]",
+                    "Tre volte prima del boss, e ogni volta che tornano."
+                  ],
+                  [
+                    "{{1}}",
+                    "[[suppressing-arrow]]",
+                    "Sul boss, quando è pronta e Precision è accesa."
+                  ],
+                  [
+                    "{{2}}",
+                    "[[explosion-trap]]",
+                    "Solo sui gruppi di mostri: li raduna."
+                  ],
+                  [
+                    "{{Spazio}}",
+                    "[[defiance]]",
+                    "Per uscire da un controllo."
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "id": "apertura",
+            "nav": "L'apertura",
+            "title": "Come si apre su un boss",
+            "blocks": [
+              {
+                "t": "seq",
+                "steps": [
+                  {
+                    "skill": "vaizels-authority"
+                  },
+                  {
+                    "skill": "supporting-fire"
+                  },
+                  {
+                    "skill": "bow-of-blessing"
+                  },
+                  {
+                    "skill": "marking-shot",
+                    "note": "Precision"
+                  },
+                  {
+                    "skill": "deadshot",
+                    "note": "a carica piena"
+                  },
+                  {
+                    "text": "tieni premuti i tre tasti",
+                    "hold": true
+                  }
+                ]
+              },
+              {
+                "t": "steps",
+                "items": [
+                  "Premi {{5}} tre volte: partono i tre buff.",
+                  "Premi {{E}}: [[marking-shot]] ti dà Precision.",
+                  "Tieni premuto il {{4}}: il primo [[deadshot]] parte a carica piena, e dentro Precision fa il 35% in più.",
+                  "Tieni premuti anche i due tasti del mouse, e non lasciarli più."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "durante",
+            "nav": "Durante",
+            "title": "Durante il combattimento",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Tieni premuti i tre tasti. La macro fa il resto.",
+                  "Circa 2 secondi prima che Precision finisca, premi {{E}}. Lascia i tasti di direzione mentre la premi: Marking Shot ti sposta dove stai andando.",
+                  "Quando tornano i buff, premi {{5}} tre volte."
+                ]
+              },
+              {
+                "t": "list",
+                "items": [
+                  "Boss in Stagger: lascia il tasto sinistro e tieni premuto {{E}}. Parte [[arrow-scattershot]], che colpisce solo un bersaglio in Stagger.",
+                  "Gruppi di mostri: tirali con [[snipe]], radunali con [[explosion-trap]] sul {{2}}, poi la macro."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

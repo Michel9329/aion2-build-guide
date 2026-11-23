@@ -1,0 +1,13 @@
+{
+  "name": "aion2-build-guide",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AION 2 build guides generated from curated data, with a consistency check and a mutation test.",
+  "license": "MIT",
+  "author": "Michel Dimitri",
+  "type": "module",
+  "scripts": {
+    "build": "node hub/build.mjs data/classes/gladiator/guide.json out/gladiator",
+    "test": "node --test test/build.test.mjs"
+  }
+}

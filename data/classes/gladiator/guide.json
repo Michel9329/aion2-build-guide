@@ -1,0 +1,3777 @@
+{
+  "include": [
+    "entities.json"
+  ],
+  "meta": {
+    "title": "Hub Gladiator AION 2",
+    "page": "hub/index.html",
+    "navTitle": "Gladiator · AION 2",
+    "h1": "Gladiator, AION 2 Global",
+    "lead": "Tutto quello che serve per sistemare il personaggio, in ordine: cosa montare, a che livello, quali tasti premere. I nomi sono quelli del client inglese; i numeri vengono dai dati del gioco, le scelte da chi lo gioca meglio.",
+    "facts": [
+      "**Season 1**, livello massimo 45",
+      "Dati del client letti il **06/10/2026**",
+      "Controllo coi primi otto d'Europa il **29/10/2026**",
+      "Scritto per **tastiera e mouse**",
+      "Interruttore **PvE / PvP** nel menu"
+    ],
+    "stamp": "Aggiornato al 29/10/2026",
+    "stampNote": "Season 1 finisce con la manutenzione di mercoledì 16/12/2026: monete e pass si chiudono entro la sera del 15. A ogni patch i dati si riscaricano dalle fonti elencate.",
+    "todoTitle": "Da fare adesso, in ordine",
+    "sheetTitle": "Scheda rapida",
+    "skillsTitle": "Skill attive: livello e specializzazioni",
+    "stigmaTitle": "Stigma: quali quattro e a che livello",
+    "passiveTitle": "Passive: quali contano"
+  },
+  "sources": [
+    {
+      "id": "db",
+      "label": "Questlog, banca dati del client Global: le 35 schede del Gladiator",
+      "url": "https://questlog.gg/aion-2/en/db/skills/gladiator",
+      "kind": "Dati del client",
+      "region": "Global",
+      "date": "letto il 06/10/2026, schede aggiornate tra il 28/09 e il 05/10",
+      "note": "Scaricate una per una e confrontate con il client coreano: testi identici, cambia solo il livello massimo delle stigma (20 invece di 25). I file grezzi non fanno parte di questo repository."
+    },
+    {
+      "id": "builds",
+      "label": "Questlog, build del Gladiator pubblicate dai giocatori Global",
+      "url": "https://questlog.gg/aion-2/en/skill-builder?publisher=global&class=gladiator",
+      "kind": "Statistiche d'uso",
+      "region": "Global",
+      "date": "06/10/2026",
+      "note": "518 build in elenco; lette nel dettaglio le 139 con almeno una skill a 16, di cui 131 PvE, per contare specializzazioni, stigma e macro."
+    },
+    {
+      "id": "meta",
+      "label": "AION 2 Meta: cosa usano i primi 94 Gladiator Global (profili ufficiali NCSOFT) e 8.465 coreani (dal sito AION2CAL)",
+      "url": "https://aion2-meta.com/guides/gladiator/",
+      "kind": "Statistiche d'uso",
+      "region": "Global e Corea",
+      "date": "05/10/2026"
+    },
+    {
+      "id": "maps",
+      "label": "Aion 2 Maps, Gladiator build and macro guide",
+      "url": "https://aion2maps.com/guides/gladiator/",
+      "kind": "Guida con dati del client",
+      "region": "Global",
+      "date": "aggiornata il 05/10/2026",
+      "note": "La più rigorosa tra quelle lette: accanto a ogni frase dice se è un dato del client, il consiglio di un creator o un punto su cui le fonti litigano. Letta direttamente, scheda per scheda."
+    },
+    {
+      "id": "arthars",
+      "label": "Arthars Gaming, The ULTIMATE AION 2 Gladiator Starter Guide (Global Launch)",
+      "url": "https://www.youtube.com/watch?v=tYTZ8VucMXw",
+      "kind": "Video",
+      "region": "registrato a Taiwan, pensato per Global Season 1",
+      "date": "27/09/2026",
+      "note": "Solo PvE. Spiega il perché di ogni scelta con una prova su manichino."
+    },
+    {
+      "id": "grobs",
+      "label": "Grobs, The Only Gladiator PVE Guide You Need",
+      "url": "https://www.youtube.com/watch?v=xRPr30JetyY",
+      "kind": "Video",
+      "region": "non dichiarata, registrato prima del lancio Global",
+      "date": "29/09/2026"
+    },
+    {
+      "id": "grobs-macro",
+      "label": "Grobs, AION 2 Macro Guide",
+      "url": "https://www.youtube.com/watch?v=HMod6Z4GrE0",
+      "kind": "Video",
+      "region": "non dichiarata, registrato prima del lancio Global",
+      "date": "24/09/2026",
+      "note": "La fonte da cui tutte le altre prendono il funzionamento delle righe della barra e della macro."
+    },
+    {
+      "id": "alucky",
+      "label": "aLuckyRO, AION 2 Latest Gladiator PVE Build for Global",
+      "url": "https://www.youtube.com/watch?v=WlxLOTs62dM",
+      "kind": "Video",
+      "region": "Global",
+      "date": "03/10/2026"
+    },
+    {
+      "id": "sen",
+      "label": "Sen, AION 2 Progression Guide (+ Gladiator guide)",
+      "url": "https://www.youtube.com/watch?v=t-B-5lR_GIs",
+      "kind": "Video",
+      "region": "Global, giocato nell'accesso anticipato",
+      "date": "02/10/2026"
+    },
+    {
+      "id": "couga",
+      "label": "couga54, AION 2 Global Guides: Gladiator",
+      "url": "https://couga54.github.io/aion2-guides/en/gladiator/",
+      "kind": "Raccolta",
+      "region": "Global Season 1; la parte PvP viene da guide coreane",
+      "date": "aggiornata il 03/10/2026",
+      "note": "Riassume i video dei creator qui sopra: utile come indice, non conta come fonte in più."
+    },
+    {
+      "id": "vortex",
+      "label": "Vortex Gaming, Gladiator Skill Guide di Chopy",
+      "url": "https://vortexgaming.io/en/postdetail/611533",
+      "kind": "Guida coreana",
+      "region": "Corea",
+      "date": "07/12/2025",
+      "note": "Base dei set PvP. Vecchia: sulle skill poi rifatte in Corea non vale più."
+    },
+    {
+      "id": "inven",
+      "label": "Inven, guide dei giocatori coreani sul Gladiator (검성)",
+      "url": "https://www.inven.co.kr/board/aion2/6448/31551",
+      "kind": "Guide coreane",
+      "region": "Corea",
+      "date": "da luglio a settembre 2026",
+      "note": "Lette le guide certificate dalla comunità su passive, cicli e macro (post 22705, 31551, 31699) e i sottotitoli di sei video coreani. Valgono per un gioco a livello 50 con sei stigma: qui è entrato solo quello che regge con quattro."
+    },
+    {
+      "id": "kr-patch",
+      "label": "NCSOFT Corea, note di aggiornamento ufficiali con le modifiche al Gladiator (27 patch)",
+      "url": "https://aion2.plaync.com/ko-kr/board/update/list",
+      "kind": "Ufficiale",
+      "region": "Corea",
+      "date": "dal 10/12/2025 al 23/09/2026"
+    },
+    {
+      "id": "kr-macro",
+      "label": "NCSOFT Corea, note ufficiali sulla Skill Macro (28/01, 27/05 e 15/07/2026)",
+      "url": "https://aion2.plaync.com/ko-kr/board/update/view?articleId=69791238ba0dc1026f956b24",
+      "kind": "Ufficiale",
+      "region": "Corea",
+      "date": "28/01/2026 e successive",
+      "note": "Per il Global NCSOFT non ha pubblicato un testo sulla macro: le regole sono quelle coreane, il percorso dei menu è quello mostrato dai creator sul client Global."
+    },
+    {
+      "id": "rules",
+      "label": "NCSOFT, regole di AION 2 Global: Operation Policies e Trust Status (bacheca), Code of Conduct (centro assistenza)",
+      "url": "https://aion2.plaync.com/en-us/board/rules/list",
+      "kind": "Ufficiale",
+      "region": "Global",
+      "date": "17/09 e 30/09/2026",
+      "note": "Il Code of Conduct non è sulla bacheca: è la FAQ 7164 del centro assistenza, [help.plaync.com/faq/aion2global](https://help.plaync.com/faq/aion2global)."
+    },
+    {
+      "id": "ncsoft",
+      "label": "NCSOFT, bacheca ufficiale di AION 2 Global",
+      "url": "https://aion2.plaync.com/en-us/board/notice/list",
+      "kind": "Ufficiale",
+      "region": "Global",
+      "date": "annunci dal 30/09 al 06/10/2026"
+    },
+    {
+      "id": "timers",
+      "label": "AION 2 Timers: reset e limiti letti dal client Global",
+      "url": "https://www.aion2timers.com/daily-reset/",
+      "kind": "Dati del client",
+      "region": "Global",
+      "date": "client letto il 05/10/2026"
+    },
+    {
+      "id": "qtimers",
+      "label": "Questlog, orari di Shugo Festival, Spacetime Rift e boss",
+      "url": "https://questlog.gg/aion-2/en/boss-schedule",
+      "kind": "Timer",
+      "region": "Global",
+      "date": "letto il 06/10/2026"
+    },
+    {
+      "id": "titan",
+      "label": "TitanTheF, tabella del percorso dopo il 45 (versione interattiva di nemobek)",
+      "url": "https://nemobek.github.io/aion2-guide/",
+      "kind": "Guida",
+      "region": "esperienza a Taiwan, adattata al Global",
+      "date": "03/10/2026",
+      "note": "Pagina in russo."
+    },
+    {
+      "id": "shugo",
+      "label": "shugo.gg, timer di AION 2",
+      "url": "https://shugo.gg/timers",
+      "kind": "Timer",
+      "region": "Global, orari nell'ora locale di ogni regione",
+      "date": "letto il 06/10/2026",
+      "note": "Avverte che NCSOFT non ha pubblicato gli orari degli eventi del Global."
+    },
+    {
+      "id": "timers-sched",
+      "label": "AION 2 Timers, calendario degli eventi",
+      "url": "https://www.aion2timers.com/schedule/",
+      "kind": "Dati del client",
+      "region": "Global, client 25650019",
+      "date": "controllato il 05/10/2026",
+      "note": "Per i boss dell'Abisso sul Global scrive \"pending\": letti dal client, non ancora visti in gioco."
+    },
+    {
+      "id": "hub-boss",
+      "label": "AION 2 Hub, World Boss Timer",
+      "url": "https://aion2hub.com/tools/world-bosses",
+      "kind": "Dati del client",
+      "region": "Global, client del Launch Scale Test del 19/09/2026",
+      "date": "letto il 06/10/2026",
+      "note": "Sostiene che tutte le regioni del Global condividano un solo orologio, UTC+9."
+    },
+    {
+      "id": "timers-boss",
+      "label": "AION 2 Timers, Field Boss Timers",
+      "url": "https://www.aion2timers.com/world-boss-timer/",
+      "kind": "Misure in gioco",
+      "region": "Global, server europei",
+      "date": "letto il 06/10/2026",
+      "note": "I tempi di ritorno vengono dai contatori di danno che segnalano le uccisioni: tra 330 e 2.700 casi per boss."
+    },
+    {
+      "id": "couga-boss",
+      "label": "couga54, World bosses",
+      "url": "https://couga54.github.io/aion2-guides/en/bosses/",
+      "kind": "Raccolta",
+      "region": "Global Season 1",
+      "date": "controllata il 06/10/2026",
+      "note": "Livelli e zone dal client. I tempi li ha provati in gioco solo ad Altgard: per otto boss di Verteron scrive la metà del tempo misurato."
+    },
+    {
+      "id": "ncsoft-kr-0408",
+      "label": "NCSOFT, note dell'aggiornamento coreano dell'8 aprile 2026",
+      "url": "https://aion2.plaync.com/ko-kr/board/update/view?articleId=69d55b381e8a8c5fcd9b44a7",
+      "kind": "Nota ufficiale",
+      "region": "Corea",
+      "date": "08/04/2026",
+      "note": "Sposta dal minuto 00 al minuto 30 l'ora in cui Dimensional Invasion «può» partire, e porta Shugo Festival al minuto 00 di ogni ora."
+    },
+    {
+      "id": "metabot",
+      "label": "MetaBot.GG, calendario degli eventi",
+      "url": "https://metabot.gg/en/aion-2/events",
+      "kind": "Dati del client",
+      "region": "Global, client 0.0.4387.0",
+      "date": "letto il 06/10/2026",
+      "note": "Le tre invasioni (Beritra Air Raid, Accursed Sword, Incursion of the Spirits) con 3 minuti di preparazione e 10 di round. Avverte che gli orari vengono dalle tabelle del client e che il fuso di ogni regione non è confermato."
+    },
+    {
+      "id": "gtools",
+      "label": "gaming.tools, AION 2 Global Database",
+      "url": "https://aion2.gaming.tools/",
+      "kind": "Dati del client",
+      "region": "Global, client 2.0.5.0",
+      "date": "aggiornato il 05/10/2026",
+      "note": "Oggetti, skill, missioni, contenuti e mappe letti dal client del Global. Per gli orari rimanda ad AION 2 Timers."
+    },
+    {
+      "id": "maps-stats",
+      "label": "Aion 2 Maps: Stats explained, How damage works, Accuracy and Crit",
+      "url": "https://aion2maps.com/guides/stats-explained/",
+      "kind": "Guida con dati del client e prove",
+      "region": "Global e server asiatici",
+      "date": "aggiornate il 28/09/2026, lette il 06/10/2026",
+      "note": "La formula del danno di kanonxo e le prove sul server asiatico. Dal client del Global viene un solo tetto scritto: critico 50%, schivata 30%."
+    },
+    {
+      "id": "metabot-armory",
+      "label": "MetaBot.GG Armory",
+      "url": "https://metabot.gg/en/aion-2/armory",
+      "kind": "Dati pubblici del sito ufficiale",
+      "region": "Global, server Triniel",
+      "date": "letta il 06/10/2026 alle 21:01",
+      "note": "Equip con potenziamento, righe e manastone, statistiche, livelli delle skill, Daevanion e titoli di ogni scheda pubblica."
+    },
+    {
+      "id": "game8-inv",
+      "label": "Game8, guida a Dimensional Invasion",
+      "url": "https://game8.co/games/Aion-2/archives/628167",
+      "kind": "Guida",
+      "region": "non dichiarata",
+      "date": "aggiornata e letta il 06/10/2026",
+      "note": "Dice come si entra: accanto alla mappa compare un timer con tre minuti di conto alla rovescia. Non dice a che ora parte né per quale regione vale."
+    },
+    {
+      "id": "metabot-items",
+      "label": "MetaBot.GG, banca dati degli oggetti: costi di potenziamento, casse, righe casuali",
+      "url": "https://metabot.gg/en/aion-2/items",
+      "kind": "Banca dati del client",
+      "region": "Global",
+      "date": "letta il 07/10/2026",
+      "note": "Per cintura e amuleto gialli dà lo stesso costo della tabella di Aion 2 Maps: 5.026.000 Kina e 10 pergamene da +0 a +10."
+    },
+    {
+      "id": "topeu",
+      "label": "MetaBot.GG, le schede dei primi otto Gladiator d'Europa per Combat Power",
+      "url": "https://metabot.gg/en/aion-2/leaderboards/eu/gladiator",
+      "kind": "Schede dei giocatori",
+      "region": "EU",
+      "date": "lette il 29/10/2026",
+      "note": "Tratti, manastone, skill, stigma, titoli, carte e Daevanion di otto schede."
+    },
+    {
+      "id": "ign-patch",
+      "label": "IGN, note delle patch di AION 2 Global del 21 e del 28 ottobre 2026",
+      "url": "https://www.ign.com/wikis/aion-2/Aion_2_October_21_2026_Patch_Notes",
+      "kind": "Note ufficiali",
+      "region": "Global",
+      "date": "21/10 e 28/10/2026",
+      "note": "Il 21/10 arriva il tabellone Ariel; il 28/10 gli Hard di Urugugu e Vakron, +1.500 HP base al Gladiator, Amplify del craftato fino a 5. Nessun cambio alle skill del Gladiator in ottobre."
+    },
+    {
+      "id": "metaroad",
+      "label": "metaroad.gg, Gladiator PvE DPS build (Riesa)",
+      "url": "https://metaroad.gg/aion2/build-guides/gladiator-pve-dps-build",
+      "kind": "Guida",
+      "region": "Global",
+      "date": "21/10/2026",
+      "note": "Tratti per posto, passive in ordine, stigma con e senza Templar, carte Magic, macro a 10 ms."
+    },
+    {
+      "id": "aion2data",
+      "label": "aion2data.com, Gladiator PvE guide",
+      "url": "https://aion2data.com/guides/gladiator/pve",
+      "kind": "Guida",
+      "region": "Global",
+      "date": "29/10/2026",
+      "note": "Riassume trenta discussioni di Reddit, Inven e Bahamut: la macro con Overhead Slam su una riga sua (chi la tiene con Rending Blow ha misurato il 20-30% in meno), il tasto sinistro in discussione."
+    },
+    {
+      "id": "aion2vault",
+      "label": "aion2vault.com, Gladiator: macro e build pubblicate",
+      "url": "https://aion2vault.com/builds/gladiator/macro/",
+      "kind": "Statistiche d'uso",
+      "region": "Global",
+      "date": "aggiornata il 26/10/2026",
+      "note": "458 build pubbliche con la macro: il 38% usa la pila Rage Burst, Overhead Slam, Rending Blow; il 28% mette Sword Aura Rampage sotto Rending Blow."
+    },
+    {
+      "id": "ulfhednar",
+      "label": "Ulfhednar, ENDGAME PvE DPS Build Guide (video)",
+      "url": "https://www.youtube.com/watch?v=BPtACTpatEA",
+      "kind": "Video",
+      "region": "Global",
+      "date": "18/10/2026",
+      "note": "Rending Blow su un tasto a parte rende di più ma consuma più mana; Blade Toss in PvE è una perdita di danno; Bell e Mirror Magic."
+    },
+    {
+      "id": "kanon",
+      "label": "Kanon, guida al Gladiator (video)",
+      "url": "https://www.youtube.com/watch?v=DjVa0HwRR8U",
+      "kind": "Video",
+      "region": "Global",
+      "date": "09/10/2026",
+      "note": "Overhead Slam è metà del danno, con Rending Blow i tre quarti; l'ordine fra la riga di Overhead Slam e quella di Rage Burst non cambia il danno."
+    }
+  ],
+  "todoIntro": [
+    {
+      "t": "p",
+      "x": "Sei al 45 con il personaggio da sistemare. Questi passi sono in ordine di resa: i primi quattro cambiano il danno più di qualunque pezzo di equipaggiamento.",
+      "mode": "pve"
+    },
+    {
+      "t": "p",
+      "x": "Per il PvP non serve un secondo equipaggiamento in Season 1: si tiene quello PvE e si cambiano stigma, specializzazioni e Daevanion.",
+      "mode": "pvp"
+    }
+  ],
+  "todo": [
+    {
+      "id": "t-codice",
+      "mode": "both",
+      "what": "Riscatta il codice TAKEFLIGHTAION2 entro il 14 ottobre",
+      "why": "Settings, Miscellaneous, Account, Enter Coupon. Dà 4 Odyle Energy, 5 Resurrection Spiritstone e 10 Battle Enhance Scroll, una volta per account. Scade mercoledì 14/10 alle 08:00.[^ncsoft,timers]"
+    },
+    {
+      "id": "t-tasti",
+      "mode": "both",
+      "what": "Dai un tasto alla macro e a Defiance",
+      "why": "Esc, Settings, Key Settings, General, sezione Gameplay: la voce Macro di base è vuota, e senza tasto la macro non parte. Il più comodo è il tasto destro del mouse. Nella stessa schermata accendi Separate Defiance Hotkey, così [[defiance]] non divide il tasto con il salto.",
+      "href": "#macro"
+    },
+    {
+      "id": "t-stigma",
+      "mode": "pve",
+      "what": "Monta le quattro stigma: Lunge Stance, Rage Burst, Focused Block, Zikel's Blessing",
+      "why": "Con i 30 punti che hai al 45: [[lunge-stance]] a 10, [[rage-burst]], [[focused-block]] e [[zikels-blessing]] a 5. Poi, con i frammenti comprati nei negozi, Lunge Stance a 20 e Zikel's Blessing a 10. In tutto 100 punti stigma. Dopo, coi frammenti: Lunge Stance e Rage Burst a 20, Zikel's Blessing a 15; nel quarto slot [[wave-armor]] a 15 se giochi con un Templar, altrimenti Focused Block resta a 5.[^topeu,metaroad]",
+      "href": "#stigma"
+    },
+    {
+      "id": "t-core",
+      "mode": "pve",
+      "what": "Porta a 10 Overhead Slam, Rending Blow e Ruinous Blow con i punti skill",
+      "why": "Sono le sole tre che devono salire in alto: 63 punti in tutto. Poi [[keen-strike]] a 10. I punti sono contati (203 al 45), quindi segui l'ordine della tabella. Scegli subito le specializzazioni indicate.",
+      "href": "#skill"
+    },
+    {
+      "id": "t-daev",
+      "mode": "pve",
+      "what": "Daevanion: prendi i nodi blu di quelle tre skill su tutti e quattro i tabelloni",
+      "why": "Ogni nodo blu dà +1 livello: con quattro tabelloni arrivi a 14. Lungo la strada prendi i nodi di [[attack-preparation]] e, dopo, quelli arancioni.",
+      "href": "#daevanion"
+    },
+    {
+      "id": "t-anelli",
+      "mode": "pve",
+      "what": "Trova due anelli con +1 a una delle tre skill",
+      "why": "Con due anelli la skill arriva a 16, il livello che cambia la rotazione: [[overhead-slam]] perde la ricarica, [[rending-blow]] si paga il mana da sola.",
+      "href": "#equip"
+    },
+    {
+      "id": "t-passive",
+      "mode": "pve",
+      "what": "Passive: Attack Preparation, Experienced Counterstrike e Impact Hit a 10",
+      "why": "[[impact-hit]] è la passiva che i primi cercano di più sui tratti e tengono tra 19 e 24: con un punto solo resta a 7. I punti si prendono da Protection Armor, Survival Willpower e Destructive Impulse, dove nessuno dei primi ne mette. Poi [[murderous-burst]] e [[identify-weakness]], man mano che arrivano le Wisdom Stone.[^topeu,metaroad]",
+      "href": "#passive"
+    },
+    {
+      "id": "t-macro",
+      "mode": "pve",
+      "what": "Costruisci la pila principale e la macro",
+      "why": "Tre skill sullo stesso tasto, per esempio T: [[rage-burst]] alla riga 0, [[overhead-slam]] alla 1, [[rending-blow]] alla 2. Poi la macro, con un passo solo: quel tasto. Nella sezione Macro ci sono le schermate.",
+      "href": "#macro"
+    },
+    {
+      "id": "t-indicatore",
+      "mode": "pve",
+      "what": "Accendi l'indicatore del fronte del boss",
+      "why": "Settings, Info Display, Combat, Display Boss Orientation Indicator. Il Gladiator fa più danno di fronte: devi sapere sempre da che parte guarda il boss.",
+      "href": "#classe"
+    },
+    {
+      "id": "t-arcana",
+      "mode": "pve",
+      "what": "Carte Arcana: Parchment per Overhead Slam, Compass per Rending Blow",
+      "why": "Le righe delle carte aggiungono livelli alle skill e le portano da 16 a 20. La prima da chiudere a 20 è [[overhead-slam]]. La Bell in versione Magic: gli otto primi d'Europa e il 97% dei coreani la portano così, per Destruction, cioè Attack increase.[^topeu,meta]",
+      "href": "#arcana"
+    },
+    {
+      "id": "t-equip",
+      "mode": "pve",
+      "what": "Potenzia arma e accessori a +10 e fermati lì",
+      "why": "Fino a +10 il potenziamento riesce sempre. Oltre, i costi esplodono e si può fallire.",
+      "href": "#equip"
+    },
+    {
+      "id": "t-pvp-stigma",
+      "mode": "pvp",
+      "what": "Prepara un secondo preset con le stigma PvP",
+      "why": "[[lunge-stance]] e [[tenaciousness]] sempre; poi [[armor-of-balance]] e [[blade-toss]] per Abyss e campi di battaglia, oppure [[focused-block]] al posto di una delle due in arena.",
+      "href": "#stigma"
+    },
+    {
+      "id": "t-pvp-skill",
+      "mode": "pvp",
+      "what": "Nel preset PvP sposta i punti su Aerial Snare, Survival Willpower e Defiance",
+      "why": "Li togli a [[sword-aura-rampage]], [[crushing-wave]] e [[destructive-impulse]], che in PvP non servono. Con [[overhead-slam]] e [[mocking-blade]] sono le skill centrali: cambia anche le specializzazioni come indicato. È la lettura di Aion 2 Maps per il Global; in Corea, a livello 50, chi fa PvP porta a 20 soprattutto [[ruinous-blow]] e [[rush-strike]].",
+      "href": "#skill"
+    },
+    {
+      "id": "t-pvp-daev",
+      "mode": "pvp",
+      "what": "Daevanion: tabellone Azphel e nodi blu delle quattro skill PvP",
+      "why": "Azphel si apre al 45 e dà quasi solo statistiche PvP. Usa cristalli suoi, 146 in Season 1: non toglie niente agli altri tabelloni.",
+      "href": "#daevanion"
+    },
+    {
+      "id": "t-pvp-passive",
+      "mode": "pvp",
+      "what": "Equip PvP: amuleto Fierce Battle e resistenza agli stati sull'armatura",
+      "why": "L'amuleto dà il 20% di danno PvP e prende il posto del Revelation Amulet. Titolo d'attacco: Saint of Ereshkigal, dal Monolith di Ereshkigal al livello 20.",
+      "href": "#equip"
+    }
+  ],
+  "sheetIntro": [
+    {
+      "t": "note",
+      "x": "La versione da tenere aperta mentre giochi. Le pile sono disegnate come sulla barra del gioco: la riga 0 sta in basso ed è quella che parte per prima. I tasti sono un esempio: conta che macro e pila stiano su due tasti diversi. È l'assetto semplice; quello con più colpi è nella sezione Macro."
+    }
+  ],
+  "class": {
+    "title": "Come funziona il Gladiator",
+    "blocks": [
+      {
+        "t": "p",
+        "x": "Combatti con lo spadone, sempre davanti al bersaglio. Quasi tutto il danno viene da una skill sola, [[overhead-slam]], che però non si può premere quando vuoi: di suo funziona solo su un nemico a terra. La build serve a tenerla accesa il più possibile.[^db]"
+      },
+      {
+        "t": "list",
+        "items": [
+          "**Il ciclo.** [[rage-burst]] accende Overhead Slam sul bersaglio per 10 secondi. In quei 10 secondi la ripeti senza sosta, perché al livello 16 non ha più ricarica.",
+          "**Il motore.** Con [[lunge-stance]] al livello 20 ogni critico ha il 50% di togliere 1 secondo a tutte le ricariche. Overhead Slam al 20 è sempre critica, quindi Rage Burst torna pronta quasi subito e la finestra non si chiude mai.[^arthars,grobs]",
+          "**I buchi.** Quando Overhead Slam non è accesa li riempi con [[rending-blow]], che non ha ricarica ma costa 120 MP a colpo. Finché è sotto il 16 il mana lo recuperi con [[keen-strike]].",
+          "**Il bonus.** [[ruinous-blow]] ogni 45 secondi ti dà Prepare for Battle: +20% di danno PvE per 20 secondi.",
+          "**Di fronte.** [[experienced-counterstrike]] aumenta il danno solo se colpisci davanti, e ogni tua parata regala 20 secondi di danno in più a tutto il gruppo. Per questo stai davanti al boss e pari con [[focused-block]]."
+        ]
+      },
+      {
+        "t": "h3",
+        "x": "Le skill che si accendono a condizione"
+      },
+      {
+        "t": "p",
+        "x": "Cinque skill restano spente finché non succede qualcosa. Sapere cosa le accende evita di fissare un'icona grigia."
+      },
+      {
+        "t": "table",
+        "head": [
+          "Skill",
+          "Cosa la accende"
+        ],
+        "rows": [
+          [
+            "[[overhead-slam]]",
+            "Bersaglio a terra, oppure [[rage-burst]] (10 secondi). Sui boss anche da sola, con il 7% a ogni tuo attacco."
+          ],
+          [
+            "[[aerial-snare]]",
+            "Bersaglio a terra. Sui boss solo con il 5% a ogni attacco."
+          ],
+          [
+            "[[rush-strike]]",
+            "Subito dopo una schivata, oppure mentre voli."
+          ],
+          [
+            "[[ankle-slice]]",
+            "Dopo una tua parata riuscita."
+          ],
+          [
+            "[[sword-aura-rampage]]",
+            "Bersaglio in Stagger, cioè con la barra di Stagger azzerata."
+          ]
+        ]
+      },
+      {
+        "t": "h3",
+        "x": "In gruppo sei spesso il tank"
+      },
+      {
+        "t": "p",
+        "x": "Il Gladiator non ha una provocazione, ma [[keen-strike]], [[rending-blow]] e [[overhead-slam]] alzano l'aggro. Se nel gruppo non c'è un Templar il boss guarda te. A parità di equipaggiamento le classi di solo danno fanno più danno: il tuo valore è reggere, parare e dare il bonus al gruppo.[^grobs,meta]",
+        "mode": "pve"
+      },
+      {
+        "t": "p",
+        "x": "In PvP il Gladiator è tra i più forti nell'uno contro uno e soffre nelle mischie grandi, dove chi entra in mezzo viene sciolto dal fuoco a distanza. Ogni uccisione parte da un atterramento: senza quello Overhead Slam non si accende.[^meta,couga]",
+        "mode": "pvp"
+      }
+    ]
+  },
+  "skillsIntro": [
+    {
+      "t": "p",
+      "x": "Una skill arriva a 10 con i punti, a 14 con i quattro nodi blu del Daevanion, a 16 con due anelli e a 20 con le carte Arcana. Gli slot di specializzazione si aprono a 8, 12 e 20: una, due, tre scelte. La quinta opzione di ogni skill si sblocca a 16 e, finché gli slot sono due, prende il posto di un'altra.[^db,builds,maps]"
+    },
+    {
+      "t": "p",
+      "x": "I punti skill sono contati: 203 arrivando al 45, poi nessuno. Ogni Wisdom Stone ne aggiunge uno: 58 dalle missioni di distretto della tua fazione e 2 da ognuno dei 61 dungeon sigillati, 383 in tutto. Portare una skill da 1 a 10 costa 21 punti, e attive e passive pescano dallo stesso mucchio: non bastano per tutte e 22.[^maps]"
+    },
+    {
+      "t": "note",
+      "x": "Il numero grande di ogni scheda è il livello a cui puntare adesso. Per le tre skill principali conta tutto: punti, nodi, anelli. Per le altre sono i punti da spendere; i nodi blu che incroci sui tabelloni le alzano ancora, e le righe più chiare mostrano cosa scegliere quando arrivano al livello successivo."
+    },
+    {
+      "t": "h3",
+      "x": "Ordine di spesa dei punti",
+      "mode": "pve"
+    },
+    {
+      "t": "table",
+      "mode": "pve",
+      "head": [
+        "",
+        "Cosa porti a 10",
+        "Punti spesi in tutto"
+      ],
+      "num": [
+        2
+      ],
+      "rows": [
+        [
+          "1",
+          "[[overhead-slam]], [[rending-blow]], [[ruinous-blow]]",
+          "63"
+        ],
+        [
+          "2",
+          "[[keen-strike]]",
+          "84"
+        ],
+        [
+          "3",
+          "[[experienced-counterstrike]] e [[attack-preparation]]",
+          "126"
+        ],
+        [
+          "4",
+          "[[crushing-wave]], [[sword-aura-rampage]], [[identify-weakness]], [[murderous-burst]], [[impact-hit]]; [[leaping-slam]] e [[mocking-blade]] a 8",
+          "257"
+        ],
+        [
+          "5",
+          "[[survival-stance]]",
+          "278"
+        ],
+        [
+          "6",
+          "[[leaping-slam]] e [[mocking-blade]] a 10",
+          "294"
+        ],
+        [
+          "7",
+          "[[blood-absorption]]",
+          "315"
+        ],
+        [
+          "8",
+          "[[rush-strike]] e [[ankle-slice]]",
+          "357"
+        ],
+        [
+          "9",
+          "[[destructive-impulse]]",
+          "378"
+        ]
+      ]
+    },
+    {
+      "t": "note",
+      "mode": "pve",
+      "x": "Con i soli punti dei livelli arrivi a metà della riga 4. Restano a 1 [[aerial-snare]], [[protection-armor]], [[survival-willpower]] e [[defiance]]. Azzerare skill e stigma è gratis: niente di quello che scegli è definitivo.[^maps]"
+    },
+    {
+      "t": "p",
+      "mode": "pvp",
+      "x": "Per il PvP si usa un secondo preset: i preset di skill sono tre, e ognuno tiene i suoi livelli di skill e di stigma. Rispetto all'assetto PvE tornano a 1 [[sword-aura-rampage]] e [[crushing-wave]], e quei 42 punti vanno a [[survival-willpower]] e [[aerial-snare]]; i 21 di [[destructive-impulse]] vanno a [[defiance]].[^maps]"
+    },
+    {
+      "t": "note",
+      "mode": "pvp",
+      "x": "Non si può cambiare preset mentre una stigma è in ricarica."
+    }
+  ],
+  "stigmaIntro": [
+    {
+      "t": "p",
+      "x": "Nel Global Season 1 gli slot sono quattro (in Corea di più) e si aprono ai livelli 22, 27, 32 e 37. Le stigma arrivano al massimo a 20 e ogni 5 livelli sbloccano da sole un effetto, senza scelte. Un livello costa 1 punto fino al 5, 2 fino al 10, 4 fino al 15 e 8 fino al 20: una stigma a 20 sono 75 punti, tutte e quattro 300.[^db,maps,alucky]"
+    },
+    {
+      "t": "p",
+      "x": "Al 45 hai 30 punti stigma, 29 dai livelli e uno dalla missione dell'Ascension: bastano esattamente per [[lunge-stance]] a 10 e le altre tre a 5. Il resto arriva dai frammenti (Stigma Shard): 200 dal negozio dell'Abyss, 35 da quello dello Shugo Festival e 35 da quello dei Nightmare.[^maps]"
+    },
+    {
+      "t": "h3",
+      "x": "Ordine dopo il 45",
+      "mode": "pve"
+    },
+    {
+      "t": "steps",
+      "mode": "pve",
+      "items": [
+        "[[lunge-stance]] a 20. A 15 moltiplica [[identify-weakness]], a 20 dura 20 secondi e ogni critico può togliere 1 secondo a tutte le ricariche.",
+        "[[zikels-blessing]] a 10: +10% di danno PvE finché dura.",
+        "[[rage-burst]] a 20: a 15 il colpo è sempre critico, a 20 il suo bonus di danno PvE diventa del 20%. Gli otto primi d'Europa la tengono tutti a 20.[^topeu]",
+        "Zikel's Blessing a 15: +50% di colpi multipli finché dura. Sei primi su otto la tengono tra 15 e 20.[^topeu]",
+        "Il quarto slot: con un Templar in gruppo [[wave-armor]] a 15, perché il suo Fury copre già il bonus delle parate e Wave Armor moltiplica [[experienced-counterstrike]] dal 10 e [[murderous-burst]] dal 15; cinque primi su otto la portano a 15-20. Senza Templar [[focused-block]] resta a 5.[^topeu,metaroad,maps]"
+      ]
+    },
+    {
+      "t": "p",
+      "mode": "pve",
+      "x": "Tre sono fisse, la quarta dipende dal gruppo. Su 90 build Global con le stigma montate, 53 usano queste quattro e 27 mettono [[lifestealing-blade]] al posto di [[focused-block]].[^builds,meta] Il 29/10/2026, sulle schede dei primi otto d'Europa: Lunge Stance 20, Rage Burst 20, Zikel's Blessing 15-20 in sei, e nel quarto slot Wave Armor 15-20 in cinque, Focused Block 5 negli altri tre.[^topeu]"
+    },
+    {
+      "t": "p",
+      "mode": "pvp",
+      "x": "Due restano sempre, [[lunge-stance]] e [[tenaciousness]]. Le altre due cambiano con la modalità: in Abyss e nei campi di battaglia [[armor-of-balance]] e [[blade-toss]]; in arena 1 contro 1 Armor of Balance e [[focused-block]]; in arena 5 contro 5 Blade Toss e Focused Block. [[forced-restraint]] o [[rage-burst]] entrano al posto di una delle due se ti serve più controllo. Un meta PvP del Global ancora non esiste: prendilo come punto di partenza.[^maps,vortex,inven]"
+    },
+    {
+      "t": "note",
+      "x": "Puoi imparare più stigma di quante ne monti e tenerle su preset diversi."
+    }
+  ],
+  "passiveIntro": [
+    {
+      "t": "p",
+      "x": "Le passive salgono a 10 con gli stessi punti delle skill attive, poi crescono con i nodi del Daevanion (quattro a testa), con le righe delle carte Arcana Mirror, Bell e Chalice e con le righe di armatura, orecchini e collana. La colonna dei numeri mostra quanto valgono ai livelli 1, 10 e 20.[^db,maps]"
+    },
+    {
+      "t": "p",
+      "mode": "pve",
+      "x": "Tra i primi 94 Gladiator Global il livello medio delle quattro passive principali è intorno a 16.[^meta]"
+    },
+    {
+      "t": "p",
+      "mode": "pve",
+      "x": "Sulle schede dei primi otto d'Europa (29/10/2026) Attack Preparation sta tra 17 e 25 e Impact Hit tra 19 e 24; nessuno mette punti in Protection Armor, Survival Willpower o Destructive Impulse. Impact Hit è anche la passiva più cercata sui tratti: elmo, spalline, stivali, mantello, collana e orecchini.[^topeu]"
+    }
+  ],
+  "macro": {
+    "title": "Macro: come si impostano",
+    "blocks": [
+      {
+        "t": "p",
+        "x": "Sono due cose diverse e servono tutte e due. Sono funzioni del gioco: niente programmi esterni.[^grobs-macro,kr-macro]"
+      },
+      {
+        "t": "list",
+        "items": [
+          "**La pila.** Più skill sullo stesso tasto, una sopra l'altra. Quando quel tasto viene premuto parte la skill più in basso tra quelle pronte.",
+          "**La macro.** Finché tieni premuto il suo tasto, il gioco preme per te il tasto della pila, a raffica. È lei che ti permette di tenere premuto invece di martellare."
+        ]
+      },
+      {
+        "t": "callout",
+        "title": "In pratica",
+        "x": "Pila su un tasto della tastiera, per esempio {{T}}. Macro sul tasto destro del mouse. [[keen-strike]] resta sul tasto sinistro. In combattimento tieni premuti i due tasti del mouse."
+      },
+      {
+        "t": "h3",
+        "x": "1. La pila"
+      },
+      {
+        "t": "fig",
+        "img": "barra-gladiator",
+        "w": 1128,
+        "h": 504,
+        "alt": "La barra del Gladiator: una griglia con i tasti in fondo e quattro righe numerate da 0 a 3. Sul tasto T, dal basso, Rage Burst, Overhead Slam e Rending Blow.",
+        "cap": "La barra è una griglia: ogni colonna è un tasto, ogni riga un piano della pila. Qui la pila sta sul tasto T.",
+        "marks": [
+          {
+            "n": 1,
+            "x": 90.6,
+            "y": 70.2
+          },
+          {
+            "n": 2,
+            "x": 90.6,
+            "y": 53.6
+          },
+          {
+            "n": 3,
+            "x": 90.6,
+            "y": 36.9
+          },
+          {
+            "n": 4,
+            "x": 5.9,
+            "y": 82.7
+          },
+          {
+            "n": 5,
+            "x": 83.2,
+            "y": 70.2
+          }
+        ],
+        "legend": [
+          "**Riga 0**, in basso: [[rage-burst]]. È quella che il gioco prova per prima.",
+          "**Riga 1**: [[overhead-slam]].",
+          "**Riga 2**: [[rending-blow]]. Conta solo l'ordine dal basso.",
+          "La riga in fondo sono i tasti della tua barra: da 1 a 8, Q, E, il tasto sinistro e T.",
+          "Sulla colonna del tasto sinistro, [[keen-strike]] da sola."
+        ],
+        "credit": "La barra da fare, disegnata con le icone del gioco nelle colonne della tua barra: 1-8, Q, E, il tasto sinistro e l'ultima colonna, che diventa T. I numeri sono quelli della legenda."
+      },
+      {
+        "t": "list",
+        "items": [
+          "La pila si riempie dalla finestra delle skill ({{K}}), nella griglia in basso.",
+          "Prima si riempie la riga 0: finché è vuota il gioco non lascia mettere niente nelle righe 1, 2 e 3.",
+          "Su un tasto ci stanno fino a quattro skill.[^maps]",
+          "Tenere premuto il tasto della pila non basta: il gioco rilancia le skill piano e ogni tanto si ferma. Senza macro quel tasto va martellato.[^grobs-macro,maps]"
+        ]
+      },
+      {
+        "t": "callout",
+        "kind": "warn",
+        "title": "Perché Rage Burst sta in basso",
+        "x": "Con Lunge Stance a 20, Overhead Slam è quasi sempre pronta. Se sta sotto Rage Burst nella pila, vince sempre lei e Rage Burst non parte più: la finestra si chiude e Overhead Slam si spegne.[^arthars]"
+      },
+      {
+        "t": "h3",
+        "x": "2. Il tasto della macro"
+      },
+      {
+        "t": "fig",
+        "img": "tasto-macro",
+        "w": 1340,
+        "h": 558,
+        "alt": "La schermata Settings, Key Settings, General: nella sezione Gameplay la riga Macro, con accanto l'avviso rosso Restricted in AION 1 Control Mode. Sotto, la riga Combat Analysis con Ctrl più X.",
+        "cap": "{{Esc}}, Settings, Key Settings, General: la riga Macro, nella sezione Gameplay. Di base è vuota, e senza tasto la macro non parte.",
+        "marks": [
+          {
+            "n": 1,
+            "x": 16.2,
+            "y": 7
+          },
+          {
+            "n": 2,
+            "x": 30.7,
+            "y": 14.7
+          },
+          {
+            "n": 3,
+            "x": 68.3,
+            "y": 83.5
+          },
+          {
+            "n": 4,
+            "x": 76.9,
+            "y": 29.4
+          },
+          {
+            "n": 5,
+            "x": 68.3,
+            "y": 95.5
+          }
+        ],
+        "legend": [
+          "La scheda **Key Settings**.",
+          "La sottoscheda **General**.",
+          "La riga **Macro**: clicca la prima casella e premi il tasto che vuoi. Nel video è un tasto del mouse.",
+          "L'avviso in rosso: nella modalità di controllo AION 1 un tasto del mouse non vale. Si passa alla modalità AION 2 con il tasto di Switch Control Mode, in cima alla stessa pagina.",
+          "Subito sotto c'è **Combat Analysis**, {{Ctrl}} + {{X}}: il contatore di danno del gioco."
+        ],
+        "credit": "Fotogramma da [Grobs, AION 2 Macro Guide](https://www.youtube.com/watch?v=HMod6Z4GrE0&t=106s), minuto 1:46. Tagliato al centro, dove la schermata è vuota."
+      },
+      {
+        "t": "p",
+        "x": "Scegli un tasto che puoi tenere premuto per tutto il combattimento. Il più comodo è il tasto destro del mouse. Macro e pila devono stare su due tasti diversi: se la macro va sul destro, la pila va su un tasto della tastiera."
+      },
+      {
+        "t": "h3",
+        "x": "3. La macro"
+      },
+      {
+        "t": "fig",
+        "img": "macro-gladiator",
+        "w": 936,
+        "h": 482,
+        "alt": "La finestra Macro con un passo solo: il tasto T, che mostra Rage Burst, Delay 10, il pulsante giallo Add Macro e accanto il pulsante Macro coi numeri dei preset.",
+        "cap": "La macro finita del Gladiator: un passo solo.",
+        "marks": [
+          {
+            "n": 1,
+            "x": 73.9,
+            "y": 18
+          },
+          {
+            "n": 2,
+            "x": 32.5,
+            "y": 43.2
+          },
+          {
+            "n": 3,
+            "x": 34.9,
+            "y": 64.7
+          },
+          {
+            "n": 4,
+            "x": 32.5,
+            "y": 83
+          },
+          {
+            "n": 5,
+            "x": 85.5,
+            "y": 18
+          }
+        ],
+        "legend": [
+          "**Macro**, in alto a destra nella finestra delle skill ({{K}}).",
+          "Il passo 1. Mostra la skill che sta in basso nella pila, qui Rage Burst: il passo preme tutto il tasto, non la skill sola.",
+          "**Delay**: 10.",
+          "**Add Macro** aggiunge un passo. Qui ne basta uno: ogni passo in più ritarda Overhead Slam.",
+          "I numeri 1, 2 e 3 sono i preset di skill. Ognuno ha la sua macro, e cambiare preset la ferma.[^maps]"
+        ],
+        "credit": "La macro da fare, disegnata come la finestra Macro del gioco, con le skill della tua barra. I numeri sono quelli della legenda."
+      },
+      {
+        "t": "fig",
+        "img": "scelta-tasto",
+        "w": 720,
+        "h": 250,
+        "narrow": true,
+        "alt": "Il passo appena creato nella finestra Macro, con l'attacco base, e sotto la fila dei tasti tra cui scegliere.",
+        "cap": "Il momento in cui si sbaglia: il passo nuovo.",
+        "marks": [
+          {
+            "n": 1,
+            "x": 59,
+            "y": 44.4
+          },
+          {
+            "n": 2,
+            "x": 94.4,
+            "y": 82.8
+          }
+        ],
+        "legend": [
+          "Il passo appena creato parte con l'attacco base. Qui è Quick Slice perché nel video gioca un Assassin: a te compare Keen Strike.",
+          "Cliccando l'icona si apre la fila dei tasti: scegli quello della pila. Se lasci l'attacco base, la macro fa attacchi base al posto delle skill."
+        ],
+        "credit": "Fotogramma da [Grobs, AION 2 Macro Guide](https://www.youtube.com/watch?v=HMod6Z4GrE0&t=114s), minuto 1:54."
+      },
+      {
+        "t": "steps",
+        "items": [
+          "Apri la finestra delle skill con {{K}} e clicca **Macro**, in alto a destra.",
+          "Clicca **Add Macro**: compare il passo 1.",
+          "Clicca l'icona del passo e scegli il tasto della pila.",
+          "Nel campo **Delay** scrivi 10. È la pausa tra una pressione e l'altra, non c'entra con il ping.",
+          "Lascia accesa Skill Queue (Settings, Combat, Controls), che lo è già di suo."
+        ]
+      },
+      {
+        "t": "h3",
+        "x": "4. In combattimento"
+      },
+      {
+        "t": "fig",
+        "img": "due-tasti",
+        "w": 1240,
+        "h": 310,
+        "alt": "Un personaggio che colpisce il manichino di prova; a destra uno schema di tastiera e mouse con i due tasti del mouse accesi.",
+        "cap": "Si tengono premuti due tasti: quello della macro e il sinistro.",
+        "marks": [
+          {
+            "n": 1,
+            "x": 82.3,
+            "y": 16.1
+          },
+          {
+            "n": 2,
+            "x": 32.3,
+            "y": 13.2
+          }
+        ],
+        "legend": [
+          "Lo schema nero l'ha aggiunto Grobs per far vedere cosa preme: i due tasti del mouse insieme, il sinistro per l'attacco base e il destro per la macro.",
+          "Il manichino di prova si chiama Training Scarecrow."
+        ],
+        "credit": "Fotogramma da [Grobs, AION 2 Macro Guide](https://www.youtube.com/watch?v=HMod6Z4GrE0&t=205s), minuto 3:25."
+      },
+      {
+        "t": "list",
+        "items": [
+          "Tieni premuti insieme il tasto della macro e il tasto sinistro. Il gioco infila un [[keen-strike]] dopo ogni skill e ne taglia la coda: a ogni taglio compare una sagoma nera sul personaggio.",
+          "Keen Strike non va dentro la macro: da fuori taglia meglio.[^grobs-macro,maps]",
+          "Quando [[overhead-slam]] e [[rending-blow]] arrivano a 16, prova a lasciare il sinistro: Grobs e Arthars lo lasciano (\"a damage loss\"), Ulfhednar, Kanon e metaroad lo tengono. Decide il manichino, con la pagina Danno. Sul sinistro resta comunque Keen Strike, per quando finisci il mana.[^grobs,aion2data]",
+          "Buff, salti e parate li premi tu, senza lasciare la macro: vince sempre il tasto che premi."
+        ]
+      },
+      {
+        "t": "h3",
+        "x": "Se premendo il sinistro la macro si ferma"
+      },
+      {
+        "t": "list",
+        "items": [
+          "Nella macro c'è un passo rimasto sull'attacco base. Cambialo con il tasto della pila, o cancellalo con il cestino.",
+          "Macro e pila sono sullo stesso tasto. Devono essere due tasti diversi.",
+          "Hai una skill su una combinazione con {{Alt}}: mentre tieni premuto un tasto, le combinazioni con Alt bloccano gli attacchi base.[^maps]",
+          "Sei nella modalità di controllo AION 1, dove i tasti del mouse non si possono riassegnare."
+        ]
+      },
+      {
+        "t": "h3",
+        "x": "Tre regole scritte da NCSOFT"
+      },
+      {
+        "t": "list",
+        "items": [
+          "Se premi un tasto mentre la macro gira, vince sempre il tuo tasto: un buff o una pozione li dai senza lasciarla.",
+          "Un tasto del mouse come tasto della macro non funziona nella modalità di controllo AION 1. Se usi quella, lega la macro a un tasto della tastiera oppure passa alla modalità AION 2.",
+          "La macro prova i passi uno dopo l'altro e riparte: l'ordine non è garantito. Per questo la priorità si decide nella pila della riga, non nell'ordine dei passi.[^kr-macro]"
+        ]
+      },
+      {
+        "t": "h3",
+        "x": "Assetto semplice: una pila sola",
+        "mode": "pve"
+      },
+      {
+        "t": "p",
+        "mode": "pve",
+        "x": "È il più usato dai giocatori Global: 67 build su 131 impilano così. Grobs tiene la pila su {{T}} e la macro sul tasto destro; couga54, sullo schema di Arthars, tiene la pila sul tasto destro e la macro su un tasto laterale del mouse. Cambia solo quale tasto tieni premuto.[^grobs,couga,builds]"
+      },
+      {
+        "t": "h3",
+        "x": "In PvP poca macro",
+        "mode": "pvp"
+      }
+    ],
+    "pve": {
+      "delay": 10,
+      "lines": [
+        {
+          "title": "Pila principale",
+          "key": "T",
+          "step": 1,
+          "delay": "nella macro, Delay 10",
+          "slots": [
+            {
+              "skill": "rage-burst",
+              "tag": "riga 0, parte per prima"
+            },
+            {
+              "skill": "overhead-slam",
+              "tag": "riga 1"
+            },
+            {
+              "skill": "rending-blow",
+              "tag": "riga 2, riempie i buchi"
+            }
+          ],
+          "why": "È la sola pila che deve stare nella macro. Non aggiungerci altro: ogni skill in più ritarda Overhead Slam. Da Rending Blow 16 passa all'assetto a due righe, con Overhead Slam da sola."
+        },
+        {
+          "title": "Ruinous Blow",
+          "key": "E",
+          "delay": "a mano",
+          "slots": [
+            {
+              "skill": "ruinous-blow",
+              "tag": "riga 0"
+            },
+            {
+              "skill": "lifestealing-blade",
+              "tag": "riga 1, solo se la monti"
+            }
+          ],
+          "why": "Deve restare su un tasto diverso dalla pila principale, altrimenti le due skill si rubano il turno."
+        },
+        {
+          "title": "Buff",
+          "key": "5",
+          "delay": "a mano",
+          "slots": [
+            {
+              "skill": "lunge-stance",
+              "tag": "riga 0"
+            },
+            {
+              "skill": "zikels-blessing",
+              "tag": "riga 1"
+            }
+          ],
+          "why": "In Season 1 le ricariche sono lunghe: i buff rendono di più premuti a mano prima del boss o di un gruppo grosso."
+        }
+      ],
+      "manual": [
+        {
+          "skill": "focused-block",
+          "key": "4",
+          "when": "sul primo colpo del boss e poi sui colpi che vedi arrivare. Ogni parata è un bonus per il gruppo."
+        },
+        {
+          "skill": "mocking-blade",
+          "key": "2",
+          "when": "quando ti serve vita: sui boss rende il 15% dei PV."
+        },
+        {
+          "skill": "leaping-slam",
+          "key": "1",
+          "when": "per entrare. Sullo stesso tasto, sopra, c'è [[rush-strike]], che si accende dopo la schivata."
+        },
+        {
+          "skill": "rush-strike",
+          "key": "1",
+          "extra": true,
+          "when": "sopra Leaping Slam, sullo stesso tasto: si accende dopo la schivata."
+        },
+        {
+          "skill": "crushing-wave",
+          "key": "3",
+          "when": "solo sui gruppi di mostri."
+        },
+        {
+          "skill": "defiance",
+          "key": "Spazio",
+          "extra": true,
+          "when": "per uscire da un controllo."
+        }
+      ],
+      "blocks": [
+        {
+          "t": "h3",
+          "x": "Da Rending Blow 16: la macro a due righe",
+          "mode": "pve"
+        },
+        {
+          "t": "p",
+          "mode": "pve",
+          "x": "Quando [[rending-blow]] arriva a 16 (Overhead Slam ci è già), Overhead Slam esce dalla pila e va da sola su un tasto suo, e la macro prende due righe: prima quel tasto, poi la pila con Rage Burst e Rending Blow. Chi ha tenuto le due skill sullo stesso tasto e l'ha misurato ha perso il 20-30%: il gioco ne fa partire una sola delle due. Gli assetti sono due, e si passa al secondo quando Rending Blow tocca il 16.[^aion2data,ulfhednar]"
+        },
+        {
+          "t": "steps",
+          "mode": "pve",
+          "items": [
+            "Sulla barra: togli [[overhead-slam]] dal tasto {{T}} e mettila da sola sul {{7}}, che è vuoto; su T lascia [[rage-burst]] alla riga 0 e scala [[rending-blow]] alla riga 1.",
+            "Nella finestra Macro: riga 1 il tasto 7, riga 2 il tasto T, Delay 10 su tutte e due.",
+            "Tieni premuta la macro. [[keen-strike]] sul sinistro: provalo sul manichino con e senza, con la pagina Danno. A 16 Grobs e Arthars lo lasciano (\"a damage loss\"), Ulfhednar, Kanon e metaroad lo tengono.[^grobs,aion2data]"
+          ]
+        },
+        {
+          "t": "list",
+          "mode": "pve",
+          "items": [
+            "L'ordine delle due righe non cambia il danno: Overhead Slam per prima perché è metà del tuo danno, con Rending Blow i tre quarti.[^kanon]",
+            "Rending Blow fuori dalla macro, su un tasto a mano, rende ancora un po' di più ma consuma molto più mana.[^ulfhednar]",
+            "Per lo Stagger: [[sword-aura-rampage]] sotto Rending Blow nella pila di T. Lo fa il 28% delle macro pubblicate, in crescita.[^aion2vault]"
+          ]
+        },
+        {
+          "t": "h3",
+          "x": "Assetto con più colpi: Overhead Slam da sola",
+          "mode": "pve"
+        },
+        {
+          "t": "p",
+          "mode": "pve",
+          "x": "Quando il primo ti viene da solo, prova questo. Overhead Slam sta su un tasto suo, tenuto premuto, così parte nell'istante in cui si accende e nessun'altra skill le ruba il turno. La macro ha una riga sola: il tasto della pila qui sotto. È l'assetto di Aion 2 Maps e ricalca quello dei coreani.[^maps,inven]"
+        },
+        {
+          "t": "table",
+          "mode": "pve",
+          "head": [
+            "Cosa tieni premuto",
+            "Cosa fa"
+          ],
+          "rows": [
+            [
+              "Tasto di [[overhead-slam]]",
+              "Overhead Slam da sola, più [[upward-strike]] a catena."
+            ],
+            [
+              "Tasto della macro",
+              "Una pila sola. Dall'alto in basso: [[rending-blow]], [[ruinous-blow]], [[rage-burst]], [[sword-aura-rampage]]. Parte per prima quella in basso."
+            ],
+            [
+              "Tasto sinistro",
+              "[[keen-strike]], solo finché Rending Blow e Overhead Slam sono sotto il 16."
+            ]
+          ]
+        },
+        {
+          "t": "list",
+          "mode": "pve",
+          "items": [
+            "In questa pila Sword Aura Rampage sta in fondo perché si accende solo quando il boss è in Stagger: lì deve passare davanti a tutto.",
+            "Se Ruinous Blow ti lancia in avanti nel momento sbagliato, toglila dalla pila e premila tu.",
+            "Una riga nella macro è la scelta migliore, due il massimo. Se ne metti due, quella di questa pila va per prima: con la riga dei buff davanti i colpi calano."
+          ]
+        },
+        {
+          "t": "h3",
+          "x": "Come capire se funziona",
+          "mode": "pve"
+        },
+        {
+          "t": "p",
+          "mode": "pve",
+          "x": "Sul manichino conta gli [[upward-strike]] in un minuto con il contatore di danno del gioco. Con Overhead Slam senza ricarica, chi usa solo la macro interna ne fa tra 72 e 90. Se sei molto sotto, abbassa gli effetti a schermo: nascondere i numeri di danno e gli effetti degli altri vale circa due colpi al minuto ciascuno.[^maps]"
+        },
+        {
+          "t": "h3",
+          "x": "Tasto sinistro: fino a quando",
+          "mode": "pve"
+        },
+        {
+          "t": "p",
+          "mode": "pve",
+          "x": "[[keen-strike]] sta sul tasto sinistro. Finché [[rending-blow]] e [[overhead-slam]] sono sotto il 16 lo tieni premuto insieme alla macro: l'attacco base si infila tra le skill, ne taglia le animazioni e ti rende mana. Non metterlo dentro la macro, da fuori taglia meglio. A 16 è in discussione: Grobs e Arthars lo lasciano, Ulfhednar, Kanon e metaroad lo tengono; decide il manichino.[^grobs,grobs-macro,maps,aion2data]"
+        },
+        {
+          "t": "h3",
+          "x": "Se qualcosa non va",
+          "mode": "pve"
+        },
+        {
+          "t": "list",
+          "mode": "pve",
+          "items": [
+            "Overhead Slam parte di rado: sui boss funziona solo quando è accesa, e sotto il 16 ha 5 secondi di ricarica.",
+            "Un tasto tenuto premuto smette di sparare: dopo una pressione lunga il gioco ferma la ripetizione e lo scrive a schermo. Rilascia e ripremi.",
+            "Focused Block cade subito: i tasti d'attacco tenuti premuti la interrompono. Lasciali un istante, poi para.",
+            "Resti senza mana: tieni premuto Keen Strike. Una parata con Focused Block a 5 rende 150 MP."
+          ]
+        },
+        {
+          "t": "callout",
+          "kind": "warn",
+          "mode": "pve",
+          "title": "Macro del mouse",
+          "x": "In Corea i giocatori di punta fanno martellare il tasto di Overhead Slam al software del mouse. Grobs dice che non è davvero permessa ma nemmeno vietata. Le regole di NCSOFT però vietano programmi e dispositivi che premono al posto tuo, e per quelli la sanzione è la perdita dell'account. La macro del gioco basta: quella esterna lasciala stare.[^grobs-macro,rules]"
+        }
+      ],
+      "hold": [
+        {
+          "key": "RMB",
+          "what": "la macro"
+        },
+        {
+          "key": "LMB",
+          "what": "Keen Strike, finché Overhead Slam e Rending Blow sono sotto il 16"
+        }
+      ],
+      "alt": {
+        "id": "rb16",
+        "title": "Da Rending Blow 16",
+        "when": {
+          "skill": "rending-blow",
+          "level": 16
+        },
+        "says": "Overhead Slam su una riga sua: con Rending Blow sullo stesso tasto ne parte una sola delle due.",
+        "delay": 10,
+        "lines": [
+          {
+            "title": "Overhead Slam da sola",
+            "key": "7",
+            "step": 1,
+            "delay": "nella macro, Delay 10",
+            "slots": [
+              {
+                "skill": "overhead-slam",
+                "tag": "riga 0, da sola"
+              }
+            ],
+            "why": "Da sola parte nell'istante in cui si accende e nessun'altra skill le ruba il turno: è metà del tuo danno. Con Rending Blow sullo stesso tasto il gioco ne fa partire una sola delle due, e chi l'ha misurato ha perso il 20-30%.[^aion2data,kanon]"
+          },
+          {
+            "title": "Rage Burst e Rending Blow",
+            "key": "T",
+            "step": 2,
+            "delay": "nella macro, Delay 10",
+            "slots": [
+              {
+                "skill": "rage-burst",
+                "tag": "riga 0, parte per prima"
+              },
+              {
+                "skill": "rending-blow",
+                "tag": "riga 1, riempie i buchi"
+              }
+            ],
+            "why": "Rage Burst sta sotto e vince quando è pronta, ogni 30 secondi: accende Overhead Slam. Il resto del tempo il tasto spara Rending Blow, che dal 16 rende mana a ogni critico. È il secondo tasto delle macro di fine ottobre.[^aion2data,ulfhednar]"
+          },
+          {
+            "title": "Ruinous Blow",
+            "key": "E",
+            "delay": "a mano",
+            "slots": [
+              {
+                "skill": "ruinous-blow",
+                "tag": "riga 0"
+              },
+              {
+                "skill": "lifestealing-blade",
+                "tag": "riga 1, solo se la monti"
+              }
+            ],
+            "why": "Deve restare su un tasto diverso dalla pila principale, altrimenti le due skill si rubano il turno."
+          },
+          {
+            "title": "Buff",
+            "key": "5",
+            "delay": "a mano",
+            "slots": [
+              {
+                "skill": "lunge-stance",
+                "tag": "riga 0"
+              },
+              {
+                "skill": "zikels-blessing",
+                "tag": "riga 1"
+              }
+            ],
+            "why": "In Season 1 le ricariche sono lunghe: i buff rendono di più premuti a mano prima del boss o di un gruppo grosso."
+          }
+        ],
+        "hold": [
+          {
+            "key": "RMB",
+            "what": "la macro"
+          },
+          {
+            "key": "LMB",
+            "what": "Keen Strike, da provare sul manichino con e senza"
+          }
+        ]
+      }
+    },
+    "pvp": {
+      "lines": [
+        {
+          "title": "Pila di riempimento",
+          "key": "T",
+          "step": 1,
+          "delay": "facoltativa",
+          "slots": [
+            {
+              "skill": "overhead-slam",
+              "tag": "riga 0"
+            },
+            {
+              "skill": "rending-blow",
+              "tag": "riga 1"
+            }
+          ],
+          "why": "Serve solo a restare addosso al bersaglio dopo che il controllo è entrato. Tutto il resto si preme a mano."
+        }
+      ],
+      "manual": [
+        {
+          "skill": "mocking-blade",
+          "when": "apertura: atterramento garantito."
+        },
+        {
+          "skill": "aerial-snare",
+          "when": "sul bersaglio a terra, dopo Overhead Slam."
+        },
+        {
+          "skill": "blade-toss",
+          "when": "prima di entrare, e sempre sugli healer."
+        },
+        {
+          "skill": "defiance",
+          "when": "sul controllo che ti ucciderebbe, non sul primo."
+        },
+        {
+          "skill": "tenaciousness",
+          "when": "sulla seconda catena di controlli."
+        },
+        {
+          "skill": "armor-of-balance",
+          "when": "prima del tuffo in un gruppo."
+        }
+      ],
+      "blocks": [
+        {
+          "t": "p",
+          "mode": "pvp",
+          "x": "In PvP decidi tu il momento di ogni tasto: controlli, avvicinamenti e difese non vanno mai in una macro. Nella macro restano solo Rending Blow e Overhead Slam.[^maps]"
+        }
+      ],
+      "hold": [
+        {
+          "key": "RMB",
+          "what": "la macro, solo per restare addosso al bersaglio"
+        }
+      ]
+    }
+  },
+  "rotations": {
+    "title": "Rotazioni",
+    "blocks": [
+      {
+        "t": "p",
+        "x": "La macro tiene il ritmo, le decisioni restano tue: quando parare, quando entrare, quando curarti. In Season 1 i combattimenti con i boss durano minuti, e ogni secondo passato lontano dal bersaglio si paga.[^arthars]",
+        "mode": "pve"
+      },
+      {
+        "t": "p",
+        "x": "Ordine di priorità: prima non farti controllare, poi resta attaccato al bersaglio, poi scarica il danno quando le sue difese sono finite.[^couga]",
+        "mode": "pvp"
+      }
+    ],
+    "pve": [
+      {
+        "title": "Apertura sul boss",
+        "short": "Apertura",
+        "sheet": true,
+        "when": "Prima di entrare",
+        "steps": [
+          {
+            "skill": "lunge-stance"
+          },
+          {
+            "skill": "zikels-blessing"
+          },
+          {
+            "skill": "leaping-slam",
+            "note": "salto dentro"
+          },
+          {
+            "skill": "ruinous-blow"
+          },
+          {
+            "text": "tieni premuta la macro",
+            "hold": true
+          }
+        ],
+        "expl": "Il primo colpo del boss lo pari con [[focused-block]]. Ogni boss apre in modo diverso: su alcuni conviene saltare dentro, parare, e solo dopo dare i buff.",
+        "src": [
+          "grobs",
+          "couga"
+        ],
+        "conf": "high"
+      },
+      {
+        "title": "Ciclo",
+        "short": "Ciclo",
+        "sheet": true,
+        "when": "Per tutto il combattimento, di fronte al boss",
+        "steps": [
+          {
+            "skill": "rage-burst",
+            "note": "accende"
+          },
+          {
+            "skill": "overhead-slam",
+            "note": "ripetuta"
+          },
+          {
+            "skill": "upward-strike",
+            "note": "a catena"
+          },
+          {
+            "skill": "rending-blow",
+            "note": "nei buchi"
+          }
+        ],
+        "expl": "È quello che fa la pila principale da sola. Tu aggiungi [[ruinous-blow]] ogni volta che torna e rinnovi i due buff. In ordine di danno: Overhead Slam, poi Rending Blow, poi Ruinous Blow.",
+        "src": [
+          "grobs",
+          "arthars"
+        ],
+        "conf": "high"
+      },
+      {
+        "title": "Boss in Stagger",
+        "when": "Quando hai azzerato la barra di Stagger del boss",
+        "steps": [
+          {
+            "skill": "sword-aura-rampage",
+            "note": "ripetuta finché dura"
+          }
+        ],
+        "expl": "Vale solo se l'hai portata a 16: ogni colpo toglie 1 secondo a tutte le ricariche. Sotto il 16 resta sulla rotazione normale.",
+        "src": [
+          "grobs",
+          "arthars",
+          "vortex"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Gruppi di mostri",
+        "when": "Farming e corridoi dei dungeon",
+        "steps": [
+          {
+            "skill": "leaping-slam",
+            "note": "dentro al gruppo"
+          },
+          {
+            "skill": "crushing-wave"
+          },
+          {
+            "skill": "rending-blow"
+          },
+          {
+            "text": "un'uccisione azzera il salto: avanti il prossimo"
+          }
+        ],
+        "expl": "Crushing Wave e Rending Blow colpiscono al massimo quattro bersagli: oltre i quattro, un gruppo più grosso non rende di più. Crushing Wave ti cura mentre colpisce.",
+        "src": [
+          "couga",
+          "arthars"
+        ],
+        "conf": "high"
+      },
+      {
+        "title": "Élite che si possono atterrare",
+        "when": "Mostri forti fuori dai boss",
+        "steps": [
+          {
+            "skill": "mocking-blade",
+            "note": "atterra"
+          },
+          {
+            "skill": "overhead-slam",
+            "note": "ripetuta"
+          },
+          {
+            "skill": "ruinous-blow"
+          }
+        ],
+        "expl": "Anche schivata più [[rush-strike]] atterra sempre un mostro normale.",
+        "src": [
+          "couga"
+        ],
+        "conf": "high"
+      }
+    ],
+    "pvp": [
+      {
+        "title": "Ingaggio da lontano",
+        "short": "Da lontano",
+        "sheet": true,
+        "when": "Il bersaglio è a distanza",
+        "steps": [
+          {
+            "skill": "blade-toss",
+            "note": "meno difesa e cure"
+          },
+          {
+            "text": "schivata"
+          },
+          {
+            "skill": "rush-strike",
+            "note": "o Leaping Slam"
+          },
+          {
+            "text": "se cade: punizione"
+          }
+        ],
+        "expl": "Se l'atterramento non entra, [[rage-burst]], se la monti, apre comunque la finestra di Overhead Slam. [[forced-restraint]] invece ferma solo le skill e i piedi del bersaglio.",
+        "src": [
+          "maps",
+          "couga",
+          "vortex"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Punizione dell'atterramento",
+        "short": "Punizione",
+        "sheet": true,
+        "when": "Quando puoi aprire con l'atterramento",
+        "steps": [
+          {
+            "skill": "mocking-blade",
+            "note": "atterra"
+          },
+          {
+            "skill": "overhead-slam",
+            "note": "ripetuta"
+          },
+          {
+            "skill": "aerial-snare",
+            "note": "in aria"
+          },
+          {
+            "skill": "forced-fall",
+            "note": "a catena"
+          }
+        ],
+        "expl": "È la combo centrale. Prima fagli spendere Defiance: i suoi 5 secondi di immunità fermano presa e atterramento, e una Mocking Blade lanciata lì dentro è buttata. Il bersaglio in aria subisce il 20% di danno in più. Variante coreana con il sigillo: dopo l'atterramento [[forced-restraint]] e si chiude con [[ruinous-blow]].",
+        "src": [
+          "maps",
+          "couga",
+          "vortex",
+          "inven"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Restare vivi",
+        "short": "Difesa",
+        "sheet": true,
+        "when": "Quando ti puntano",
+        "steps": [
+          {
+            "skill": "armor-of-balance",
+            "note": "prima del tuffo"
+          },
+          {
+            "skill": "defiance",
+            "note": "primo controllo pesante"
+          },
+          {
+            "skill": "tenaciousness",
+            "note": "seconda catena"
+          }
+        ],
+        "expl": "Defiance è la tua sola uscita dai controlli: tienila per quello che ti ucciderebbe, perché appena la spendi ti incatenano. [[tenaciousness]] è per il loro burst. In arena [[focused-block]] si usa sui colpi di danno grossi, non sui controlli.",
+        "src": [
+          "maps",
+          "couga",
+          "vortex"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Contro gli healer",
+        "when": "Mischie e Abyss",
+        "steps": [
+          {
+            "skill": "blade-toss"
+          },
+          {
+            "skill": "crushing-wave",
+            "note": "pull dalla seconda linea"
+          },
+          {
+            "text": "punizione"
+          }
+        ],
+        "expl": "Nelle mischie grandi non entrare per primo: segui il controllo degli alleati o il bersaglio chiamato.",
+        "src": [
+          "couga"
+        ],
+        "conf": "mid"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "daevanion",
+      "nav": "Daevanion",
+      "title": "Daevanion: dove vanno i cristalli",
+      "blocks": [
+        {
+          "t": "p",
+          "x": "Nel Global i tabelloni erano cinque; dalla patch del 21/10/2026 sono sei, con Ariel.[^ign-patch] I primi quattro contengono per ogni skill attiva un nodo blu da +1 livello: sono quelli che portano una skill da 10 a 14. Le passive hanno nodi verdi, quattro in tutto per ciascuna.[^db]"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Tabellone",
+            "Si apre al",
+            "Nodi arancioni (4 cristalli)",
+            "Cristalli per riempirlo"
+          ],
+          "num": [
+            1,
+            3
+          ],
+          "rows": [
+            [
+              "Nezekan",
+              "12",
+              "Combat Speed e Cooldown Reduction, 2 + 2",
+              "134"
+            ],
+            [
+              "Zikel",
+              "20",
+              "Damage Boost e Damage Tolerance, 2 + 2",
+              "134"
+            ],
+            [
+              "Vaizel",
+              "30",
+              "Critical Damage Boost e Tolerance, 2 + 2",
+              "134"
+            ],
+            [
+              "Triniel",
+              "40",
+              "Multi-Hit Chance e Resist, 3 + 3",
+              "168"
+            ],
+            [
+              "Azphel",
+              "45",
+              "quasi solo statistiche PvP (più stati, PV e MP), nessun nodo skill",
+              "232"
+            ],
+            [
+              "Ariel",
+              "45, dalla patch del 21/10/2026",
+              "due angoli di PvE Damage Boost, 26 cristalli; nessuna guida ha ancora un piano (aion2vault, 28/10)",
+              "232"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "mode": "pve",
+          "x": "Ariel: i primi otto d'Europa ci hanno tra 45 e 76 cristalli. I due angoli di PvE Damage Boost per primi; le ricette di Urugugu e Vakron per i frammenti sono aperte dal 28/10.[^topeu,ign-patch]"
+        },
+        {
+          "t": "note",
+          "x": "Costo dei nodi: grigio 1, verde (passiva) 2, blu (skill) 3, arancione 4."
+        },
+        {
+          "t": "p",
+          "x": "I cristalli non bastano per tutto. Arrivando al 45 ne hai circa 136 dai livelli; diventano 316 quando hai chiuso le missioni di distretto e i dungeon sigillati della tua fazione, 366 con i 50 del negozio dei Nightmare, 416 con i 50 del negozio dello Shugo Festival.[^maps]"
+        },
+        {
+          "t": "h3",
+          "x": "In che ordine",
+          "mode": "pve"
+        },
+        {
+          "t": "steps",
+          "mode": "pve",
+          "items": [
+            "Su ogni tabellone i nodi blu di [[overhead-slam]] e [[rending-blow]], poi i nodi arancioni di Combat Speed.",
+            "[[ruinous-blow]] su Nezekan e Zikel, i nodi arancioni di Damage Boost, [[keen-strike]] su Nezekan. Fin qui sono 128 cristalli.",
+            "[[attack-preparation]] ed [[experienced-counterstrike]], gli altri nodi di Ruinous Blow, i nodi arancioni di Critical Damage Boost e di Cooldown Reduction.",
+            "[[murderous-burst]] e [[impact-hit]], Multi-Hit Chance, poi i nodi di attacco e di critico. Qui sei a 316.",
+            "Con i cristalli dei negozi: Damage Tolerance e [[identify-weakness]], poi critico e PV."
+          ]
+        },
+        {
+          "t": "note",
+          "mode": "pve",
+          "x": "Da saltare: i nodi di Aerial Snare, Defiance, Rush Strike, Leaping Slam, Mocking Blade, Ankle Slice e Sword Aura Rampage; Multi-Hit Resist e Critical Damage Tolerance, che contro i boss non servono; mana e resistenza al critico. Dove il tabellone obbliga a passarci, se ne attraversa uno.[^maps]"
+        },
+        {
+          "t": "h3",
+          "x": "Azphel",
+          "mode": "pvp"
+        },
+        {
+          "t": "list",
+          "mode": "pvp",
+          "items": [
+            "Si apre al 45 e usa cristalli suoi: 36 dal Monolith di Ereshkigal e 110 dal negozio dell'Abyss, 146 in tutta la Season 1.",
+            "Prima i nodi arancioni di danno e resistenza PvP (110 cristalli), poi quelli di resistenza e probabilità degli stati.",
+            "Sugli altri quattro tabelloni il preset PvP vuole i nodi blu di [[overhead-slam]], [[mocking-blade]], [[defiance]] e [[aerial-snare]]."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arcana",
+      "nav": "Arcana",
+      "title": "Arcana: le carte che portano le skill a 20",
+      "blocks": [
+        {
+          "t": "p",
+          "x": "Le carte si aprono al 45. Nel Global gli slot sono cinque: Bell, Mirror, Compass, Parchment e Chalice, una carta per slot. Ogni carta esiste in due versioni, Vigor e Magic, con le stesse righe di skill: la versione decide solo la statistica principale e il set. Le righe sono casuali, da una a quattro secondo la rarità, e ognuna alza una skill.[^db,maps,meta]"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Slot",
+            "Cosa cercare nelle righe"
+          ],
+          "rows": [
+            [
+              "Parchment",
+              "[[overhead-slam]] e [[ruinous-blow]]. Delle sei skill che può dare sono le sole due utili."
+            ],
+            [
+              "Compass",
+              "[[rending-blow]]."
+            ],
+            [
+              "Chalice",
+              "Può dare qualunque skill, e creandola ne scegli due: usala per la skill o la passiva più lontana dall'obiettivo."
+            ],
+            [
+              "Mirror",
+              "[[experienced-counterstrike]] e [[murderous-burst]]."
+            ],
+            [
+              "Bell",
+              "[[attack-preparation]]."
+            ]
+          ]
+        },
+        {
+          "t": "list",
+          "items": [
+            "Solo una carta Unique, gialla, arriva al livello 5 (una Epic, blu, si ferma a 4): a quel livello dà in media +2 a una delle skill che può avere. Il conto tipico per Overhead Slam: 14, più 2 dagli anelli, più 2 e 2 da due carte, uguale 20.",
+            "Se una sola altra skill può arrivare a 20, scegli [[rending-blow]] prima di Ruinous Blow.",
+            "Quattro carte in versione Vigor danno il set Primal Vigor: +150 di attacco PvE quando hai almeno il 70% dei PV. Con due ne dà 60.",
+            "Con cinque slot i due set non ci stanno insieme: o quattro Vigor più una carta libera, o tre Vigor e due Magic. Gli otto primi d'Europa e il 97% dei coreani fanno la seconda, con la Bell e la Mirror in versione Magic: la Bell Magic porta Destruction, cioè Attack increase, dove la Vigor porta Justice, difesa e colpi perfetti; e due Magic rendono 1.500 MP quando scendi sotto il 20%, una volta ogni 30 secondi.[^topeu,metaroad,ulfhednar]"
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Le prime carte blu arrivano dalla Transcendence, dal secondo piano in su."
+        }
+      ]
+    },
+    {
+      "id": "equip",
+      "nav": "Statistiche ed equip",
+      "title": "Statistiche ed equipaggiamento",
+      "blocks": [
+        {
+          "t": "h3",
+          "x": "Statistiche, in ordine",
+          "mode": "pve"
+        },
+        {
+          "t": "steps",
+          "mode": "pve",
+          "items": [
+            "**Front Attack Damage Boost.** È un moltiplicatore a parte e tu colpisci di fronte quasi sempre. La danno le Superior Manastone e le Superior Abyssal Manastone, il pet e, per lo 0,4% a livello, [[experienced-counterstrike]].",
+            "**Double Chance.** Altro moltiplicatore a parte. Le manastone non la danno: viene dal pet, dalle righe di elmo, spalle e mantello, da [[impact-hit]] e da [[lunge-stance]].",
+            "**Weapon Damage Boost, Critical Damage Boost, Damage Boost**, più o meno alla pari.",
+            "**Attack** su ogni riga libera, e **Combat Speed**: senza velocità i colpi al minuto calano. La velocità rende a gradini, non in modo continuo."
+          ]
+        },
+        {
+          "t": "table",
+          "mode": "pve",
+          "head": [
+            "Dove",
+            "Cosa cercare"
+          ],
+          "rows": [
+            [
+              "Manastone",
+              "Front Attack Damage Boost; poi Weapon Damage Boost, Critical Damage Boost, Damage Boost"
+            ],
+            [
+              "Arma e guardia",
+              "Combat Speed, Weapon Damage Boost, Might, Precision, Damage Boost. Le righe di skill lasciale agli anelli"
+            ],
+            [
+              "Armatura",
+              "Petto Damage Boost, spalle Critical Damage Boost, elmo e mantello Double Chance, guanti Combat Speed, stivali Move Speed. La riga di skill di ogni pezzo su una delle quattro passive principali"
+            ],
+            [
+              "Anelli",
+              "Might, e +1 a [[overhead-slam]], [[rending-blow]] o [[ruinous-blow]]"
+            ],
+            [
+              "Collana e orecchini",
+              "Quelli di grado Unique danno +1 alle passive. Combat Speed sulla collana"
+            ],
+            [
+              "Cintura, amuleto, rune",
+              "Non hanno righe: Noble Belt, Revelation Amulet (10% di Weapon Damage Boost) e una Clash Rune per slot. Due Clash Rune insieme le portano 46 dei primi 50 Gladiator Global"
+            ],
+            [
+              "Pet",
+              "Slot 4 del Genus: Front Attack Damage Boost sul tabellone Varian, Double Chance sullo Special"
+            ],
+            [
+              "Ali",
+              "Dark Veil, dalla Conquest di Ferocious Horn Den; oppure Talisra da un negozio. Ogni ala posseduta dà comunque il suo effetto fisso. I primi 94 Global portano Forest Spirit (39%) e Ultimate Daeva (35%)"
+            ],
+            [
+              "Titoli",
+              "Attacco: Unbound by Genus (4,5% di danno PvE, con Insight 10 su tutti e cinque i tabelloni Genus) o, prima, Guardian of Verteron o di Altgard (Monolith al livello 20). Difesa: Saint of Verteron o di Altgard (Monolith a 30). Utilità: Empty Closet (700 skin) o, prima, Through Hell and Back"
+            ]
+          ]
+        },
+        {
+          "t": "list",
+          "mode": "pve",
+          "items": [
+            "La precisione è una soglia, non una statistica da accumulare: quando i colpi entrano sempre, il resto va in danno e velocità.",
+            "Il critico serve meno di quanto sembra: Overhead Slam con la sua specializzazione è già sempre critica. Ne basta abbastanza per far scattare [[lunge-stance]] e il recupero di mana di [[rending-blow]]. Misurato su di te il 06/10: sul manichino i colpi critici erano il 50%, che è il tetto scritto nel client del Global; sui boss di Vakron il 38%. Un critico ti vale tra 1,6 e 1,8 volte un colpo normale.[^maps-stats]",
+            "Manastone, cosa montano davvero i primi 784 coreani: Attack sul 60-86% dei pezzi, Front Attack Damage Boost sul 36-41%. La tabella qui sopra segue il valore calcolato da Aion 2 Maps, non l'uso: le due cose non coincidono.[^meta,maps]",
+            "Non inseguire le manastone perfette in Season 1: ogni cambio costa caro e il vantaggio è piccolo."
+          ]
+        },
+        {
+          "t": "note",
+          "mode": "pve",
+          "x": "Aion 2 Maps chiama Smite la statistica che i dati del client chiamano Double Chance: è la stessa. Sulle statistiche le fonti danno ordini diversi; questo è quello della fonte che distingue i dati dalle opinioni.[^maps]"
+        },
+        {
+          "t": "h3",
+          "x": "Cosa cambia in PvP",
+          "mode": "pvp"
+        },
+        {
+          "t": "table",
+          "mode": "pvp",
+          "head": [
+            "Dove",
+            "Cosa cambia"
+          ],
+          "rows": [
+            [
+              "Amuleto",
+              "Fierce Battle Amulet (20% di danno PvP) al posto del Revelation Amulet"
+            ],
+            [
+              "Armatura",
+              "Status Effect Resist su ogni pezzo"
+            ],
+            [
+              "Manastone",
+              "Le Abyssal Manastone danno righe PvP, come PvP Attack"
+            ],
+            [
+              "Ali",
+              "Brawler Wings (resistenza e probabilità degli stati) o Talisra"
+            ],
+            [
+              "Titolo",
+              "Attacco: Saint of Ereshkigal (4% di danno PvP), dal Monolith di Ereshkigal al livello 20"
+            ]
+          ]
+        },
+        {
+          "t": "list",
+          "mode": "pvp",
+          "items": [
+            "Precisione prima di tutto: i giocatori parano e schivano molto più dei boss, e una combo parata è una combo persa.",
+            "In Season 1 non serve un secondo equipaggiamento completo: si cambiano amuleto, righe e preset."
+          ]
+        },
+        {
+          "t": "h3",
+          "x": "Potenziamento"
+        },
+        {
+          "t": "list",
+          "items": [
+            "Arma e accessori a +10, poi basta. Fino a +10 riesce sempre. I primi 94 hanno l'arma a +15 e la guardia a +11: è roba da dopo, da +10 a +15 lo stesso punto costa circa 75 volte di più.",
+            "Cintura e amuleto per ultimi. Costano secondo il colore: da +0 a +10 una Noble Belt verde (Rare) chiede circa 232.000 Kina, una blu (Epic) circa 1,6 milioni, una gialla (Unique) come la tua circa 5 milioni, più una pergamena dedicata a ogni livello. L'hai letto anche in gioco il 07/10: da +2 a +3 la tua chiede 381.000 Kina. I primi 94 li tengono a +0.[^maps,metabot-items]",
+            "Non smontare gli oggetti gialli che non usi: servono per rifare le righe con successo sicuro."
+          ]
+        },
+        {
+          "t": "h3",
+          "x": "Il percorso dopo il 45"
+        },
+        {
+          "t": "p",
+          "x": "Il numero che apre i contenuti è l'Item Level, che molti chiamano gear score. Il Combat Power è un altro numero, a sei cifre, e non apre niente. A 2.000 di Item Level ti mancano 100 punti alla soglia dei 2.100, quella di Fire Temple e Ferocious Horn Den in Conquest.[^maps,couga]"
+        },
+        {
+          "t": "h3",
+          "x": "Da 2.000 a 2.100: cosa costa meno"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Cosa",
+            "Item Level",
+            "Costo"
+          ],
+          "rows": [
+            [
+              "Un cristallo Daevanion speso",
+              "+1 l'uno",
+              "niente Kina: controlla di non averne da parte"
+            ],
+            [
+              "Due Clash Rune, una per slot",
+              "+40 l'una",
+              "niente Kina; fermale a +1, da +2 un fallimento le distrugge. I primi 94 le tengono a +3: hanno rischiato"
+            ],
+            [
+              "Una riga di manastone o soulstone",
+              "grigia +1, verde +2, blu +3, gialla +4",
+              ""
+            ],
+            [
+              "Noble Belt verde da +0 a +10, poi Substance Morph",
+              "+10, poi +13",
+              "circa 232.000 Kina e 10 pergamene"
+            ],
+            [
+              "Un pezzo Unique di livello 54 da +0 a +5",
+              "+5",
+              "circa 99.000 Kina"
+            ],
+            [
+              "Un pezzo Epic di livello 38 da +5 a +10",
+              "+5",
+              "circa 274.000 Kina"
+            ],
+            [
+              "Cintura o amuleto blu da +0 a +10, poi Substance Morph",
+              "+10, poi +19",
+              "circa 1,6 milioni di Kina e 10 pergamene"
+            ],
+            [
+              "Cintura o amuleto gialli da +0 a +10",
+              "+10",
+              "circa 5 milioni di Kina e 10 pergamene"
+            ],
+            [
+              "Una carta Arcana di grado più alto",
+              "20, 40, 60 o 80 secondo il grado, più 1 a livello",
+              "dalla Transcendence"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "L'Item Level è una somma: ogni pezzo porta il suo, più 1 per ogni livello di potenziamento fino a +15. Ali, pet e titoli non contano. Da +10 a +15 lo stesso punto costa circa 75 volte di più che da +0 a +5.[^maps]"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Item level",
+            "Da dove arriva"
+          ],
+          "num": [
+            0
+          ],
+          "rows": [
+            [
+              "1.400",
+              "Shugo Festival, Nightmare, Draupnir, missioni verdi, dungeon sigillati e roccaforti"
+            ],
+            [
+              "1.900",
+              "Vakron Sky Island"
+            ],
+            [
+              "2.100",
+              "Transcendence a due stelle"
+            ],
+            [
+              "2.500",
+              "Ferocious Horn Den"
+            ],
+            [
+              "2.800",
+              "soglia del raid da 10, Abyssal Forge: Ludra"
+            ]
+          ]
+        },
+        {
+          "t": "table",
+          "head": [
+            "Contenuto",
+            "Item level richiesto"
+          ],
+          "num": [
+            1
+          ],
+          "rows": [
+            [
+              "Krao Cave, Draupnir",
+              "700"
+            ],
+            [
+              "Urugugu Canyon, Vakron Sky Island",
+              "1.400"
+            ],
+            [
+              "Transcendence: Deus Research Base, Shattered Arkanis",
+              "1.600"
+            ],
+            [
+              "Fire Temple, Ferocious Horn Den",
+              "2.100"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Soglie della modalità Conquest; l'Exploration dello stesso dungeon si apre prima. Game8 dà valori più alti di 100 o 200 punti: il numero giusto è quello scritto sulla porta del dungeon."
+        },
+        {
+          "t": "callout",
+          "kind": "warn",
+          "title": "Il raid è chiuso",
+          "x": "NCSOFT ha tolto Ludra con la versione del lancio e comunicherà la nuova data entro il 16/10/2026.[^ncsoft]"
+        },
+        {
+          "t": "h3",
+          "x": "Cosa indossano i primi 94 Gladiator Global"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Pezzo",
+            "Più usato",
+            "Potenziamento"
+          ],
+          "rows": [
+            [
+              "Arma",
+              "Aulamus Greatsword (28%) o Splendent White Dragon Lord Greatsword (17%)",
+              "+15"
+            ],
+            [
+              "Guardia",
+              "Spiritforged Guard (32%) o Vakron Guard (25%)",
+              "+11"
+            ],
+            [
+              "Armatura",
+              "set Vakron: petto 66%, gambali 61%, stivali 55%, guanti 51%, elmo 49%, mantello 47%, spalline 46%. Secondo il set Nuakum, tra il 17 e il 28% per pezzo",
+              "+10"
+            ],
+            [
+              "Collana, orecchini, anelli",
+              "Aulamus (51, 43 e 43%); secondo Enraged Kromede (11-13%)",
+              "+10"
+            ],
+            [
+              "Bracciali",
+              "Ascension Bracelet (50%) o Liberator Bracelet (28%)",
+              "+10"
+            ],
+            [
+              "Rune",
+              "Clash Rune (100%)",
+              "+3"
+            ],
+            [
+              "Cintura e amuleto",
+              "Noble Belt e Revelation Amulet (100%)",
+              "+0"
+            ],
+            [
+              "Ali",
+              "Forest Spirit (39%), Ultimate Daeva (35%), Ancient Aullaeu (7%)",
+              ""
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Fotografia del 05/10/2026, primo giorno di gioco per tutti, sesto dell'accesso anticipato: serve a capire la direzione, non è la lista definitiva.[^meta]"
+        },
+        {
+          "t": "note",
+          "x": "Nel campione più largo di Questlog, 193 Gladiator Global, l'ordine dei set si inverte: Nuakum sul 31-32% dei pezzi, Vakron sul 20-22%. Vakron è quello che portano i più avanti. La mediana dei primi 500 Global è Item Level 2.273 e Combat Power 109.049. I titoli più usati li conosco solo per i coreani: Empty Closet 73%, Unbound by Genus 42%.[^builds,meta]"
+        },
+        {
+          "t": "h3",
+          "x": "Quanto rende l'1% di una statistica"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Statistica",
+            "Danno in più per l'1%",
+            "Da dove viene il numero"
+          ],
+          "rows": [
+            [
+              "Front Attack Damage Boost",
+              "da 0,57 a 0,96%, di più sui primi punti",
+              "prove di kanonxo e di un secondo tester"
+            ],
+            [
+              "Double Chance",
+              "circa 1% ai primi punti, 0,8% al 50%",
+              "prove sul server asiatico; i boss ne tolgono fino al 30%"
+            ],
+            [
+              "Weapon Damage Boost",
+              "da 0,42 a 0,55%",
+              "prove di kanonxo e di un secondo tester"
+            ],
+            [
+              "Probabilità di critico",
+              "0,40% sui boss, dove sei al 38%; niente sul manichino, dove sei al tetto",
+              "misurato sui tuoi colpi il 06/10"
+            ],
+            [
+              "Critical Damage Boost",
+              "da 0,34 a 0,41%",
+              "misurato sui tuoi colpi il 06/10; le prove di altri danno 0,40-0,45%"
+            ],
+            [
+              "Damage Boost",
+              "da 0,30 a 0,53%, rende meno man mano che sale",
+              "prove di kanonxo e di un secondo tester"
+            ],
+            [
+              "Might",
+              "0,1% di Attack per punto",
+              "dati del client; sulla tua scheda 28 punti, +2,8%"
+            ]
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Il tetto del critico: il client del Global scrive «Max Critical Hit Rate is 50%»; sui server asiatici le prove davano 80%. I tuoi numeri stanno col 50%: 50,2% su 602 colpi al manichino. Per Combat Speed non c'è una formula nota, solo soglie a gradini.[^maps-stats]"
+        }
+      ]
+    },
+    {
+      "id": "routine",
+      "nav": "Giornaliere e orari",
+      "title": "Giornaliere, settimanali e orari",
+      "blocks": [
+        {
+          "t": "p",
+          "x": "Gli orari qui sotto sono quelli del tuo orologio (Spagna e Italia hanno lo stesso fuso) e valgono fino a sabato 24 ottobre. NCSOFT non ha pubblicato un calendario per il Global: sono orari letti dal client da siti diversi. Su reset giornaliero, Rift e Shugo Festival concordano; sul reset settimanale Questlog mostra mercoledì alle 18:00, tutti gli altri mercoledì alle 09:00.[^timers,qtimers,maps] Su Dimensional Invasion concordano anche, ma in gioco l'orario non torna: leggi la riga in tabella."
+        },
+        {
+          "t": "callout",
+          "kind": "warn",
+          "title": "Dal 25 ottobre",
+          "x": "Con l'ora solare gli orari potrebbero scalare di un'ora indietro (reset alle 08:00, Rift all'una, alle 4, alle 7 e così via). Le fonti su questo non concordano: guarda il conto alla rovescia in gioco la prima domenica. La manutenzione di mercoledì 28 potrebbe cominciare alle 07:30."
+        },
+        {
+          "t": "table",
+          "head": [
+            "Cosa",
+            "Quando (ora locale)",
+            "Note"
+          ],
+          "rows": [
+            [
+              "Reset giornaliero",
+              "ogni giorno alle 09:00",
+              ""
+            ],
+            [
+              "Reset settimanale",
+              "mercoledì alle 09:00",
+              "cade dentro la manutenzione"
+            ],
+            [
+              "Manutenzione",
+              "mercoledì dalle 08:30, circa tre ore e mezza",
+              "annunciata per il 7/10; orario e durata possono cambiare"
+            ],
+            [
+              "Shugo Festival",
+              "ogni ora al minuto 00",
+              "visto partire alle 22:00 del 6 ottobre; dura da 5 a 10 minuti secondo le fonti: presentati al minuto 00"
+            ],
+            [
+              "Spacetime Rift",
+              "02, 05, 08, 11, 14, 17, 20, 23",
+              "il portale resta aperto 10 minuti, dentro si sta un'ora"
+            ],
+            [
+              "Dimensional Invasion",
+              "orario da confermare",
+              "Sulla carta parte al minuto 30 di ogni ora, ma il 6 ottobre alle 19:30 non è partita. La nota di NCSOFT che ha fissato quel minuto dice che lì l'invasione «può» partire. Tre tipi: Beritra Air Raid, Accursed Sword, Incursion of the Spirits. Dura al massimo un quarto d'ora.[^ncsoft-kr-0408,metabot,gtools] Quando parte, accanto alla mappa compare un timer con tre minuti di conto alla rovescia: ci clicchi e scegli l'attività.[^game8-inv]"
+            ]
+          ]
+        },
+        {
+          "t": "h3",
+          "x": "Ogni giorno"
+        },
+        {
+          "t": "list",
+          "items": [
+            "Nightmare: 2 ingressi nuovi al giorno, se ne accumulano fino a 14. L'ingresso si consuma solo se uccidi il boss.",
+            "Duty, dal Journal: 5 al giorno, non si accumulano.",
+            "Shugo Festival: la ricompensa si ritira spendendo una chiave. Le chiavi sono una scorta che si ricarica, e sul numero le fonti danno quattro conti diversi: leggilo in gioco e non lasciarle arrivare al tetto.",
+            "Dimensional Invasion: una chiave al giorno, fino a 7.",
+            "Odyle Energy: +15 ogni 3 ore, tetto 560 (840 con la membership). Non lasciarla arrivare al tetto."
+          ]
+        },
+        {
+          "t": "h3",
+          "x": "Ogni settimana, entro martedì sera"
+        },
+        {
+          "t": "list",
+          "items": [
+            "Mercoledì i server chiudono alle 08:30 per la manutenzione e il reset delle 09:00 cade a server chiusi: quello che non hai fatto martedì sera è perso. Ricontrolla l'avviso la sera prima, l'orario è già cambiato una volta.[^ncsoft]",
+            "Daily Dungeon: 14 ingressi a settimana secondo il contatore del client, per tutti i personaggi del server insieme. Alcune fonti dicono 7 senza membership: guarda il numero in gioco. Nonostante il nome si possono fare tutti lo stesso giorno.",
+            "Expedition, modalità Exploration: 7 ricompense a settimana per ciascuna delle sei spedizioni.",
+            "Command Missions: 12 a settimana dalla capitale, più i rotoli Abyss Command, fino a 20. Comprali il giorno del reset.",
+            "Ascension Trial: 3 tentativi. Falli per ultimi, l'ultima sera prima del reset, con l'equipaggiamento migliore della settimana.",
+            "Transcendence e Conquest: le ricompense si ricaricano col tempo, una ogni 12 ore fino a 14 e una ogni 8 fino a 21. Passa a svuotarle almeno una volta a settimana.",
+            "Lower Abyss: 7 ore a settimana per personaggio.",
+            "Odyle Energy dal Substance Morph: limite settimanale, 4 o 7 creazioni secondo le fonti."
+          ]
+        },
+        {
+          "t": "callout",
+          "kind": "warn",
+          "title": "Errori che costano",
+          "x": "Ogni forziere costa 40 di Odyle Energy: aprili nel dungeon più alto in cui entri, non in quelli che hai superato. In Conquest e Transcendence prendi il cubo prima di uscire: le uscite senza cubo sono 10 a settimana, poi non entri più. Non comprare alla cieca nel negozio di stagione: le monete sono poche fino al 16 dicembre.[^maps,couga]"
+        },
+        {
+          "t": "h3",
+          "x": "Boss dell'Abisso"
+        },
+        {
+          "t": "p",
+          "x": "Stanno in **Lower Reshanta**. Giorni e ore sono scritti nel client del Global e valgono nell'ora locale del server, che per i server europei è quella del tuo orologio: il 6 ottobre Watcher Kaira è comparsa alle 22:00, come da tabella.[^shugo,qtimers,timers-sched]"
+        },
+        {
+          "t": "table",
+          "head": [
+            "Boss",
+            "Quando (ora locale)",
+            "Quanto resta"
+          ],
+          "rows": [
+            [
+              "Watcher Kaira",
+              "ogni giorno alle 01:00, 04:00, 07:00, 10:00, 13:00, 16:00, 19:00 e 22:00",
+              "mezz'ora, in un punto a caso"
+            ],
+            [
+              "Artifact Siege",
+              "lunedì, giovedì e sabato alle 21:00",
+              "mezz'ora; chi vince ha l'Abyss Corridor"
+            ],
+            [
+              "Executor Argo, Executor Kaira, Executor Tamasa",
+              "lunedì, giovedì e sabato alle 21:30",
+              "mezz'ora"
+            ],
+            [
+              "Guardian Lord Nahma",
+              "venerdì e domenica alle 21:00",
+              "mezz'ora"
+            ],
+            [
+              "Argo, the Spirit King",
+              "12 ore dopo che è stato ucciso",
+              ""
+            ]
+          ]
+        },
+        {
+          "t": "callout",
+          "title": "L'orologio è quello locale",
+          "x": "Visto in gioco il 6 ottobre: Watcher Kaira è comparsa alle 22:00 ora locale. La lettura di AION 2 Hub, sull'orologio unico UTC+9, la dava un'ora prima: per i server europei non regge. Artifact Siege, Executor e Nahma seguono lo stesso orologio, ma in gioco non li hai ancora visti; Questlog mette Artifact Siege ed Executor alle 23:00 e alle 23:30.[^hub-boss,qtimers]"
+        },
+        {
+          "t": "h3",
+          "x": "Boss di campo"
+        },
+        {
+          "t": "p",
+          "x": "I 24 boss di Verteron e i 24 di Altgard non hanno un orario: tornano un tempo fisso dopo l'uccisione, da 30 minuti a 12 ore secondo il boss. Sul Global quel tempo è la metà di quello coreano: lo dicono le uccisioni registrate sui server europei.[^timers-boss] Per otto boss di Verteron couga54 scrive la metà del tempo vero.[^couga-boss]"
+        }
+      ]
+    },
+    {
+      "id": "strumenti",
+      "nav": "Strumenti e regole",
+      "title": "Strumenti accanto al gioco, e cosa è vietato",
+      "blocks": [
+        {
+          "t": "p",
+          "x": "La regola di NCSOFT è scritta così: sono vietati i programmi, i dispositivi e gli apparecchi di terzi che interferiscono con il gioco o danno un vantaggio sleale, quelli che compiono azioni al posto del giocatore (macro e bot) e la modifica dei programmi del client. Per i programmi non autorizzati la sanzione prevista è la sospensione permanente di tutto l'account NC, senza gradini intermedi.[^rules]"
+        },
+        {
+          "t": "table",
+          "head": [
+            "",
+            "Cosa",
+            "Perché"
+          ],
+          "rows": [
+            [
+              "Va bene",
+              "Siti e app dove i dati li inserisci tu: checklist, timer, guide, planner di build. La macro e il contatore di danno interni al gioco.",
+              "Non leggono e non toccano il client."
+            ],
+            [
+              "Rischio basso",
+              "Overlay che leggono solo lo schermo, come Aion 2 Map Overlay.",
+              "Nessuna regola li nomina: non toccano né il client né la rete."
+            ],
+            [
+              "Zona grigia",
+              "I DPS meter, che leggono il traffico di rete del gioco: quelli di terzi. La VPN.",
+              "I testi ufficiali del Global non nominano i meter. Non ho trovato un solo ban per un meter passivo, ma «uso di software sospetto» e «uso di una VPN» sono tra i motivi per perdere lo stato di account fidato, che serve per mercato e scambi. Chi usa un meter lo tenga locale, senza caricare i combattimenti su classifiche pubbliche: NCSOFT Corea ha minacciato azioni legali contro i siti che raccolgono il danno degli altri."
+            ],
+            [
+              "Vietato",
+              "Macro di mouse o tastiera fatte con software esterno, script che intrecciano gli attacchi da soli, bot. Patch che sostituiscono file del client, compresa la traduzione italiana non ufficiale.",
+              "In Corea account farm e programmi non autorizzati hanno portato a ban di massa (24.374 account in dodici giorni tra il 26 agosto e il 6 settembre 2026, una parte poi riammessa) e a denunce contro chi usava programmi di farming automatico."
+            ]
+          ]
+        },
+        {
+          "t": "h3",
+          "x": "Quelli che valgono il tempo"
+        },
+        {
+          "t": "list",
+          "items": [
+            "[Aion2-DailiesTracker](https://aion2-tracker.github.io/Aion2-DailiesTracker/): checklist giornaliera e settimanale per più personaggi, con le cariche e i conti alla rovescia. Solo Global, in inglese o spagnolo, i dati restano nel browser.",
+            "[Atreia Timers](https://hawikk.github.io/aion2-timers/): conto alla rovescia di Rift, Shugo Festival, boss e reset. Per ogni orario dice se è confermato, letto dai dati o stimato.",
+            "[Questlog](https://questlog.gg/aion-2/en/skill-builder?publisher=global&class=gladiator): banca dati, costruttore di build e timer. È la fonte dei dati di questo hub.",
+            "[AION 2 Global Database](https://aion2.gaming.tools/) di gaming.tools: oggetti, skill, missioni, contenuti e mappe letti dal client del Global. Serve per controllare un numero alla fonte; per gli orari rimanda ad AION 2 Timers.",
+            "[MetaBot Armory](https://metabot.gg/en/aion-2/armory): la scheda pubblica di ogni personaggio coi dati del sito ufficiale, cioè equip con righe e manastone, statistiche e livelli delle skill. Ha anche un'app per il desktop che mostra che cosa manca a un personaggio.",
+            "[AION 2 Meta](https://aion2-meta.com/guides/gladiator/): cosa usano davvero i Gladiator più forti, aggiornato sui profili ufficiali.",
+            "[Aion 2 Map Overlay](https://github.com/problem-xyz/aion2-map-overlay): percorsi numerati sopra la mappa. Riconosce la mappa dallo schermo, non legge la rete. Non è firmato, Windows avvisa all'avvio.",
+            "[PowerMeter](https://powermeter.letrionlabs.it/): contatore di danno open source (GPL-3.0) di Letrion Labs, costruito sul motore di A2Tools DPS Meter. Legge il traffico di rete, quindi sta nella zona grigia della tabella qui sopra, e chiede il driver Npcap."
+          ]
+        },
+        {
+          "t": "note",
+          "x": "Il contatore di danno del gioco misura solo te: la guida alle impostazioni di couga54 lo indica alla voce Combat Analysis, {{Ctrl}} + {{X}}. In Corea esiste dal 1° aprile 2026."
+        }
+      ]
+    },
+    {
+      "id": "italiano",
+      "nav": "In italiano",
+      "title": "In italiano",
+      "blocks": [
+        {
+          "t": "p",
+          "x": "Il client non ha l'italiano, né nei testi né nell'audio. Una guida italiana completa sul Gladiator del Global, scritta da chi lo gioca, oggi non esiste: quello che c'è è qui sotto."
+        },
+        {
+          "t": "list",
+          "items": [
+            "[Discord Aion 2 ITALIA](https://discord.gg/eRFSb6bVFV): circa 1.400 iscritti. Le gilde italiane si stanno raccogliendo sul server Munin (Asmodiani), abbinato a Phernos (Elyos). I trasferimenti di server partono il 14 ottobre, all'inizio gratis e solo dentro la stessa fazione; dai server dell'accesso anticipato non si passa a quelli del lancio, e Munin è un server del lancio.",
+            "[-Viper-, guida all'early game e all'endgame](https://www.youtube.com/watch?v=D0J0wCFsXr8): 19 minuti in italiano sul percorso dopo il 45, con le tappe a 1.400, 2.100, 2.529 e 2.800. Girato sulla versione di Taiwan prima del lancio. Si apre con uno sponsor, LagoFast, che vende VPN, traduzione e contatore di danno: quella parte saltala, vedi Strumenti e regole.",
+            "[games.gg, Gladiator PvE](https://games.gg/it/aion-2/guides/aion-2-gladiator-pve-build-skill-stigma-e-rotazione/): traduzione automatica di una guida inglese. Segue lo stesso impianto di questo hub, ma su tre numeri è rimasta alla Corea di prima di agosto: Prepare for Battle da 5 secondi, Lunge Stance con il 20% di mana in meno, ricariche ridotte a ogni colpo invece che sui critici.",
+            "[MMO.it](https://www.mmo.it/index.php/tag/aion/) per le notizie, [iCrewPlay](https://www.icrewplay.com/?s=aion+2) per gli articoli di servizio su server e trasferimenti."
+          ]
+        },
+        {
+          "t": "callout",
+          "kind": "warn",
+          "title": "La traduzione italiana non ufficiale",
+          "x": "Gira una patch che si installa copiando file nella cartella del gioco. Modificare il client è vietato dalle Operation Policies, e la sanzione scritta è la perdita dell'account NC: una riga tradotta non lo vale.[^rules]"
+        }
+      ]
+    },
+    {
+      "id": "versione",
+      "nav": "Global e Corea",
+      "title": "Global e Corea: cosa cambia",
+      "blocks": [
+        {
+          "t": "p",
+          "x": "Il client Global è partito dallo stato in cui era la Corea a fine estate 2026: i testi delle skill attive e passive sono identici, parola per parola. Le differenze stanno intorno.[^db,kr-patch]"
+        },
+        {
+          "t": "table",
+          "head": [
+            "",
+            "Global Season 1",
+            "Corea e Taiwan"
+          ],
+          "rows": [
+            [
+              "Livello massimo",
+              "45",
+              "50"
+            ],
+            [
+              "Slot stigma",
+              "4",
+              "5 o 6 secondo le fonti"
+            ],
+            [
+              "Livello massimo stigma",
+              "20, quattro effetti",
+              "25, cinque effetti"
+            ],
+            [
+              "Tabelloni Daevanion",
+              "6 dal 21/10/2026 (Ariel): mancano Marchutan e Yustiel",
+              "8"
+            ],
+            [
+              "Equipaggiamento",
+              "niente grado Heroic",
+              "Heroic disponibile"
+            ],
+            [
+              "Gruppi",
+              "Expedition da 5, raid da 10",
+              "come nel Global dal 1° luglio 2026; prima da 4 e da 8"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "x": "Conseguenza pratica: una guida coreana è allineata al Global solo se è posteriore al 26 agosto 2026. I cambi che contano: [[rage-burst]] accende Overhead Slam dal 4 febbraio ed è stata rifatta il 29 aprile; [[zikels-blessing]] vale solo su di te dall'8 luglio; [[lunge-stance]] non riduce più il costo in mana dal 12 agosto; [[ruinous-blow]] ha ricarica 45 secondi e 20 secondi di bonus dal 12 agosto; [[experienced-counterstrike]] è stata ridotta il 26 agosto. Le build coreane con cinque o sei stigma non si possono copiare."
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "en": "Stigma",
+      "ko": "스티그마",
+      "it": "Skill speciali che si montano negli slot, quattro nel Global."
+    },
+    {
+      "en": "Specialty",
+      "ko": "특화",
+      "it": "Le specializzazioni di una skill: le opzioni che scegli a 8, 12 e 20."
+    },
+    {
+      "en": "Chain Skill",
+      "ko": "연속기",
+      "it": "Secondo colpo che parte premendo di nuovo lo stesso tasto dopo la skill madre."
+    },
+    {
+      "en": "Knockdown",
+      "ko": "넘어짐",
+      "it": "Atterramento. Accende Overhead Slam e Aerial Snare."
+    },
+    {
+      "en": "Stagger",
+      "ko": "그로기",
+      "it": "Stordimento del boss quando la sua barra di Stagger arriva a zero: la svuotano solo certe skill. Accende Sword Aura Rampage."
+    },
+    {
+      "en": "Airborne",
+      "ko": "공중 속박",
+      "it": "Lancio in aria: il bersaglio non può agire."
+    },
+    {
+      "en": "Root",
+      "ko": "속박",
+      "it": "Immobilizzato: può usare skill ma non muoversi."
+    },
+    {
+      "en": "Seal",
+      "ko": "봉인",
+      "it": "Sigillo: non può usare skill."
+    },
+    {
+      "en": "Incapacitated Immunity",
+      "ko": "행동불가 면역",
+      "it": "Immunità ai controlli. È la condizione dei boss."
+    },
+    {
+      "en": "Impact-type",
+      "ko": "충격계",
+      "it": "La famiglia di stati con atterramento, stordimento e lancio in aria."
+    },
+    {
+      "en": "Block / Parry",
+      "ko": "막기 / 무기막기",
+      "it": "Parata. Con lo spadone si para con l'arma, e conta come parata riuscita."
+    },
+    {
+      "en": "Tenacity",
+      "ko": "강인함",
+      "it": "Immunità agli stati per qualche secondo, data da Defiance."
+    },
+    {
+      "en": "Prepare for Battle",
+      "ko": "전투 준비",
+      "it": "Il bonus di danno dato da Ruinous Blow e Leaping Slam."
+    },
+    {
+      "en": "Enmity",
+      "ko": "적대치",
+      "it": "Aggro: quanto il mostro ce l'ha con te."
+    },
+    {
+      "en": "Combat Speed",
+      "ko": "전투 속도",
+      "it": "Velocità di attacco e di lancio delle skill."
+    },
+    {
+      "en": "Double Chance",
+      "ko": "강타",
+      "it": "Probabilità di colpo doppio. Alcune fonti la chiamano Smite."
+    },
+    {
+      "en": "Multi-Hit",
+      "ko": "다단 히트",
+      "it": "Colpo che entra più volte."
+    },
+    {
+      "en": "Perfect Chance",
+      "ko": "완벽",
+      "it": "Probabilità di colpo perfetto, cioè al danno massimo dell'arma."
+    },
+    {
+      "en": "Damage Boost / Tolerance",
+      "ko": "피해 증폭 / 피해 내성",
+      "it": "Danno in più inflitto e danno in meno subito. Esistono in versione PvE e PvP."
+    },
+    {
+      "en": "Soul Binding",
+      "ko": "영혼 각인",
+      "it": "Il legame di un pezzo al personaggio, che ne fissa le righe casuali."
+    },
+    {
+      "en": "Odyle Energy",
+      "ko": "오드 에너지",
+      "it": "Energia che si ricarica col tempo e si spende nei forzieri dei dungeon."
+    },
+    {
+      "en": "Wisdom Stone",
+      "ko": "",
+      "it": "Oggetto che dà un punto skill. Viene dalle missioni di distretto e dai dungeon sigillati."
+    },
+    {
+      "en": "Stigma Shard",
+      "ko": "",
+      "it": "Frammento che dà un punto stigma. Si compra nei negozi di Abyss, Shugo Festival e Nightmare."
+    },
+    {
+      "en": "Skill Preset",
+      "ko": "",
+      "it": "Assetto salvato: sono tre, ognuno con i suoi livelli di skill e stigma e la sua macro."
+    }
+  ],
+  "verifyTitle": "Da controllare in gioco",
+  "verifyIntro": [
+    {
+      "t": "p",
+      "x": "Io il gioco non posso aprirlo. Questi sono i punti in cui le fonti lasciano un margine: i primi quattro si chiudono in due minuti sul manichino, gli altri guardando i contatori del gioco."
+    }
+  ],
+  "verify": [
+    "Che nella pila parta per prima la riga 0, quella in basso. Prova con due skill e guarda quale esce.",
+    "Il percorso dei menu per la macro: Skill, Macro in alto a destra, Add macro. E il campo Delay: metti 10 ms.",
+    "Quanti [[upward-strike]] fai in un minuto sul manichino, con un assetto e con l'altro. Tieni quello che ne fa di più. Il 06/10, letti dal vivo, erano 12: uno per ogni Overhead Slam.",
+    "[[ankle-slice]] si accende subito dopo una parata.",
+    "Se nei menu del gioco la statistica del colpo doppio si chiama Double Chance o Smite: le fonti usano tutti e due i nomi.",
+    "A che ora cade il reset: giornaliero alle 09:00, settimanale mercoledì alle 09:00 (Questlog dice mercoledì alle 18:00). Lo vedi nel conto alla rovescia delle missioni.",
+    "Il contatore del Daily Dungeon: 14 a settimana, oppure 7 senza membership.",
+    "Quante chiavi dello Shugo Festival hai, quante ne arrivano e ogni quanto: le fonti danno quattro conti diversi.",
+    "Se in Exploration i 7 a settimana sono per ogni spedizione, come dicono i dati del client.",
+    "Se Artifact Siege, Executor e Nahma compaiono alle ore della tabella: l'orologio è quello locale (Watcher Kaira vista alle 22:00 del 6 ottobre), ma questi tre non li hai ancora visti.",
+    "Quando parte Dimensional Invasion: intorno al minuto 30 guarda se accanto alla mappa compare il suo timer, e segnati l'ora. Alle 19:30 del 6 ottobre non è partita. L'ipotesi da provare è un'ora e mezza dopo ogni Rift: 18:30, 21:30, 00:30. Shugo Festival invece al minuto 00 parte: visto alle 22:00 del 6 ottobre.",
+    "Se lo Spacetime Rift si apre alle ore della tabella, per esempio alle 20:00 e alle 23:00: in gioco non l'hai ancora visto."
+  ],
+  "sourcesIntro": [
+    {
+      "t": "note",
+      "x": "I numeri piccoli accanto ai dati rimandano a queste voci. Ordine di peso: dati del client, statistiche d'uso, fonti che separano i dati dalle opinioni, creator che spiegano il perché. Ho letto anche sette guide di siti che vendono servizi o valuta: ripetono le stesse cose senza numeri propri e qui non contano."
+    }
+  ],
+  "path": {
+    "nav": "Parti da qui",
+    "title": "Parti da qui: un passo alla volta",
+    "chapters": [
+      {
+        "id": "macro",
+        "nav": "La macro",
+        "steps": [
+          {
+            "id": "idea",
+            "nav": "L'idea",
+            "title": "Prima l'idea: un pulsante, un filo, un cassetto",
+            "blocks": [
+              {
+                "t": "flow",
+                "items": [
+                  {
+                    "k": "Il pulsante",
+                    "x": "Il **tasto destro** del mouse. È l'unico che tieni premuto tu."
+                  },
+                  {
+                    "k": "Il filo",
+                    "x": "La **macro**. Finché tieni premuto il destro, preme il tasto T al posto tuo."
+                  },
+                  {
+                    "k": "Il cassetto",
+                    "x": "Il **tasto T**, con dentro tre skill. Il gioco usa la prima pronta, partendo dal basso."
+                  }
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Un tasto può fare una cosa sola: o lancia le skill che ha sopra, o fa partire la macro. Per questo le skill non stanno sul destro: sul destro va la macro, le skill vanno su T."
+              },
+              {
+                "t": "p",
+                "x": "Le cose da preparare sono tre, una per passo: le tre skill su T, il tasto destro per la macro, la macro con dentro T."
+              },
+              {
+                "t": "callout",
+                "title": "Hai già messo le tre skill sul tasto destro?",
+                "x": "Funziona anche così, tenendolo premuto: è solo più lento. Puoi giocare e fare la macro quando hai cinque minuti."
+              }
+            ]
+          },
+          {
+            "id": "skill",
+            "nav": "Le tre skill",
+            "title": "Metti le tre skill sul tasto T",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri la finestra delle skill con {{K}}. In basso c'è questa griglia: trova la colonna del tasto **T**.",
+                  "Trascina **Rage Burst** nella casella più in basso di quella colonna.",
+                  "Trascina **Overhead Slam** nella casella sopra.",
+                  "Trascina **Rending Blow** nella casella sopra ancora."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "barra-gladiator",
+                "w": 1128,
+                "h": 504,
+                "alt": "La barra del Gladiator: sul T, dal basso, Rage Burst, Overhead Slam e Rending Blow.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 90.6,
+                    "y": 82.7
+                  },
+                  {
+                    "n": 2,
+                    "x": 90.6,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 3,
+                    "x": 90.6,
+                    "y": 53.6
+                  },
+                  {
+                    "n": 4,
+                    "x": 90.6,
+                    "y": 36.9
+                  }
+                ],
+                "credit": "La barra da fare, disegnata con le icone del gioco nelle colonne della tua barra: 1-8, Q, E, il tasto sinistro e l'ultima colonna, che diventa T. I numeri sono quelli dei passi."
+              }
+            ],
+            "check": "nella colonna T vedi le tre icone una sopra l'altra, con Rage Burst in fondo."
+          },
+          {
+            "id": "tasto",
+            "nav": "Il tasto destro",
+            "title": "Dai il tasto destro alla macro",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Premi {{Esc}}, apri **Settings** e clicca **Key Settings**.",
+                  "Clicca **General**.",
+                  "Scorri fino a Gameplay. Alla riga **Macro** clicca la prima casella, poi premi il **tasto destro** del mouse."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "tasto-macro",
+                "w": 1340,
+                "h": 558,
+                "alt": "Settings, Key Settings, General: la riga Macro nella sezione Gameplay.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 16.2,
+                    "y": 7
+                  },
+                  {
+                    "n": 2,
+                    "x": 30.7,
+                    "y": 14.7
+                  },
+                  {
+                    "n": 3,
+                    "x": 68.3,
+                    "y": 83.5
+                  }
+                ],
+                "credit": "Fotogramma da [Grobs, AION 2 Macro Guide](https://www.youtube.com/watch?v=HMod6Z4GrE0&t=106s), minuto 1:46. Tagliato al centro."
+              },
+              {
+                "t": "note",
+                "x": "Se la casella non prende il tasto del mouse, sei nella modalità di controllo AION 1: cambiala con il tasto scritto in cima alla stessa pagina, alla riga Switch Control Mode."
+              }
+            ],
+            "check": "nella casella della riga Macro compare il disegno di un mouse."
+          },
+          {
+            "id": "macro",
+            "nav": "La macro",
+            "title": "Crea la macro e mettici dentro il tasto T",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri la finestra delle skill con {{K}} e clicca **Macro**, in alto a destra.",
+                  "Clicca il pulsante giallo **Add Macro**. Compare una riga con un'icona.",
+                  "Clicca quell'icona: si apre una fila di caselle. Clicca la casella con l'icona di **Rage Burst**.",
+                  "Nel campo **Delay** scrivi **10**."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "macro-gladiator",
+                "w": 936,
+                "h": 482,
+                "alt": "La finestra Macro con una riga: il tasto T, che mostra Rage Burst, e Delay 10.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 73.9,
+                    "y": 18
+                  },
+                  {
+                    "n": 2,
+                    "x": 32.5,
+                    "y": 83
+                  },
+                  {
+                    "n": 3,
+                    "x": 32.5,
+                    "y": 43.2
+                  },
+                  {
+                    "n": 4,
+                    "x": 34.9,
+                    "y": 64.7
+                  }
+                ],
+                "credit": "La macro da fare, disegnata come la finestra Macro del gioco, con le skill della tua barra. I numeri sono quelli dei passi."
+              },
+              {
+                "t": "callout",
+                "title": "Vedi solo Rage Burst? È giusto",
+                "x": "La macro elenca i tasti, non le skill. Hai scelto il tasto T, e il gioco lo mostra con l'icona della skill più in basso. Overhead Slam e Rending Blow stanno sullo stesso tasto e partono anche loro."
+              }
+            ],
+            "check": "nella finestra Macro c'è una riga sola, con l'icona di Rage Burst e Delay 10."
+          },
+          {
+            "id": "prova",
+            "nav": "La prova",
+            "title": "Provala sul manichino",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Vai davanti a un manichino, il **Training Scarecrow**.",
+                  "Tieni premuti insieme il **tasto destro** e il **tasto sinistro**.",
+                  "Il personaggio attacca da solo, senza fermarsi. A ogni colpo tagliato compare una sagoma nera."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "due-tasti",
+                "w": 1240,
+                "h": 310,
+                "alt": "Il personaggio colpisce il manichino con i due tasti del mouse premuti insieme.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 32.3,
+                    "y": 13.2
+                  },
+                  {
+                    "n": 2,
+                    "x": 82.3,
+                    "y": 16.1
+                  }
+                ],
+                "credit": "Fotogramma da [Grobs, AION 2 Macro Guide](https://www.youtube.com/watch?v=HMod6Z4GrE0&t=205s), minuto 3:25."
+              },
+              {
+                "t": "list",
+                "items": [
+                  "Il tasto sinistro è **Keen Strike**: lo tieni premuto finché Overhead Slam e Rending Blow sono sotto il livello 16, poi lo lasci.",
+                  "Buff, salti e parate li premi tu, senza lasciare il destro."
+                ]
+              }
+            ],
+            "check": "il personaggio continua a colpire finché tieni premuto, e si ferma quando lasci."
+          }
+        ]
+      },
+      {
+        "id": "rb16",
+        "nav": "Da Rending Blow 16",
+        "title": "Da Rending Blow 16: Overhead Slam da sola",
+        "steps": [
+          {
+            "id": "sposta",
+            "nav": "Sulla barra",
+            "title": "Sposta Overhead Slam da sola sul 7",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri la finestra delle skill con {{K}}: la griglia in basso è la tua barra.",
+                  "Trascina **Overhead Slam** dalla colonna **T** alla casella in basso della colonna **7**, che è vuota.",
+                  "Trascina **Rending Blow** dalla riga 2 alla riga 1 della colonna T, nella casella appena lasciata libera, sopra Rage Burst.",
+                  "Rage Burst resta dov'è, in basso."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "barra-gladiator-rb16",
+                "w": 1128,
+                "h": 504,
+                "alt": "La barra da Rending Blow 16: Overhead Slam da sola sul 7, sul T Rage Burst e sopra Rending Blow.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 52,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 2,
+                    "x": 90.6,
+                    "y": 53.6
+                  },
+                  {
+                    "n": 3,
+                    "x": 90.6,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 4,
+                    "x": 52,
+                    "y": 82.7
+                  }
+                ],
+                "legend": [
+                  "**Overhead Slam**, da sola in basso sul **7**: la preme la macro, alla riga 1.",
+                  "**Rending Blow**, scesa dalla riga 2 alla riga 1 del T, sopra Rage Burst.",
+                  "**Rage Burst** resta in basso sul T: parte per prima quando è pronta e accende Overhead Slam.",
+                  "Il tasto **7** nella riga dei tasti: da qui in poi lo preme la macro."
+                ],
+                "credit": "La barra da Rending Blow 16, disegnata con le icone del gioco nelle colonne della tua barra: 1-8, Q, E, il tasto sinistro e l'ultima colonna, che diventa T. I numeri sono quelli della legenda."
+              },
+              {
+                "t": "callout",
+                "title": "Perché da sola",
+                "x": "Con Rending Blow sullo stesso tasto il gioco ne fa partire una sola delle due, e chi l'ha misurato ha perso il 20-30%. Da sola Overhead Slam parte nell'istante in cui Rage Burst la accende.[^aion2data,kanon]"
+              }
+            ],
+            "check": "sul 7 c'è solo Overhead Slam; sul T, dal basso, Rage Burst e Rending Blow, con la riga 2 e la 3 vuote."
+          },
+          {
+            "id": "macro",
+            "nav": "La macro",
+            "title": "La macro a due righe: il 7 e poi il T",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri la finestra delle skill con {{K}} e clicca **Macro**, in alto a destra.",
+                  "Nella riga che c'è già clicca l'icona e scegli il tasto **7**: la riga mostra Overhead Slam.",
+                  "Clicca **Add Macro**: compare la riga 2. Clicca la sua icona e scegli il tasto **T**: la riga mostra Rage Burst.",
+                  "In tutte e due le righe, nel campo **Delay**, scrivi **10**."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "macro-gladiator-rb16",
+                "w": 936,
+                "h": 672,
+                "alt": "La finestra Macro con due righe: il 7, che mostra Overhead Slam, e il T, che mostra Rage Burst.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 73.9,
+                    "y": 12.9
+                  },
+                  {
+                    "n": 2,
+                    "x": 32.5,
+                    "y": 31
+                  },
+                  {
+                    "n": 3,
+                    "x": 32.5,
+                    "y": 87.8
+                  },
+                  {
+                    "n": 4,
+                    "x": 34.9,
+                    "y": 46.4
+                  }
+                ],
+                "credit": "La macro da Rending Blow 16, disegnata come la finestra Macro del gioco, con le skill della tua barra. I numeri sono quelli della legenda.",
+                "legend": [
+                  "**Macro**, in alto a destra.",
+                  "L'icona della riga 1: cliccala e scegli il tasto 7, e compare Overhead Slam.",
+                  "**Add Macro** aggiunge la riga 2: lì scegli il tasto T, e compare Rage Burst.",
+                  "**Delay**: 10, su tutte e due le righe."
+                ]
+              },
+              {
+                "t": "callout",
+                "title": "L'ordine delle due righe",
+                "x": "Overhead Slam per prima perché è metà del tuo danno; fra le due righe l'ordine non cambia il danno. La macro prova la riga 1, poi la 2, e ricomincia.[^kanon,aion2data]"
+              }
+            ],
+            "check": "nella finestra Macro ci sono due righe: la prima mostra Overhead Slam, la seconda Rage Burst, tutte e due con Delay 10."
+          },
+          {
+            "id": "prova",
+            "nav": "Il sinistro",
+            "title": "Tieni premuta la macro e prova il tasto sinistro",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Sul manichino tieni premuto il tasto destro per un minuto, col contatore della pagina Danno acceso.",
+                  "Rifai un minuto tenendo premuti destro e sinistro insieme: il sinistro è Keen Strike.",
+                  "Tieni l'assetto che ha fatto più danno. A 16 Grobs e Arthars lasciano il sinistro, Ulfhednar, Kanon e metaroad lo tengono: decide il tuo manichino."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "due-tasti",
+                "w": 1240,
+                "h": 310,
+                "alt": "Un personaggio che colpisce il manichino di prova; a destra uno schema di tastiera e mouse con i due tasti del mouse accesi.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 82.3,
+                    "y": 16.1
+                  },
+                  {
+                    "n": 2,
+                    "x": 32.3,
+                    "y": 13.2
+                  }
+                ],
+                "legend": [
+                  "I due tasti del mouse insieme: il sinistro per Keen Strike, il destro per la macro.",
+                  "Il manichino di prova si chiama Training Scarecrow."
+                ],
+                "credit": "Fotogramma da [Grobs, AION 2 Macro Guide](https://www.youtube.com/watch?v=HMod6Z4GrE0&t=205s), minuto 3:25."
+              }
+            ],
+            "check": "hai due numeri del contatore, uno per assetto, e tieni quello più alto."
+          }
+        ]
+      },
+      {
+        "id": "skill",
+        "nav": "Le skill",
+        "steps": [
+          {
+            "id": "finestra",
+            "nav": "La finestra",
+            "title": "La finestra delle skill: dove si fa tutto",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri la finestra con {{K}}. A destra ci sono tutte le skill: **Active** sopra, **Passive** sotto. Clicca quella che vuoi guardare.",
+                  "A sinistra compare il suo nome con il livello.",
+                  "Sotto c'è **Specialty**: le specializzazioni. Quelle accese sono scritte in chiaro. Quelle col lucchetto si aprono al livello scritto davanti.",
+                  "In basso a destra **Level Up** alza la skill di un livello. Il numero accanto sono i punti che ti restano."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "finestra-skill",
+                "w": 1440,
+                "h": 810,
+                "alt": "La finestra Skill: a destra l'elenco delle skill attive e passive, a sinistra la skill scelta con le sue specializzazioni, in basso a destra il pulsante Level Up.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 80.6,
+                    "y": 25.9
+                  },
+                  {
+                    "n": 2,
+                    "x": 19.6,
+                    "y": 12.5
+                  },
+                  {
+                    "n": 3,
+                    "x": 10.6,
+                    "y": 41.2
+                  },
+                  {
+                    "n": 4,
+                    "x": 80.5,
+                    "y": 95.1
+                  }
+                ],
+                "credit": "Fotogramma da [Grobs, The Only Gladiator PVE Guide You Need](https://www.youtube.com/watch?v=xRPr30JetyY&t=770s), minuto 12:50."
+              }
+            ]
+          },
+          {
+            "id": "ordine",
+            "nav": "Quali alzare",
+            "title": "Quali skill alzare, in ordine",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "I punti non bastano per tutto: al 45 ne hai 203, e portare una skill da 1 a 10 ne costa 21. Spendili così, dall'alto in basso."
+              },
+              {
+                "t": "table",
+                "head": [
+                  "",
+                  "Porta a 10",
+                  "Perché"
+                ],
+                "rows": [
+                  [
+                    "1",
+                    "[[overhead-slam]], [[rending-blow]], [[ruinous-blow]]",
+                    "Sono le tre che fanno il danno."
+                  ],
+                  [
+                    "2",
+                    "[[keen-strike]]",
+                    "Ti rende il mana, finché le prime due sono sotto il 16."
+                  ],
+                  [
+                    "3",
+                    "[[experienced-counterstrike]] e [[attack-preparation]] (passive)",
+                    "Più danno sempre, e il bonus al gruppo quando pari."
+                  ],
+                  [
+                    "4",
+                    "[[crushing-wave]], [[sword-aura-rampage]], [[identify-weakness]], [[murderous-burst]], [[impact-hit]]",
+                    "Con i punti che arrivano dopo, dalle Wisdom Stone."
+                  ]
+                ]
+              },
+              {
+                "t": "list",
+                "items": [
+                  "[[leaping-slam]] e [[mocking-blade]]: prima a 8, poi a 10.",
+                  "[[defiance]] e [[aerial-snare]] restano a 1 in PvE.",
+                  "Azzerare le skill è gratis: se hai speso male, rifai."
+                ]
+              }
+            ],
+            "check": "le prime tre sono a 10 e ti avanza ancora qualche punto per Keen Strike."
+          },
+          {
+            "id": "passive",
+            "nav": "Le passive",
+            "title": "Le passive: quattro da spingere, le altre si fermano",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "Ogni passiva arriva a 10 coi punti e a 14 coi suoi quattro nodi del Daevanion. Oltre il 14 sale solo se la trovi su armatura, collana e orecchini, o sulle carte Arcana. Quindi la scelta è una: quali cercare sull'equip."
+              },
+              {
+                "t": "passives"
+              }
+            ]
+          },
+          {
+            "id": "overhead",
+            "nav": "Overhead Slam",
+            "title": "Overhead Slam: le specializzazioni",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Accendi **Adds [Upward Strike] Chain Skill**. Si apre al livello 8 ed è la più importante: aggiunge un secondo colpo.",
+                  "Al livello 12 accendi anche **Critical Hit on hit**.",
+                  "Al livello 16 si sblocca **Remove cooldown**: mettila al posto di Critical Hit on hit. Da lì Overhead Slam non ha più ricarica."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "spec-overhead",
+                "w": 500,
+                "h": 480,
+                "narrow": true,
+                "alt": "Le specializzazioni di Overhead Slam: accese Adds Upward Strike Chain Skill e Critical Hit on hit, con il lucchetto Remove cooldown al livello 16.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 7,
+                    "y": 74
+                  },
+                  {
+                    "n": 2,
+                    "x": 7,
+                    "y": 83.5
+                  },
+                  {
+                    "n": 3,
+                    "x": 7,
+                    "y": 92.9
+                  }
+                ],
+                "credit": "Fotogramma da [Grobs, The Only Gladiator PVE Guide You Need](https://www.youtube.com/watch?v=xRPr30JetyY&t=265s), minuto 4:25."
+              },
+              {
+                "t": "note",
+                "x": "Al livello 20 gli slot diventano tre e le tieni accese tutte e tre."
+              }
+            ],
+            "check": "le due righe che hai scelto sono scritte in chiaro, come nella foto."
+          },
+          {
+            "id": "rending",
+            "nav": "Rending Blow",
+            "title": "Rending Blow: le specializzazioni",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Accendi **Changes to mobile skill**. Si apre al livello 8: senza, ogni colpo ti blocca sul posto.",
+                  "Al livello 12 accendi anche **Deals up to 12% more damage when less targets are hit**.",
+                  "Al livello 16 si sblocca **Restores 50 MP on landing a Critical Hit**: mettila al posto di quella del 12%. Da lì il mana torna da solo e non ti serve più Keen Strike."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "spec-rending",
+                "w": 500,
+                "h": 480,
+                "narrow": true,
+                "alt": "Le specializzazioni di Rending Blow: accese Changes to mobile skill e Deals up to 12% more damage, con il lucchetto Restores 50 MP al livello 16.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 7,
+                    "y": 73.5
+                  },
+                  {
+                    "n": 2,
+                    "x": 7,
+                    "y": 83.3
+                  },
+                  {
+                    "n": 3,
+                    "x": 7,
+                    "y": 92.5
+                  }
+                ],
+                "credit": "Fotogramma da [Grobs, The Only Gladiator PVE Guide You Need](https://www.youtube.com/watch?v=xRPr30JetyY&t=200s), minuto 3:20."
+              }
+            ],
+            "check": "usando Rending Blow puoi continuare a camminare."
+          },
+          {
+            "id": "ruinous",
+            "nav": "Ruinous Blow",
+            "title": "Ruinous Blow e Keen Strike",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Su Ruinous Blow accendi **+30% Skill Critical Hit**. Nella foto è spenta e al suo posto c'è +20% Skill Speed: va bene anche quella, ma tra i giocatori Global vince il critico.",
+                  "Al livello 12 accendi anche **Extra damage on hit**.",
+                  "La riga col lucchetto si apre al 16, ma gli slot restano due fino al 20: lasciala stare."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "spec-ruinous",
+                "w": 500,
+                "h": 470,
+                "narrow": true,
+                "alt": "Le specializzazioni di Ruinous Blow: +20% Skill Speed ed Extra damage on hit accese, +30% Skill Critical Hit spenta, e una riga col lucchetto al livello 16.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 7,
+                    "y": 75.1
+                  },
+                  {
+                    "n": 2,
+                    "x": 7,
+                    "y": 84.9
+                  },
+                  {
+                    "n": 3,
+                    "x": 7,
+                    "y": 94.5
+                  }
+                ],
+                "credit": "Fotogramma da [Grobs, The Only Gladiator PVE Guide You Need](https://www.youtube.com/watch?v=xRPr30JetyY&t=320s), minuto 5:20."
+              },
+              {
+                "t": "callout",
+                "title": "Keen Strike",
+                "x": "Accendi **+20% MP restored**, e al livello 12 anche **−1s [Ruinous Blow] cooldown on hit**."
+              }
+            ]
+          },
+          {
+            "id": "sedici",
+            "nav": "Da 10 a 16",
+            "title": "Come una skill arriva a 16",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "Con i punti una skill si ferma a 10. Il resto arriva da altre parti:"
+              },
+              {
+                "t": "table",
+                "head": [
+                  "Livello",
+                  "Da dove arriva"
+                ],
+                "rows": [
+                  [
+                    "10",
+                    "I punti skill, con Level Up."
+                  ],
+                  [
+                    "14",
+                    "I nodi del Daevanion: su ognuno dei quattro tabelloni c'è un nodo che dà +1 alla skill."
+                  ],
+                  [
+                    "16",
+                    "Due anelli con scritto +1 a quella skill."
+                  ],
+                  [
+                    "20",
+                    "Le carte Arcana, più avanti."
+                  ]
+                ]
+              },
+              {
+                "t": "callout",
+                "title": "Il 16 cambia tutto",
+                "x": "A 16 Overhead Slam perde la ricarica e Rending Blow si paga il mana da sola. Per questo le prime due da portare a 16 sono loro."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stigma",
+        "nav": "Le stigma",
+        "steps": [
+          {
+            "id": "quali",
+            "nav": "Quali quattro",
+            "title": "Monta queste quattro stigma",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri {{K}} e in alto clicca **Stigma**.",
+                  "Monta queste quattro: gli slot sono quattro e si aprono ai livelli 22, 27, 32 e 37."
+                ]
+              },
+              {
+                "t": "seq",
+                "steps": [
+                  {
+                    "skill": "lunge-stance"
+                  },
+                  {
+                    "skill": "rage-burst"
+                  },
+                  {
+                    "skill": "focused-block"
+                  },
+                  {
+                    "skill": "zikels-blessing"
+                  }
+                ]
+              },
+              {
+                "t": "table",
+                "head": [
+                  "Stigma",
+                  "Cosa fa"
+                ],
+                "rows": [
+                  [
+                    "[[lunge-stance]]",
+                    "Ti rende più veloce. A 20 fa tornare prima tutte le ricariche: è il motore della build."
+                  ],
+                  [
+                    "[[rage-burst]]",
+                    "Accende Overhead Slam per 10 secondi."
+                  ],
+                  [
+                    "[[focused-block]]",
+                    "La parata. Ogni parata dà più danno a te e al gruppo."
+                  ],
+                  [
+                    "[[zikels-blessing]]",
+                    "Più attacco per qualche secondo: si accende prima del boss."
+                  ]
+                ]
+              }
+            ],
+            "check": "nei quattro slot vedi le quattro icone qui sopra."
+          },
+          {
+            "id": "livelli",
+            "nav": "A che livello",
+            "title": "A che livello portarle",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Al 45 hai 30 punti stigma. Mettili così: **Lunge Stance a 10**, le altre tre **a 5**. Bastano esatti.",
+                  "Con i punti che arrivano dopo, porta **Lunge Stance a 20**.",
+                  "Poi **Zikel's Blessing a 10**."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "stigma-lunge",
+                "w": 560,
+                "h": 420,
+                "narrow": true,
+                "alt": "La scheda di Lunge Stance con gli effetti che si accendono ai livelli 5, 10, 15, 20 e 25.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 5,
+                    "y": 54
+                  },
+                  {
+                    "n": 2,
+                    "x": 5,
+                    "y": 79
+                  }
+                ],
+                "credit": "Fotogramma da [Grobs, The Only Gladiator PVE Guide You Need](https://www.youtube.com/watch?v=xRPr30JetyY&t=465s), minuto 7:45."
+              },
+              {
+                "t": "list",
+                "items": [
+                  "Le stigma non hanno scelte: a 5, 10, 15 e 20 si accende da solo un effetto, quello scritto accanto al numero.",
+                  "Nella foto c'è anche una riga 25: sul Global non esiste, il massimo è 20."
+                ]
+              }
+            ],
+            "check": "Lunge Stance è a 10 e non ti avanzano punti."
+          },
+          {
+            "id": "punti",
+            "nav": "Altri punti",
+            "title": "Dove trovi gli altri punti",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "Dopo i 30 punti dei livelli, gli altri si comprano nei negozi sotto forma di **Stigma Shard**."
+              },
+              {
+                "t": "table",
+                "head": [
+                  "Negozio",
+                  "Stigma Shard"
+                ],
+                "num": [
+                  1
+                ],
+                "rows": [
+                  [
+                    "Abyss",
+                    "200"
+                  ],
+                  [
+                    "Shugo Festival",
+                    "35"
+                  ],
+                  [
+                    "Nightmare",
+                    "35"
+                  ]
+                ]
+              },
+              {
+                "t": "note",
+                "x": "In tutto 300 punti nella Season 1: bastano per quattro stigma a 20. Azzerarle è gratis."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "combattimento",
+        "nav": "In combattimento",
+        "steps": [
+          {
+            "id": "tasti",
+            "nav": "I tasti",
+            "title": "Cosa metti sugli altri tasti",
+            "blocks": [
+              {
+                "t": "table",
+                "head": [
+                  "Tasto",
+                  "Cosa ci metti",
+                  "Quando lo premi"
+                ],
+                "rows": [
+                  [
+                    "{{tasto destro}}",
+                    "La macro",
+                    "Sempre premuto."
+                  ],
+                  [
+                    "{{tasto sinistro}}",
+                    "[[keen-strike]]",
+                    "Premuto insieme al destro, finché le due skill sono sotto il 16."
+                  ],
+                  [
+                    "{{T}}",
+                    "[[rage-burst]], [[overhead-slam]], [[rending-blow]]",
+                    "Mai: lo preme la macro. Da Rending Blow 16 Overhead Slam esce da qui e va da sola sul 7."
+                  ],
+                  [
+                    "{{7}}",
+                    "[[overhead-slam]] da sola, da Rending Blow 16",
+                    "Mai: lo preme la macro, riga 1."
+                  ],
+                  [
+                    "{{E}}",
+                    "[[ruinous-blow]]",
+                    "Ogni volta che torna pronta, circa ogni 45 secondi."
+                  ],
+                  [
+                    "{{5}}",
+                    "[[lunge-stance]] in basso, [[zikels-blessing]] sopra",
+                    "Prima del boss, e ogni volta che tornano."
+                  ],
+                  [
+                    "Un tasto comodo",
+                    "[[focused-block]]",
+                    "Subito prima di un colpo grosso del boss."
+                  ],
+                  [
+                    "{{F}}",
+                    "[[leaping-slam]] in basso, [[rush-strike]] sopra",
+                    "Per saltare addosso al nemico."
+                  ]
+                ]
+              },
+              {
+                "t": "note",
+                "x": "I tasti sono un esempio: mettili dove ti viene comodo. Conta solo che la macro e le tre skill stiano su due tasti diversi."
+              }
+            ]
+          },
+          {
+            "id": "apertura",
+            "nav": "L'apertura",
+            "title": "Come si apre su un boss",
+            "blocks": [
+              {
+                "t": "seq",
+                "steps": [
+                  {
+                    "skill": "lunge-stance"
+                  },
+                  {
+                    "skill": "zikels-blessing"
+                  },
+                  {
+                    "skill": "leaping-slam",
+                    "note": "salti dentro"
+                  },
+                  {
+                    "skill": "ruinous-blow"
+                  },
+                  {
+                    "text": "tieni premuti i due tasti del mouse",
+                    "hold": true
+                  }
+                ]
+              },
+              {
+                "t": "steps",
+                "items": [
+                  "Premi {{R}} due volte: partono i due buff.",
+                  "Salta sul boss con {{F}}.",
+                  "Premi {{E}}: Ruinous Blow ti dà il 20% di danno in più per 20 secondi.",
+                  "Tieni premuti i due tasti del mouse e non lasciarli più."
+                ]
+              },
+              {
+                "t": "callout",
+                "title": "Stai davanti al boss",
+                "x": "Il Gladiator fa più danno di fronte. In Settings, Info Display, Combat accendi **Display Boss Orientation Indicator**: ti mostra da che parte guarda il boss."
+              }
+            ]
+          },
+          {
+            "id": "durante",
+            "nav": "Durante",
+            "title": "Durante il combattimento",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Tieni premuti i due tasti del mouse. La macro fa il resto.",
+                  "Ogni volta che [[ruinous-blow]] torna pronta, premila.",
+                  "Quando tornano i due buff, premili.",
+                  "Quando il boss carica un colpo grosso, para con [[focused-block]]: ogni parata dà più danno a tutto il gruppo per 20 secondi."
+                ]
+              },
+              {
+                "t": "list",
+                "items": [
+                  "Senza mana? Tieni premuto anche il sinistro: Keen Strike lo rende.",
+                  "Contro i gruppi di mostri: salta dentro con [[leaping-slam]] e usa [[crushing-wave]], che ti cura mentre colpisce."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "daevanion",
+        "nav": "Daevanion",
+        "steps": [
+          {
+            "id": "nodi",
+            "nav": "I nodi",
+            "title": "Daevanion: cerca i nodi con l'icona di una skill",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "I tabelloni sono cinque: Nezekan, Zikel, Vaizel, Triniel e Azphel. Si aprono ai livelli 12, 20, 30, 40 e 45.",
+                  "Un nodo con l'icona di una skill dà **+1 livello** a quella skill. Qui è quello di [[overhead-slam]].",
+                  "Questo è quello di [[rending-blow]].",
+                  "I nodi si prendono solo se sono collegati a uno già preso: per arrivare a una skill attraversi i nodi grigi in mezzo."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "daevanion-nezekan",
+                "w": 1150,
+                "h": 866,
+                "alt": "Il tabellone Nezekan nel pianificatore di Questlog: accesi i nodi di Overhead Slam, Rending Blow e Keen Strike con i nodi grigi che li collegano.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 34.4,
+                    "y": 3.4
+                  },
+                  {
+                    "n": 2,
+                    "x": 14.1,
+                    "y": 18.6
+                  },
+                  {
+                    "n": 3,
+                    "x": 14.1,
+                    "y": 42.8
+                  },
+                  {
+                    "n": 4,
+                    "x": 34,
+                    "y": 42.8
+                  }
+                ],
+                "credit": "Fotogramma da [Grobs, The Only Gladiator PVE Guide You Need](https://www.youtube.com/watch?v=xRPr30JetyY&t=692s), minuto 11:32: è il pianificatore di Questlog, non il gioco, con il percorso di partenza da 65 cristalli."
+              }
+            ]
+          },
+          {
+            "id": "ordine",
+            "nav": "In che ordine",
+            "title": "Quali nodi prendere, in ordine",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Su ogni tabellone i nodi di [[overhead-slam]] e [[rending-blow]], poi i nodi arancioni di Combat Speed.",
+                  "[[ruinous-blow]] su Nezekan e Zikel, i nodi arancioni di Damage Boost, [[keen-strike]] su Nezekan.",
+                  "[[attack-preparation]] ed [[experienced-counterstrike]], gli altri nodi di Ruinous Blow, i nodi arancioni di Critical Damage Boost e Cooldown Reduction.",
+                  "[[murderous-burst]] e [[impact-hit]], poi Multi-Hit Chance."
+                ]
+              },
+              {
+                "t": "list",
+                "items": [
+                  "I cristalli non bastano per tutto: al 45 ne hai circa 136, e diventano 316 finendo le missioni di distretto e i dungeon sigillati.",
+                  "Lascia stare i nodi di Aerial Snare, Defiance, Ankle Slice e quelli di mana.",
+                  "Ogni cristallo speso vale anche +1 di Item Level: non tenerli da parte."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "equip",
+        "nav": "Equip",
+        "steps": [
+          {
+            "id": "dieci",
+            "nav": "+10 e stop",
+            "title": "Equip: potenzia a +10 e fermati",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Porta arma e accessori a **+10**. Fino a +10 il potenziamento riesce sempre.",
+                  "Oltre +10 lascia stare: lo stesso punto costa circa 75 volte di più e può fallire.",
+                  "Cintura e amuleto per ultimi: i tuoi sono già gialli, e gialli costano circa **5 milioni di Kina** l'uno da +0 a +10.",
+                  "Cerca due anelli con scritto **+1 a Overhead Slam** o **a Rending Blow**: sono quelli che portano la skill a 16."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "duemila",
+            "nav": "Da 2.000 a 2.100",
+            "title": "Da 2.000 a 2.100 di Item Level",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "A 2.100 si aprono Fire Temple e Ferocious Horn Den in Conquest. Ti mancano 100 punti: prendili da dove costano meno."
+              },
+              {
+                "t": "table",
+                "head": [
+                  "Cosa",
+                  "Item Level",
+                  "Costo"
+                ],
+                "rows": [
+                  [
+                    "Un cristallo Daevanion speso",
+                    "+1 l'uno",
+                    "niente"
+                  ],
+                  [
+                    "Due Clash Rune, una per slot",
+                    "+40 l'una",
+                    "niente; fermale a +1"
+                  ],
+                  [
+                    "Una riga di manastone",
+                    "da +1 a +4",
+                    "secondo il colore"
+                  ],
+                  [
+                    "Noble Belt verde a +10, poi Substance Morph",
+                    "+10, poi +13",
+                    "circa 232.000 Kina"
+                  ],
+                  [
+                    "Cintura o amuleto gialli a +10",
+                    "+10",
+                    "circa 5 milioni di Kina"
+                  ],
+                  [
+                    "Una carta Arcana di grado più alto",
+                    "20, 40, 60 o 80",
+                    "dalla Transcendence"
+                  ]
+                ]
+              },
+              {
+                "t": "note",
+                "x": "Il numero che conta è l'Item Level. Il Combat Power è un altro numero, a sei cifre, e non apre niente."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "routine",
+        "nav": "Ogni giorno",
+        "steps": [
+          {
+            "id": "app",
+            "nav": "Cosa fare",
+            "title": "Ogni giorno e ogni settimana",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "I conti li tiene l'app **Gladiator**, che hai sul desktop: ti dice cosa resta da fare e ti avvisa prima degli eventi. Qui c'è solo l'essenziale."
+              },
+              {
+                "t": "table",
+                "head": [
+                  "Quando",
+                  "Cosa"
+                ],
+                "rows": [
+                  [
+                    "Ogni giorno, entro le 09:00",
+                    "Le 5 missioni Duty. Gli ingressi di Nightmare, 2 nuovi al giorno."
+                  ],
+                  [
+                    "Quando capita",
+                    "Spendi l'Odyle Energy prima che arrivi al tetto: cresce di 15 ogni 3 ore."
+                  ],
+                  [
+                    "Ogni settimana, entro martedì sera",
+                    "Daily Dungeon, Command Missions, e per ultimo l'Ascension Trial."
+                  ],
+                  [
+                    "Mercoledì mattina",
+                    "Server chiusi dalle 08:30 per la manutenzione: quello che non hai fatto è perso."
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

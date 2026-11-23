@@ -1,0 +1,1174 @@
+{
+  "include": [
+    "entities.json"
+  ],
+  "meta": {
+    "title": "Cleric AION 2",
+    "navTitle": "Cleric · AION 2",
+    "h1": "Cleric, AION 2 Global",
+    "lead": "Skill, stigma, passive, macro e rotazione del Cleric, in due build sullo stesso personaggio: Danno e Cura, una per preset delle skill. I nomi sono quelli del client inglese; i numeri vengono dai dati del gioco, le scelte da chi lo gioca meglio.",
+    "facts": [
+      "**Season 1**, livello massimo 45",
+      "Dati del client letti il **01/11/2026**",
+      "Confronto coi primi otto d'Europa il **01/11/2026**",
+      "Scritto per **tastiera e mouse**"
+    ],
+    "stamp": "Aggiornato al 01/11/2026"
+  },
+  "builds": [
+    {
+      "id": "danno",
+      "label": "Danno",
+      "preset": 1
+    },
+    {
+      "id": "cura",
+      "label": "Cura",
+      "preset": 2
+    }
+  ],
+  "sources": [
+    {
+      "id": "db",
+      "label": "Questlog, le skill del Cleric",
+      "url": "https://questlog.gg/aion-2/en/db/skills/cleric",
+      "kind": "Dati del client",
+      "region": "Global",
+      "date": "letto il 01/11/2026, schede aggiornate tra il 28/09 e il 29/10",
+      "note": "35 schede: 12 attive, 13 stigma, 10 passive. Il testo salvato non fa parte di questo repository."
+    },
+    {
+      "id": "builds",
+      "label": "Questlog, le build pubblicate dai giocatori",
+      "url": "https://questlog.gg/aion-2/en/skill-builder?publisher=global&class=cleric",
+      "kind": "Statistiche d'uso",
+      "region": "Global",
+      "date": "01/11/2026",
+      "note": "900 build in elenco; di 278 autori lette in dettaglio 438 build, 353 PvE con una skill a 16 o più (specializzazioni, pile sui tasti, macro)."
+    },
+    {
+      "id": "meta",
+      "label": "Aion 2 Meta, guida del Cleric",
+      "url": "https://aion2-meta.com/guides/cleric/",
+      "kind": "Statistiche d'uso",
+      "region": "Global e Corea",
+      "date": "Corea 25/10/2026, Global 29/10/2026",
+      "note": "10.358 Cleric coreani tra i primi (AION2CAL) e i primi 32 Cleric del Global."
+    },
+    {
+      "id": "maps",
+      "label": "Aion 2 Maps, guida del Cleric",
+      "url": "https://aion2maps.com/guides/cleric/",
+      "kind": "Guida con le fonti",
+      "region": "Global",
+      "date": "aggiornata il 18/10/2026",
+      "note": "Di ogni frase dice se è un dato del client o il consiglio di un creator: 235 citazioni da 49 fonti. Con le sue pagine sulle skill e sulla macro, che spiegano i tre preset."
+    },
+    {
+      "id": "couga",
+      "label": "couga54, raccolta di guide del Cleric",
+      "url": "https://couga54.github.io/aion2-guides/en/cleric/",
+      "kind": "Raccolta di creator",
+      "region": "Global",
+      "date": "08-10/10/2026",
+      "note": "Segue Kaeria, Lucia (che si presenta come «World's First Rank 1» tra i Cleric), Whelps e aLuckyRO. Il sito si è spostato su aion2-guides.info."
+    },
+    {
+      "id": "topeu",
+      "label": "Le schede dei primi otto Cleric d'Europa",
+      "url": "https://metabot.gg/en/aion-2/leaderboards/eu/cleric",
+      "kind": "Schede dei giocatori",
+      "region": "Europa",
+      "date": "01/11/2026",
+      "note": "I primi otto per Combat Power, letti da MetaBot: pezzi, tratti, skill, stigma, carte e Daevanion. Item Level da 3.292 a 3.561. Cinque montano i quattro stigma da danno, tre una versione da cura."
+    },
+    {
+      "id": "ranks",
+      "label": "MetaBot, classifica dei Cleric d'Europa",
+      "url": "https://metabot.gg/en/aion-2/leaderboards/eu/cleric",
+      "kind": "Classifica",
+      "region": "Europa",
+      "date": "01/11/2026",
+      "note": "587 Cleric in classifica; mediana dei primi 100: Item Level 2.942, Combat Power 181.958."
+    },
+    {
+      "id": "whelps",
+      "label": "Whelps, il Cleric del Global dopo la patch",
+      "url": "https://www.youtube.com/watch?v=N3ONhVc0K-U",
+      "kind": "Video di un creator",
+      "region": "Global e Corea",
+      "date": "20/10/2026",
+      "note": "Gioca il Cleric sul Global e sul server coreano Israphel. Stigma, livelli, specializzazioni e la sua macro, con la finestra Skill a schermo (le foto della pila e dei preset vengono da qui)."
+    },
+    {
+      "id": "lucia",
+      "label": "Lucia (LuciaHeals), guida del Cleric e prova delle macro",
+      "url": "https://www.youtube.com/watch?v=j86-p9Kpijo",
+      "kind": "Video di un creator",
+      "region": "Global",
+      "date": "04/10 e 30/10/2026",
+      "note": "Si presenta come «World's First Rank 1» tra i Cleric. Il 30/10 ha misurato sul manichino la macro con e senza Judgment Thunder: con, circa 99 mila danni al secondo; senza, circa 85 mila. Dal 20 di Condemnation, dice, si toglie."
+    },
+    {
+      "id": "excalul",
+      "label": "Excalul, guida del Cleric",
+      "url": "https://www.youtube.com/watch?v=zioAbsvcX_8",
+      "kind": "Video di un creator",
+      "region": "Global",
+      "date": "18/10/2026",
+      "note": "Si presenta come primo al mondo nel raid Ludra e primo Cleric del Global. Specializzazioni, stigma e macro."
+    },
+    {
+      "id": "th3ruthless",
+      "label": "Th3Ruthless, guida del Cleric con le build",
+      "url": "https://www.youtube.com/watch?v=kCYoKiK9Nmc",
+      "kind": "Video di un creator",
+      "region": "Global",
+      "date": "24/10/2026",
+      "note": "Con un PDF di 68 pagine: specializzazioni a ogni livello, ordine dei punti stigma, quattro build per il Global."
+    },
+    {
+      "id": "antochi",
+      "label": "Antochi, la macro coreana del Cleric",
+      "url": "https://www.youtube.com/watch?v=-86sdRZ4SX4",
+      "kind": "Video di un creator",
+      "region": "Corea",
+      "date": "07/10/2026",
+      "note": "Riassume le guide di Inven e dei creator coreani: «una colonna, un passo». Un creator coreano ha provato decine di ordini e questo rende di più."
+    },
+    {
+      "id": "aion2data",
+      "label": "aion2data, i 490 Cleric più forti del Global",
+      "url": "https://aion2data.com/rankings/meta/cleric",
+      "kind": "Statistiche d'uso",
+      "region": "Global",
+      "date": "01/11/2026",
+      "note": "Livelli medi di skill, stigma e passive, carte Arcana, titoli e Daevanion dei 490 Cleric con più Combat Power; e la guida del 29/10 con le discussioni di Reddit, Inven e Bahamut."
+    },
+    {
+      "id": "aion2vault",
+      "label": "aion2vault, le macro pubbliche del Cleric",
+      "url": "https://aion2vault.com/builds/cleric/macro/",
+      "kind": "Statistiche d'uso",
+      "region": "Global",
+      "date": "26/10/2026",
+      "note": "537 build pubbliche con macro: quali skill stanno dentro e quali fuori, e quante copiano la stessa."
+    },
+    {
+      "id": "metaroad",
+      "label": "Metaroad, il Cleric da curatore",
+      "url": "https://metaroad.gg/aion2/build-guides/cleric-pve-healer-build",
+      "kind": "Guida scritta",
+      "region": "Global",
+      "date": "05/10/2026, ritoccata il 21/10",
+      "note": "Tre preset per i tre gruppi che si incontrano: normale, dungeon nuovo dove si muore, gruppo con un Chanter. Le cure d'emergenza mai nella macro."
+    },
+    {
+      "id": "gangcoding",
+      "label": "Gangcoding (강코딩), il Cleric coreano del quarto santuario in difficile",
+      "url": "https://www.youtube.com/watch?v=bT0shr2kILY",
+      "kind": "Video di un creator",
+      "region": "Corea",
+      "date": "15/09/2026",
+      "note": "Ha chiuso il quarto santuario in difficile due giorni prima del video. Senza Chanter: Salvation, Yustiel's Power e Light of Protection al massimo sono obbligatori, e Benevolence anche."
+    }
+  ],
+  "macro": {
+    "pve": {
+      "delay": 10,
+      "hold": [
+        {
+          "key": "LMB",
+          "what": "Earth's Retribution, l'attacco base"
+        },
+        {
+          "key": "RMB",
+          "what": "la macro"
+        }
+      ],
+      "lines": [
+        {
+          "title": "La pila",
+          "key": "T",
+          "step": 1,
+          "delay": "nella macro, riga 1",
+          "slots": [
+            {
+              "skill": "light-of-regeneration",
+              "tag": "la cura del gruppo, a ogni ricarica"
+            },
+            {
+              "skill": "divine-aura",
+              "tag": "l'aura, quando è pronta"
+            },
+            {
+              "skill": "condemnation",
+              "tag": "il colpo principale: parte solo su chi ha Chain of Torment"
+            },
+            {
+              "skill": "chain-of-torment",
+              "tag": "la rimette quando sul bersaglio non c'è"
+            }
+          ],
+          "why": "La pila della Danno con [[light-of-regeneration]] in basso al posto di Earth Punishment, che in questa build non c'è: cura il gruppo per 30 secondi e si ricarica in 30, quindi in basso riparte appena può e sul gruppo non si spegne mai (Th3Ruthless la mette in basso nella sua pila). Sopra, il danno: nei dungeon il premio dipende anche da quello, e le cure il contatore non le conta. Le cure d'emergenza, Salvation e Yustiel's Power mai nella macro: le premi tu (Metaroad).[^th3ruthless,metaroad]"
+        },
+        {
+          "title": "Judgment Thunder",
+          "key": "Q",
+          "step": 2,
+          "delay": "nella macro, riga 2",
+          "slots": [
+            {
+              "skill": "judgment-thunder",
+              "tag": "riempie tra un colpo e l'altro"
+            }
+          ],
+          "why": "Senza Earth Punishment [[condemnation]] riparte solo coi critici veri: [[judgment-thunder]] riempie i buchi. C'è anche nella macro da curatore di Metaroad.[^metaroad]"
+        }
+      ],
+      "manual": [
+        {
+          "skill": "radiant-recovery",
+          "key": "3",
+          "when": "quando quasi tutto il gruppo ha preso un colpo, o ha un effetto negativo addosso."
+        },
+        {
+          "skill": "healing-light",
+          "key": "E",
+          "when": "uno o due feriti: fino a tre lanci di fila."
+        },
+        {
+          "skill": "yustiels-power",
+          "key": "8",
+          "when": "subito prima del colpo che prende tutti, non dopo: +20% di resistenza al gruppo."
+        },
+        {
+          "skill": "benevolence",
+          "key": "7",
+          "when": "prima di una fase in cui il gruppo prende danno a lungo: cura tutti per 30 secondi."
+        },
+        {
+          "skill": "salvation",
+          "key": "6",
+          "when": "sul colpo che uccide: dal 15 l'immunità va anche al compagno con meno vita."
+        },
+        {
+          "skill": "light-of-protection",
+          "key": "5",
+          "when": "una volta sola: resta acceso. Un secondo tocco lo spegne."
+        },
+        {
+          "skill": "debilitating-mark",
+          "key": "1",
+          "when": "quando il boss picchia forte: fa il 15% di danno in meno finché brucia."
+        },
+        {
+          "skill": "bolt",
+          "key": "4",
+          "extra": true,
+          "when": "carica piena, solo quando il gruppo sta bene."
+        },
+        {
+          "skill": "lightning-strike-scattershot",
+          "key": "1",
+          "extra": true,
+          "when": "sotto Debilitating Mark, sullo stesso tasto: parte solo col boss in Stagger."
+        },
+        {
+          "skill": "defiance",
+          "key": "Spazio",
+          "extra": true,
+          "when": "per uscire da uno stordimento o da un atterramento."
+        }
+      ]
+    },
+    "pvp": {
+      "delay": 10,
+      "hold": [
+        {
+          "key": "LMB",
+          "what": "Earth's Retribution, tra un colpo e l'altro"
+        },
+        {
+          "key": "RMB",
+          "what": "la macro, solo con le skill di danno"
+        }
+      ],
+      "lines": [
+        {
+          "title": "La pila",
+          "key": "T",
+          "step": 1,
+          "delay": "nella macro, riga 1",
+          "slots": [
+            {
+              "skill": "divine-aura",
+              "tag": "rallenta chi le sta vicino"
+            },
+            {
+              "skill": "condemnation",
+              "tag": "parte solo su chi ha Chain of Torment"
+            },
+            {
+              "skill": "chain-of-torment",
+              "tag": "la rimette"
+            }
+          ],
+          "why": "In PvP il preset è uno, uguale per le due build: nella macro restano le skill di danno. [[earth-punishment]], [[voice-of-doom]], le cure, [[salvation]] e [[defiance]] li premi tu, quando servono (Aion 2 Maps).[^maps]"
+        }
+      ],
+      "manual": [
+        {
+          "skill": "debilitating-mark",
+          "key": "1",
+          "when": "per primo, insieme a Chain of Torment: l'altro spreca la sua pulizia."
+        },
+        {
+          "skill": "earth-punishment",
+          "key": "6",
+          "when": "quando la sua pulizia è in ricarica: Condemnation è critica finché brucia."
+        },
+        {
+          "skill": "voice-of-doom",
+          "key": "7",
+          "when": "su chi cura o ha uno scudo: taglia del 60% le cure per 20 secondi."
+        },
+        {
+          "skill": "salvation",
+          "key": "8",
+          "when": "a poca vita: per 3 secondi niente ti prende, e le cure ti rendono il doppio."
+        },
+        {
+          "skill": "radiant-recovery",
+          "key": "3",
+          "when": "toglie gli effetti negativi a te e al gruppo."
+        },
+        {
+          "skill": "healing-light",
+          "key": "E",
+          "when": "la cura veloce, tra un colpo e l'altro."
+        },
+        {
+          "skill": "defiance",
+          "key": "Spazio",
+          "when": "sul controllo che ti ucciderebbe, non sul primo."
+        }
+      ]
+    }
+  },
+  "rotations": {
+    "pve": [
+      {
+        "title": "Apertura sul boss",
+        "short": "Apertura",
+        "sheet": true,
+        "when": "Prima di cominciare",
+        "steps": [
+          {
+            "skill": "light-of-protection",
+            "note": "acceso"
+          },
+          {
+            "text": "tieni premuti i due tasti",
+            "hold": true
+          },
+          {
+            "skill": "light-of-regeneration",
+            "note": "dalla macro"
+          }
+        ],
+        "expl": "[[light-of-protection]] resta acceso da prima. Poi tieni premuti il tasto sinistro e la macro: [[light-of-regeneration]] parte da sola sul gruppo e la pila fa danno. Le cure grandi e gli stigma li tieni pronti per quando servono.",
+        "src": [
+          "meta",
+          "maps",
+          "th3ruthless"
+        ],
+        "conf": "high"
+      },
+      {
+        "title": "Ciclo",
+        "short": "Ciclo",
+        "sheet": true,
+        "when": "Per tutto il combattimento",
+        "steps": [
+          {
+            "text": "tieni premuti i due tasti",
+            "hold": true
+          },
+          {
+            "skill": "healing-light",
+            "note": "uno o due feriti"
+          },
+          {
+            "skill": "radiant-recovery",
+            "note": "quasi tutti"
+          },
+          {
+            "text": "torna alla macro"
+          }
+        ],
+        "expl": "La macro fa danno e tiene su [[light-of-regeneration]]. Tu guardi la vita del gruppo: uno o due feriti, [[healing-light]]; quasi tutti, o un effetto negativo addosso, [[radiant-recovery]]. Una cura premuta mentre tieni la macro parte subito.",
+        "src": [
+          "meta",
+          "maps"
+        ],
+        "conf": "high"
+      },
+      {
+        "title": "Il colpo grosso",
+        "short": "Colpo grosso",
+        "sheet": true,
+        "when": "Quando il boss sta per colpire tutti",
+        "steps": [
+          {
+            "skill": "yustiels-power",
+            "note": "prima, non dopo"
+          },
+          {
+            "skill": "benevolence",
+            "note": "se il danno dura"
+          },
+          {
+            "skill": "salvation",
+            "note": "su chi sta per cadere"
+          },
+          {
+            "skill": "radiant-recovery",
+            "note": "dopo"
+          }
+        ],
+        "expl": "Prima del colpo che prende tutti, [[yustiels-power]]: +20% di resistenza al gruppo e uno scudo, e va lanciata prima, non dopo (Th3Ruthless). Se la fase fa male a lungo, [[benevolence]]. Se un compagno sta per morire, [[salvation]]: dal 15 l'immunità va anche a chi ha meno vita. Dopo il colpo, [[radiant-recovery]]. I coreani nel raid fanno lo stesso: Yustiel's Power, Benevolence e Salvation sui momenti del boss.",
+        "src": [
+          "th3ruthless",
+          "gangcoding"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Effetti negativi",
+        "short": "Pulizia",
+        "sheet": false,
+        "when": "Quando il boss mette effetti negativi",
+        "steps": [
+          {
+            "skill": "radiant-recovery",
+            "note": "ne toglie due a tutti"
+          },
+          {
+            "skill": "benevolence",
+            "note": "dal 20 li toglie ogni 5 secondi"
+          }
+        ],
+        "expl": "[[radiant-recovery]] toglie due effetti negativi a te e a tutto il gruppo, con la sua prima specializzazione. [[benevolence]] dal 20 li toglie ogni 5 secondi finché dura. Nei dungeon pieni di effetti negativi [[absolution]] prende il posto di Salvation: dal 10 li toglie tutti.",
+        "src": [
+          "db",
+          "th3ruthless",
+          "metaroad"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Boss in Stagger",
+        "short": "Stagger",
+        "sheet": false,
+        "when": "Quando si rompe la barra di Stagger",
+        "steps": [
+          {
+            "skill": "lightning-strike-scattershot",
+            "note": "tasto 1, a ripetizione"
+          }
+        ],
+        "expl": "Col boss in Stagger, se il gruppo sta bene, il tasto 1 lancia [[lightning-strike-scattershot]], che colpisce solo in quel momento.",
+        "src": [
+          "meta",
+          "maps"
+        ],
+        "conf": "mid"
+      }
+    ],
+    "pvp": [
+      {
+        "title": "Il colpo",
+        "short": "Colpo",
+        "sheet": true,
+        "when": "Per aprire",
+        "steps": [
+          {
+            "skill": "debilitating-mark",
+            "note": "l'esca"
+          },
+          {
+            "skill": "chain-of-torment"
+          },
+          {
+            "skill": "earth-punishment",
+            "note": "dopo la loro pulizia"
+          },
+          {
+            "skill": "condemnation",
+            "note": "a ripetizione"
+          }
+        ],
+        "expl": "Prima [[debilitating-mark]] e [[chain-of-torment]]: l'altro spreca la pulizia per toglierli. Con la sua pulizia in ricarica, [[earth-punishment]]: finché brucia ogni [[condemnation]] è critica e riparte subito.",
+        "src": [
+          "maps"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Chi cura",
+        "short": "Curatori",
+        "sheet": true,
+        "when": "Contro un curatore o uno scudo",
+        "steps": [
+          {
+            "skill": "voice-of-doom",
+            "note": "-60% cure"
+          }
+        ],
+        "expl": "[[voice-of-doom]] taglia del 60% le cure e le pozioni fino a 4 nemici per 20 secondi, e dal 10 toglie gli scudi. Tienila per chi cura.",
+        "src": [
+          "maps"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Quando ti saltano addosso",
+        "short": "Difesa",
+        "sheet": false,
+        "when": "Ti hanno preso",
+        "steps": [
+          {
+            "skill": "defiance"
+          },
+          {
+            "skill": "salvation",
+            "note": "a poca vita"
+          },
+          {
+            "skill": "radiant-recovery",
+            "note": "toglie gli effetti"
+          }
+        ],
+        "expl": "[[defiance]] ti libera e per 5 secondi niente ti prende. Se la vita scende lo stesso, [[salvation]]: 3 secondi in cui non prendi danni, e ti curi dentro. [[radiant-recovery]] toglie gli effetti negativi a te e al gruppo.",
+        "src": [
+          "maps"
+        ],
+        "conf": "mid"
+      }
+    ]
+  },
+  "path": {
+    "nav": "Parti da qui",
+    "title": "Parti da qui: un passo alla volta",
+    "chapters": [
+      {
+        "id": "preset",
+        "nav": "Il preset 2",
+        "steps": [
+          {
+            "id": "apri",
+            "nav": "Il preset 2",
+            "title": "La Cura sta nel preset 2",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "Il gioco tiene fino a tre preset delle skill, e ognuno ha i suoi livelli, i suoi stigma e la sua macro (Aion 2 Maps). La build Danno sta nell'1, questa nel 2: azzerare punti e stigma è gratis, e ogni preset spende tutti i tuoi punti, quindi la Cura non toglie niente alla Danno."
+              },
+              {
+                "t": "steps",
+                "items": [
+                  "Apri la finestra delle skill con {{K}}.",
+                  "In alto a destra, accanto a **Macro**, ci sono i numeri dei preset: clicca il **2**.",
+                  "Da qui in poi tutto quello che metti (punti, specializzazioni, stigma, macro) vale per il preset 2."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "macro-cleric-cura",
+                "w": 936,
+                "h": 672,
+                "alt": "In alto a destra della finestra Skill: il pulsante Macro e i numeri dei preset, col 2 acceso.",
+                "marks": [
+                  {
+                    "n": 2,
+                    "x": 90.2,
+                    "y": 12.9
+                  }
+                ],
+                "credit": "La finestra Macro del preset 2, disegnata come la finestra Macro del gioco, con le skill della tua barra: accanto a Macro i numeri dei preset, col 2 acceso. Il numero è quello del passo."
+              }
+            ],
+            "check": "accanto a Macro è acceso il 2."
+          },
+          {
+            "id": "cambia",
+            "nav": "Quando usarla",
+            "title": "Quando passare alla Cura",
+            "blocks": [
+              {
+                "t": "table",
+                "head": [
+                  "Dove",
+                  "Build"
+                ],
+                "rows": [
+                  [
+                    "Dungeon di tutti i giorni, Expedition, Transcendence 1, gruppi a caso",
+                    "**Danno**: i migliori giocano così, e curano gli errori piccoli tra un colpo e l'altro."
+                  ],
+                  [
+                    "Nightmare, da solo contro il boss",
+                    "**Danno**."
+                  ],
+                  [
+                    "Transcendence 2-4, i dungeon più duri",
+                    "**Cura**, per chi ne ha bisogno."
+                  ],
+                  [
+                    "Il raid (Ludra torna il 4 novembre), un boss nuovo, un gruppo che muore a ogni tentativo",
+                    "**Cura**."
+                  ]
+                ]
+              },
+              {
+                "t": "note",
+                "x": "Nessuno dei migliori tiene la Cura come build di tutti i giorni: le cure il contatore non le conta, e il premio dei dungeon chiede circa il 5% del danno al boss. I coreani passano alla Cura per il raid, e alla Danno per Transcendence ed Expedition (aion2data, Inven)."
+              },
+              {
+                "t": "callout",
+                "kind": "warn",
+                "title": "Cambiare preset ferma la macro",
+                "x": "Dopo il cambio tieni di nuovo premuto il tasto destro: la macro del preset 2 riparte da sola. Il gioco cambia preset anche coi tasti **Alt + Num4**, **Num5** e **Num6** (Aion 2 Meta)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "macro",
+        "nav": "La macro",
+        "steps": [
+          {
+            "id": "pila",
+            "nav": "La pila",
+            "title": "La pila della Cura: Light of Regeneration in basso",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Con il preset **2** acceso guarda la griglia in basso nella finestra {{K}}.",
+                  "Nell'ultima colonna, dal basso: **Light of Regeneration**, **Divine Aura**, **Condemnation**, **Chain of Torment**. Rispetto alla Danno cambia solo la casella in basso: Earth Punishment in questa build non c'è.",
+                  "Sul **Q** **Judgment Thunder**, da sola, come nella Danno.",
+                  "Gli stigma: **Salvation** sul 6, **Benevolence** sul 7, **Yustiel's Power** sull'8. Light of Protection resta sul 5."
+                ]
+              },
+              {
+                "t": "seq",
+                "steps": [
+                  {
+                    "skill": "light-of-regeneration",
+                    "note": "in basso"
+                  },
+                  {
+                    "skill": "divine-aura"
+                  },
+                  {
+                    "skill": "condemnation"
+                  },
+                  {
+                    "skill": "chain-of-torment",
+                    "note": "in cima"
+                  }
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "barra-cleric-cura",
+                "w": 1128,
+                "h": 504,
+                "alt": "La barra della Cura: nell'ultima colonna, il T, dal basso Light of Regeneration, Divine Aura, Condemnation e Chain of Torment; Judgment Thunder sul Q; Salvation, Benevolence e Yustiel's Power sul 6, sul 7 e sull'8.",
+                "marks": [
+                  {
+                    "n": 2,
+                    "x": 90.6,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 3,
+                    "x": 68.3,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 4,
+                    "x": 44.5,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 4,
+                    "x": 52,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 4,
+                    "x": 59.4,
+                    "y": 70.2
+                  }
+                ],
+                "credit": "La barra da fare nel preset 2, disegnata con le icone del gioco nelle colonne della tua barra: 1-8, Q, E, il tasto sinistro e l'ultima colonna, che diventa T. I numeri sono quelli dei passi."
+              },
+              {
+                "t": "callout",
+                "kind": "warn",
+                "title": "Controlla il preset 1",
+                "x": "Torna sul preset **1** e guarda la colonna T: in basso deve esserci ancora Earth Punishment. Se è cambiata anche lì, la barra è una sola per i due preset: allora tieni Earth Punishment in basso e premi Light of Regeneration a mano, sul 2, appena è pronta. E dimmelo: questa cosa sul tuo schermo non è ancora stata vista."
+              }
+            ],
+            "check": "nel preset 2 la colonna T ha in basso Light of Regeneration, sul Q c'è Judgment Thunder, e gli stigma stanno su 5, 6, 7 e 8."
+          },
+          {
+            "id": "righe",
+            "nav": "La macro",
+            "title": "Crea la macro del preset 2: il T e il Q",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Nella finestra {{K}}, con il preset **2** acceso, clicca **Macro**. Ogni preset ha la sua macro: questa è vuota anche se hai già fatto quella della Danno.",
+                  "**Add Macro**, e nella riga 1 scegli la casella con **Light of Regeneration**: è il tasto T. **Delay 10**.",
+                  "Di nuovo **Add Macro**: nella riga 2 la casella con **Judgment Thunder**, il tasto Q. **Delay 10**."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "macro-cleric-cura",
+                "w": 936,
+                "h": 672,
+                "alt": "La finestra Macro del preset 2 con due righe: il T, che mostra Light of Regeneration, e il Q, che mostra Judgment Thunder.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 90.2,
+                    "y": 12.9
+                  },
+                  {
+                    "n": 2,
+                    "x": 32.5,
+                    "y": 87.8
+                  },
+                  {
+                    "n": 3,
+                    "x": 34.9,
+                    "y": 46.4
+                  }
+                ],
+                "legend": [
+                  "I numeri dei **preset**: per la Cura il 2.",
+                  "**Add Macro**: due volte, una per riga.",
+                  "**Delay**: 10, in tutte e due le righe."
+                ],
+                "credit": "La macro da fare, disegnata come la finestra Macro del gioco, con le skill della tua barra. I numeri sono quelli della legenda."
+              },
+              {
+                "t": "callout",
+                "title": "Vedi Light of Regeneration nella riga 1? È giusto",
+                "x": "La riga mostra la skill più in basso della pila: nella Cura è Light of Regeneration. La riga preme il tasto T, e partono anche Divine Aura, Condemnation e Chain of Torment."
+              },
+              {
+                "t": "callout",
+                "title": "Le cure d'emergenza mai nella macro",
+                "x": "Healing Light, Radiant Recovery, Salvation, Yustiel's Power e Benevolence li premi tu, quando servono (Metaroad, Th3Ruthless). Nella macro solo Light of Regeneration, che conviene lanciare a ogni ricarica."
+              }
+            ],
+            "check": "nel preset 2 la finestra Macro ha due righe: Light of Regeneration e Judgment Thunder, Delay 10."
+          },
+          {
+            "id": "prova",
+            "nav": "La prova",
+            "title": "Provala sul manichino",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Davanti al **Training Scarecrow**, tieni premuti il **tasto sinistro** e il **tasto destro**.",
+                  "Mentre li tieni, premi {{E}}: la cura parte subito, e la macro riprende da sola."
+                ]
+              },
+              {
+                "t": "list",
+                "items": [
+                  "Light of Regeneration deve ripartire da sola ogni 30 secondi: guardala sulla barra.",
+                  "Se una cura premuta non parte, controlla che Skill Queue sia accesa: sta in Settings, Combat."
+                ]
+              }
+            ],
+            "check": "la macro colpisce, Light of Regeneration riparte da sola e le cure che premi partono subito."
+          }
+        ]
+      },
+      {
+        "id": "skill",
+        "nav": "Le skill",
+        "steps": [
+          {
+            "id": "ordine",
+            "nav": "Quali alzare",
+            "title": "Le skill della Cura",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "Oltre il 10 i livelli vengono da Daevanion, equip e carte, che sono del personaggio: nelle due build le skill hanno gli stessi livelli. Nel preset 2 cambiano i punti fino al 10 e le specializzazioni."
+              },
+              {
+                "t": "seq",
+                "steps": [
+                  {
+                    "skill": "radiant-recovery",
+                    "note": "20"
+                  },
+                  {
+                    "skill": "healing-light",
+                    "note": "20"
+                  },
+                  {
+                    "skill": "light-of-regeneration",
+                    "note": "16"
+                  },
+                  {
+                    "skill": "condemnation",
+                    "note": "20"
+                  }
+                ]
+              },
+              {
+                "t": "list",
+                "items": [
+                  "[[radiant-recovery]] e [[healing-light]] sono le prime due da portare a 20 per chi cura (Th3Ruthless); prima dei dungeon di gruppo nessuna delle tre cure sotto il 16 (Metaroad).",
+                  "[[condemnation]] resta il colpo che conta anche da curatore: il premio dei dungeon dipende dal danno."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "passive",
+            "nav": "Le passive",
+            "title": "Le passive della Cura: i punti vanno alla vita",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "Nel preset 2 i punti delle passive cambiano: prima Healing Enhancement, poi Warm Benediction, Immortal Veil, Earth's Grace e Radiant Benediction, tutte a 10. Empyrean Lord's Grace resta a 1: aiuta solo il danno, e le cure non sono mai critiche (Th3Ruthless)."
+              },
+              {
+                "t": "passives"
+              },
+              {
+                "t": "note",
+                "x": "Sui pezzi cerchi le stesse passive della Danno: l'equip è uno per le due build."
+              }
+            ]
+          },
+          {
+            "id": "spec",
+            "nav": "Specializzazioni",
+            "title": "Le specializzazioni del preset 2",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Con il preset **2** acceso, clicca una cura nella finestra {{K}}: sotto **Specialty** ci sono cinque righe.",
+                  "Accendi le specializzazioni della build Cura.",
+                  "Le specializzazioni sono del preset: quelle della Danno restano nel preset 1."
+                ]
+              },
+              {
+                "t": "note",
+                "x": "Nei dungeon senza effetti negativi da togliere i coreani spengono le specializzazioni di pulizia e prendono quelle che curano di più (Inven, 13/09)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stigma",
+        "nav": "Gli stigma",
+        "steps": [
+          {
+            "id": "quali",
+            "nav": "Quali quattro",
+            "title": "Monta questi quattro stigma nel preset 2",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Con il preset **2** acceso apri {{K}} e in alto clicca **Stigma**.",
+                  "Monta questi quattro, e dai i punti a loro: nel preset 2 i livelli degli stigma sono suoi."
+                ]
+              },
+              {
+                "t": "seq",
+                "steps": [
+                  {
+                    "skill": "light-of-protection"
+                  },
+                  {
+                    "skill": "yustiels-power"
+                  },
+                  {
+                    "skill": "salvation"
+                  },
+                  {
+                    "skill": "benevolence"
+                  }
+                ]
+              },
+              {
+                "t": "table",
+                "head": [
+                  "Stigma",
+                  "Cosa fa"
+                ],
+                "rows": [
+                  [
+                    "[[light-of-protection]]",
+                    "Più danno e più resistenza al gruppo, più cure ricevute dal 5, più vita dal 15. C'è in tutti i set da cura."
+                  ],
+                  [
+                    "[[yustiels-power]]",
+                    "+20% di resistenza a tutto il gruppo per 10 secondi, e uno scudo dal 5: prima del colpo grosso."
+                  ],
+                  [
+                    "[[salvation]]",
+                    "Dal 15 l'immunità di 3 secondi va anche al compagno con meno vita: per il colpo che uccide."
+                  ],
+                  [
+                    "[[benevolence]]",
+                    "Cura tutto il gruppo nel tempo; dal 20 toglie gli effetti negativi ogni 5 secondi."
+                  ]
+                ]
+              },
+              {
+                "t": "callout",
+                "title": "Da dove viene",
+                "x": "Sono i quattro stigma che il Cleric coreano del quarto santuario in difficile chiama obbligatori: Salvation, Yustiel's Power e Light of Protection al massimo, e Benevolence (Gangcoding, 15/09; in Corea gli slot sono sei). Nel Global Th3Ruthless monta [[absolution]] al posto di Salvation per i dungeon normali, e Metaroad [[summon-resurrection]] per un gruppo che muore: la Scheda li mostra sotto, con chi sostituiscono."
+              }
+            ],
+            "check": "nel preset 2 sono montati Light of Protection, Yustiel's Power, Salvation e Benevolence."
+          },
+          {
+            "id": "livelli",
+            "nav": "A che livello",
+            "title": "A che livello portarli",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Al 45 hai 30 punti stigma: **Light of Protection a 10**, gli altri tre **a 5**. Bastano esatti.",
+                  "Con i punti che arrivano dopo: **Yustiel's Power a 20** e **Salvation a 15**, poi **Light of Protection a 20** e **Salvation a 20**, poi **Benevolence**.",
+                  "Fermati sempre su un multiplo di 5: le specializzazioni degli stigma si accendono a 5, 10, 15 e 20, e i livelli in mezzo alzano solo i numeri."
+                ]
+              },
+              {
+                "t": "list",
+                "items": [
+                  "Un livello costa 1 punto fino al 5, 2 fino al 10, 4 fino al 15 e 8 fino al 20.",
+                  "Salvation rende dal 15: sotto, protegge solo te."
+                ]
+              }
+            ],
+            "check": "Light of Protection è a 10 e non ti avanzano punti."
+          }
+        ]
+      },
+      {
+        "id": "combattimento",
+        "nav": "In combattimento",
+        "steps": [
+          {
+            "id": "tasti",
+            "nav": "I tasti",
+            "title": "Che cosa c'è su ogni tasto",
+            "blocks": [
+              {
+                "t": "fig",
+                "img": "barra-cleric-cura",
+                "w": 1128,
+                "h": 504,
+                "alt": "La barra intera della Cura, tasto per tasto.",
+                "marks": [],
+                "credit": "La barra intera della Cura, la stessa della tabella qui sotto, disegnata con le icone del gioco nelle colonne della tua barra: 1-8, Q, E, il tasto sinistro e l'ultima colonna, che diventa T."
+              },
+              {
+                "t": "table",
+                "head": [
+                  "Tasto",
+                  "Cosa c'è",
+                  "Quando lo premi"
+                ],
+                "rows": [
+                  [
+                    "{{tasto sinistro}}",
+                    "[[earths-retribution]]",
+                    "Sempre premuto."
+                  ],
+                  [
+                    "{{tasto destro}}",
+                    "La macro",
+                    "Sempre premuto."
+                  ],
+                  [
+                    "{{T}}",
+                    "[[light-of-regeneration]], [[divine-aura]], [[condemnation]], [[chain-of-torment]]",
+                    "Mai: lo preme la macro."
+                  ],
+                  [
+                    "{{Q}}",
+                    "[[judgment-thunder]]",
+                    "Mai: la preme la macro, riga 2."
+                  ],
+                  [
+                    "{{3}}",
+                    "[[radiant-recovery]]",
+                    "Quando quasi tutto il gruppo è ferito, o ha un effetto negativo."
+                  ],
+                  [
+                    "{{E}}",
+                    "[[healing-light]]",
+                    "Uno o due feriti: fino a tre lanci di fila."
+                  ],
+                  [
+                    "{{8}}",
+                    "[[yustiels-power]]",
+                    "Subito prima del colpo che prende tutti."
+                  ],
+                  [
+                    "{{7}}",
+                    "[[benevolence]]",
+                    "Prima di una fase in cui il gruppo prende danno a lungo."
+                  ],
+                  [
+                    "{{6}}",
+                    "[[salvation]]",
+                    "Sul colpo che uccide."
+                  ],
+                  [
+                    "{{5}}",
+                    "[[light-of-protection]]",
+                    "Una volta sola: resta acceso."
+                  ],
+                  [
+                    "{{1}}",
+                    "[[lightning-strike-scattershot]], e sopra [[debilitating-mark]]",
+                    "Quando il boss picchia forte, Debilitating Mark; col boss in Stagger parte Lightning Strike Scattershot."
+                  ],
+                  [
+                    "{{4}}",
+                    "[[bolt]]",
+                    "Carica piena, solo quando il gruppo sta bene."
+                  ],
+                  [
+                    "{{Spazio}}",
+                    "[[defiance]]",
+                    "Per uscire da un controllo."
+                  ]
+                ]
+              },
+              {
+                "t": "note",
+                "x": "Gli stessi tasti della Danno, con tre cambi: sul 6, 7 e 8 gli stigma da cura, e in basso nella pila Light of Regeneration. Il 2 resta libero."
+              }
+            ]
+          },
+          {
+            "id": "cure",
+            "nav": "Le cure",
+            "title": "Quale cura, quando",
+            "blocks": [
+              {
+                "t": "table",
+                "head": [
+                  "Quando",
+                  "Premi",
+                  "Che cosa fa"
+                ],
+                "rows": [
+                  [
+                    "Sempre",
+                    "{{T}}, dalla macro",
+                    "[[light-of-regeneration]]: cura il gruppo ogni 2 secondi per 30 secondi."
+                  ],
+                  [
+                    "Uno o due feriti",
+                    "{{E}}",
+                    "[[healing-light]]: te e il compagno con meno vita, fino a tre volte di fila."
+                  ],
+                  [
+                    "Quasi tutti feriti, o un effetto negativo",
+                    "{{3}}",
+                    "[[radiant-recovery]]: tutto il gruppo, e toglie due effetti negativi."
+                  ],
+                  [
+                    "Arriva il colpo che prende tutti",
+                    "{{8}}",
+                    "[[yustiels-power]]: prima, non dopo."
+                  ],
+                  [
+                    "Arriva una fase lunga di danno",
+                    "{{7}}",
+                    "[[benevolence]]: cura tutti per 30 secondi."
+                  ],
+                  [
+                    "Un compagno sta per morire",
+                    "{{6}}",
+                    "[[salvation]]: dal 15 l'immunità va anche a lui."
+                  ],
+                  [
+                    "Il boss picchia forte",
+                    "{{1}}",
+                    "[[debilitating-mark]]: il boss fa il 15% di danno in meno."
+                  ]
+                ]
+              },
+              {
+                "t": "note",
+                "x": "Una cura premuta mentre tieni la macro parte subito: non serve lasciare i tasti. Yustiel's Power e Light of Regeneration vanno prima del colpo, non dopo (Th3Ruthless, Metaroad)."
+              }
+            ]
+          },
+          {
+            "id": "gruppo",
+            "nav": "Nel gruppo",
+            "title": "Il tuo lavoro nel gruppo",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "In questa build sei tu a tenere in piedi il gruppo. Tra una cura e l'altra la macro fa danno: le cure il contatore non le conta, e il premio dei dungeon chiede circa il 5% del danno al boss."
+              },
+              {
+                "t": "table",
+                "head": [
+                  "Con un Chanter nel gruppo",
+                  "Che cosa succede"
+                ],
+                "rows": [
+                  [
+                    "[[light-of-protection]]",
+                    "Non si somma con la sua Undefeated Mantra: vale quella di livello più alto. Al suo posto, [[absolution]]."
+                  ],
+                  [
+                    "Due Cleric nel gruppo",
+                    "Vale una sola Chain of Torment, quella di livello più alto: mettetevi d'accordo su chi cura."
+                  ]
+                ]
+              },
+              {
+                "t": "callout",
+                "title": "Le resurrezioni",
+                "x": "Se il gruppo muore spesso, [[summon-resurrection]] prende il posto di [[benevolence]] sul 7 (Metaroad, nel suo preset per un dungeon nuovo)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2477 @@
+{
+  "skills": [
+    {
+      "id": "earths-retribution",
+      "name": "Earth's Retribution",
+      "ko": "대지의 응보",
+      "sum": "L'attacco base: colpisce un bersaglio entro 20 metri e ti rende 110 MP a colpo. Senza ricarica: lo tieni premuto sul tasto sinistro, e tra un colpo e l'altro partono le skill della macro.",
+      "meta": "Nessuna ricarica · 0 MP · rende 110 MP · 20 m · un bersaglio",
+      "options": [
+        {
+          "req": 8,
+          "name": "+20% MP restored",
+          "it": "rende il 20% di mana in più"
+        },
+        {
+          "req": 8,
+          "name": "+20% [Discharge] Chain Skill trigger chance",
+          "it": "+20% di probabilità che parta la catena [[discharge]]"
+        },
+        {
+          "req": 8,
+          "name": "+50% Multi-Hit on hit",
+          "it": "50% in più di colpi multipli"
+        },
+        {
+          "req": 12,
+          "name": "-7s [Bolt] cooldown on landing [Discharge]",
+          "it": "quando [[discharge]] colpisce, toglie 7 secondi alla ricarica di [[bolt]]"
+        },
+        {
+          "req": 16,
+          "name": "Ignores Block and Evasion",
+          "it": "ignora parata ed evasione"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 8,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+20% [Discharge] Chain Skill trigger chance"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+20% [Discharge] Chain Skill trigger chance",
+              "-7s [Bolt] cooldown on landing [Discharge]"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+20% [Discharge] Chain Skill trigger chance",
+              "-7s [Bolt] cooldown on landing [Discharge]"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+20% [Discharge] Chain Skill trigger chance",
+              "+50% Multi-Hit on hit",
+              "-7s [Bolt] cooldown on landing [Discharge]"
+            ]
+          }
+        ],
+        "use": "Sul tasto sinistro, sempre premuto insieme alla macro: ti rende mana a ogni colpo.",
+        "note": "16 basta. A 12 -7s [Bolt] cooldown on landing [Discharge] fa tornare prima Bolt (Lucia, Whelps, Th3Ruthless, BoredAF); a 20 si aggiunge il Multi-Hit. I primi coreani a 12 prendono subito il Multi-Hit (Aion 2 Meta). I primi otto d'Europa la tengono tra 13 e 18.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 2,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+20% [Discharge] Chain Skill trigger chance"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+20% [Discharge] Chain Skill trigger chance",
+              "-7s [Bolt] cooldown on landing [Discharge]"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+20% [Discharge] Chain Skill trigger chance",
+              "-7s [Bolt] cooldown on landing [Discharge]"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+20% [Discharge] Chain Skill trigger chance",
+              "-7s [Bolt] cooldown on landing [Discharge]",
+              "Ignores Block and Evasion"
+            ]
+          }
+        ],
+        "use": "Sul tasto sinistro, tra un colpo e l'altro.",
+        "note": "In PvP a 20 Ignores Block and Evasion: contro i giocatori il colpo base deve entrare (couga54).",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "builds",
+        "topeu",
+        "whelps",
+        "excalul",
+        "th3ruthless",
+        "aion2data"
+      ],
+      "conf": "mid",
+      "top": 16,
+      "rings": {
+        "pve": 66,
+        "pvp": 42
+      }
+    },
+    {
+      "id": "judgment-thunder",
+      "name": "Judgment Thunder",
+      "ko": "심판의 번개",
+      "sum": "Un fulmine senza ricarica su un bersaglio entro 20 metri e fino a 4 nemici attorno; fa partire [[divine-punishment]]. Riempie i buchi tra le altre skill.",
+      "meta": "Nessuna ricarica · 120 MP · 20 m · fino a 4 nemici",
+      "options": [
+        {
+          "req": 8,
+          "name": "-20% MP consumed",
+          "it": "costa il 20% di mana in meno"
+        },
+        {
+          "req": 8,
+          "name": "Deals up to 12% more damage when less targets are hit",
+          "it": "fino al 12% di danno in più quando colpisce meno bersagli"
+        },
+        {
+          "req": 8,
+          "name": "-10% enemy Combat Speed for 5s on landing [Divine Punishment]",
+          "it": "chi è colpito da [[divine-punishment]] attacca il 10% più lento per 5 secondi"
+        },
+        {
+          "req": 12,
+          "name": "10% chance to inflict Root for 2s on landing [Divine Punishment]",
+          "it": "[[divine-punishment]] ha il 10% di probabilità di bloccare il bersaglio per 2 secondi"
+        },
+        {
+          "req": 16,
+          "name": "Activates [Divine Punishment] 1 extra time",
+          "it": "[[divine-punishment]] parte una volta in più"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 7,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Deals up to 12% more damage when less targets are hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "-20% MP consumed",
+              "Deals up to 12% more damage when less targets are hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Deals up to 12% more damage when less targets are hit",
+              "Activates [Divine Punishment] 1 extra time"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "-20% MP consumed",
+              "Deals up to 12% more damage when less targets are hit",
+              "Activates [Divine Punishment] 1 extra time"
+            ]
+          }
+        ],
+        "use": "Sul tasto Q: la preme la macro, riga 2.",
+        "note": "Senza Earth Punishment Condemnation riparte di meno, e Judgment Thunder riempie: c'è anche nella macro da curatore di Metaroad. A 20 il mana in meno, perché la scarica in più ne consuma tanto (Th3Ruthless).",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 5,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Deals up to 12% more damage when less targets are hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Deals up to 12% more damage when less targets are hit",
+              "10% chance to inflict Root for 2s on landing [Divine Punishment]"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "10% chance to inflict Root for 2s on landing [Divine Punishment]",
+              "Activates [Divine Punishment] 1 extra time"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "Deals up to 12% more damage when less targets are hit",
+              "10% chance to inflict Root for 2s on landing [Divine Punishment]",
+              "Activates [Divine Punishment] 1 extra time"
+            ]
+          }
+        ],
+        "use": "Sul tasto Q, tra un colpo e l'altro.",
+        "note": "In PvP 10% chance to inflict Root for 2s on landing [Divine Punishment] al posto della seconda scelta (Aion 2 Maps).",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "builds",
+        "topeu",
+        "whelps",
+        "excalul",
+        "th3ruthless",
+        "aion2data",
+        "lucia",
+        "metaroad"
+      ],
+      "conf": "mid",
+      "top": 17.9,
+      "rings": {
+        "pve": 45,
+        "pvp": 44
+      }
+    },
+    {
+      "id": "bolt",
+      "name": "Bolt",
+      "ko": "벽력",
+      "sum": "Si carica tenendo premuto il tasto, fino a tre gradini, e colpisce un bersaglio entro 20 metri e fino a 4 nemici attorno. Toglie da 20 a 35 alla barra di Stagger.",
+      "meta": "Ricarica 45 s · 300 MP · 20 m · fino a 4 nemici · si carica",
+      "options": [
+        {
+          "req": 8,
+          "name": "30% chance to inflict Stun for 3s when fully charged",
+          "it": "a carica piena, 30% di probabilità di stordire per 3 secondi"
+        },
+        {
+          "req": 8,
+          "name": "+300 Skill Accuracy",
+          "it": "+300 di precisione della skill"
+        },
+        {
+          "req": 8,
+          "name": "+30% Skill Speed",
+          "it": "si lancia il 30% più in fretta"
+        },
+        {
+          "req": 12,
+          "name": "Up to +20% damage when less targets hit",
+          "it": "fino al 20% di danno in più quando colpisce meno bersagli"
+        },
+        {
+          "req": 16,
+          "name": "Critical Hit on hit",
+          "it": "sempre critico"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 6,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+30% Skill Speed"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+30% Skill Speed",
+              "Up to +20% damage when less targets hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+30% Skill Speed",
+              "Critical Hit on hit"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+30% Skill Speed",
+              "Up to +20% damage when less targets hit",
+              "Critical Hit on hit"
+            ]
+          }
+        ],
+        "use": "Sul tasto 4, a mano, quando il gruppo sta bene.",
+        "note": "In questa build Bolt aspetta le cure: una carica in corso è una cura che ritarda (Aion 2 Meta).",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 3,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+300 Skill Accuracy"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+300 Skill Accuracy",
+              "+30% Skill Speed"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+300 Skill Accuracy",
+              "+30% Skill Speed"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "30% chance to inflict Stun for 3s when fully charged",
+              "+30% Skill Speed",
+              "Up to +20% damage when less targets hit"
+            ]
+          }
+        ],
+        "use": "Sul tasto 4, a mano, a carica piena.",
+        "note": "In PvP +300 Skill Accuracy conta di più: contro chi schiva, Bolt deve entrare.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "builds",
+        "topeu",
+        "whelps",
+        "excalul",
+        "th3ruthless",
+        "aion2data"
+      ],
+      "conf": "high",
+      "top": 17.7,
+      "rings": {
+        "pve": 65,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "chain-of-torment",
+      "name": "Chain of Torment",
+      "ko": "고통의 연쇄",
+      "sum": "Colpisce un bersaglio entro 20 metri e fino a 4 nemici attorno, abbassa del 5% la loro resistenza al danno in PvE e li brucia per 10 secondi. Senza di lei [[condemnation]] non parte.",
+      "meta": "Ricarica 20 s · 150 MP · 20 m · fino a 4 nemici",
+      "options": [
+        {
+          "req": 8,
+          "name": "Slows target for 5s",
+          "it": "rallenta il bersaglio per 5 secondi"
+        },
+        {
+          "req": 8,
+          "name": "+3s Damage over Time",
+          "it": "il danno nel tempo dura 3 secondi in più"
+        },
+        {
+          "req": 8,
+          "name": "Has a 20% chance to inflict Knockdown on the target for 3s",
+          "it": "20% di probabilità di atterrare il bersaglio per 3 secondi"
+        },
+        {
+          "req": 12,
+          "name": "+10% PvE Damage Tolerance reduction and +5% PvP Damage Tolerance reduction",
+          "it": "abbassa di un altro 10% la resistenza al danno in PvE (5% in PvP)"
+        },
+        {
+          "req": 16,
+          "name": "Ignores Block and Evasion and reduces Damage over Time interval by 50%",
+          "it": "ignora parata ed evasione, e il danno nel tempo batte il doppio delle volte"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 9,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+3s Damage over Time"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+3s Damage over Time",
+              "+10% PvE Damage Tolerance reduction and +5% PvP Damage Tolerance reduction"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+10% PvE Damage Tolerance reduction and +5% PvP Damage Tolerance reduction",
+              "Ignores Block and Evasion and reduces Damage over Time interval by 50%"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+3s Damage over Time",
+              "+10% PvE Damage Tolerance reduction and +5% PvP Damage Tolerance reduction",
+              "Ignores Block and Evasion and reduces Damage over Time interval by 50%"
+            ]
+          }
+        ],
+        "use": "In cima alla pila sul T: la preme la macro quando sul bersaglio non c'è.",
+        "note": "Serve a Condemnation, che parte solo su chi ce l'ha addosso, e abbassa la resistenza del boss per tutto il gruppo: 15% in tutto con la specializzazione del 12. Coi punti basta 10, i nodi del Daevanion la portano a 14; se arriva a 16, Whelps tiene il taglio alla resistenza e il danno nel tempo più fitto. I primi otto d'Europa la tengono tra 14 e 17.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 10,
+        "order": 9,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Has a 20% chance to inflict Knockdown on the target for 3s"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Has a 20% chance to inflict Knockdown on the target for 3s",
+              "+10% PvE Damage Tolerance reduction and +5% PvP Damage Tolerance reduction"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Has a 20% chance to inflict Knockdown on the target for 3s",
+              "+10% PvE Damage Tolerance reduction and +5% PvP Damage Tolerance reduction"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+3s Damage over Time",
+              "Has a 20% chance to inflict Knockdown on the target for 3s",
+              "Ignores Block and Evasion and reduces Damage over Time interval by 50%"
+            ]
+          }
+        ],
+        "use": "In cima alla pila sul T.",
+        "note": "In PvP il 20% di atterrare il bersaglio vale più del danno nel tempo (couga54, Aion 2 Maps).",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "builds",
+        "topeu",
+        "whelps",
+        "excalul",
+        "th3ruthless",
+        "aion2data"
+      ],
+      "conf": "high",
+      "top": 15.1,
+      "rings": {
+        "pve": 0,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "debilitating-mark",
+      "name": "Debilitating Mark",
+      "ko": "약화의 낙인",
+      "sum": "Colpisce un bersaglio entro 20 metri e fino a 4 nemici attorno, abbassa del 5% il loro danno in PvE e li brucia per 10 secondi: il boss picchia meno su tutto il gruppo.",
+      "meta": "Ricarica 10 s · 100 MP · 20 m · fino a 4 nemici",
+      "options": [
+        {
+          "req": 8,
+          "name": "Removes MP Consumed and restores 150 MP",
+          "it": "non costa mana e ne rende 150"
+        },
+        {
+          "req": 8,
+          "name": "-15% target Defense for duration of Damage over Time",
+          "it": "15% di difesa in meno al bersaglio finché brucia"
+        },
+        {
+          "req": 8,
+          "name": "Has a 20% chance to inflict Stun on the target for 3s",
+          "it": "20% di probabilità di stordire il bersaglio per 3 secondi"
+        },
+        {
+          "req": 12,
+          "name": "+10% PvE Damage Boost reduction and +5% PvP Damage Boost reduction",
+          "it": "abbassa di un altro 10% il danno del bersaglio in PvE (5% in PvP)"
+        },
+        {
+          "req": 16,
+          "name": "Ignores Block and Evasion and reduces Damage over Time interval by 50%",
+          "it": "ignora parata ed evasione, e il danno nel tempo batte il doppio delle volte"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 10,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "-15% target Defense for duration of Damage over Time"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "-15% target Defense for duration of Damage over Time",
+              "+10% PvE Damage Boost reduction and +5% PvP Damage Boost reduction"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "-15% target Defense for duration of Damage over Time",
+              "Ignores Block and Evasion and reduces Damage over Time interval by 50%"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "-15% target Defense for duration of Damage over Time",
+              "+10% PvE Damage Boost reduction and +5% PvP Damage Boost reduction",
+              "Ignores Block and Evasion and reduces Damage over Time interval by 50%"
+            ]
+          }
+        ],
+        "use": "Sul tasto 1: quando il boss picchia forte, a ogni ricarica finché dura.",
+        "note": "Nella Cura è una difesa: il boss fa il 15% di danno in meno su tutto il gruppo finché brucia.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 10,
+        "order": 10,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "-15% target Defense for duration of Damage over Time"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "-15% target Defense for duration of Damage over Time",
+              "Has a 20% chance to inflict Stun on the target for 3s"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "-15% target Defense for duration of Damage over Time",
+              "Has a 20% chance to inflict Stun on the target for 3s"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "-15% target Defense for duration of Damage over Time",
+              "Has a 20% chance to inflict Stun on the target for 3s",
+              "Ignores Block and Evasion and reduces Damage over Time interval by 50%"
+            ]
+          }
+        ],
+        "use": "Sul tasto 1: prima di Earth Punishment, per far sprecare la pulizia all'altro.",
+        "note": "In PvP il 20% di stordire al posto del taglio al danno (Aion 2 Maps).",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "builds",
+        "topeu",
+        "whelps",
+        "excalul",
+        "th3ruthless",
+        "aion2data"
+      ],
+      "conf": "mid",
+      "top": 14.4,
+      "rings": {
+        "pve": 0,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "light-of-regeneration",
+      "name": "Light of Regeneration",
+      "ko": "재생의 빛",
+      "sum": "Cura te e il gruppo entro 40 metri ogni 2 secondi per 30 secondi, e si ricarica in 30: lanciata a ogni ricarica, sul gruppo non si spegne mai.",
+      "meta": "Ricarica 30 s · 0 MP · 40 m · tutto il gruppo",
+      "options": [
+        {
+          "req": 8,
+          "name": "+5% Defense while healing",
+          "it": "+5% di difesa finché cura"
+        },
+        {
+          "req": 8,
+          "name": "+20% amount healed when HP is 50% or less",
+          "it": "cura il 20% in più chi è sotto metà vita"
+        },
+        {
+          "req": 8,
+          "name": "+5% Incoming Heal during healing",
+          "it": "+5% di cure ricevute finché cura"
+        },
+        {
+          "req": 12,
+          "name": "+5% Move Speed during healing",
+          "it": "+5% di velocità di movimento finché cura"
+        },
+        {
+          "req": 16,
+          "name": "+5% PvE Damage Tolerance and +2.5% PvP Damage Tolerance during healing",
+          "it": "+5% di resistenza al danno in PvE (2,5% in PvP) finché cura"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 3,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+5% Incoming Heal during healing"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+20% amount healed when HP is 50% or less",
+              "+5% Incoming Heal during healing"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+5% Incoming Heal during healing",
+              "+5% PvE Damage Tolerance and +2.5% PvP Damage Tolerance during healing"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+20% amount healed when HP is 50% or less",
+              "+5% Incoming Heal during healing",
+              "+5% PvE Damage Tolerance and +2.5% PvP Damage Tolerance during healing"
+            ]
+          }
+        ],
+        "use": "In basso nella pila sul T: la preme la macro a ogni ricarica.",
+        "note": "Dura quanto la sua ricarica: in basso nella pila riparte appena può, e sul gruppo non si spegne mai (Th3Ruthless la mette in basso nella sua pila). +5% Incoming Heal durante la cura, dal 12 il 20% in più a chi è sotto metà vita, a 16 la resistenza al danno mentre cura.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 8,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+5% Defense while healing"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+5% Defense while healing",
+              "+5% Move Speed during healing"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+5% Move Speed during healing",
+              "+5% PvE Damage Tolerance and +2.5% PvP Damage Tolerance during healing"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+5% Defense while healing",
+              "+5% Move Speed during healing",
+              "+5% PvE Damage Tolerance and +2.5% PvP Damage Tolerance during healing"
+            ]
+          }
+        ],
+        "use": "Sul tasto 2, a mano.",
+        "note": "La resistenza mentre cura vale anche in PvP: 2,5%.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "topeu",
+        "th3ruthless",
+        "metaroad",
+        "lucia"
+      ],
+      "conf": "mid",
+      "top": 16.7,
+      "rings": {
+        "pve": 49,
+        "pvp": 47
+      }
+    },
+    {
+      "id": "healing-light",
+      "name": "Healing Light",
+      "ko": "치유의 빛",
+      "sum": "Cura te e il compagno con meno vita entro 40 metri. Ogni 6 secondi: è la cura di tutti i momenti.",
+      "meta": "Ricarica 6 s · 50 MP · 40 m · tu e il compagno più basso",
+      "options": [
+        {
+          "req": 8,
+          "name": "+2 consecutive uses",
+          "it": "si lancia 2 volte in più di fila"
+        },
+        {
+          "req": 8,
+          "name": "+20% amount healed when HP is 50% or less",
+          "it": "cura il 20% in più chi è sotto metà vita"
+        },
+        {
+          "req": 8,
+          "name": "50% chance to remove 1 debuff",
+          "it": "50% di probabilità di togliere un effetto negativo"
+        },
+        {
+          "req": 12,
+          "name": "+2% HP restored",
+          "it": "cura un altro 2% della vita"
+        },
+        {
+          "req": 16,
+          "name": "-2s cooldown",
+          "it": "ricarica di 2 secondi più corta"
+        }
+      ],
+      "pve": {
+        "level": 20,
+        "order": 2,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+2 consecutive uses"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+2 consecutive uses",
+              "+2% HP restored"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+2 consecutive uses",
+              "+2% HP restored"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+2 consecutive uses",
+              "+2% HP restored",
+              "-2s cooldown"
+            ]
+          }
+        ],
+        "use": "Sul tasto E, a mano: uno o due feriti, fino a tre lanci di fila.",
+        "note": "Con la prima specializzazione si lancia tre volte di fila; dal 12 cura un altro 2% della vita, a 20 torna 2 secondi prima (Th3Ruthless, BoredAF, Metaroad, Lucia). Se il gruppo resta negli effetti a terra, 50% chance to remove 1 debuff al posto del +2%.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 7,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+2 consecutive uses"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+2 consecutive uses",
+              "50% chance to remove 1 debuff"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+2 consecutive uses",
+              "50% chance to remove 1 debuff"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+2 consecutive uses",
+              "50% chance to remove 1 debuff",
+              "-2s cooldown"
+            ]
+          }
+        ],
+        "use": "Sul tasto E, a mano.",
+        "note": "In PvP 50% chance to remove 1 debuff al posto del +2% (Aion 2 Maps).",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "builds",
+        "topeu",
+        "th3ruthless",
+        "metaroad",
+        "lucia"
+      ],
+      "conf": "high",
+      "top": 16.6,
+      "rings": {
+        "pve": 52,
+        "pvp": 50
+      }
+    },
+    {
+      "id": "radiant-recovery",
+      "name": "Radiant Recovery",
+      "ko": "쾌유의 광휘",
+      "sum": "Cura te e tutto il gruppo entro 40 metri e toglie un effetto negativo. La cura grande, ogni 12 secondi.",
+      "meta": "Ricarica 12 s · 0 MP · 40 m · tutto il gruppo",
+      "options": [
+        {
+          "req": 8,
+          "name": "Removes up to 2 debuffs",
+          "it": "toglie fino a 2 effetti negativi"
+        },
+        {
+          "req": 8,
+          "name": "+1 consecutive use",
+          "it": "si lancia una volta in più di fila"
+        },
+        {
+          "req": 8,
+          "name": "-3s cooldown",
+          "it": "ricarica di 3 secondi più corta"
+        },
+        {
+          "req": 12,
+          "name": "+10% Incoming Heal for 10s",
+          "it": "+10% di cure ricevute per 10 secondi"
+        },
+        {
+          "req": 16,
+          "name": "+5% HP restored",
+          "it": "cura un altro 5% della vita"
+        }
+      ],
+      "pve": {
+        "level": 20,
+        "order": 1,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Removes up to 2 debuffs"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Removes up to 2 debuffs",
+              "-3s cooldown"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Removes up to 2 debuffs",
+              "-3s cooldown"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "Removes up to 2 debuffs",
+              "-3s cooldown",
+              "+5% HP restored"
+            ]
+          }
+        ],
+        "use": "Sul tasto 3, a mano: quando quasi tutto il gruppo ha preso un colpo, o ha un effetto negativo addosso.",
+        "note": "Con Healing Light le prime due da portare a 20 in questa build (Th3Ruthless). Toglie due effetti negativi, torna 3 secondi prima, e a 20 cura un altro 5% della vita: è la scelta di Th3Ruthless e di BoredAF. Dove non ci sono effetti negativi da togliere (i coreani nel raid nuovo) la prima scelta lascia il posto a +1 consecutive use.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 4,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "-3s cooldown"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Removes up to 2 debuffs",
+              "-3s cooldown"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Removes up to 2 debuffs",
+              "-3s cooldown"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "Removes up to 2 debuffs",
+              "-3s cooldown",
+              "+5% HP restored"
+            ]
+          }
+        ],
+        "use": "Sul tasto 3, a mano: toglie gli effetti negativi a te e al gruppo.",
+        "note": "In PvP Removes up to 2 debuffs al posto della seconda volta di fila (Aion 2 Maps).",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "builds",
+        "topeu",
+        "th3ruthless",
+        "metaroad",
+        "lucia"
+      ],
+      "conf": "high",
+      "top": 17.2,
+      "rings": {
+        "pve": 66,
+        "pvp": 61
+      }
+    },
+    {
+      "id": "divine-aura",
+      "name": "Divine Aura",
+      "ko": "신성한 기운",
+      "sum": "Un'aura ferma accanto a te che per 5 secondi colpisce il tuo bersaglio entro 20 metri. Non si sposta e non si lancia mentre cammini: va messa dove il boss resta.",
+      "meta": "Ricarica 30 s · 0 MP · 20 m · resta dove la metti",
+      "options": [
+        {
+          "req": 8,
+          "name": "-40% Move Speed for 3s to up to 4 enemies within 4m of the Aura",
+          "it": "rallenta del 40% per 3 secondi fino a 4 nemici entro 4 metri dall'aura"
+        },
+        {
+          "req": 8,
+          "name": "Changes to AoE Skill",
+          "it": "colpisce ad area"
+        },
+        {
+          "req": 8,
+          "name": "+50% [Divine Aura] attacking speed",
+          "it": "l'aura attacca il 50% più in fretta"
+        },
+        {
+          "req": 12,
+          "name": "+3s [Divine Aura] duration",
+          "it": "l'aura dura 3 secondi in più"
+        },
+        {
+          "req": 16,
+          "name": "-10s cooldown",
+          "it": "ricarica di 10 secondi più corta"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 5,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+50% [Divine Aura] attacking speed"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+50% [Divine Aura] attacking speed",
+              "+3s [Divine Aura] duration"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+50% [Divine Aura] attacking speed",
+              "-10s cooldown"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+50% [Divine Aura] attacking speed",
+              "+3s [Divine Aura] duration",
+              "-10s cooldown"
+            ]
+          }
+        ],
+        "use": "Nella pila sul T, sopra Light of Regeneration: la preme la macro.",
+        "note": "16, poi 20 se l'equip lo porta. L'aura non si sposta: va lanciata dove il boss starà fermo. A 16 -10 secondi di ricarica al posto dei 3 secondi in più (Lucia), a 20 tutte e tre: le tengono 235 build su 252 del Global. I primi otto d'Europa la tengono tra 14 e 18.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 6,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "-40% Move Speed for 3s to up to 4 enemies within 4m of the Aura"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "-40% Move Speed for 3s to up to 4 enemies within 4m of the Aura",
+              "+50% [Divine Aura] attacking speed"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "-40% Move Speed for 3s to up to 4 enemies within 4m of the Aura",
+              "+50% [Divine Aura] attacking speed"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "-40% Move Speed for 3s to up to 4 enemies within 4m of the Aura",
+              "+50% [Divine Aura] attacking speed",
+              "-10s cooldown"
+            ]
+          }
+        ],
+        "use": "Sul tasto T, nella pila.",
+        "note": "In PvP il rallentamento a chi le sta vicino.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "builds",
+        "topeu",
+        "whelps",
+        "excalul",
+        "th3ruthless",
+        "aion2data"
+      ],
+      "conf": "mid",
+      "top": 16.7,
+      "rings": {
+        "pve": 65,
+        "pvp": 27
+      }
+    },
+    {
+      "id": "defiance",
+      "name": "Defiance",
+      "ko": "충격 해제",
+      "sum": "Ti libera da stordimento, atterramento, sbalzo, presa, gelo e paura, e per 5 secondi non ti prende più niente. La sua ricarica non si accorcia.",
+      "meta": "Ricarica 60 s · 0 MP · solo su di te",
+      "options": [
+        {
+          "req": 8,
+          "name": "Adds [Blessing of Regeneration] Chain Skill",
+          "it": "aggiunge la catena [[blessing-of-regeneration]]"
+        },
+        {
+          "req": 8,
+          "name": "Restores 1000 Stamina on using [Defiance]",
+          "it": "ti rende 1.000 di stamina"
+        },
+        {
+          "req": 8,
+          "name": "Restores 10% HP on using [Defiance]",
+          "it": "ti rende il 10% della vita"
+        },
+        {
+          "req": 12,
+          "name": "+2s Tenacity duration",
+          "it": "l'immunità dura 2 secondi in più"
+        },
+        {
+          "req": 16,
+          "name": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+          "it": "finché sei immune, +50% di resistenza al danno in PvE (25% in PvP)"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 11,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Restores 10% HP on using [Defiance]"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Restores 1000 Stamina on using [Defiance]",
+              "Restores 10% HP on using [Defiance]"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Restores 1000 Stamina on using [Defiance]",
+              "Restores 10% HP on using [Defiance]"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "Restores 1000 Stamina on using [Defiance]",
+              "Restores 10% HP on using [Defiance]",
+              "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+            ]
+          }
+        ],
+        "use": "Sulla barra spaziatrice: per uscire da uno stordimento o da un atterramento.",
+        "note": "Coi punti basta 10. Ti rende vita e stamina quando ti liberi (Th3Ruthless); Metaroad e vyzerai la alzano a 12.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 10,
+        "order": 11,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Restores 10% HP on using [Defiance]"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Restores 10% HP on using [Defiance]",
+              "+2s Tenacity duration"
+            ]
+          }
+        ],
+        "use": "Sulla barra spaziatrice: decide gli scontri.",
+        "note": "Usala quando cambia lo scontro, e guarda quali controlli ha ancora l'altro.",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "maps",
+        "couga",
+        "topeu",
+        "th3ruthless",
+        "metaroad",
+        "lucia"
+      ],
+      "conf": "mid",
+      "top": 12.1,
+      "rings": {
+        "pve": 0,
+        "pvp": 36
+      }
+    },
+    {
+      "id": "condemnation",
+      "name": "Condemnation",
+      "ko": "단죄",
+      "sum": "Il tuo colpo principale: 3 secondi di ricarica, ma parte solo su un bersaglio che ha addosso [[chain-of-torment]]. Colpisce anche fino a 4 nemici attorno.",
+      "meta": "Ricarica 3 s · 0 MP · 20 m · solo su chi ha Chain of Torment",
+      "options": [
+        {
+          "req": 8,
+          "name": "Restores 100 MP on hit",
+          "it": "ogni colpo rende 100 MP"
+        },
+        {
+          "req": 8,
+          "name": "Up to +12% damage when less targets hit",
+          "it": "fino al 12% di danno in più quando colpisce meno bersagli"
+        },
+        {
+          "req": 8,
+          "name": "20% chance to inflict Root for 3s",
+          "it": "20% di probabilità di bloccare il bersaglio per 3 secondi"
+        },
+        {
+          "req": 12,
+          "name": "Resets cooldown on landing a Critical Hit with [Condemnation]",
+          "it": "un critico azzera la sua ricarica"
+        },
+        {
+          "req": 16,
+          "name": "Multi-Hit on hit",
+          "it": "colpisce sempre più volte"
+        }
+      ],
+      "pve": {
+        "level": 20,
+        "order": 4,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Up to +12% damage when less targets hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Up to +12% damage when less targets hit",
+              "Resets cooldown on landing a Critical Hit with [Condemnation]"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Resets cooldown on landing a Critical Hit with [Condemnation]",
+              "Multi-Hit on hit"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "Up to +12% damage when less targets hit",
+              "Resets cooldown on landing a Critical Hit with [Condemnation]",
+              "Multi-Hit on hit"
+            ]
+          }
+        ],
+        "use": "Nella pila sul T, sopra Light of Regeneration e Divine Aura: la preme la macro.",
+        "note": "Anche da curatore è il colpo che conta: nei dungeon il premio dipende da quanto danno fai (circa il 5% del danno al boss), e le cure il contatore non le conta. Senza Earth Punishment riparte solo coi critici veri.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 20,
+        "order": 1,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Up to +12% damage when less targets hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Up to +12% damage when less targets hit",
+              "Resets cooldown on landing a Critical Hit with [Condemnation]"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Resets cooldown on landing a Critical Hit with [Condemnation]",
+              "Multi-Hit on hit"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "Up to +12% damage when less targets hit",
+              "Resets cooldown on landing a Critical Hit with [Condemnation]",
+              "Multi-Hit on hit"
+            ]
+          }
+        ],
+        "use": "Nella pila sul T, come in PvE.",
+        "note": "Contro chi combatte in mischia Aion 2 Maps mette 20% chance to inflict Root for 3s al posto del +12%.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "builds",
+        "topeu",
+        "whelps",
+        "excalul",
+        "th3ruthless",
+        "aion2data"
+      ],
+      "conf": "high",
+      "top": 20.2,
+      "rings": {
+        "pve": 68,
+        "pvp": 55
+      }
+    },
+    {
+      "id": "lightning-strike-scattershot",
+      "name": "Lightning Strike Scattershot",
+      "ko": "벼락 난사",
+      "sum": "Colpisce solo un bersaglio in Stagger entro 20 metri, senza ricarica: finché il boss è a terra parte a ripetizione.",
+      "meta": "Nessuna ricarica · 0 MP · 20 m · solo su un bersaglio in Stagger",
+      "options": [
+        {
+          "req": 8,
+          "name": "Absorbs 5% HP",
+          "it": "ti rende il 5% della vita"
+        },
+        {
+          "req": 8,
+          "name": "Restores 120 MP",
+          "it": "rende 120 MP"
+        },
+        {
+          "req": 8,
+          "name": "Changes to mobile skill",
+          "it": "la tiri anche camminando"
+        },
+        {
+          "req": 12,
+          "name": "Multi-Hit on hit",
+          "it": "colpisce sempre più volte"
+        },
+        {
+          "req": 16,
+          "name": "-1s all skill cooldowns on hit",
+          "it": "ogni colpo toglie 1 secondo a tutte le ricariche"
+        }
+      ],
+      "pve": {
+        "level": 1,
+        "order": 12,
+        "picks": [],
+        "use": "Sul tasto 1 sotto Debilitating Mark: parte solo col boss in Stagger.",
+        "note": "Cinque dei primi otto d'Europa la lasciano a 1, e il 72% dei primi del Global la tiene sotto l'8 (Aion 2 Meta): i punti servono altrove. Aion 2 Maps e couga54 la alzano per il -1 secondo a tutte le ricariche del 16.",
+        "label": "lasciala a 1"
+      },
+      "pvp": {
+        "level": 1,
+        "order": 12,
+        "picks": [],
+        "use": "In PvP non serve: colpisce solo un bersaglio in Stagger.",
+        "label": "lasciala a 1"
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "topeu"
+      ],
+      "conf": "mid",
+      "top": 5.5,
+      "rings": {
+        "pve": 0,
+        "pvp": 0
+      }
+    }
+  ],
+  "chains": [
+    {
+      "id": "discharge",
+      "name": "Discharge"
+    },
+    {
+      "id": "divine-punishment",
+      "name": "Divine Punishment"
+    },
+    {
+      "id": "blessing-of-regeneration",
+      "name": "Blessing of Regeneration"
+    },
+    {
+      "id": "earths-blessing",
+      "name": "Earth's Blessing"
+    }
+  ],
+  "stigma": [
+    {
+      "id": "earth-punishment",
+      "name": "Earth Punishment",
+      "ko": "대지의 징벌",
+      "sum": "Colpisce un bersaglio entro 20 metri e lo brucia per 10 secondi. Dal livello 5, finché brucia, [[condemnation]] è sempre critica, quindi riparte subito.",
+      "meta": "Ricarica 30 s · 200 MP · 20 m",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "[Condemnation] lands as a Critical Hit on targets afflicted with [Earth Punishment]",
+          "it": "[[condemnation]] è sempre critica sul bersaglio che brucia"
+        },
+        {
+          "at": 10,
+          "name": "+10% Double Chance to caster and +5% to party members from [Earth's Blessing]",
+          "it": "[[earths-blessing]]: +10% di colpo doppio a te, +5% al gruppo"
+        },
+        {
+          "at": 15,
+          "name": "+10% Attack and Defense to caster and +5% to party members from [Earth's Blessing]",
+          "it": "[[earths-blessing]]: +10% di attacco e difesa a te, +5% al gruppo"
+        },
+        {
+          "at": 20,
+          "name": "+10s [Earth Punishment] and [Earth's Blessing] duration",
+          "it": "bruciatura e [[earths-blessing]] durano 10 secondi in più"
+        }
+      ],
+      "pve": {
+        "level": 20,
+        "state": "quando il gruppo regge",
+        "pos": 7,
+        "swap": "yustiels-power",
+        "note": "Al posto di Yustiel's Power quando il gruppo sta in piedi da solo e serve danno (Th3Ruthless): ogni Condemnation sul bersaglio che brucia è critica. I tre dei primi otto d'Europa che curano la tengono."
+      },
+      "pvp": {
+        "level": 20,
+        "state": "da solo",
+        "pos": 2,
+        "note": "Dopo che l'altro ha usato la sua pulizia: Condemnation critica finché brucia."
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "builds",
+        "topeu",
+        "whelps",
+        "th3ruthless",
+        "aion2data"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "prayer-of-amplification",
+      "name": "Prayer of Amplification",
+      "ko": "증폭의 기도",
+      "sum": "+20% di attacco per 10 secondi (20 al livello 20). Le tue cure crescono col tuo attacco: alza anche quelle.",
+      "meta": "Ricarica 60 s · 0 MP · solo su di te",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+20% PvE Damage Boost and +10% PvP Damage Boost",
+          "it": "+20% di danno in PvE, 10% in PvP"
+        },
+        {
+          "at": 10,
+          "name": "x1.5 [Empyrean Lord's Grace] effect for the duration",
+          "it": "[[empyrean-lords-grace]] vale una volta e mezza finché dura"
+        },
+        {
+          "at": 15,
+          "name": "x1.5 [Earth's Grace] effect for the duration",
+          "it": "[[earths-grace]] vale una volta e mezza finché dura"
+        },
+        {
+          "at": 20,
+          "name": "+15% additional Attack",
+          "it": "un altro 15% di attacco"
+        }
+      ],
+      "pve": {
+        "level": 20,
+        "state": "nella build Danno",
+        "pos": 8,
+        "swap": "benevolence",
+        "note": "Nella Cura resta fuori: i suoi punti, nel preset 2, vanno agli stigma da cura."
+      },
+      "pvp": null,
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "builds",
+        "topeu",
+        "whelps",
+        "th3ruthless",
+        "aion2data"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "light-of-protection",
+      "name": "Light of Protection",
+      "ko": "보호의 빛",
+      "sum": "Un interruttore che lasci acceso: per te e per i compagni vicini +10,5% di danno e di resistenza al danno in PvE al livello 1, 15% al 10, 20% al 20 (la metà in PvP). Non si somma con Undefeated Mantra del Chanter: vale quello di livello più alto, e a pari livello il mantra.",
+      "meta": "Ricarica 5 s · 0 MP · interruttore",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+10% Incoming Heal",
+          "it": "+10% di cure ricevute"
+        },
+        {
+          "at": 10,
+          "name": "+100 Accuracy",
+          "it": "+100 di precisione"
+        },
+        {
+          "at": 15,
+          "name": "+10% Max HP",
+          "it": "+10% di vita massima"
+        },
+        {
+          "at": 20,
+          "name": "+10% Perfect Chance",
+          "it": "+10% di colpo perfetto"
+        }
+      ],
+      "pve": {
+        "level": 20,
+        "state": "in uso",
+        "pos": 1,
+        "note": "C'è in tutti i set da cura, coreani e del Global: +20% di danno e di resistenza al gruppo a 20, +10% di cure ricevute dal 5, +10% di vita massima dal 15. I gruppi guardano il suo livello. Non si somma con Undefeated Mantra di un Chanter: con un Chanter nel gruppo il suo posto va ad Absolution."
+      },
+      "pvp": {
+        "level": 20,
+        "state": "sempre acceso",
+        "pos": 1,
+        "note": "In PvP vale la metà, e lo tieni acceso lo stesso."
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "builds",
+        "topeu",
+        "gangcoding",
+        "th3ruthless",
+        "metaroad"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "noble-aura",
+      "name": "Noble Aura",
+      "ko": "고결한 기운",
+      "sum": "Un'aura che ti segue per 5 minuti e colpisce il tuo bersaglio ogni 2 secondi.",
+      "meta": "Ricarica 60 s · 0 MP · dura 5 minuti",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+200 Aura Critical Hit",
+          "it": "+200 di critico all'aura"
+        },
+        {
+          "at": 10,
+          "name": "+20% damage to targets afflicted with Debilitating Mark",
+          "it": "+20% di danno su chi ha [[debilitating-mark]]"
+        },
+        {
+          "at": 15,
+          "name": "+30% damage to targets with Incapacitated Immunity",
+          "it": "+30% di danno su chi è immune agli stati"
+        },
+        {
+          "at": 20,
+          "name": "-1s Aura attack cooldown",
+          "it": "l'aura colpisce ogni secondo invece che ogni 2"
+        }
+      ],
+      "pve": {
+        "level": 20,
+        "state": "nella build Danno",
+        "pos": 9,
+        "swap": "salvation",
+        "note": "Nella Cura resta fuori."
+      },
+      "pvp": null,
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "builds",
+        "topeu",
+        "whelps",
+        "th3ruthless",
+        "aion2data"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "summon-resurrection",
+      "name": "Summon Resurrection",
+      "ko": "소환 부활",
+      "sum": "Rianima un compagno caduto entro 40 metri.",
+      "meta": "Ricarica 120 s · 0 MP · 40 m",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "-1s casting time",
+          "it": "si lancia 1 secondo più in fretta"
+        },
+        {
+          "at": 10,
+          "name": "Invincible for 3s after resurrection",
+          "it": "chi rianimi è invulnerabile per 3 secondi"
+        },
+        {
+          "at": 15,
+          "name": "Restores 20% of Max HP",
+          "it": "chi rianimi riparte col 20% della vita massima"
+        },
+        {
+          "at": 20,
+          "name": "Invincible for 5s after resurrection",
+          "it": "chi rianimi è invulnerabile per 5 secondi"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "state": "con un gruppo che muore spesso",
+        "pos": 6,
+        "swap": "benevolence",
+        "note": "Rianima un compagno caduto; dal 10 è invulnerabile per 3 secondi. Per un dungeon nuovo dove si muore (Metaroad) e per il raid Ludra (MrRosaPony). Lucia lo lascia fuori nei gruppi a caso: se il compagno si rialza con una pietra, lo stigma va in ricarica lo stesso."
+      },
+      "pvp": {
+        "level": 5,
+        "state": "nell'Abisso",
+        "pos": 7,
+        "swap": "earth-punishment",
+        "note": "Nell'Abisso e in campo aperto una resurrezione ribalta lo scontro."
+      },
+      "src": [
+        "db",
+        "maps",
+        "couga",
+        "topeu",
+        "th3ruthless",
+        "metaroad",
+        "lucia"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "absolution",
+      "name": "Absolution",
+      "ko": "면죄",
+      "sum": "Toglie fino a 2 effetti negativi e cura te e il gruppo entro 40 metri: la cura più grande del Cleric.",
+      "meta": "Ricarica 90 s · 0 MP · 40 m · tutto il gruppo",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "-30s cooldown",
+          "it": "ricarica di 30 secondi più corta"
+        },
+        {
+          "at": 10,
+          "name": "Removes all debuffs",
+          "it": "toglie tutti gli effetti negativi"
+        },
+        {
+          "at": 15,
+          "name": "+5% HP restored",
+          "it": "cura un altro 5% della vita"
+        },
+        {
+          "at": 20,
+          "name": "Restores 1.5% HP every 2s for 10s",
+          "it": "per 10 secondi cura l'1,5% della vita ogni 2 secondi"
+        }
+      ],
+      "pve": {
+        "level": 15,
+        "state": "nei dungeon con effetti negativi",
+        "pos": 5,
+        "swap": "salvation",
+        "note": "La cura più grande, e dal 10 toglie tutti gli effetti negativi; rende dal 15, quando cura 15-20 mila (Lucia). Al posto di Salvation nei dungeon normali (Th3Ruthless, Metaroad), o di Light of Protection con un Chanter nel gruppo."
+      },
+      "pvp": {
+        "level": 20,
+        "state": "nei gruppi",
+        "pos": 6,
+        "swap": "earth-punishment",
+        "note": "Nei gruppi la pulizia e la cura grande valgono più del danno."
+      },
+      "src": [
+        "db",
+        "maps",
+        "couga",
+        "th3ruthless",
+        "metaroad",
+        "lucia"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "salvation",
+      "name": "Salvation",
+      "ko": "구원",
+      "sum": "Per 3 secondi nessun danno e nessun effetto ti prende; alcuni attacchi potenti passano lo stesso.",
+      "meta": "Ricarica 150 s · 0 MP · solo su di te",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+100% Incoming Heal",
+          "it": "+100% di cure ricevute"
+        },
+        {
+          "at": 10,
+          "name": "Restores 20% of Max HP at the end of [Salvation]",
+          "it": "alla fine ti rende il 20% della vita massima"
+        },
+        {
+          "at": 15,
+          "name": "Grants base effect of [Salvation] to the party member with the lowest HP",
+          "it": "dà lo stesso effetto al compagno con meno vita"
+        },
+        {
+          "at": 20,
+          "name": "Triggers [Salvation] when afflicted with Impact-type status",
+          "it": "scatta da sola quando ti stordiscono, ti atterrano, ti sbalzano o ti prendono"
+        }
+      ],
+      "pve": {
+        "level": 20,
+        "state": "in uso",
+        "pos": 3,
+        "note": "Dal 15 l'immunità di 3 secondi va anche al compagno con meno vita: è per il colpo che uccide. I coreani che curano nel raid la tengono al massimo; tre dei primi otto Cleric d'Europa la tengono a 20. Alcuni attacchi potenti passano lo stesso, e chi la riceve non prende un'altra immunità per 30 secondi: per questo Metaroad e Th3Ruthless nei dungeon normali la lasciano fuori."
+      },
+      "pvp": {
+        "level": 20,
+        "state": "sempre",
+        "pos": 3,
+        "note": "Il pulsante d'emergenza: 3 secondi in cui niente ti prende, e dal 5 le cure ti rendono il doppio."
+      },
+      "src": [
+        "db",
+        "maps",
+        "couga",
+        "gangcoding",
+        "th3ruthless",
+        "metaroad"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "voice-of-doom",
+      "name": "Voice of Doom",
+      "ko": "파멸의 목소리",
+      "sum": "Colpisce un bersaglio entro 20 metri e fino a 4 nemici attorno, li brucia per 20 secondi e taglia del 60% le cure e le pozioni che ricevono.",
+      "meta": "Ricarica 60 s · 200 MP · 20 m · fino a 4 nemici",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "Up to +20% damage when more targets hit",
+          "it": "fino al 20% di danno in più quando colpisce più bersagli"
+        },
+        {
+          "at": 10,
+          "name": "Removes Protective Shields on hit",
+          "it": "toglie gli scudi a chi colpisce"
+        },
+        {
+          "at": 15,
+          "name": "-200 Critical Hit Resist for duration",
+          "it": "200 di resistenza ai critici in meno finché dura"
+        },
+        {
+          "at": 20,
+          "name": "-50% Damage over Time intervals",
+          "it": "il danno nel tempo batte il doppio delle volte"
+        }
+      ],
+      "pve": null,
+      "pvp": {
+        "level": 10,
+        "state": "da solo",
+        "pos": 4,
+        "note": "Su chi cura o si protegge con uno scudo: taglia del 60% le cure e le pozioni per 20 secondi, e dal 10 toglie gli scudi."
+      },
+      "src": [
+        "db",
+        "maps",
+        "couga"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "yustiels-power",
+      "name": "Yustiel's Power",
+      "ko": "유스티엘의 권능",
+      "sum": "Per 10 secondi (20 al livello 20) +20% di resistenza al danno in PvE, 10% in PvP, a te e al gruppo entro 40 metri: si lancia subito prima del colpo grosso.",
+      "meta": "Ricarica 60 s · 0 MP · 40 m · tutto il gruppo",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "10% Max HP Protective Shield",
+          "it": "uno scudo pari al 10% della vita massima"
+        },
+        {
+          "at": 10,
+          "name": "+100 Block, Evasion",
+          "it": "+100 di parata ed evasione"
+        },
+        {
+          "at": 15,
+          "name": "+20% Status Effect Resist",
+          "it": "+20% di resistenza agli stati"
+        },
+        {
+          "at": 20,
+          "name": "+10% PvE Damage Tolerance increase and +5% PvP Damage Tolerance increase",
+          "it": "un altro 10% di resistenza al danno in PvE (5% in PvP)"
+        }
+      ],
+      "pve": {
+        "level": 20,
+        "state": "in uso",
+        "pos": 2,
+        "note": "+20% di resistenza al danno a tutto il gruppo per 10 secondi, +10% dal 20, e dal 5 uno scudo del 10% della vita: si lancia prima del colpo grosso, non dopo (Th3Ruthless). Per i coreani del quarto santuario in difficile è lo stigma chiave (Gangcoding, 15/09)."
+      },
+      "pvp": {
+        "level": 15,
+        "state": "contro chi colpisce forte",
+        "pos": 5,
+        "swap": "voice-of-doom",
+        "note": "Al posto di Voice of Doom quando devi resistere a un attacco tutto insieme."
+      },
+      "src": [
+        "db",
+        "maps",
+        "couga",
+        "gangcoding",
+        "th3ruthless",
+        "metaroad"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "benevolence",
+      "name": "Benevolence",
+      "ko": "생명의 권능",
+      "sum": "Per 20 secondi cura te e il gruppo entro 40 metri ogni 2 secondi.",
+      "meta": "Ricarica 90 s · 0 MP · 40 m · tutto il gruppo",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+10s duration",
+          "it": "dura 10 secondi in più"
+        },
+        {
+          "at": 10,
+          "name": "Restores 200 Stamina every 5s for the duration",
+          "it": "ogni 5 secondi rende 200 di stamina"
+        },
+        {
+          "at": 15,
+          "name": "Restores 2% HP every 5s for the duration",
+          "it": "ogni 5 secondi cura il 2% della vita"
+        },
+        {
+          "at": 20,
+          "name": "Cleansing effect every 5s for the duration",
+          "it": "ogni 5 secondi toglie gli effetti negativi"
+        }
+      ],
+      "pve": {
+        "level": 20,
+        "state": "in uso",
+        "pos": 4,
+        "note": "Cura nel tempo te e il gruppo per 20 secondi, 30 dal 5; dal 15 anche il 2% della vita ogni 5 secondi, dal 20 toglie gli effetti negativi ogni 5 secondi. Per i coreani che curano nel raid è obbligatoria; nel Global la montano Th3Ruthless e Void Survivor, e il secondo Cleric d'Europa per Combat Power la tiene a 20."
+      },
+      "pvp": null,
+      "src": [
+        "db",
+        "maps",
+        "couga",
+        "gangcoding",
+        "th3ruthless",
+        "metaroad"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "power-burst",
+      "name": "Power Burst",
+      "ko": "권능 폭발",
+      "sum": "Un colpo solo su un bersaglio entro 20 metri che toglie 50 alla barra di Stagger: contro la barra è il colpo più forte del Cleric, a qualunque livello.",
+      "meta": "Ricarica 60 s · 200 MP · 20 m",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+20% Skill Speed",
+          "it": "si lancia il 20% più in fretta"
+        },
+        {
+          "at": 10,
+          "name": "Critical Hit on hit",
+          "it": "sempre critico"
+        },
+        {
+          "at": 15,
+          "name": "75% chance to inflict Knock Back",
+          "it": "75% di probabilità di spingere indietro"
+        },
+        {
+          "at": 20,
+          "name": "75% chance to inflict Stun for 3s",
+          "it": "75% di probabilità di stordire per 3 secondi"
+        }
+      ],
+      "pve": null,
+      "pvp": null,
+      "src": [
+        "db",
+        "maps",
+        "couga"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "root",
+      "name": "Root",
+      "ko": "속박",
+      "sum": "Colpisce un bersaglio entro 20 metri e fino a 4 nemici attorno, con il 75% di probabilità di bloccarli per 10 secondi (sui mostri sempre).",
+      "meta": "Ricarica 60 s · 200 MP · 20 m · fino a 4 nemici",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "Changes to mobile skill",
+          "it": "la tiri anche camminando"
+        },
+        {
+          "at": 10,
+          "name": "+2s Root duration",
+          "it": "il blocco dura 2 secondi in più"
+        },
+        {
+          "at": 15,
+          "name": "+25% Root chance",
+          "it": "+25% di probabilità di bloccare"
+        },
+        {
+          "at": 20,
+          "name": "x2 Damage over Time on Root targets",
+          "it": "doppio danno nel tempo su chi è bloccato"
+        }
+      ],
+      "pve": null,
+      "pvp": null,
+      "src": [
+        "db",
+        "maps"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "assault-mark",
+      "name": "Assault Mark",
+      "ko": "강습 낙인",
+      "sum": "Colpisce un bersaglio entro 20 metri e fino a 4 nemici entro 4 metri, con il 30% di probabilità di bloccarli (sui mostri sempre); più bersagli colpisce, più difesa ti dà, fino al 20%.",
+      "meta": "Ricarica 120 s · 0 MP · 20 m · fino a 4 nemici",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+20% Attack for 5s on hit",
+          "it": "+20% di attacco per 5 secondi quando colpisce"
+        },
+        {
+          "at": 10,
+          "name": "500 MP damage on hit",
+          "it": "toglie 500 MP a chi colpisce"
+        },
+        {
+          "at": 15,
+          "name": "+10m range",
+          "it": "10 metri di gittata in più"
+        },
+        {
+          "at": 20,
+          "name": "+20% Root Chance",
+          "it": "+20% di probabilità di bloccare"
+        }
+      ],
+      "pve": null,
+      "pvp": null,
+      "src": [
+        "db"
+      ],
+      "conf": "mid"
+    }
+  ],
+  "passive": [
+    {
+      "id": "empyrean-lords-grace",
+      "name": "Empyrean Lord's Grace",
+      "ko": "주신의 은총",
+      "sum": "Più critico, un po' di colpo doppio, e un colpo in più quando colpisci, al massimo uno al secondo. Con [[prayer-of-amplification]] dal 10 vale una volta e mezza.",
+      "scale": [
+        {
+          "label": "Critico",
+          "v": [
+            "+100",
+            "+145",
+            "+195"
+          ]
+        },
+        {
+          "label": "Colpo doppio",
+          "v": [
+            "0,2%",
+            "2%",
+            "4%"
+          ]
+        },
+        {
+          "label": "Danno minimo del colpo in più",
+          "v": [
+            "71",
+            "355",
+            "550"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 6,
+        "note": "Nella Cura i suoi punti vanno alle altre: aiuta solo il danno (Th3Ruthless). Sui pezzi la cerchi lo stesso: l'equip è uno per le due build."
+      },
+      "pvp": {
+        "rank": 3
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "topeu",
+        "th3ruthless",
+        "metaroad",
+        "aion2data"
+      ],
+      "conf": "high",
+      "top": 22.1,
+      "gear": {
+        "pve": 68,
+        "pvp": 14
+      }
+    },
+    {
+      "id": "earths-grace",
+      "name": "Earth's Grace",
+      "ko": "대지의 은총",
+      "sum": "Più danno critico e +100 di precisione. Con [[prayer-of-amplification]] dal 15 vale una volta e mezza.",
+      "scale": [
+        {
+          "label": "Danno critico",
+          "v": [
+            "10,5%",
+            "15%",
+            "20%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 4,
+        "note": "10 coi punti. Aiuta solo il danno: le cure non sono mai critiche (Th3Ruthless)."
+      },
+      "pvp": {
+        "rank": 4
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "topeu",
+        "th3ruthless",
+        "metaroad",
+        "aion2data"
+      ],
+      "conf": "high",
+      "top": 21.1,
+      "gear": {
+        "pve": 67,
+        "pvp": 15
+      }
+    },
+    {
+      "id": "healing-enhancement",
+      "name": "Healing Enhancement",
+      "ko": "치유력 강화",
+      "sum": "Le tue cure crescono col tuo attacco: una parte dell'attacco diventa potenza di cura. Per questo un Cleric cerca attacco e non cure.",
+      "scale": [
+        {
+          "label": "Potenza di cura, sull'attacco",
+          "v": [
+            "22,4%",
+            "26%",
+            "30%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 1,
+        "note": "La prima della Cura: trasforma l'attacco in potenza di cura (Th3Ruthless, Metaroad, Lucia). 10 coi punti, poi i nodi."
+      },
+      "pvp": {
+        "rank": 5
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "topeu",
+        "th3ruthless",
+        "metaroad",
+        "aion2data"
+      ],
+      "conf": "high",
+      "top": 17.2,
+      "gear": {
+        "pve": 18,
+        "pvp": 10
+      }
+    },
+    {
+      "id": "warm-benediction",
+      "name": "Warm Benediction",
+      "ko": "따뜻한 가호",
+      "sum": "Più vita e più mana massimi.",
+      "scale": [
+        {
+          "label": "Vita massima",
+          "v": [
+            "6%",
+            "15%",
+            "25%"
+          ]
+        },
+        {
+          "label": "Mana massimo",
+          "v": [
+            "7%",
+            "25%",
+            "45%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 2,
+        "note": "Più vita: 10 coi punti (Th3Ruthless, Metaroad)."
+      },
+      "pvp": {
+        "rank": 6
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "topeu",
+        "th3ruthless",
+        "metaroad",
+        "aion2data"
+      ],
+      "conf": "mid",
+      "top": 15.4,
+      "gear": {
+        "pve": 10,
+        "pvp": 10
+      }
+    },
+    {
+      "id": "immortal-veil",
+      "name": "Immortal Veil",
+      "ko": "불사의 장막",
+      "sum": "Più difesa e più resistenza ai critici.",
+      "scale": [
+        {
+          "label": "Difesa",
+          "v": [
+            "2%",
+            "20%",
+            "40%"
+          ]
+        },
+        {
+          "label": "Resistenza ai critici",
+          "v": [
+            "+100",
+            "+190",
+            "+290"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 3,
+        "note": "Più difesa: 10 coi punti. È il rimedio più economico se un colpo ti uccide in uno (Metaroad)."
+      },
+      "pvp": {
+        "rank": 2,
+        "note": "In PvP si cerca sui pezzi al posto delle due Grace (Aion 2 Maps)."
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga",
+        "topeu",
+        "th3ruthless",
+        "metaroad",
+        "aion2data"
+      ],
+      "conf": "mid",
+      "top": 14.9,
+      "gear": {
+        "pve": 17,
+        "pvp": 18
+      }
+    },
+    {
+      "id": "radiant-benediction",
+      "name": "Radiant Benediction",
+      "ko": "찬란한 가호",
+      "sum": "Quando colpisci, cura te e il gruppo entro 40 metri, al massimo ogni 5 secondi.",
+      "scale": [
+        {
+          "label": "Cura minima",
+          "v": [
+            "384",
+            "546",
+            "737"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 5,
+        "note": "Cura il gruppo quando colpisci, ogni 5 secondi: 10 coi punti."
+      },
+      "pvp": {
+        "rank": 10,
+        "note": "In PvP i suoi punti vanno a [[survival-willpower]] (Aion 2 Maps)."
+      },
+      "src": [
+        "db",
+        "maps",
+        "couga",
+        "topeu",
+        "th3ruthless",
+        "metaroad",
+        "aion2data"
+      ],
+      "conf": "mid",
+      "top": 13.8,
+      "gear": {
+        "pve": 2,
+        "pvp": 1
+      }
+    },
+    {
+      "id": "survival-willpower",
+      "name": "Survival Willpower",
+      "ko": "생존 의지",
+      "sum": "Più resistenza agli stati; quando ti stordiscono, ti atterrano o ti sbalzano, per 5 secondi più resistenza al danno, una volta al minuto.",
+      "scale": [
+        {
+          "label": "Resistenza agli stati",
+          "v": [
+            "17%",
+            "35%",
+            "55%"
+          ]
+        },
+        {
+          "label": "Resistenza al danno PvE quando ti bloccano",
+          "v": [
+            "12%",
+            "30%",
+            "50%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 7,
+        "note": "Resta a 1, se gli stordimenti non ti fermano le cure."
+      },
+      "pvp": {
+        "rank": 1,
+        "note": "In PvP la prima: resistenza agli stati sempre accesa."
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "topeu"
+      ],
+      "conf": "mid",
+      "top": 14.1,
+      "gear": {
+        "pve": 1,
+        "pvp": 23
+      }
+    },
+    {
+      "id": "prayer-of-concentration",
+      "name": "Prayer of Concentration",
+      "ko": "집중의 기도",
+      "sum": "Sotto metà vita uno scudo e +20% di potenza di cura per 30 secondi, al massimo una volta al minuto.",
+      "scale": [
+        {
+          "label": "Scudo",
+          "v": [
+            "424",
+            "1.648",
+            "2.844"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 8,
+        "note": "Resta a 1."
+      },
+      "pvp": {
+        "rank": 7
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps"
+      ],
+      "conf": "mid",
+      "top": 8.5,
+      "gear": {
+        "pve": 1,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "heal-block",
+      "name": "Heal Block",
+      "ko": "회복 차단",
+      "sum": "Colpendo, il 7% delle volte taglia per 5 secondi le cure che riceve il bersaglio; al massimo una volta ogni 5 secondi.",
+      "scale": [
+        {
+          "label": "Cure ricevute in meno",
+          "v": [
+            "32%",
+            "50%",
+            "70%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 9,
+        "note": "Resta a 1."
+      },
+      "pvp": {
+        "rank": 8
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps"
+      ],
+      "conf": "mid",
+      "top": 5.1,
+      "gear": {
+        "pve": 0,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "empyrean-lords-benediction",
+      "name": "Empyrean Lords' Benediction",
+      "ko": "주신의 가호",
+      "sum": "+200 di parata, e ogni parata ti cura, al massimo ogni 3 secondi.",
+      "scale": [
+        {
+          "label": "Cura minima a ogni parata",
+          "v": [
+            "53",
+            "233",
+            "444"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 10,
+        "note": "Resta a 1: è da PvP."
+      },
+      "pvp": {
+        "rank": 9
+      },
+      "src": [
+        "db",
+        "meta",
+        "maps",
+        "couga"
+      ],
+      "conf": "mid",
+      "top": 8.3,
+      "gear": {
+        "pve": 0,
+        "pvp": 1
+      }
+    }
+  ],
+  "levels": {
+    "src": "meta",
+    "players": 32,
+    "date": "2026-10-29",
+    "read": "2026-11-01"
+  }
+}

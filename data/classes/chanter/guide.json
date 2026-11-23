@@ -1,0 +1,1511 @@
+{
+  "include": [
+    "entities.json"
+  ],
+  "meta": {
+    "title": "Chanter AION 2",
+    "navTitle": "Chanter · AION 2",
+    "h1": "Chanter, AION 2 Global",
+    "lead": "Skill, stigma, passive, macro e rotazione del Chanter. I nomi sono quelli del client inglese; i numeri vengono dai dati del gioco, le scelte da chi lo gioca meglio.",
+    "facts": [
+      "**Season 1**, livello massimo 45",
+      "Dati del client letti il **12/10/2026**",
+      "Controllo coi primi sei d'Europa il **29/10/2026**",
+      "Scritto per **tastiera e mouse**"
+    ],
+    "stamp": "Aggiornato al 29/10/2026"
+  },
+  "sources": [
+    {
+      "id": "db",
+      "label": "Questlog, le skill del Chanter",
+      "url": "https://questlog.gg/aion-2/en/db/skills/chanter",
+      "kind": "Dati del client",
+      "region": "Global",
+      "date": "letto il 12/10/2026, schede aggiornate tra il 28/09 e il 10/10",
+      "note": "35 schede: 12 attive, 13 stigma, 10 passive. Il testo salvato non fa parte di questo repository."
+    },
+    {
+      "id": "builds",
+      "label": "Questlog, le build pubblicate dai giocatori",
+      "url": "https://questlog.gg/aion-2/en/skill-builder?publisher=global&class=chanter",
+      "kind": "Statistiche d'uso",
+      "region": "Global",
+      "date": "12/10/2026",
+      "note": "803 build in elenco; 328 build PvE con una skill a 16 o più lette in dettaglio (specializzazioni, pile sui tasti, macro)."
+    },
+    {
+      "id": "meta",
+      "label": "Aion 2 Meta, guida del Chanter",
+      "url": "https://aion2-meta.com/guides/chanter/",
+      "kind": "Statistiche d'uso",
+      "region": "Global e Corea",
+      "date": "Corea 05/10/2026, Global 08/10/2026",
+      "note": "7.297 Chanter coreani tra i primi (AION2CAL) e i primi 59 Chanter del Global."
+    },
+    {
+      "id": "maps",
+      "label": "Aion 2 Maps, guida del Chanter",
+      "url": "https://aion2maps.com/guides/chanter/",
+      "kind": "Guida con dati del client",
+      "region": "Global",
+      "date": "aggiornata il 09/10/2026",
+      "note": "Ogni frase dice se è un dato del client, una misura sul Global, il consiglio di un creator o un punto su cui le fonti non sono d'accordo. Ha il piano dei punti livello per livello, da 1 a 45."
+    },
+    {
+      "id": "couga",
+      "label": "couga54, raccolta di guide: Chanter",
+      "url": "https://couga54.github.io/aion2-guides/en/chanter/",
+      "kind": "Raccolta",
+      "region": "Global Season 1",
+      "date": "aggiornata il 07/10/2026",
+      "note": "Segue Arthars Gaming, otto mesi sul Chanter a Taiwan, e lo confronta con Grobs, notXeon e WallyJTV."
+    },
+    {
+      "id": "ranks",
+      "label": "MetaBot.GG, classifica dei Chanter in Europa",
+      "url": "https://metabot.gg/en/aion-2/leaderboards/eu/chanter",
+      "kind": "Dati pubblici del sito ufficiale",
+      "region": "Europa",
+      "date": "letta il 12/10/2026",
+      "note": "I primi 100 per Combat Power su 433 Chanter che MetaBot conosce: nel mezzo Item Level 2.379 e Combat Power 114.131."
+    },
+    {
+      "id": "topeu",
+      "label": "MetaBot.GG, le schede dei primi otto Chanter d'Europa per Combat Power",
+      "url": "https://metabot.gg/en/aion-2/leaderboards/eu/chanter",
+      "kind": "Schede dei giocatori",
+      "region": "EU",
+      "date": "lette il 29/10/2026",
+      "note": "gigawhaleYT (il primo del Global), Wenya, Roxi, DooDinette, Reason, DirtyRhino, Nosive, Pher: tratti, manastone, skill, stigma, titoli, carte e Daevanion."
+    },
+    {
+      "id": "metaroad",
+      "label": "metaroad.gg, Chanter PvE support build (Riesa)",
+      "url": "https://metaroad.gg/aion2/build-guides/chanter-pve-support-build",
+      "kind": "Guida",
+      "region": "Global",
+      "date": "05/10/2026",
+      "note": "Tratti per posto, manastone, carte, Daevanion, skill, stigma con e senza Cleric, macro a due passi."
+    },
+    {
+      "id": "aion2data",
+      "label": "aion2data.com, Chanter PvE guide e meta dei primi 476 del Global",
+      "url": "https://aion2data.com/guides/chanter/pve",
+      "kind": "Guida e statistiche d'uso",
+      "region": "Global",
+      "date": "29/10/2026",
+      "note": "Riassume ventisei discussioni di Reddit, Inven, Bahamut e 17173: sotto il 16 un trigger fuori dalla pila; Guardian Blessing sulla barra del 71% dei primi 476."
+    },
+    {
+      "id": "aion2vault",
+      "label": "aion2vault.com, Chanter: macro, build e set pubblicati",
+      "url": "https://aion2vault.com/builds/chanter/macro/",
+      "kind": "Statistiche d'uso",
+      "region": "Global",
+      "date": "aggiornata il 26/10/2026",
+      "note": "491 build pubbliche con la macro: il 69% usa la pila Dark Crush, Spinning Strike, Impactful Crush, Incandescent Blow; a Dark Crush 16-19, 49 su 82 tengono il critico e la ricarica tolta."
+    },
+    {
+      "id": "notxeon",
+      "label": "notXeon, The ONLY 2500+ Chanter Guide You'll Ever Need (video)",
+      "url": "https://www.youtube.com/watch?v=enxMRSkU8Qg",
+      "kind": "Video",
+      "region": "Global",
+      "date": "18/10/2026",
+      "note": "Guardian Blessing a 15 in cima alla build; Power of the Storm 5 o 20; Dark Crush a 16, poi Onslaught, Spinning Strike e Incandescent Blow."
+    },
+    {
+      "id": "gigawhale",
+      "label": "gigawhale, 600K DPS?! The Rank 1 Chanter Reveals His Build (video)",
+      "url": "https://www.youtube.com/watch?v=Y1KYRLH3xIM",
+      "kind": "Video",
+      "region": "Global",
+      "date": "20/10/2026",
+      "note": "Il primo Chanter del Global: Guardian Blessing solo per il 15; quattro Vigor più la Bell Magic; Marchutan's Wrath facoltativa; Gust Rampage sotto il 16 è una perdita di danno."
+    },
+    {
+      "id": "grobs",
+      "label": "Grobs, The Only Chanter PVE Guide You Need (video)",
+      "url": "https://www.youtube.com/watch?v=2qTjfkuzdj4",
+      "kind": "Video",
+      "region": "Global",
+      "date": "05/10/2026",
+      "note": "A Dark Crush 16 critico e ricarica tolta; sotto il 16 un trigger fuori dalla pila; Power of the Storm a 5 per primo."
+    },
+    {
+      "id": "alucky",
+      "label": "aLuckyRO, Chanter PvE Macro Setup, Level 16 Dark Crush (video)",
+      "url": "https://www.youtube.com/watch?v=V0CkB8SKsJg",
+      "kind": "Video",
+      "region": "Global",
+      "date": "12/10/2026",
+      "note": "Dark Crush in fondo alla pila; spostamenti e Gust Rampage fuori dalla macro; Delay 10 sotto i 50 di ping, 50 sopra."
+    },
+    {
+      "id": "ign-patch",
+      "label": "IGN, note delle patch di AION 2 Global del 21 e del 28 ottobre 2026",
+      "url": "https://www.ign.com/wikis/aion-2/Aion_2_October_21_2026_Patch_Notes",
+      "kind": "Note ufficiali",
+      "region": "Global",
+      "date": "21/10 e 28/10/2026",
+      "note": "Nessun cambio alle skill del Chanter: il 21/10 un fix grafico a Spinning Strike e il tabellone Ariel, il 28/10 +1.000 HP base."
+    }
+  ],
+  "macro": {
+    "pve": {
+      "delay": 10,
+      "hold": [
+        {
+          "key": "LMB",
+          "what": "Onslaught, l'attacco base"
+        },
+        {
+          "key": "RMB",
+          "what": "la macro"
+        }
+      ],
+      "lines": [
+        {
+          "title": "La pila",
+          "key": "T",
+          "step": 1,
+          "delay": "nella macro, riga 1",
+          "slots": [
+            {
+              "skill": "dark-crush",
+              "tag": "il colpo forte: parte solo dopo una delle due sopra"
+            },
+            {
+              "skill": "spinning-strike",
+              "tag": "accende Dark Crush"
+            },
+            {
+              "skill": "incandescent-blow",
+              "tag": "riempie quando le altre non sono pronte"
+            }
+          ],
+          "why": "[[dark-crush]] è il tuo colpo forte, ma si può usare solo per 2 secondi dopo [[spinning-strike]] o [[impactful-crush]]. Messa in basso parte per prima ogni volta che è accesa; quando è spenta la pila passa a Spinning Strike, che la riaccende, e [[incandescent-blow]] riempie il resto. Finché Dark Crush non è a 16 ha 5 secondi di ricarica: Impactful Crush sta fuori, sul tasto 3, e la premi tu quando Dark Crush è pronta, così nessuna finestra va persa.[^grobs,notxeon,alucky,aion2data]"
+        },
+        {
+          "title": "Impactful Crush",
+          "key": "3",
+          "delay": "a mano",
+          "slots": [
+            {
+              "skill": "impactful-crush",
+              "tag": "quando Dark Crush è pronta"
+            }
+          ],
+          "why": "Sotto il 16 Dark Crush ha 5 secondi di ricarica: con i due trigger nella stessa pila il secondo la accende mentre è ancora in ricarica, e la finestra va persa. Fuori dalla pila la premi tu quando Dark Crush è pronta; sotto il 16 solo 23 build su 57 incatenano tutti e due i trigger.[^grobs,notxeon,alucky,aion2data,aion2vault]"
+        }
+      ],
+      "manual": [
+        {
+          "skill": "marchutans-wrath",
+          "key": "8",
+          "when": "quando Dark Crush resta spenta: la accende per 3 secondi."
+        },
+        {
+          "skill": "recuperation",
+          "key": "4",
+          "when": "la cura: quando il gruppo perde vita o ha un debuff addosso, due volte di fila."
+        },
+        {
+          "skill": "power-of-the-storm",
+          "key": "7",
+          "when": "all'inizio, prima che qualcuno usi una skill; poi appena prima di uno Stagger."
+        },
+        {
+          "skill": "undefeated-mantra",
+          "key": "5",
+          "when": "una volta sola: resta acceso. Riaccendilo dopo ogni morte."
+        },
+        {
+          "skill": "guardian-blessing",
+          "key": "6",
+          "when": "una volta ogni due minuti: dura quanto la sua ricarica, quindi è sempre accesa. Dal 15 Wind's Promise vale una volta e mezza. Prende il posto di Sprint Mantra sul 6 appena è a 15."
+        },
+        {
+          "skill": "sprint-mantra",
+          "key": "6",
+          "when": "finché Guardian Blessing non è a 15 resta lei sul 6: una volta sola, un secondo tocco la spegne. Poi solo per le corse e il farming.",
+          "extra": true
+        },
+        {
+          "skill": "rushing-smash",
+          "key": "1",
+          "extra": true,
+          "when": "ti lancia sul bersaglio: per arrivare sul boss e per passare da un mostro all'altro."
+        },
+        {
+          "skill": "tremor-crush",
+          "key": "1",
+          "extra": true,
+          "when": "sopra Rushing Smash, sullo stesso tasto. Si accende solo subito dopo una schivata: ti riporta sul bersaglio."
+        },
+        {
+          "skill": "gust-rampage",
+          "key": "E",
+          "extra": true,
+          "when": "solo col boss in Stagger: tienila premuta finché resta a terra."
+        },
+        {
+          "skill": "wave-blow",
+          "key": "2",
+          "extra": true,
+          "when": "si accende solo su un mostro stordito, entro 4 metri: appena dopo Impactful Crush, lo atterra."
+        },
+        {
+          "skill": "heat-wave-blow",
+          "key": "2",
+          "extra": true,
+          "when": "sopra Wave Blow, sullo stesso tasto. Premuta da te si accende solo dopo una parata; di solito parte da sola, dai colpi di Rushing Smash."
+        },
+        {
+          "skill": "defiance",
+          "key": "Spazio",
+          "extra": true,
+          "when": "per uscire da un controllo."
+        }
+      ],
+      "alt": {
+        "id": "dc16",
+        "title": "Da Dark Crush 16",
+        "when": {
+          "skill": "dark-crush",
+          "level": 16
+        },
+        "says": "Dark Crush senza ricarica: tutti e due i trigger nella pila e la macro gira da sola. È la catena del 69% delle build pubbliche con macro.",
+        "delay": 10,
+        "lines": [
+          {
+            "title": "La pila",
+            "key": "T",
+            "step": 1,
+            "delay": "nella macro, riga 1",
+            "slots": [
+              {
+                "skill": "dark-crush",
+                "tag": "il colpo forte: parte solo dopo una delle due sopra"
+              },
+              {
+                "skill": "spinning-strike",
+                "tag": "accende Dark Crush"
+              },
+              {
+                "skill": "impactful-crush",
+                "tag": "accende Dark Crush"
+              },
+              {
+                "skill": "incandescent-blow",
+                "tag": "riempie quando le altre non sono pronte"
+              }
+            ],
+            "why": "[[dark-crush]] è il tuo colpo forte e dal 16 non ha più ricarica: parte ogni volta che una delle due sopra la accende. Messa in basso parte per prima; quando è spenta la pila passa a [[spinning-strike]] o a [[impactful-crush]], che la riaccendono, e [[incandescent-blow]] riempie il resto. È la pila del 69% delle build pubbliche con macro.[^aion2vault,metaroad,couga]"
+          }
+        ],
+        "hold": [
+          {
+            "key": "LMB",
+            "what": "Onslaught, l'attacco base"
+          },
+          {
+            "key": "RMB",
+            "what": "la macro"
+          }
+        ]
+      }
+    },
+    "pvp": {
+      "delay": 10,
+      "hold": [
+        {
+          "key": "LMB",
+          "what": "Onslaught, tra un colpo e l'altro"
+        },
+        {
+          "key": "RMB",
+          "what": "la macro, solo con le skill di danno"
+        }
+      ],
+      "lines": [
+        {
+          "title": "Pila del danno",
+          "key": "T",
+          "step": 1,
+          "delay": "nella macro, riga 1",
+          "slots": [
+            {
+              "skill": "dark-crush",
+              "tag": "parte solo dopo che una skill la accende"
+            },
+            {
+              "skill": "spinning-strike",
+              "tag": "accende Dark Crush"
+            },
+            {
+              "skill": "incandescent-blow",
+              "tag": ""
+            }
+          ],
+          "why": "In PvP nella macro restano le skill di danno. [[marchutans-wrath]], gli stordimenti, [[tremor-crush]] e le difese li premi tu, quando servono."
+        }
+      ],
+      "manual": [
+        {
+          "skill": "marchutans-wrath",
+          "when": "per cominciare lo scontro, da 20 metri: accende Dark Crush per 3 secondi."
+        },
+        {
+          "skill": "impactful-crush",
+          "when": "stordisce da 20 metri, il 60% delle volte."
+        },
+        {
+          "skill": "wave-blow",
+          "when": "subito dopo, sul bersaglio stordito: lo atterra per 3 secondi."
+        },
+        {
+          "skill": "tremor-crush",
+          "when": "quando scappano, o appena finisce una loro immunità."
+        },
+        {
+          "skill": "recuperation",
+          "when": "toglie fino a 2 debuff a te e ai compagni, due volte di fila."
+        },
+        {
+          "skill": "guardian-blessing",
+          "when": "prima dello scontro: non te lo possono togliere."
+        },
+        {
+          "skill": "defiance",
+          "when": "sul controllo che ti ucciderebbe, non sul primo."
+        }
+      ]
+    }
+  },
+  "rotations": {
+    "pve": [
+      {
+        "title": "Apertura sul boss",
+        "short": "Apertura",
+        "sheet": true,
+        "when": "Prima di cominciare",
+        "steps": [
+          {
+            "skill": "undefeated-mantra",
+            "note": "acceso"
+          },
+          {
+            "skill": "guardian-blessing",
+            "note": "accesa"
+          },
+          {
+            "skill": "power-of-the-storm",
+            "note": "prima di tutti"
+          },
+          {
+            "skill": "rushing-smash",
+            "note": "sul boss"
+          },
+          {
+            "text": "tieni premuti i due tasti",
+            "hold": true
+          }
+        ],
+        "expl": "Undefeated Mantra e Guardian Blessing restano accesi da prima. [[power-of-the-storm]] va premuto prima che qualcuno usi una skill: accorcia solo le ricariche che partono mentre è acceso. Poi [[rushing-smash]] ti porta sul boss, e da lì tieni premuti il tasto sinistro e la macro.",
+        "src": [
+          "maps",
+          "couga"
+        ],
+        "conf": "high"
+      },
+      {
+        "title": "Ciclo",
+        "short": "Ciclo",
+        "sheet": true,
+        "when": "Per tutto il combattimento",
+        "steps": [
+          {
+            "skill": "spinning-strike",
+            "note": "accende Dark Crush"
+          },
+          {
+            "skill": "dark-crush",
+            "note": "dalla macro"
+          },
+          {
+            "skill": "impactful-crush",
+            "note": "la riaccende"
+          },
+          {
+            "skill": "dark-crush",
+            "note": "dalla macro"
+          },
+          {
+            "skill": "marchutans-wrath",
+            "note": "a mano"
+          },
+          {
+            "skill": "incandescent-blow",
+            "note": "nei buchi"
+          }
+        ],
+        "expl": "È quello che fa la macro mentre tieni premuti i due tasti: dopo ogni skill che la accende parte [[dark-crush]], e [[incandescent-blow]] riempie il resto. [[onslaught]] passa tra un colpo e l'altro: ti rende il mana e fa tornare prima [[spinning-strike]]. Tu aggiungi [[marchutans-wrath]] quando le altre due sono in ricarica. Stai dietro al boss: più di metà del danno di un Chanter è fatto da dietro.",
+        "src": [
+          "maps",
+          "meta",
+          "couga"
+        ],
+        "conf": "high"
+      },
+      {
+        "title": "Boss in Stagger",
+        "short": "Stagger",
+        "sheet": false,
+        "when": "Quando si apre la barra di Stagger",
+        "steps": [
+          {
+            "skill": "power-of-the-storm",
+            "note": "appena prima"
+          },
+          {
+            "skill": "gust-rampage",
+            "note": "tenuta premuta",
+            "hold": true
+          }
+        ],
+        "expl": "Il secondo [[power-of-the-storm]] tienilo per appena prima dello Stagger: copre tutta la finestra. Col boss a terra tieni premuto anche il tasto di [[gust-rampage]]: colpisce solo in quel momento. Se al gruppo manca barra, la skill che ne toglie di più è [[obliterate]]: 50.",
+        "src": [
+          "maps"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Il gruppo prende danno",
+        "short": "Cura",
+        "sheet": false,
+        "when": "Quando la vita del gruppo scende",
+        "steps": [
+          {
+            "skill": "recuperation",
+            "note": "due volte di fila"
+          },
+          {
+            "text": "torna a colpire"
+          }
+        ],
+        "expl": "[[recuperation]] cura subito e per 8 secondi, e toglie un debuff. I due usi tornano uno alla volta, 15 secondi l'uno. Non resusciti nessuno: il curatore è il Cleric, tu tieni su il gruppo tra una sua cura e l'altra.",
+        "src": [
+          "maps",
+          "couga"
+        ],
+        "conf": "high"
+      },
+      {
+        "title": "Gruppi di mostri",
+        "short": "Gruppi",
+        "sheet": false,
+        "when": "Più mostri insieme",
+        "steps": [
+          {
+            "skill": "rushing-smash",
+            "note": "dentro al gruppo"
+          },
+          {
+            "text": "tieni premuti i due tasti",
+            "hold": true
+          }
+        ],
+        "expl": "[[rushing-smash]] ti porta dentro al gruppo e torna pronta a ogni uccisione: passi da un mostro all'altro. Quasi tutte le tue skill colpiscono fino a 4 nemici.",
+        "src": [
+          "maps",
+          "couga"
+        ],
+        "conf": "mid"
+      }
+    ],
+    "pvp": [
+      {
+        "title": "Il colpo",
+        "short": "Colpo",
+        "sheet": true,
+        "when": "Per aprire",
+        "steps": [
+          {
+            "skill": "marchutans-wrath",
+            "note": "da 20 metri"
+          },
+          {
+            "skill": "dark-crush",
+            "note": "3 secondi"
+          },
+          {
+            "skill": "impactful-crush",
+            "note": "stordisce"
+          },
+          {
+            "skill": "wave-blow",
+            "note": "atterra"
+          },
+          {
+            "skill": "dark-crush"
+          }
+        ],
+        "expl": "Apri con [[marchutans-wrath]] da 20 metri. Poi [[impactful-crush]] li stordisce e [[wave-blow]] li atterra per 3 secondi, ogni volta. Fai il danno presto: in uno scontro lungo una classe più robusta ti consuma.",
+        "src": [
+          "maps"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Riprenderli",
+        "short": "Inseguire",
+        "sheet": true,
+        "when": "Quando scappano",
+        "steps": [
+          {
+            "skill": "tremor-crush",
+            "note": "dopo una schivata"
+          },
+          {
+            "skill": "spinning-strike",
+            "note": "40% di sigillo"
+          }
+        ],
+        "expl": "[[tremor-crush]], dopo una schivata, ti porta su un bersaglio entro 20 metri e lo stordisce una volta su due. Usala quando scappano, e nel momento in cui finisce un'immunità come la Tenaciousness di un Gladiator.",
+        "src": [
+          "maps"
+        ],
+        "conf": "mid"
+      },
+      {
+        "title": "Quando ti saltano addosso",
+        "short": "Difesa",
+        "sheet": false,
+        "when": "Ti hanno preso",
+        "steps": [
+          {
+            "skill": "defiance"
+          },
+          {
+            "skill": "recuperation",
+            "note": "toglie 2 debuff"
+          },
+          {
+            "skill": "guardian-blessing"
+          }
+        ],
+        "expl": "[[defiance]] ti libera e ti dà 5 secondi di immunità. [[recuperation]] tiene puliti te e i compagni. [[guardian-blessing]] non te lo può togliere nessuno.",
+        "src": [
+          "maps"
+        ],
+        "conf": "mid"
+      }
+    ]
+  },
+  "path": {
+    "nav": "Parti da qui",
+    "title": "Parti da qui: un passo alla volta",
+    "chapters": [
+      {
+        "id": "macro",
+        "nav": "La macro",
+        "steps": [
+          {
+            "id": "idea",
+            "nav": "L'idea",
+            "title": "Due tasti premuti, e una pila che fa il resto",
+            "blocks": [
+              {
+                "t": "flow",
+                "items": [
+                  {
+                    "k": "Il tasto sinistro",
+                    "x": "[[onslaught]], l'attacco base. Lo tieni premuto tu: ti rende mana e fa tornare prima [[spinning-strike]]."
+                  },
+                  {
+                    "k": "Il tasto destro",
+                    "x": "La **macro**. Finché lo tieni premuto, preme {{T}} al posto tuo."
+                  },
+                  {
+                    "k": "La pila",
+                    "x": "Il tasto {{T}}, con quattro skill una sopra l'altra. Il gioco usa la prima pronta, partendo dal basso."
+                  }
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Tutto gira intorno a [[dark-crush]]: è il tuo colpo più importante, ma si può usare solo per 2 secondi dopo [[spinning-strike]] o [[impactful-crush]]. Messa in fondo alla pila, parte ogni volta che è accesa."
+              },
+              {
+                "t": "callout",
+                "title": "Hai la pila sul tasto destro?",
+                "x": "Funziona anche così, tenendolo premuto: è solo più lento. Un tasto fa una cosa sola, o lancia le skill che ha sopra o fa partire la macro: per questo il destro va alla macro e alla pila dai la {{T}}, come hai fatto col Gladiator e col Ranger. Puoi giocare e farlo quando hai cinque minuti."
+              }
+            ]
+          },
+          {
+            "id": "pila",
+            "nav": "La pila",
+            "title": "La pila: tre skill nell'ultima colonna",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri la finestra delle skill con {{K}}. In basso c'è la griglia: trova l'ultima colonna a destra.",
+                  "Trascina **Dark Crush** nella casella più in basso di quella colonna.",
+                  "Sopra, **Spinning Strike**.",
+                  "Sopra ancora, **Incandescent Blow**.",
+                  "**Impactful Crush** va da sola sul **3**."
+                ]
+              },
+              {
+                "t": "seq",
+                "steps": [
+                  {
+                    "skill": "dark-crush",
+                    "note": "in basso"
+                  },
+                  {
+                    "skill": "spinning-strike"
+                  },
+                  {
+                    "skill": "incandescent-blow",
+                    "note": "in cima"
+                  }
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "barra-chanter",
+                "w": 1128,
+                "h": 504,
+                "alt": "La barra del Chanter fino a Dark Crush 15: sul T, dal basso, Dark Crush, Spinning Strike e Incandescent Blow; Impactful Crush sul 3.",
+                "marks": [
+                  {
+                    "n": 2,
+                    "x": 90.6,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 3,
+                    "x": 90.6,
+                    "y": 53.6
+                  },
+                  {
+                    "n": 4,
+                    "x": 90.6,
+                    "y": 36.9
+                  },
+                  {
+                    "n": 5,
+                    "x": 20.7,
+                    "y": 70.2
+                  }
+                ],
+                "credit": "La barra fino a Dark Crush 15, disegnata con le icone del gioco nelle colonne della tua barra: 1-8, Q, E, il tasto sinistro e l'ultima colonna, che diventa T: la T all'ultima colonna gliela dai al passo dopo. I numeri sono quelli dei passi."
+              },
+              {
+                "t": "callout",
+                "kind": "warn",
+                "title": "Finché Dark Crush non è a 16",
+                "x": "Impactful Crush sta fuori dalla pila, sul tasto 3: la premi tu quando Dark Crush è pronta. Nella stessa pila il secondo trigger la accende mentre è ancora in ricarica, e la finestra va persa. Da 16 torna nella pila (capitolo Da Dark Crush 16)."
+              },
+              {
+                "t": "callout",
+                "title": "Sulla barra vedi Spinning Strike? È giusto",
+                "x": "Il tasto mostra la prima skill pronta. Dark Crush sta sotto, ma è spenta finché un'altra non la accende: per questo nella riga dei tasti c'è l'icona di Spinning Strike. La finestra Macro invece mostra Dark Crush, la skill in basso."
+              },
+              {
+                "t": "note",
+                "x": "Si parte sempre dal basso: finché la casella in fondo è vuota, il gioco non lascia riempire quelle sopra."
+              }
+            ],
+            "check": "nell'ultima colonna, dal basso, vedi Dark Crush, Spinning Strike, Impactful Crush e Incandescent Blow."
+          },
+          {
+            "id": "tasto-pila",
+            "nav": "La T",
+            "title": "Dai la T alla pila",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Premi {{Esc}}, apri **Settings** e clicca **Key Settings**.",
+                  "Clicca **Quickslot**.",
+                  "Scorri l'elenco e trova la riga che nella prima casella ha il disegno di un mouse con la metà destra accesa: è l'ultima colonna della barra, quella della pila.",
+                  "Clicca quella casella e premi {{T}}."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "ranger-tasto-deadshot",
+                "w": 1460,
+                "h": 450,
+                "alt": "Settings, Key Settings, Quickslot: una riga per ogni casella della barra, con due caselle per i tasti.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 31.6,
+                    "y": 7.5
+                  },
+                  {
+                    "n": 2,
+                    "x": 63.2,
+                    "y": 15.3
+                  },
+                  {
+                    "n": 3,
+                    "x": 77.9,
+                    "y": 59.3
+                  }
+                ],
+                "credit": "Fotogramma da [Whelps, Complete Ranger PvE Guide](https://www.youtube.com/watch?v=wKOm6yKuu_I&t=545s), minuto 9:05. Tagliato al centro. Qui si vedono le righe dei tasti 1, 2, 3, 4 e Q: la tua è nella stessa colonna di caselle, col disegno del mouse."
+              },
+              {
+                "t": "note",
+                "x": "Questa pagina sul tuo schermo non è ancora stata vista: se la riga non è così, serve la tua schermata."
+              }
+            ],
+            "check": "nella finestra delle skill l'ultima colonna della barra ha la T al posto del mouse."
+          },
+          {
+            "id": "tasto",
+            "nav": "Il tasto destro",
+            "title": "Dai il tasto destro alla macro",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Premi {{Esc}}, apri **Settings** e clicca **Key Settings**.",
+                  "Clicca **General**.",
+                  "Scorri fino a Gameplay. Alla riga **Macro** clicca la prima casella, poi premi il **tasto destro** del mouse."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "tasto-macro",
+                "w": 1340,
+                "h": 558,
+                "alt": "Settings, Key Settings, General: la riga Macro nella sezione Gameplay.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 16.2,
+                    "y": 7
+                  },
+                  {
+                    "n": 2,
+                    "x": 30.7,
+                    "y": 14.7
+                  },
+                  {
+                    "n": 3,
+                    "x": 68.3,
+                    "y": 83.5
+                  }
+                ],
+                "credit": "Fotogramma da [Grobs, AION 2 Macro Guide](https://www.youtube.com/watch?v=HMod6Z4GrE0&t=106s), minuto 1:46. Tagliato al centro."
+              },
+              {
+                "t": "note",
+                "x": "Se la casella non prende il tasto del mouse, sei nella modalità di controllo AION 1: cambiala con il tasto scritto in cima alla stessa pagina, alla riga Switch Control Mode."
+              }
+            ],
+            "check": "nella casella della riga Macro compare il disegno di un mouse."
+          },
+          {
+            "id": "righe",
+            "nav": "La macro",
+            "title": "Crea la macro: una riga, il tasto T",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri la finestra delle skill con {{K}} e clicca **Macro**, in alto a destra.",
+                  "Clicca il pulsante giallo **Add Macro**. Compare una riga con un'icona.",
+                  "Clicca quell'icona: si apre una fila di caselle. Clicca quella con **Dark Crush**: è il tasto T.",
+                  "Nel campo **Delay** scrivi **10**."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "macro-chanter",
+                "w": 936,
+                "h": 482,
+                "alt": "La finestra Macro con una riga: il tasto T, che mostra Dark Crush, e Delay 10.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 73.9,
+                    "y": 18
+                  },
+                  {
+                    "n": 2,
+                    "x": 32.5,
+                    "y": 83
+                  },
+                  {
+                    "n": 3,
+                    "x": 32.5,
+                    "y": 43.2
+                  },
+                  {
+                    "n": 4,
+                    "x": 34.9,
+                    "y": 64.7
+                  }
+                ],
+                "credit": "La macro da fare, disegnata come la finestra Macro del gioco, con le skill della tua barra: una riga sola, quella del tasto T. I numeri sono quelli dei passi."
+              },
+              {
+                "t": "callout",
+                "title": "Vedi solo Dark Crush? È giusto",
+                "x": "La macro elenca i tasti, non le skill, e ogni tasto ha l'icona della skill più in basso: per la T è Dark Crush. Spinning Strike da sola non la trovi e non serve: quella riga è la pila intera, partono anche le altre."
+              },
+              {
+                "t": "callout",
+                "kind": "warn",
+                "title": "Non lasciare l'attacco base",
+                "x": "Una riga nuova parte con l'attacco base: se resta così, la macro tira colpi base al posto delle skill."
+              },
+              {
+                "t": "callout",
+                "title": "Lascia accesa Skill Queue",
+                "x": "Sta in Settings, Combat. È accesa da sola: senza, i colpi della macro si perdono."
+              }
+            ],
+            "check": "nella finestra Macro c'è una riga sola, con l'icona di Dark Crush e Delay 10."
+          },
+          {
+            "id": "prova",
+            "nav": "La prova",
+            "title": "Provala sul manichino: due tasti premuti",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Vai davanti a un manichino, il **Training Scarecrow**.",
+                  "Tieni premuti insieme il **tasto sinistro** e il **tasto destro**."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "due-tasti",
+                "w": 1240,
+                "h": 310,
+                "alt": "Il personaggio colpisce il manichino con i due tasti del mouse premuti insieme.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 32.3,
+                    "y": 13.2
+                  },
+                  {
+                    "n": 2,
+                    "x": 82.3,
+                    "y": 16.1
+                  }
+                ],
+                "credit": "Fotogramma da [Grobs, AION 2 Macro Guide](https://www.youtube.com/watch?v=HMod6Z4GrE0&t=205s), minuto 3:25. Nel video è un Gladiator: i due tasti sono gli stessi."
+              },
+              {
+                "t": "list",
+                "items": [
+                  "Dark Crush parte poco? Aspetta una skill che la accenda, e finché non arriva a 16 ha anche 5 secondi di ricarica sua. Fino ad allora è normale.",
+                  "La macro si ferma quando cambi preset delle skill."
+                ]
+              }
+            ],
+            "check": "il personaggio continua a colpire finché tieni premuto, e si ferma quando lasci."
+          }
+        ]
+      },
+      {
+        "id": "dc16",
+        "nav": "Da Dark Crush 16",
+        "title": "Da Dark Crush 16: la pila e i tuoi tasti",
+        "steps": [
+          {
+            "id": "pila",
+            "nav": "La pila",
+            "title": "La pila da Dark Crush 16: quattro skill sul T",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri la finestra delle skill con {{K}}: la griglia in basso è la tua barra, la pila sta nella colonna {{T}}.",
+                  "In basso **Dark Crush**.",
+                  "Sopra, **Spinning Strike**.",
+                  "Sopra ancora, **Impactful Crush**: dal 16 torna nella pila, e il 3 resta libero.",
+                  "In cima, **Incandescent Blow**."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "barra-chanter-dc16",
+                "w": 1128,
+                "h": 504,
+                "alt": "La barra da Dark Crush 16: sul T, dal basso, Dark Crush, Spinning Strike, Impactful Crush e Incandescent Blow.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 90.6,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 2,
+                    "x": 90.6,
+                    "y": 53.6
+                  },
+                  {
+                    "n": 3,
+                    "x": 90.6,
+                    "y": 36.9
+                  },
+                  {
+                    "n": 4,
+                    "x": 90.6,
+                    "y": 20.2
+                  }
+                ],
+                "legend": [
+                  "**Dark Crush** in basso: dal 16 non ha ricarica, e così parte per prima ogni volta che è accesa.",
+                  "**Spinning Strike** alla riga 1: accende Dark Crush. In basso partirebbe lei ogni volta che torna, anche con Dark Crush accesa.",
+                  "**Impactful Crush** alla riga 2: accende Dark Crush quando Spinning Strike è in ricarica.",
+                  "**Incandescent Blow** in cima: riempie quando le altre tre non sono pronte."
+                ],
+                "credit": "La barra da Dark Crush 16, disegnata con le icone del gioco nelle colonne della tua barra: 1-8, Q, E, il tasto sinistro e l'ultima colonna, che diventa T. I numeri sono quelli della legenda."
+              },
+              {
+                "t": "callout",
+                "title": "Perché in basso",
+                "x": "Il gioco prova le caselle dal basso e fa partire la prima pronta. Con Dark Crush in basso e senza ricarica, ogni finestra aperta da Spinning Strike, Impactful Crush o Marchutan's Wrath la spende subito."
+              }
+            ],
+            "check": "nella colonna T, dal basso, vedi Dark Crush, Spinning Strike, Impactful Crush e Incandescent Blow."
+          },
+          {
+            "id": "macro",
+            "nav": "La macro",
+            "title": "La macro: una riga sola, il tasto T",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri la finestra delle skill con {{K}} e clicca **Macro**, in alto a destra.",
+                  "Se la riga c'è già, clicca la sua icona e scegli la casella con **Dark Crush**: è il tasto T. Se la riga non c'è, prima **Add Macro**.",
+                  "Nel campo **Delay** scrivi **10**.",
+                  "Una riga sola: ogni riga in più ritarda Dark Crush."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "macro-chanter-dc16",
+                "w": 936,
+                "h": 482,
+                "alt": "La finestra Macro con una riga: il tasto T, che mostra Dark Crush, e Delay 10.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 73.9,
+                    "y": 18
+                  },
+                  {
+                    "n": 2,
+                    "x": 32.5,
+                    "y": 43.2
+                  },
+                  {
+                    "n": 3,
+                    "x": 34.9,
+                    "y": 64.7
+                  },
+                  {
+                    "n": 4,
+                    "x": 32.5,
+                    "y": 83
+                  }
+                ],
+                "legend": [
+                  "**Macro**, in alto a destra.",
+                  "L'icona della riga: cliccala e scegli la casella con Dark Crush, il tasto T. La macro mostra la skill più in basso della pila.",
+                  "**Delay**: 10.",
+                  "**Add Macro** serve solo se la riga non c'è ancora."
+                ],
+                "credit": "La macro da Dark Crush 16, disegnata come la finestra Macro del gioco, con le skill della tua barra. I numeri sono quelli della legenda."
+              },
+              {
+                "t": "callout",
+                "title": "Vedi solo Dark Crush? È giusto",
+                "x": "La macro elenca i tasti, non le skill: la casella con Dark Crush è la colonna T intera. Spinning Strike da sola non c'è e non serve: sta sullo stesso tasto e parte anche lei, come Impactful Crush e Incandescent Blow."
+              }
+            ],
+            "check": "nella finestra Macro c'è una riga sola, con l'icona di Dark Crush e Delay 10."
+          },
+          {
+            "id": "tasti",
+            "nav": "I tuoi tasti",
+            "title": "In combattimento, coi tuoi tasti",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Tieni premuti il **tasto sinistro** (Onslaught) e il **tasto destro** (la macro) per tutto il combattimento.",
+                  "Prima di tutti, **7**: Power of the Storm. Poi salti sul boss con l'**1**.",
+                  "Quando Dark Crush resta spenta, **8**: Marchutan's Wrath la accende per 3 secondi.",
+                  "**4** quando il gruppo perde vita, **5** una volta sola (Undefeated Mantra, da riaccendere dopo ogni morte), **E** solo col boss in Stagger.",
+                  "Quando porti Guardian Blessing a 15, prende il posto di Sprint Mantra sul **6**: una volta ogni due minuti."
+                ]
+              },
+              {
+                "t": "fig",
+                "img": "barra-chanter-dc16",
+                "w": 1128,
+                "h": 504,
+                "alt": "La barra intera del Chanter da Dark Crush 16, coi tasti.",
+                "marks": [
+                  {
+                    "n": 1,
+                    "x": 83.2,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 2,
+                    "x": 90.6,
+                    "y": 82.7
+                  },
+                  {
+                    "n": 3,
+                    "x": 52,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 4,
+                    "x": 59.4,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 5,
+                    "x": 28.2,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 6,
+                    "x": 37.1,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 7,
+                    "x": 44.5,
+                    "y": 70.2
+                  },
+                  {
+                    "n": 8,
+                    "x": 75.7,
+                    "y": 70.2
+                  }
+                ],
+                "legend": [
+                  "**Onslaught** sul tasto sinistro: sempre premuto.",
+                  "La colonna **T**: la preme la macro, sul tasto destro.",
+                  "**7**, Power of the Storm: prima di tutti. Da portare a 20, senza fermarsi in mezzo.",
+                  "**8**, Marchutan's Wrath: quando Dark Crush resta spenta.",
+                  "**4**, Recuperation: la cura, due volte di fila.",
+                  "**5**, Undefeated Mantra: una volta sola, da portare a 20.",
+                  "**6**, Guardian Blessing a 15: finché non ci arriva, qui c'è Sprint Mantra.",
+                  "**E**, Gust Rampage: solo col boss in Stagger."
+                ],
+                "credit": "La barra da Dark Crush 16, disegnata con le icone del gioco nelle colonne della tua barra: 1-8, Q, E, il tasto sinistro e l'ultima colonna, che diventa T. I numeri sono quelli della legenda."
+              }
+            ],
+            "check": "destro e sinistro premuti e Dark Crush parte da sola; il 7 prima di tutti, l'8 quando Dark Crush resta spenta."
+          }
+        ]
+      },
+      {
+        "id": "skill",
+        "nav": "Le skill",
+        "steps": [
+          {
+            "id": "ordine",
+            "nav": "Quali alzare",
+            "title": "Quali skill alzare, e fin dove",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "Coi punti una skill arriva a 10, e i suoi quattro nodi del Daevanion la portano a 14. Oltre sale solo con gli anelli e con le carte Arcana. I livelli che contano sono tre: 12, 16 e 20, dove si apre una specializzazione o un posto in più."
+              },
+              {
+                "t": "seq",
+                "steps": [
+                  {
+                    "skill": "dark-crush",
+                    "note": "16, poi 20"
+                  },
+                  {
+                    "skill": "onslaught",
+                    "note": "16, poi 20"
+                  },
+                  {
+                    "skill": "spinning-strike",
+                    "note": "16, poi 20"
+                  },
+                  {
+                    "skill": "recuperation",
+                    "note": "16, poi 20"
+                  },
+                  {
+                    "skill": "incandescent-blow",
+                    "note": "16 e basta"
+                  }
+                ]
+              },
+              {
+                "t": "list",
+                "items": [
+                  "[[dark-crush]] a 16 viene prima di tutto: lì perde i 5 secondi di ricarica. Cerca **+1 Dark Crush** su tutti e due gli anelli.",
+                  "[[recuperation]]: i primi coreani la portano a 20 per terza. Finché non sei il curatore del gruppo può aspettare.",
+                  "Le altre sette: 10 coi punti, e basta. [[defiance]] in PvE resta a 1."
+                ]
+              },
+              {
+                "t": "note",
+                "x": "I tuoi livelli, e le specializzazioni da tenere accese oggi: pagina **Equip**, vista **Skill**, clicca la skill."
+              }
+            ]
+          },
+          {
+            "id": "passive",
+            "nav": "Le passive",
+            "title": "Le passive: tre da spingere, le altre si fermano",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "Ogni passiva arriva a 10 coi punti e a 14 coi suoi quattro nodi del Daevanion. Oltre il 14 sale solo se la trovi su armatura, collana e orecchini, o sulle carte Arcana. Quindi la scelta è una: quali cercare sull'equip."
+              },
+              {
+                "t": "passives"
+              },
+              {
+                "t": "note",
+                "x": "A 1 restano [[crossguard]], [[survival-willpower]] e [[raging-spell]]: in PvE non fanno quasi niente."
+              }
+            ]
+          },
+          {
+            "id": "spec",
+            "nav": "Specializzazioni",
+            "title": "Le specializzazioni: dove si accendono",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Nella finestra delle skill clicca una skill attiva: sotto **Specialty** ci sono cinque righe.",
+                  "Clicca una riga per accenderla. Quelle accese sono scritte in chiaro, quelle spente in scuro.",
+                  "I posti sono contati: uno dal livello 8 della skill, due dal 12, tre dal 20."
+                ]
+              },
+              {
+                "t": "note",
+                "x": "Quali accendere, skill per skill e al livello che hai oggi: pagina **Equip**, vista **Skill**, clicca la skill."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stigma",
+        "nav": "Gli stigma",
+        "steps": [
+          {
+            "id": "quali",
+            "nav": "Quali quattro",
+            "title": "Monta questi quattro stigma",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Apri {{K}} e in alto clicca **Stigma**.",
+                  "A destra ci sono tutti gli stigma. Quelli col lucchetto non li hai presi.",
+                  "Clicca uno stigma e poi **Acquire**: costa un punto stigma."
+                ]
+              },
+              {
+                "t": "seq",
+                "steps": [
+                  {
+                    "skill": "undefeated-mantra"
+                  },
+                  {
+                    "skill": "power-of-the-storm"
+                  },
+                  {
+                    "skill": "guardian-blessing"
+                  },
+                  {
+                    "skill": "marchutans-wrath"
+                  }
+                ]
+              },
+              {
+                "t": "table",
+                "head": [
+                  "Stigma",
+                  "Cosa fa"
+                ],
+                "rows": [
+                  [
+                    "[[undefeated-mantra]]",
+                    "Più danno e più resistenza per te e per chi ti sta vicino. È il motivo per cui un gruppo vuole un Chanter."
+                  ],
+                  [
+                    "[[power-of-the-storm]]",
+                    "Per qualche secondo tutti colpiscono più in fretta e le ricariche si accorciano."
+                  ],
+                  [
+                    "[[guardian-blessing]]",
+                    "A 15 Wind's Promise vale una volta e mezza; dura due minuti e si ricarica in due, quindi è sempre accesa. Finché non hai i 75 punti per portarla a 15, al suo posto [[sprint-mantra]] a 5."
+                  ],
+                  [
+                    "[[marchutans-wrath]]",
+                    "Accende Dark Crush per 3 secondi, da 20 metri. La premi tu."
+                  ]
+                ]
+              },
+              {
+                "t": "callout",
+                "title": "Nel gruppo non c'è un Cleric?",
+                "x": "Al posto di [[marchutans-wrath]] monta [[healing-touch]]: cura tutto il gruppo ogni 30 secondi."
+              }
+            ],
+            "check": "sono accesi questi quattro, e tutti gli altri hanno il lucchetto."
+          },
+          {
+            "id": "livelli",
+            "nav": "A che livello",
+            "title": "A che livello portarli",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Al 45 hai 30 punti stigma. Mettili così: **Undefeated Mantra a 10**, gli altri tre **a 5**. Bastano esatti.",
+                  "Con i punti che arrivano dopo, porta **Undefeated Mantra a 20**, poi **Guardian Blessing a 15** nel quarto slot al posto di Sprint Mantra, poi **Power of the Storm a 20**: fra 5 e 20 non spendere punti su di lei, i livelli in mezzo danno quasi niente.",
+                  "**Marchutan's Wrath resta a 5**: i livelli dopo sono stordimento e anti-cura, da PvP. Sprint Mantra, se la rimonti per le corse, al massimo a 10."
+                ]
+              },
+              {
+                "t": "list",
+                "items": [
+                  "Un livello costa 1 punto fino al 5, 2 fino al 10, 4 fino al 15 e 8 fino al 20.",
+                  "Gli altri punti si comprano nei negozi come **Stigma Shard**: 200 dall'Abisso, 35 dallo Shugo Festival, 35 dai Nightmare.",
+                  "Azzerare gli stigma è gratis: se hai messo i punti altrove, toglili e rimettili."
+                ]
+              }
+            ],
+            "check": "Undefeated Mantra è a 10 e non ti avanzano punti."
+          }
+        ]
+      },
+      {
+        "id": "combattimento",
+        "nav": "In combattimento",
+        "steps": [
+          {
+            "id": "tasti",
+            "nav": "I tasti",
+            "title": "Che cosa c'è su ogni tasto",
+            "blocks": [
+              {
+                "t": "table",
+                "head": [
+                  "Tasto",
+                  "Cosa c'è",
+                  "Quando lo premi"
+                ],
+                "rows": [
+                  [
+                    "{{tasto sinistro}}",
+                    "[[onslaught]]",
+                    "Sempre premuto."
+                  ],
+                  [
+                    "{{tasto destro}}",
+                    "La macro",
+                    "Sempre premuto."
+                  ],
+                  [
+                    "{{T}}",
+                    "[[dark-crush]], [[spinning-strike]], [[incandescent-blow]]",
+                    "Mai: lo preme la macro. Da Dark Crush 16 ci torna anche Impactful Crush."
+                  ],
+                  [
+                    "{{3}}",
+                    "[[impactful-crush]]",
+                    "Quando Dark Crush è pronta, finché non è a 16: nella pila la sua finestra andrebbe persa."
+                  ],
+                  [
+                    "{{E}}",
+                    "[[gust-rampage]]",
+                    "Solo col boss in Stagger: tienilo premuto finché resta a terra."
+                  ],
+                  [
+                    "{{8}}",
+                    "[[marchutans-wrath]]",
+                    "Quando Dark Crush resta spenta."
+                  ],
+                  [
+                    "{{4}}",
+                    "[[recuperation]]",
+                    "Quando il gruppo perde vita o ha un debuff: due volte di fila."
+                  ],
+                  [
+                    "{{7}}",
+                    "[[power-of-the-storm]]",
+                    "All'inizio, e poi appena prima di uno Stagger."
+                  ],
+                  [
+                    "{{1}}",
+                    "[[rushing-smash]], e sopra [[tremor-crush]]",
+                    "Per arrivare sul bersaglio. Tremor Crush si accende solo dopo una schivata."
+                  ],
+                  [
+                    "{{2}}",
+                    "[[wave-blow]], e sopra [[heat-wave-blow]]",
+                    "Su un mostro appena stordito. Heat Wave Blow si accende solo dopo una parata."
+                  ],
+                  [
+                    "{{5}}",
+                    "[[undefeated-mantra]]",
+                    "Una volta sola: resta acceso."
+                  ],
+                  [
+                    "{{6}}",
+                    "[[sprint-mantra]]",
+                    "Finché Guardian Blessing non è a 15: una volta sola, un secondo tocco la spegne. Poi solo per le corse."
+                  ],
+                  [
+                    "{{6}}",
+                    "[[guardian-blessing]]",
+                    "Una volta ogni due minuti: dura quanto la ricarica, quindi è sempre accesa. Prende il posto di Sprint Mantra sul 6 appena è a 15."
+                  ],
+                  [
+                    "{{Spazio}}",
+                    "[[defiance]]",
+                    "Per uscire da un controllo."
+                  ]
+                ]
+              },
+              {
+                "t": "note",
+                "x": "Sono i tasti della tua barra del 12 ottobre: il 4, la E e la barra spaziatrice li hai già così. Sull'1 restano Rushing Smash e Tremor Crush. Wave Blow e Heat Wave Blow passano sul 2: sotto Rushing Smash non partono quasi mai, perché lei si prende la pressione ogni volta che è pronta. Q, 5, 7 e 8 sono liberi e aspettano gli stigma."
+              }
+            ]
+          },
+          {
+            "id": "apertura",
+            "nav": "L'apertura",
+            "title": "Come si apre su un boss",
+            "blocks": [
+              {
+                "t": "seq",
+                "steps": [
+                  {
+                    "skill": "undefeated-mantra",
+                    "note": "acceso"
+                  },
+                  {
+                    "skill": "sprint-mantra",
+                    "note": "acceso"
+                  },
+                  {
+                    "skill": "power-of-the-storm",
+                    "note": "prima di tutti"
+                  },
+                  {
+                    "skill": "rushing-smash",
+                    "note": "sul boss"
+                  },
+                  {
+                    "text": "tieni premuti i due tasti",
+                    "hold": true
+                  }
+                ]
+              },
+              {
+                "t": "steps",
+                "items": [
+                  "Accendi i due mantra con {{7}} e {{8}}: una volta, e restano.",
+                  "Premi {{5}} prima che qualcuno usi una skill: [[power-of-the-storm]] accorcia solo le ricariche che partono mentre è acceso.",
+                  "Premi {{1}}: [[rushing-smash]] ti porta sul boss.",
+                  "Tieni premuti i due tasti del mouse, e non lasciarli più."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "durante",
+            "nav": "Durante",
+            "title": "Durante il combattimento",
+            "blocks": [
+              {
+                "t": "steps",
+                "items": [
+                  "Tieni premuti i due tasti. La macro fa il resto.",
+                  "Quando Dark Crush resta spenta, premi {{Q}}: [[marchutans-wrath]] la accende per 3 secondi.",
+                  "Guarda la vita del gruppo: quando scende, {{4}} due volte."
+                ]
+              },
+              {
+                "t": "list",
+                "items": [
+                  "Stai dietro al boss: più di metà del danno di un Chanter è fatto da dietro, e da davanti i colpi vengono parati.",
+                  "Boss in Stagger: tieni premuto anche {{E}}, [[gust-rampage]] colpisce solo in quel momento. Il secondo {{5}} tienilo per appena prima.",
+                  "Se muori, riaccendi i due mantra: si spengono."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "gruppo",
+            "nav": "Nel gruppo",
+            "title": "Il tuo lavoro nel gruppo",
+            "blocks": [
+              {
+                "t": "p",
+                "x": "Un Chanter non si giudica dal contatore del danno. A parità di equip fai meno di un Gladiator o di un Ranger; con te, però, tutto il gruppo colpisce più forte e muore meno. Stai subito dietro la prima linea, così i mantra arrivano a tutti."
+              },
+              {
+                "t": "table",
+                "head": [
+                  "Con un Cleric nel gruppo",
+                  "Che cosa succede"
+                ],
+                "rows": [
+                  [
+                    "[[undefeated-mantra]]",
+                    "Non si somma con la sua Light of Protection: vale quello di livello più alto, e a pari livello il tuo. Tienilo acceso."
+                  ],
+                  [
+                    "[[power-of-the-storm]]",
+                    "Non arriva a chi ha addosso la sua Earth's Blessing: mettetevi d'accordo su chi copre chi."
+                  ],
+                  [
+                    "[[wave-blow]]",
+                    "Il suo Debilitating Mark copre il 15% di danno in meno che metti tu."
+                  ]
+                ]
+              },
+              {
+                "t": "callout",
+                "title": "Non resusciti nessuno",
+                "x": "Il curatore è il Cleric. Tu curi tra una sua cura e l'altra con [[recuperation]], e togli i debuff."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

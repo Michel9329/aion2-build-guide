@@ -1,0 +1,2241 @@
+{
+  "skills": [
+    {
+      "id": "onslaught",
+      "name": "Onslaught",
+      "ko": "격파쇄",
+      "sum": "L'attacco base: una catena di colpi su fino a 4 nemici entro 4 metri, che tieni sempre premuta. Ogni colpo ti rende 100 MP e, dal livello 12, toglie 1 secondo alla ricarica di [[spinning-strike]].",
+      "meta": "Nessuna ricarica · 0 MP · rende 100 MP · 4 m · fino a 4 nemici",
+      "options": [
+        {
+          "req": 8,
+          "name": "+20% MP restored",
+          "it": "rende il 20% di mana in più"
+        },
+        {
+          "req": 8,
+          "name": "Absorbs 0.7% HP",
+          "it": "ogni colpo ti rende lo 0,7% dei PV"
+        },
+        {
+          "req": 8,
+          "name": "+50% Multi-Hit on hit",
+          "it": "50% in più di colpi multipli"
+        },
+        {
+          "req": 12,
+          "name": "-1s [Spinning Strike] cooldown on hit",
+          "it": "ogni colpo toglie 1 secondo alla ricarica di Spinning Strike"
+        },
+        {
+          "req": 16,
+          "name": "Adds [Storm Chain] Chain Skill",
+          "it": "aggiunge un quarto colpo alla catena, [[storm-chain]]"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 2,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Absorbs 0.7% HP"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Absorbs 0.7% HP",
+              "-1s [Spinning Strike] cooldown on hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "-1s [Spinning Strike] cooldown on hit",
+              "Adds [Storm Chain] Chain Skill"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+50% Multi-Hit on hit",
+              "-1s [Spinning Strike] cooldown on hit",
+              "Adds [Storm Chain] Chain Skill"
+            ]
+          }
+        ],
+        "use": "Sul tasto sinistro, sempre premuto insieme alla macro.",
+        "note": "A 12 prendi subito -1s [Spinning Strike] cooldown on hit: sul manichino Spinning Strike torna circa ogni 10 secondi invece che ogni 25. A 16 entra Storm Chain al posto dell'assorbimento. A 20 il terzo slot sul Global è +50% Multi-Hit on hit (notXeon, gigawhale, Whelps, game8, 117 build su 177): più danno; i coreani e metaroad tengono l'assorbimento, che rende vita. I primi otto d'Europa la hanno tra 14 e 22.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 4,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Absorbs 0.7% HP"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Absorbs 0.7% HP",
+              "-1s [Spinning Strike] cooldown on hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "-1s [Spinning Strike] cooldown on hit",
+              "Adds [Storm Chain] Chain Skill"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "Absorbs 0.7% HP",
+              "-1s [Spinning Strike] cooldown on hit",
+              "Adds [Storm Chain] Chain Skill"
+            ]
+          }
+        ],
+        "use": "Sul tasto sinistro, tra un colpo e l'altro.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga"
+      ],
+      "conf": "mid",
+      "top": 15.8,
+      "rings": {
+        "pve": 77,
+        "pvp": 50
+      }
+    },
+    {
+      "id": "incandescent-blow",
+      "name": "Incandescent Blow",
+      "ko": "백열격",
+      "sum": "Il colpo che riempie i buchi quando [[dark-crush]] è spenta: nessuna ricarica, fino a 4 nemici entro 4 metri. Dopo di lei parte da sola [[bursting-blow]].",
+      "meta": "Nessuna ricarica · 120 MP · 4 m · fino a 4 nemici",
+      "options": [
+        {
+          "req": 8,
+          "name": "-20% MP consumed",
+          "it": "costa il 20% di mana in meno"
+        },
+        {
+          "req": 8,
+          "name": "+200 Block while using skill",
+          "it": "+200 di parata mentre la usi"
+        },
+        {
+          "req": 8,
+          "name": "Deals up to 12% more damage when less targets are hit",
+          "it": "fino al 12% di danno in più quando colpisci pochi bersagli"
+        },
+        {
+          "req": 12,
+          "name": "-200 enemy Accuracy for 3s on landing Bursting Blow",
+          "it": "Bursting Blow toglie 200 di precisione al bersaglio per 3 secondi"
+        },
+        {
+          "req": 16,
+          "name": "Ignores Block and Evasion and lands as Multi-Hit",
+          "it": "non si può parare né schivare, e colpisce più volte"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 4,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Deals up to 12% more damage when less targets are hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Deals up to 12% more damage when less targets are hit",
+              "-200 enemy Accuracy for 3s on landing Bursting Blow"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Deals up to 12% more damage when less targets are hit",
+              "Ignores Block and Evasion and lands as Multi-Hit"
+            ]
+          }
+        ],
+        "use": "Nella pila della macro, in alto: parte quando le altre tre non sono pronte.",
+        "note": "Si ferma a 16: una terza scelta buona non c'è. Se resti senza mana, a 12 prendi -20% MP consumed al posto di -200 enemy Accuracy.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 6,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Deals up to 12% more damage when less targets are hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Deals up to 12% more damage when less targets are hit",
+              "-200 enemy Accuracy for 3s on landing Bursting Blow"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Deals up to 12% more damage when less targets are hit",
+              "Ignores Block and Evasion and lands as Multi-Hit"
+            ]
+          }
+        ],
+        "use": "Nella pila della macro, come riempimento.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga"
+      ],
+      "conf": "high",
+      "top": 15.7,
+      "rings": {
+        "pve": 57,
+        "pvp": 40
+      }
+    },
+    {
+      "id": "impactful-crush",
+      "name": "Impactful Crush",
+      "ko": "타격쇄",
+      "sum": "Un colpo da 20 metri che stordisce per 3 secondi: i mostri sempre, i giocatori il 60% delle volte. Accende [[dark-crush]] per 2 secondi.",
+      "meta": "Ricarica 15 s · 100 MP · 20 m",
+      "options": [
+        {
+          "req": 8,
+          "name": "Changes to AoE damage",
+          "it": "colpisce ad area"
+        },
+        {
+          "req": 8,
+          "name": "+1s [Impactful Crush] Stun duration",
+          "it": "stordisce 1 secondo in più"
+        },
+        {
+          "req": 8,
+          "name": "Changes to mobile skill",
+          "it": "la tiri anche camminando"
+        },
+        {
+          "req": 12,
+          "name": "+30% Skill Speed",
+          "it": "parte il 30% più in fretta"
+        },
+        {
+          "req": 16,
+          "name": "+20% [Impactful Crush] Stun Chance",
+          "it": "+20% di probabilità di stordire"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 6,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Changes to mobile skill"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Changes to mobile skill",
+              "+30% Skill Speed"
+            ]
+          }
+        ],
+        "use": "Nella pila della macro, sopra [[spinning-strike]]: è la seconda skill che accende Dark Crush.",
+        "note": "A 12 arriva coi nodi del Daevanion.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 10,
+        "order": 3,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Changes to mobile skill"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Changes to mobile skill",
+              "+30% Skill Speed"
+            ]
+          }
+        ],
+        "use": "A mano: stordisce da 20 metri e accende Dark Crush. Subito dopo, [[wave-blow]].",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga"
+      ],
+      "conf": "high",
+      "top": 14.7,
+      "rings": {
+        "pve": 29,
+        "pvp": 35
+      }
+    },
+    {
+      "id": "wave-blow",
+      "name": "Wave Blow",
+      "ko": "파동격",
+      "sum": "Colpisce solo un bersaglio stordito entro 4 metri, e lo atterra per 3 secondi. Su un boss che non si può stordire parte da sola il 7% delle volte, mentre attacchi.",
+      "meta": "Ricarica 20 s · 0 MP · 4 m · solo su un bersaglio stordito",
+      "options": [
+        {
+          "req": 8,
+          "name": "Multi-Hit on hit",
+          "it": "colpisce sempre più volte"
+        },
+        {
+          "req": 8,
+          "name": "+6m Range",
+          "it": "arriva a 10 metri"
+        },
+        {
+          "req": 8,
+          "name": "+1s Knockdown duration",
+          "it": "atterra 1 secondo in più"
+        },
+        {
+          "req": 12,
+          "name": "-15% target's PvE Damage Boost and -7.5% PvP Damage Boost for 10s",
+          "it": "per 10 secondi il bersaglio fa il 15% di danno in meno in PvE e il 7,5% in PvP"
+        },
+        {
+          "req": 16,
+          "name": "-5s cooldown",
+          "it": "ricarica di 15 secondi"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 11,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+6m Range"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+6m Range",
+              "-15% target's PvE Damage Boost and -7.5% PvP Damage Boost for 10s"
+            ]
+          }
+        ],
+        "use": "Sul tasto 2, a mano: si accende solo su un mostro che [[impactful-crush]] ha appena stordito. Mai al posto di Dark Crush.",
+        "note": "Il motivo per darle punti è a 12: il bersaglio fa il 15% di danno in meno per 10 secondi. A 12 arriva con due nodi del Daevanion. Con un Cleric nel gruppo il suo Debilitating Mark copre questo effetto. Tra le build del Global 115 su 187 la tengono così; 58 al posto della gittata prendono Multi-Hit on hit, come Aion 2 Maps.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 1,
+        "order": 11,
+        "picks": [],
+        "use": "A mano, subito dopo [[impactful-crush]]: prende il bersaglio stordito e lo atterra per 3 secondi. Tienila per dopo la loro Defiance.",
+        "note": "Presa e atterramento sono uguali a ogni livello: in PvP i suoi punti vanno a [[defiance]].",
+        "label": "lasciala a 1"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga"
+      ],
+      "conf": "mid",
+      "top": 9.4,
+      "rings": {
+        "pve": 0,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "rushing-smash",
+      "name": "Rushing Smash",
+      "ko": "돌진 격파",
+      "sum": "Ti lancia su un bersaglio entro 20 metri, colpisce fino a 4 nemici e ti rende 100 MP.",
+      "meta": "Ricarica 15 s · 0 MP · rende 100 MP · 20 m · fino a 4 nemici",
+      "options": [
+        {
+          "req": 8,
+          "name": "-20% target's Impact-type Resist for 5s",
+          "it": "per 5 secondi il bersaglio resiste il 20% in meno agli stati di tipo Impact"
+        },
+        {
+          "req": 8,
+          "name": "Changes to Charge Skill, dealing up to 200% more damage",
+          "it": "diventa una skill a carica, fino al 200% di danno in più"
+        },
+        {
+          "req": 8,
+          "name": "50% chance to trigger [Heat Wave Blow] on hit",
+          "it": "una volta su due fa partire [[heat-wave-blow]]"
+        },
+        {
+          "req": 12,
+          "name": "Resets cooldown on defeating an enemy",
+          "it": "torna subito pronta quando uccidi un nemico"
+        },
+        {
+          "req": 16,
+          "name": "Ignores Block and Evasion and lands as Multi-Hit",
+          "it": "non si può parare né schivare, e colpisce più volte"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 7,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "50% chance to trigger [Heat Wave Blow] on hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "50% chance to trigger [Heat Wave Blow] on hit",
+              "Resets cooldown on defeating an enemy"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Resets cooldown on defeating an enemy",
+              "Ignores Block and Evasion and lands as Multi-Hit"
+            ]
+          }
+        ],
+        "use": "Sul tasto 1, a mano: per arrivare sul boss e per passare da un gruppo di mostri all'altro.",
+        "note": "A 12, coi nodi di Nezekan e Zikel, torna pronta a ogni uccisione: salti da un mostro all'altro. La carica non si prende mai: le skill a carica fanno perdere danno.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 10,
+        "order": 7,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "-20% target's Impact-type Resist for 5s"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "-20% target's Impact-type Resist for 5s",
+              "50% chance to trigger [Heat Wave Blow] on hit"
+            ]
+          }
+        ],
+        "use": "A mano, per arrivare addosso: toglie il 20% di resistenza agli stati di tipo Impact, e subito dopo stordisci.",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga"
+      ],
+      "conf": "high",
+      "top": 14.8,
+      "rings": {
+        "pve": 42,
+        "pvp": 36
+      }
+    },
+    {
+      "id": "dark-crush",
+      "name": "Dark Crush",
+      "ko": "암격쇄",
+      "sum": "Il tuo danno. Colpisce da 20 metri e non costa mana, ma si può usare solo per 2 secondi dopo [[spinning-strike]] o [[impactful-crush]], e per 3 dopo [[marchutans-wrath]].",
+      "meta": "Ricarica 5 s · 0 MP · 20 m · solo dopo che un'altra skill la accende",
+      "options": [
+        {
+          "req": 8,
+          "name": "Absorbs 0.7% HP",
+          "it": "ogni colpo ti rende lo 0,7% dei PV"
+        },
+        {
+          "req": 8,
+          "name": "Deals extra damage on attacking a target afflicted with Impact-type status",
+          "it": "danno in più su un bersaglio stordito, atterrato o sospeso"
+        },
+        {
+          "req": 8,
+          "name": "Critical Hit on hit",
+          "it": "sempre critico"
+        },
+        {
+          "req": 12,
+          "name": "Adds [Piercing Strike] Chain Skill",
+          "it": "aggiunge un secondo colpo a catena, [[piercing-strike]]"
+        },
+        {
+          "req": 16,
+          "name": "Removes [Dark Crush] cooldown",
+          "it": "toglie la ricarica: nella finestra la tiri più volte di fila"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 1,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Critical Hit on hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Critical Hit on hit",
+              "Adds [Piercing Strike] Chain Skill"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Critical Hit on hit",
+              "Removes [Dark Crush] cooldown"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "Critical Hit on hit",
+              "Adds [Piercing Strike] Chain Skill",
+              "Removes [Dark Crush] cooldown"
+            ]
+          }
+        ],
+        "use": "Nella pila della macro, in basso: parte per prima ogni volta che è accesa.",
+        "note": "La prima da portare a 16, con un tratto +1 Dark Crush su ogni anello: lì perde i 5 secondi di ricarica, e senza quello la classe non gira. A 16 tieni il critico garantito e togli Piercing Strike, che rientra a 20: lo fanno Grobs, aLuckyRO e 49 build su 82 tra 16 e 19 (aion2vault, 26/10/2026); su Reddit chi è passato al critico con la ricarica tolta ha visto il danno salire. I coreani e couga54 tenevano Piercing Strike. I primi otto d'Europa la hanno a 20-21.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 1,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Critical Hit on hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Critical Hit on hit",
+              "Adds [Piercing Strike] Chain Skill"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Adds [Piercing Strike] Chain Skill",
+              "Removes [Dark Crush] cooldown"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "Critical Hit on hit",
+              "Adds [Piercing Strike] Chain Skill",
+              "Removes [Dark Crush] cooldown"
+            ]
+          }
+        ],
+        "use": "Nella pila della macro. La accendi tu con [[marchutans-wrath]] da 20 metri.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga"
+      ],
+      "conf": "high",
+      "top": 17.6,
+      "rings": {
+        "pve": 78,
+        "pvp": 63
+      }
+    },
+    {
+      "id": "recuperation",
+      "name": "Recuperation",
+      "ko": "쾌유의 주문",
+      "sum": "La tua cura: rende PV subito a te e al gruppo entro 40 metri, toglie 1 debuff, e continua a curare ogni 2 secondi per 8 secondi.",
+      "meta": "Ricarica 15 s · 0 MP · tu e il gruppo entro 40 metri",
+      "options": [
+        {
+          "req": 8,
+          "name": "+1 consecutive use and Heal over Time can stack up to 2 times",
+          "it": "si può usare due volte di fila, e la cura nel tempo si somma fino a 2 volte"
+        },
+        {
+          "req": 8,
+          "name": "Removes up to 2 debuffs",
+          "it": "toglie fino a 2 debuff"
+        },
+        {
+          "req": 8,
+          "name": "+4s healing duration",
+          "it": "la cura nel tempo dura 4 secondi in più"
+        },
+        {
+          "req": 12,
+          "name": "+5% HP restored",
+          "it": "rende un altro 5% dei PV"
+        },
+        {
+          "req": 16,
+          "name": "-3s cooldown",
+          "it": "ricarica di 12 secondi"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 5,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+1 consecutive use and Heal over Time can stack up to 2 times"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+1 consecutive use and Heal over Time can stack up to 2 times",
+              "+5% HP restored"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+1 consecutive use and Heal over Time can stack up to 2 times",
+              "-3s cooldown"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+1 consecutive use and Heal over Time can stack up to 2 times",
+              "+5% HP restored",
+              "-3s cooldown"
+            ]
+          }
+        ],
+        "use": "Sul tasto 4, a mano: quando il gruppo perde vita o ha un debuff addosso. Due usi di fila, e ognuno torna dopo 15 secondi.",
+        "note": "Per i coreani è la terza skill da portare a 20, e a 16 mettono -3s cooldown al posto del 5% di PV, che rientra a 20. notXeon, gigawhale, couga54 e metaroad la fermano a 12 e mettono prima Spinning Strike e Incandescent Blow; i primi otto d'Europa la tengono tra 13 e 19 (29/10/2026). Nei combattimenti pieni di debuff, al posto del 5% prendi Removes up to 2 debuffs: a livello 20 lo fanno 86 build del Global su 184.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 10,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+1 consecutive use and Heal over Time can stack up to 2 times"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+1 consecutive use and Heal over Time can stack up to 2 times",
+              "Removes up to 2 debuffs"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "+1 consecutive use and Heal over Time can stack up to 2 times",
+              "Removes up to 2 debuffs",
+              "-3s cooldown"
+            ]
+          }
+        ],
+        "use": "A mano: cura te e i compagni entro 40 metri e toglie fino a 2 debuff a ogni uso, due volte di fila.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga"
+      ],
+      "conf": "mid",
+      "top": 14.8,
+      "rings": {
+        "pve": 77,
+        "pvp": 52
+      }
+    },
+    {
+      "id": "heat-wave-blow",
+      "name": "Heat Wave Blow",
+      "ko": "열파격",
+      "sum": "Colpisce fino a 4 nemici entro 4 metri, ma premuta da te parte solo dopo una parata. In PvE la fa partire [[rushing-smash]], una volta su due. Sigilla per 3 secondi: i mostri sempre, i giocatori il 40% delle volte.",
+      "meta": "Ricarica 10 s · 0 MP · 4 m · fino a 4 nemici",
+      "options": [
+        {
+          "req": 8,
+          "name": "40% chance to inflict Stun for 3s",
+          "it": "40% di stordire per 3 secondi"
+        },
+        {
+          "req": 8,
+          "name": "+20% Seal Chance",
+          "it": "+20% di probabilità di sigillare"
+        },
+        {
+          "req": 8,
+          "name": "Up to +20% damage when more targets hit",
+          "it": "fino al 20% di danno in più sui gruppi"
+        },
+        {
+          "req": 12,
+          "name": "Ignores Block and Evasion and lands as Multi-Hit",
+          "it": "non si può parare né schivare, e colpisce più volte"
+        },
+        {
+          "req": 16,
+          "name": "25% chance to reset [Heat Wave Blow] cooldown on Block",
+          "it": "dopo una parata, una volta su quattro torna subito pronta"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 9,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Up to +20% damage when more targets hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Up to +20% damage when more targets hit",
+              "Ignores Block and Evasion and lands as Multi-Hit"
+            ]
+          }
+        ],
+        "use": "Sul tasto 2, sopra [[wave-blow]]. Di solito non la premi, parte dai colpi di Rushing Smash; premuta da te si accende solo dopo una parata.",
+        "note": "Tra le ultime a cui dare punti: il 22% dei primi del Global la lascia sotto 8.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 10,
+        "order": 9,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "40% chance to inflict Stun for 3s"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "40% chance to inflict Stun for 3s",
+              "Ignores Block and Evasion and lands as Multi-Hit"
+            ]
+          }
+        ],
+        "use": "Dopo una parata: 40% di stordire per 3 secondi.",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga"
+      ],
+      "conf": "mid",
+      "top": 10.8,
+      "rings": {
+        "pve": 0,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "defiance",
+      "name": "Defiance",
+      "ko": "충격 해제",
+      "sum": "Ti libera da Stun, Knockdown, Airborne, Grab, Frost e Fear, e per 5 secondi nessuno stato ti prende. Non libera da Root, Slow, Seal, Blind e Taunt.",
+      "meta": "Ricarica 60 s al livello 1, 51 s al 10 · 0 MP",
+      "options": [
+        {
+          "req": 8,
+          "name": "Adds [Crushing Strike] Chain Skill",
+          "it": "aggiunge un colpo a catena, [[crushing-strike]]"
+        },
+        {
+          "req": 8,
+          "name": "Restores 1000 Stamina on using [Defiance]",
+          "it": "ti rende 1.000 di Stamina"
+        },
+        {
+          "req": 8,
+          "name": "Restores 10% HP on using [Defiance]",
+          "it": "ti rende il 10% dei PV"
+        },
+        {
+          "req": 12,
+          "name": "+2s Tenacity duration",
+          "it": "l'immunità dura 2 secondi in più"
+        },
+        {
+          "req": 16,
+          "name": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+          "it": "finché dura l'immunità subisci il 50% di danno in meno in PvE e il 25% in PvP"
+        }
+      ],
+      "pve": {
+        "level": 1,
+        "order": 12,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Restores 10% HP on using [Defiance]"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Restores 10% HP on using [Defiance]",
+              "+2s Tenacity duration"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+2s Tenacity duration",
+              "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+            ]
+          }
+        ],
+        "use": "Sulla barra spaziatrice, per uscire da un controllo.",
+        "note": "In PvE basta a 1. Contro i boss che stordiscono o atterrano prende i punti di [[wave-blow]]: a 16 sono sette secondi in cui subisci la metà del danno.",
+        "label": "lasciala a 1"
+      },
+      "pvp": {
+        "level": 10,
+        "order": 2,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Restores 10% HP on using [Defiance]"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Restores 10% HP on using [Defiance]",
+              "+2s Tenacity duration"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "+2s Tenacity duration",
+              "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+            ]
+          }
+        ],
+        "use": "Sul controllo che ti ucciderebbe, non sul primo.",
+        "note": "Non toglie Root, Slow, Seal e Blind; i suoi 5 secondi di immunità però li bloccano, e bloccano anche il Taunt di un Templar.",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga"
+      ],
+      "conf": "high",
+      "top": 10.2,
+      "rings": {
+        "pve": 0,
+        "pvp": 39
+      }
+    },
+    {
+      "id": "tremor-crush",
+      "name": "Tremor Crush",
+      "ko": "진동쇄",
+      "sum": "Ti porta su un bersaglio entro 10 metri. Si usa solo dopo una schivata o in volo. Stordisce per 3 secondi: i mostri sempre, i giocatori il 50% delle volte.",
+      "meta": "Ricarica 20 s · 0 MP · 10 m · dopo una schivata o in volo",
+      "options": [
+        {
+          "req": 8,
+          "name": "Restores 300 Stamina on hit",
+          "it": "ti rende 300 di Stamina"
+        },
+        {
+          "req": 8,
+          "name": "+10m [Tremor Crush] range",
+          "it": "arriva a 20 metri"
+        },
+        {
+          "req": 8,
+          "name": "+50% Multi-Hit on hit",
+          "it": "50% in più di colpi multipli"
+        },
+        {
+          "req": 12,
+          "name": "Adds [Surging Strike] Chain Skill",
+          "it": "aggiunge un colpo a catena, [[surging-strike]]"
+        },
+        {
+          "req": 16,
+          "name": "+25% [Tremor Crush] Stun Chance",
+          "it": "+25% di probabilità di stordire"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "order": 10,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+10m [Tremor Crush] range"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+10m [Tremor Crush] range",
+              "Adds [Surging Strike] Chain Skill"
+            ]
+          }
+        ],
+        "use": "Sul tasto 1, sopra [[rushing-smash]]: si accende solo subito dopo una schivata, e ti riporta sul bersaglio.",
+        "note": "Tra le ultime a cui dare punti. Tra le build del Global 81 su 192 a 12 aggiungono la catena Surging Strike, 62 prendono +50% Multi-Hit on hit.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 10,
+        "order": 8,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "+10m [Tremor Crush] range"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "+10m [Tremor Crush] range",
+              "Adds [Surging Strike] Chain Skill"
+            ]
+          }
+        ],
+        "use": "Per riprenderli quando scappano, e nel momento in cui finisce una loro immunità.",
+        "label": "con i punti"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga"
+      ],
+      "conf": "mid",
+      "top": 11.9,
+      "rings": {
+        "pve": 0,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "spinning-strike",
+      "name": "Spinning Strike",
+      "ko": "회전격",
+      "sum": "Colpisce da 20 metri fino a 4 nemici e ti dà +15% di danno critico per 30 secondi, fino a 2 volte. Accende [[dark-crush]] per 2 secondi.",
+      "meta": "Ricarica 30 s · 250 MP · 20 m · fino a 4 nemici",
+      "options": [
+        {
+          "req": 8,
+          "name": "-5s cooldown",
+          "it": "ricarica di 25 secondi"
+        },
+        {
+          "req": 8,
+          "name": "+10% Heal Boost (up to 20%)",
+          "it": "+10% alle cure, fino al 20%"
+        },
+        {
+          "req": 8,
+          "name": "Up to +20% damage when less targets hit",
+          "it": "fino al 20% di danno in più quando colpisci pochi bersagli"
+        },
+        {
+          "req": 12,
+          "name": "40% chance to inflict Seal for 3s",
+          "it": "40% di sigillare per 3 secondi"
+        },
+        {
+          "req": 16,
+          "name": "Ignores Block and Evasion and lands as a Critical Hit",
+          "it": "non si può parare né schivare, ed è sempre critico"
+        }
+      ],
+      "pve": {
+        "level": 16,
+        "order": 3,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "-5s cooldown"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "-5s cooldown",
+              "Up to +20% damage when less targets hit"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "-5s cooldown",
+              "Up to +20% damage when less targets hit",
+              "Ignores Block and Evasion and lands as a Critical Hit"
+            ]
+          }
+        ],
+        "use": "Nella pila della macro, sopra [[dark-crush]]: è la prima skill che la accende.",
+        "note": "Grobs a 16 prende Ignores Block and Evasion and lands as a Critical Hit al posto di -5s cooldown; i primi coreani la aggiungono a 20. Se nel gruppo il curatore sei tu, al posto di -5s cooldown tieni +10% Heal Boost.",
+        "label": "obiettivo"
+      },
+      "pvp": {
+        "level": 16,
+        "order": 5,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Up to +20% damage when less targets hit"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Up to +20% damage when less targets hit",
+              "40% chance to inflict Seal for 3s"
+            ]
+          },
+          {
+            "at": 20,
+            "choose": [
+              "Up to +20% damage when less targets hit",
+              "40% chance to inflict Seal for 3s",
+              "Ignores Block and Evasion and lands as a Critical Hit"
+            ]
+          }
+        ],
+        "use": "Nella pila della macro. Col 40% di sigillare per 3 secondi: il sigillo la loro Defiance non lo toglie.",
+        "label": "obiettivo"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga"
+      ],
+      "conf": "high",
+      "top": 15.7,
+      "rings": {
+        "pve": 73,
+        "pvp": 52
+      }
+    },
+    {
+      "id": "gust-rampage",
+      "name": "Gust Rampage",
+      "ko": "질풍 난무",
+      "sum": "Colpisce solo un bersaglio in Stagger entro 4 metri, senza ricarica: finché il boss è a terra parte a ripetizione.",
+      "meta": "Nessuna ricarica · 0 MP · 4 m · solo su un bersaglio in Stagger",
+      "options": [
+        {
+          "req": 8,
+          "name": "Absorbs 5% HP",
+          "it": "ti rende il 5% dei PV"
+        },
+        {
+          "req": 8,
+          "name": "Restores 120 MP",
+          "it": "rende 120 MP"
+        },
+        {
+          "req": 8,
+          "name": "Changes to mobile skill",
+          "it": "la tiri anche camminando"
+        },
+        {
+          "req": 12,
+          "name": "Multi-Hit on hit",
+          "it": "colpisce sempre più volte"
+        },
+        {
+          "req": 16,
+          "name": "-1s all skill cooldowns on hit",
+          "it": "ogni colpo toglie 1 secondo a tutte le ricariche"
+        }
+      ],
+      "pve": {
+        "level": 8,
+        "order": 8,
+        "picks": [
+          {
+            "at": 8,
+            "choose": [
+              "Changes to mobile skill"
+            ]
+          },
+          {
+            "at": 12,
+            "choose": [
+              "Changes to mobile skill",
+              "Multi-Hit on hit"
+            ]
+          },
+          {
+            "at": 16,
+            "choose": [
+              "Multi-Hit on hit",
+              "-1s all skill cooldowns on hit"
+            ]
+          }
+        ],
+        "use": "Sul tasto E, a mano: col boss in Stagger tienila premuta finché resta a terra.",
+        "note": "Nessuna fonte di ottobre la porta a 10: 8 o meno in Season 1 (couga54, metaroad), e i primi otto d'Europa la tengono tra 1 e 18. Il motivo per alzarla è a 16: ogni colpo toglie 1 secondo a tutte le ricariche; sotto il 16, per gigawhale, i punti sono persi.",
+        "label": "con i punti"
+      },
+      "pvp": {
+        "level": 1,
+        "order": 12,
+        "picks": [],
+        "use": "In PvP non serve: colpisce solo un bersaglio in Stagger.",
+        "label": "lasciala a 1"
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga"
+      ],
+      "conf": "mid",
+      "top": 7.6,
+      "rings": {
+        "pve": 21,
+        "pvp": 0
+      }
+    }
+  ],
+  "chains": [
+    {
+      "id": "storm-chain",
+      "name": "Storm Chain"
+    },
+    {
+      "id": "piercing-strike",
+      "name": "Piercing Strike"
+    },
+    {
+      "id": "crushing-strike",
+      "name": "Crushing Strike"
+    },
+    {
+      "id": "surging-strike",
+      "name": "Surging Strike"
+    },
+    {
+      "id": "bursting-blow",
+      "name": "Bursting Blow"
+    }
+  ],
+  "stigma": [
+    {
+      "id": "fracturing-blow",
+      "name": "Fracturing Blow",
+      "ko": "분쇄격",
+      "sum": "Si lancia su un bersaglio entro 20 metri e per 5 secondi gli toglie il 30% di difesa; il 20% di danno in più su chi è stordito, atterrato o sospeso. Toglie 20 alla barra di Stagger.",
+      "meta": "Ricarica 45 s · 100 MP · 20 m",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "-15s cooldown",
+          "it": "ricarica di 30 secondi"
+        },
+        {
+          "at": 10,
+          "name": "Inflict Exposed for 5s on hit",
+          "it": "lascia il bersaglio scoperto (Exposed) per 5 secondi"
+        },
+        {
+          "at": 15,
+          "name": "Critical Hit on hit",
+          "it": "sempre critico"
+        },
+        {
+          "at": 20,
+          "name": "+30% additional Impact-type Status target damage",
+          "it": "un altro 30% sui bersagli storditi, atterrati o sospesi"
+        }
+      ],
+      "pve": null,
+      "pvp": {
+        "level": 5,
+        "state": "in campo aperto",
+        "pos": 7,
+        "note": "Per dare la caccia ai giocatori fuori dalle arene: entra come quarto.",
+        "swap": "guardian-blessing"
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "focused-defense",
+      "name": "Focused Defense",
+      "ko": "집중 방어",
+      "sum": "Per un momento ogni colpo viene parato e la parata toglie tutto il danno; alla parata ti rende 110 MP e Stamina, una volta.",
+      "meta": "Ricarica 20 s · 0 MP",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+1 consecutive use",
+          "it": "si può usare due volte di fila"
+        },
+        {
+          "at": 10,
+          "name": "Changes to mobile skill",
+          "it": "la usi anche camminando"
+        },
+        {
+          "at": 15,
+          "name": "+20% Move Speed for 3s on Block",
+          "it": "+20% di velocità per 3 secondi dopo una parata"
+        },
+        {
+          "at": 20,
+          "name": "Restores 5% HP once on Parry",
+          "it": "su una parata con l'arma ti rende il 5% dei PV, una volta"
+        }
+      ],
+      "pve": {
+        "level": 5,
+        "state": "per restare sul boss",
+        "pos": 9,
+        "note": "Due parate sicure di fila ti lasciano addosso al boss mentre gli altri si allontanano. Entra al posto di [[marchutans-wrath]] sui boss dove parare conta (gigawhale: Ludra) o con un Cleric in gruppo (metaroad).",
+        "swap": "marchutans-wrath"
+      },
+      "pvp": {
+        "level": 5,
+        "state": "alternativa",
+        "pos": 6,
+        "note": "Una parata sicura, due di fila dal livello 5. In coppia con un Cleric prende invece il posto di [[undefeated-mantra]], che con la sua Light of Protection non si somma.",
+        "swap": "guardian-blessing"
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "sprint-mantra",
+      "name": "Sprint Mantra",
+      "ko": "질주의 진언",
+      "sum": "Un interruttore che lasci acceso: +10,5% di velocità di movimento al livello 1 (15% al 10, 20% al 20) per te e per i compagni vicini, e a ogni colpo andato a segno il 15% di rendere un po' di PV, al massimo una volta al secondo.",
+      "meta": "Ricarica 5 s · 0 MP · interruttore",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+10% Incoming Heal",
+          "it": "+10% alle cure ricevute"
+        },
+        {
+          "at": 10,
+          "name": "+30% Natural Stamina Regen",
+          "it": "+30% di Stamina che torna da sola"
+        },
+        {
+          "at": 15,
+          "name": "+50% amount restored when HP is 50% or less",
+          "it": "+50% di PV resi quando sei sotto metà vita"
+        },
+        {
+          "at": 20,
+          "name": "+10% Restoration",
+          "it": "+10% di rigenerazione (Restoration)"
+        }
+      ],
+      "pve": {
+        "level": 10,
+        "state": "alternativa",
+        "pos": 5,
+        "note": "Finché [[guardian-blessing]] non arriva a 15 resta lei nel quarto slot; poi torna per le corse e il farming: tutti più veloci, e dal 10 la Stamina torna prima. Mai oltre il 10: la sua cura è poca cosa. Sei dei primi otto d'Europa non la montano (29/10/2026).",
+        "swap": "guardian-blessing"
+      },
+      "pvp": null,
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "healing-touch",
+      "name": "Healing Touch",
+      "ko": "쾌유의 손길",
+      "sum": "Rende subito PV a te e al gruppo entro 40 metri: è la cura d'emergenza.",
+      "meta": "Ricarica 30 s · 0 MP",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+20% amount healed when HP is 50% or less",
+          "it": "+20% di cura su chi è sotto metà vita"
+        },
+        {
+          "at": 10,
+          "name": "Restores 1000 Stamina",
+          "it": "rende 1.000 di Stamina"
+        },
+        {
+          "at": 15,
+          "name": "Removes 5 debuff(s)",
+          "it": "toglie 5 debuff"
+        },
+        {
+          "at": 20,
+          "name": "+5% HP restored",
+          "it": "rende un altro 5% dei PV"
+        }
+      ],
+      "pve": {
+        "level": 5,
+        "state": "senza Cleric",
+        "pos": 7,
+        "note": "Quando nel gruppo il curatore sei tu. Dal livello 15 toglie cinque debuff. Per Grobs non vale lo slot nemmeno così: troppa poca cura per 30 secondi di ricarica.",
+        "swap": "marchutans-wrath"
+      },
+      "pvp": null,
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "undefeated-mantra",
+      "name": "Undefeated Mantra",
+      "ko": "불패의 진언",
+      "sum": "Un interruttore che lasci acceso: +10,5% di danno e di resistenza al danno in PvE al livello 1 (15% al 10, 20% al 20), la metà in PvP, per te e per i compagni vicini. Non si somma con Light of Protection del Cleric: vale quello di livello più alto, e a pari livello il tuo.",
+      "meta": "Ricarica 5 s · 0 MP · interruttore",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+100 Critical Hit",
+          "it": "+100 di critico"
+        },
+        {
+          "at": 10,
+          "name": "+100 Accuracy",
+          "it": "+100 di precisione"
+        },
+        {
+          "at": 15,
+          "name": "+5% Critical Damage Boost",
+          "it": "+5% di danno critico"
+        },
+        {
+          "at": 20,
+          "name": "+5% Double Chance",
+          "it": "+5% di colpo doppio"
+        }
+      ],
+      "pve": {
+        "level": 20,
+        "state": "in uso",
+        "pos": 1,
+        "note": "È il motivo per cui un gruppo vuole un Chanter. A 45 sta a 10; appena hai i punti è il primo stigma da portare a 20: tutti e otto i primi d'Europa la tengono a 20 (29/10/2026). Si spegne quando muori: riaccendilo dopo ogni resurrezione."
+      },
+      "pvp": {
+        "level": 20,
+        "state": "sempre",
+        "pos": 1
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "obliterate",
+      "name": "Obliterate",
+      "ko": "멸화",
+      "sum": "Colpisce fino a 4 nemici entro 4 metri dal bersaglio e li atterra: i mostri sempre, i giocatori il 50% delle volte. Toglie 50 alla barra di Stagger a qualunque livello, più di ogni altra skill del Chanter.",
+      "meta": "Ricarica 60 s · 200 MP · 4 m",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "Up to +20% damage when more targets hit",
+          "it": "fino al 20% di danno in più sui gruppi"
+        },
+        {
+          "at": 10,
+          "name": "+20% Skill Speed",
+          "it": "parte il 20% più in fretta"
+        },
+        {
+          "at": 15,
+          "name": "Critical Hit on hit",
+          "it": "sempre critico"
+        },
+        {
+          "at": 20,
+          "name": "+25% Knockdown Chance",
+          "it": "+25% di probabilità di atterrare"
+        }
+      ],
+      "pve": {
+        "level": 1,
+        "state": "per lo Stagger",
+        "pos": 6,
+        "note": "Se il gruppo non fa in tempo a stordire il boss, entra nel quarto slot e resta a 1: i 4 punti che avanzano vanno a [[undefeated-mantra]]. Tienila per quando la barra di Stagger si apre.",
+        "swap": "marchutans-wrath"
+      },
+      "pvp": null,
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "ensnaring-mark",
+      "name": "Ensnaring Mark",
+      "ko": "결박의 낙인",
+      "sum": "Da 20 metri colpisce fino a 4 nemici e li sigilla per 5 secondi: i mostri sempre, i giocatori il 50% delle volte. Accende [[dark-crush]] per 3 secondi.",
+      "meta": "Ricarica 60 s · 200 MP · 20 m",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "50% chance to inflict Root",
+          "it": "una volta su due li blocca sul posto"
+        },
+        {
+          "at": 10,
+          "name": "50% chance to inflict -1000 enemy Max Stamina",
+          "it": "una volta su due toglie 1.000 di Stamina massima"
+        },
+        {
+          "at": 15,
+          "name": "+3s Seal, Root, Max Stamina reduction effect",
+          "it": "sigillo, blocco e Stamina tolta durano 3 secondi in più"
+        },
+        {
+          "at": 20,
+          "name": "+25% Seal, Root, Max Stamina reduction chance",
+          "it": "+25% di probabilità per tutti e tre"
+        }
+      ],
+      "pve": null,
+      "pvp": {
+        "level": 5,
+        "state": "alternativa",
+        "pos": 5,
+        "note": "Un sigillo ad area da 20 metri, e dal livello 5 anche un blocco sul posto.",
+        "swap": "guardian-blessing"
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "impeding-authority",
+      "name": "Impeding Authority",
+      "ko": "차단의 권능",
+      "sum": "Uno scudo per te e per il gruppo entro 40 metri: assorbe danni pari al 16% dei PV massimi al livello 1 (25% al 10, 35% al 20), per 20 secondi.",
+      "meta": "Ricarica 90 s · 0 MP · durata 20 s",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+15% Defense",
+          "it": "+15% di difesa"
+        },
+        {
+          "at": 10,
+          "name": "+10% Incoming Heal",
+          "it": "+10% alle cure ricevute"
+        },
+        {
+          "at": 15,
+          "name": "+10% PvE Damage Tolerance, +5% PvP Damage Tolerance",
+          "it": "10% di danno in meno in PvE e 5% in PvP"
+        },
+        {
+          "at": 20,
+          "name": "Restores 7% of Max HP when Protective Shield ends or is broken",
+          "it": "quando lo scudo finisce o si rompe rende il 7% dei PV massimi"
+        }
+      ],
+      "pve": {
+        "level": 5,
+        "state": "colpi a tutto il gruppo",
+        "pos": 8,
+        "note": "Per i boss che colpiscono tutto il gruppo a momenti che si conoscono, finché il gruppo impara il combattimento.",
+        "swap": "marchutans-wrath"
+      },
+      "pvp": null,
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "power-of-the-storm",
+      "name": "Power of the Storm",
+      "ko": "질풍의 권능",
+      "sum": "Per 10 secondi al livello 1 (12 al 5, 20 al 20) hai +20% di velocità di combattimento e ricariche più corte del 20%; i compagni entro 40 metri hanno la stessa velocità e ricariche più corte del 10%. Chi ha addosso Earth's Blessing del Cleric non lo riceve.",
+      "meta": "Ricarica 120 s, 90 s dal livello 5 · 0 MP · durata 10 s (Lv 1), 12 s (Lv 5), 20 s (Lv 20)",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "-30s cooldown",
+          "it": "ricarica di 90 secondi"
+        },
+        {
+          "at": 10,
+          "name": "+200 Accuracy",
+          "it": "+200 di precisione"
+        },
+        {
+          "at": 15,
+          "name": "+200 Critical Hit",
+          "it": "+200 di critico"
+        },
+        {
+          "at": 20,
+          "name": "+20% Caster Attack and +10% party member Attack",
+          "it": "+20% di attacco a te e +10% ai compagni"
+        }
+      ],
+      "pve": {
+        "level": 20,
+        "state": "in uso",
+        "pos": 2,
+        "note": "A 45 sta a 5: la ricarica scende da 120 a 90 secondi. Poi si porta a 20 (+20% di attacco a te, +10% al gruppo), ma fra 5 e 20 non si spende un punto: i livelli in mezzo danno quasi niente (notXeon, Aion 2 Maps). Va premuto all'inizio, prima che qualcuno usi una skill: accorcia solo le ricariche che partono mentre è acceso. Sette dei primi otto d'Europa la tengono a 20 (29/10/2026)."
+      },
+      "pvp": {
+        "level": 5,
+        "state": "sempre",
+        "pos": 2
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "marchutans-wrath",
+      "name": "Marchutan's Wrath",
+      "ko": "마르쿠탄의 분노",
+      "sum": "Da 20 metri colpisce fino a 4 nemici intorno al bersaglio e accende [[dark-crush]] per 3 secondi.",
+      "meta": "Ricarica 30 s · 0 MP · 20 m",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "Up to +20% damage when less targets hit",
+          "it": "fino al 20% di danno in più quando colpisci pochi bersagli"
+        },
+        {
+          "at": 10,
+          "name": "50% chance to inflict Stun for 3s",
+          "it": "una volta su due stordisce per 3 secondi"
+        },
+        {
+          "at": 15,
+          "name": "-70% Incoming Heal and Potion Recovery",
+          "it": "il bersaglio riceve il 70% di cure e di pozioni in meno"
+        },
+        {
+          "at": 20,
+          "name": "+25% additional Stun Chance",
+          "it": "+25% di probabilità di stordire"
+        }
+      ],
+      "pve": {
+        "level": 5,
+        "state": "in uso",
+        "pos": 4,
+        "note": "La terza skill che accende Dark Crush, e per più tempo: 3 secondi. La premi tu quando le altre due sono in ricarica. A 5 dà fino al 20% di danno in più su pochi bersagli; i livelli 10, 15 e 20 sono stordimento e anti-cura, da PvP (i primi d'Europa la tengono a 15-20 anche per l'Abisso). Per Aion 2 Maps e gigawhale è facoltativa: con e senza, sul manichino, meno dell'1%.",
+        "or": "obliterate"
+      },
+      "pvp": {
+        "level": 15,
+        "state": "sempre",
+        "pos": 3,
+        "note": "Si apre con lei, da 20 metri. A 10 stordisce una volta su due, a 15 taglia del 70% cure e pozioni: sono 35 punti, quindi a 15 arriva con gli Stigma Shard."
+      },
+      "src": [
+        "db",
+        "maps",
+        "builds",
+        "meta",
+        "couga"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "guardian-blessing",
+      "name": "Guardian Blessing",
+      "ko": "수호의 축복",
+      "sum": "+5,4% di PV massimi per 120 secondi al livello 1 (9% al 10, 11% al 15), e ti rende subito la stessa parte di PV. Dura quanto la sua ricarica, e nessuno te lo può togliere.",
+      "meta": "Ricarica 120 s · 0 MP · durata 120 s",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+10% Status Effect Resist",
+          "it": "+10% di resistenza agli stati"
+        },
+        {
+          "at": 10,
+          "name": "x1.5 [Crossguard] effect for the duration",
+          "it": "[[crossguard]] vale una volta e mezza"
+        },
+        {
+          "at": 15,
+          "name": "x1.5 [Wind's Promise] effect for the duration",
+          "it": "[[winds-promise]] vale una volta e mezza"
+        },
+        {
+          "at": 20,
+          "name": "+10% Incoming Heal",
+          "it": "+10% alle cure ricevute"
+        }
+      ],
+      "pve": {
+        "level": 15,
+        "state": "in uso",
+        "pos": 3,
+        "note": "Il quarto slot di chi fa danno, da fine ottobre: a 15 Wind's Promise vale una volta e mezza, e dura quanto la sua ricarica, due minuti, quindi è sempre accesa. Sette dei primi otto d'Europa la portano tra 15 e 20 (29/10/2026); notXeon e gigawhale, il primo del Global, la mettono in cima alla build. Sotto il 15 non vale lo slot: finché non hai i 75 punti resta [[sprint-mantra]]."
+      },
+      "pvp": {
+        "level": 5,
+        "state": "sempre",
+        "pos": 4,
+        "note": "Assassin e Spiritmaster ti tolgono i buff: questo non possono."
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga"
+      ],
+      "conf": "high"
+    },
+    {
+      "id": "barrier-spell",
+      "name": "Barrier Spell",
+      "ko": "결계의 주문",
+      "sum": "Per 3 secondi i PV tuoi e del gruppo entro 40 metri non scendono sotto il 10%. Non ferma certi colpi molto forti.",
+      "meta": "Ricarica 180 s · 0 MP · durata 3 s",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "Restores 10% HP when effect expires naturally",
+          "it": "quando finisce da solo rende il 10% dei PV"
+        },
+        {
+          "at": 10,
+          "name": "+10% PvE Damage Tolerance and +5% PvP Damage Tolerance for 10s when effect expires naturally",
+          "it": "quando finisce da solo, 10 secondi col 10% di danno in meno in PvE e 5% in PvP"
+        },
+        {
+          "at": 15,
+          "name": "+10% HP limit",
+          "it": "i PV non scendono sotto il 20%"
+        },
+        {
+          "at": 20,
+          "name": "+1s effect duration",
+          "it": "dura 1 secondo in più"
+        }
+      ],
+      "pve": null,
+      "pvp": {
+        "level": 5,
+        "state": "boss dell'Abisso",
+        "pos": 8,
+        "note": "Per i boss dell'Abisso, quando tutto il gruppo sta per cadere insieme.",
+        "swap": "guardian-blessing"
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta"
+      ],
+      "conf": "mid"
+    },
+    {
+      "id": "assault-shock",
+      "name": "Assault Shock",
+      "ko": "강습 충격",
+      "sum": "Da 20 metri colpisce fino a 4 nemici e li stordisce per 3 secondi, i mostri sempre e i giocatori il 30% delle volte; più bersagli colpisci, più difesa ti dà, fino al 20%.",
+      "meta": "Ricarica 120 s · 0 MP · 20 m",
+      "unlocks": [
+        {
+          "at": 5,
+          "name": "+20% Attack for 5s on hit",
+          "it": "+20% di attacco per 5 secondi"
+        },
+        {
+          "at": 10,
+          "name": "500 MP damage on hit",
+          "it": "toglie 500 MP al bersaglio"
+        },
+        {
+          "at": 15,
+          "name": "+10m range",
+          "it": "arriva a 30 metri"
+        },
+        {
+          "at": 20,
+          "name": "+20% Stun Chance",
+          "it": "+20% di probabilità di stordire"
+        }
+      ],
+      "pve": null,
+      "pvp": null,
+      "src": [
+        "db"
+      ],
+      "conf": "mid"
+    }
+  ],
+  "passive": [
+    {
+      "id": "blessing-of-life",
+      "name": "Blessing of Life",
+      "ko": "생명의 축복",
+      "sum": "Più PV, e cure più forti: le tue cure crescono col tuo attacco.",
+      "scale": [
+        {
+          "label": "PV",
+          "v": [
+            "+150",
+            "+1.500",
+            "+3.000"
+          ]
+        },
+        {
+          "label": "PV massimi",
+          "v": [
+            "6,5%",
+            "20%",
+            "35%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 5,
+        "note": "Coi punti, non coi tratti dell'equip."
+      },
+      "pvp": {
+        "rank": 4,
+        "note": "In PvP si cerca sui pezzi al posto di [[winds-promise]]."
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga"
+      ],
+      "conf": "high",
+      "top": 15.3,
+      "gear": {
+        "pve": 5,
+        "pvp": 13
+      }
+    },
+    {
+      "id": "crossguard",
+      "name": "Crossguard",
+      "ko": "십자 방어",
+      "sum": "+200 di parata, e a ogni parata ti rende un po' di PV, al massimo una volta al secondo.",
+      "scale": [
+        {
+          "label": "Cura minima a ogni parata",
+          "v": [
+            "53",
+            "351",
+            "695"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 10,
+        "note": "Resta a 1: in PvE non fa quasi niente. Se la trovi su un pezzo, è un tratto da cambiare."
+      },
+      "pvp": {
+        "rank": 10
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga"
+      ],
+      "conf": "high",
+      "top": 8,
+      "gear": {
+        "pve": 0,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "protection-circle",
+      "name": "Protection Circle",
+      "ko": "보호진",
+      "sum": "A ogni colpo andato a segno prendi un segno, al massimo uno ogni mezzo secondo; a 10 segni tu e il gruppo avete uno scudo per 10 secondi. E quando scendi sotto metà vita hai per 5 secondi uno scudo tuo, una volta al minuto.",
+      "scale": [
+        {
+          "label": "Scudo del gruppo, sui PV massimi",
+          "v": [
+            "3,1%",
+            "4%",
+            "5%"
+          ]
+        },
+        {
+          "label": "Scudo tuo sotto metà vita",
+          "v": [
+            "21%",
+            "30%",
+            "40%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 7,
+        "note": "La migliore tra quelle di difesa: metaroad e couga54 la mettono prima di Blessing of Life, e metaroad e MetaBot prendono i suoi nodi su Nezekan. Coi punti che avanzano dopo quelle di danno."
+      },
+      "pvp": {
+        "rank": 7
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga"
+      ],
+      "conf": "high",
+      "top": 13.4,
+      "gear": {
+        "pve": 1,
+        "pvp": 1
+      }
+    },
+    {
+      "id": "inspiring-spell",
+      "name": "Inspiring Spell",
+      "ko": "고취의 주문",
+      "sum": "Più critico e più colpo perfetto.",
+      "scale": [
+        {
+          "label": "Critico",
+          "v": [
+            "+100",
+            "+190",
+            "+290"
+          ]
+        },
+        {
+          "label": "Colpo perfetto",
+          "v": [
+            "0,5%",
+            "5%",
+            "10%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 4,
+        "note": "Si tiene se capita. [[winds-promise]] rende solo sui critici, e questa li porta: metaroad e couga54 la mettono seconda finché il critico non è vicino al tetto del 50%."
+      },
+      "pvp": {
+        "rank": 6
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga"
+      ],
+      "conf": "high",
+      "top": 15.8,
+      "gear": {
+        "pve": 36,
+        "pvp": 6
+      }
+    },
+    {
+      "id": "attack-preparation",
+      "name": "Attack Preparation",
+      "ko": "공격 준비",
+      "sum": "Più danno, sempre: danno PvE e PvP, difesa e +100 di precisione.",
+      "scale": [
+        {
+          "label": "Danno PvE",
+          "v": [
+            "5,5%",
+            "10%",
+            "15%"
+          ]
+        },
+        {
+          "label": "Danno PvP",
+          "v": [
+            "2,75%",
+            "5%",
+            "7,5%"
+          ]
+        },
+        {
+          "label": "Difesa",
+          "v": [
+            "2%",
+            "20%",
+            "40%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 1,
+        "note": "La prima da cercare su armatura, collana e orecchini, e sulla carta Bell."
+      },
+      "pvp": {
+        "rank": 3
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga"
+      ],
+      "conf": "high",
+      "top": 16.5,
+      "gear": {
+        "pve": 75,
+        "pvp": 22
+      }
+    },
+    {
+      "id": "impact-hit",
+      "name": "Impact Hit",
+      "ko": "충격 적중",
+      "sum": "Più probabilità di stordire e atterrare (gli stati di tipo Impact), e più colpo doppio: è da qui che il Chanter prende Double Chance.",
+      "scale": [
+        {
+          "label": "Stati di tipo Impact",
+          "v": [
+            "11,2%",
+            "22%",
+            "34%"
+          ]
+        },
+        {
+          "label": "Colpo doppio",
+          "v": [
+            "0,3%",
+            "3%",
+            "6%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 3,
+        "note": "La terza da cercare sui pezzi, e sulla carta Mirror."
+      },
+      "pvp": {
+        "rank": 2
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga"
+      ],
+      "conf": "high",
+      "top": 15.8,
+      "gear": {
+        "pve": 73,
+        "pvp": 30
+      }
+    },
+    {
+      "id": "raging-spell",
+      "name": "Raging Spell",
+      "ko": "격노의 주문",
+      "sum": "Un colpo in più su un bersaglio in Stagger, oppure stordito, atterrato o sospeso; al massimo uno al secondo.",
+      "scale": [
+        {
+          "label": "Danno minimo del colpo in più",
+          "v": [
+            "146",
+            "369",
+            "532"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 9,
+        "note": "In PvE resta a 1."
+      },
+      "pvp": {
+        "rank": 9
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga"
+      ],
+      "conf": "high",
+      "top": 10.3,
+      "gear": {
+        "pve": 0,
+        "pvp": 0
+      }
+    },
+    {
+      "id": "earths-promise",
+      "name": "Earth's Promise",
+      "ko": "대지의 약속",
+      "sum": "Ogni 10 secondi un tuo colpo abbassa per 5 secondi la resistenza al danno del bersaglio: tutto il gruppo gli fa più male. Non vale insieme a Chain of Torment del Cleric.",
+      "scale": [
+        {
+          "label": "Resistenza tolta in PvE",
+          "v": [
+            "5,4%",
+            "9%",
+            "13%"
+          ]
+        },
+        {
+          "label": "Resistenza tolta in PvP",
+          "v": [
+            "2,7%",
+            "4,5%",
+            "6,5%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 6,
+        "note": "Si tiene se capita: è accesa circa metà del tempo."
+      },
+      "pvp": {
+        "rank": 8
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga"
+      ],
+      "conf": "high",
+      "top": 15.3,
+      "gear": {
+        "pve": 17,
+        "pvp": 2
+      }
+    },
+    {
+      "id": "survival-willpower",
+      "name": "Survival Willpower",
+      "ko": "생존 의지",
+      "sum": "Resistenza agli stati; e quando ti stordiscono, atterrano, sospendono, congelano o spaventano subisci meno danno per 5 secondi, una volta al minuto.",
+      "scale": [
+        {
+          "label": "Resistenza agli stati",
+          "v": [
+            "17%",
+            "35%",
+            "55%"
+          ]
+        },
+        {
+          "label": "Danno in meno in PvP, da stordito",
+          "v": [
+            "6%",
+            "15%",
+            "25%"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 8,
+        "note": "In PvE resta a 1."
+      },
+      "pvp": {
+        "rank": 1,
+        "note": "La prima da alzare in PvP: a 10 dà il 35% di resistenza agli stati."
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga"
+      ],
+      "conf": "high",
+      "top": 13.5,
+      "gear": {
+        "pve": 0,
+        "pvp": 35
+      }
+    },
+    {
+      "id": "winds-promise",
+      "name": "Wind's Promise",
+      "ko": "바람의 약속",
+      "sum": "Più danno critico, e su un critico, una volta su due, un colpo in più; al massimo uno al secondo. Con [[guardian-blessing]] a 15 vale una volta e mezza.",
+      "scale": [
+        {
+          "label": "Danno critico",
+          "v": [
+            "5,7%",
+            "12%",
+            "19%"
+          ]
+        },
+        {
+          "label": "Danno minimo del colpo in più",
+          "v": [
+            "554",
+            "1.042",
+            "1.402"
+          ]
+        }
+      ],
+      "pve": {
+        "rank": 2,
+        "note": "Insieme ad [[attack-preparation]]: la cerchi negli stessi posti, e sulla carta Mirror."
+      },
+      "pvp": {
+        "rank": 5
+      },
+      "src": [
+        "db",
+        "maps",
+        "meta",
+        "couga"
+      ],
+      "conf": "high",
+      "top": 16,
+      "gear": {
+        "pve": 67,
+        "pvp": 9
+      }
+    }
+  ],
+  "levels": {
+    "src": "meta",
+    "players": 59,
+    "date": "2026-10-08",
+    "read": "2026-10-12"
+  }
+}
